@@ -1,0 +1,910 @@
+penDesign — UI & Platform Parity Plan (Clean, Ordered)
+0) Target stack & parity goals
+
+What we’re recreating: the UI and behavior surfaced by MFC + BCGSoft + Win32 + Direct3D 11 code paths (ribbon/menus/toolbars/dialogs, grid & status UI, command routing, windowing, print preview, CAD editing commands, workbox/dispatcher pattern, and 2D/3D views). Examples in the decompiled list: ConstructRibbonBar, OnCommandRibbonHomeEdit*, window/menu creation APIs, dialog OnInitDialog, status bar auto‑merge toggle, grid events, print preview navigation, etc.
+
+Open‑source replacements (equal or better):
+
+UI toolkit: Qt 6 LTS (Widgets)
+
+Ribbon: SARibbonBar (MIT) or wxWidgets wxRibbonBar if we prefer wx; pick SARibbonBar for Qt consistency.
+
+Docking: KDDockWidgets (modern docking)
+
+Grid: Qt QTableView / QTreeView + models
+
+Web/HTML dialogs: QtWebEngine (Chromium)
+
+Settings: QSettings → Windows Registry on Win; INI elsewhere
+
+CAD kernel & geometry: Open Cascade Technology (OCCT) for B‑rep, meshing, geometry ops, projections, 2D/3D views
+
+Rendering:
+
+Filament (PBR real‑time) default GPU path (cross‑platform, IBL, tone mapping)
+
+Optional DXR (DirectX 12) via Falcor, or CPU path via Intel Embree + OSPRay for physically accurate previews
+
+Import/export & assets: Assimp (formats), OpenImageIO (textures), cgltf (glTF focused)
+
+Utilities: fmt, spdlog, nlohmann/json, Catch2 (tests), Eigen or glm (math)
+
+Build & deps: lock versions in vcpkg.json or conanfile.txt + CMakePresets.json; one‑shot setup cmake -S . -B build -DOPEN_SOURCE_STRICT=ON for Windows (MSVC), Linux (clang/gcc), macOS (clang)
+
+Licensing & ethics note: re‑implement behavior, don’t reuse proprietary code/assets. No CodeMeter/FlexNet hooks; instead, define feature flags (OPEN_DESIGN_PRO=ON/OFF). Where the original used registry/license checks, keep a clean capability provider that toggles Pro features without reproducing proprietary logic.
+
+1) Repository layout (create exactly)
+opendesign/
+├─ cmake/                 # Superbuild + find modules
+├─ external/              # (empty) fetched by package manager
+├─ src/
+│  ├─ app/                # app entry, main window wiring
+│  ├─ ui/                 # ribbon, menus, dialogs, status, grid
+│  ├─ framework/          # command bus, update-ui, accel, theming
+│  ├─ cad/                # geometry, workbox, selection, ops
+│  ├─ render/             # Filament/Falcor/Embree adapters
+│  ├─ io/                 # file dialogs, import/export, settings
+│  ├─ compat/             # Win32/MFC shim wrappers & helpers
+│  └─ plugins/            # optional modules (360 publish etc.)
+├─ data/
+│  ├─ icons/              # SVG/PNG at 1x/1.5x/2x
+│  ├─ cursors/
+│  ├─ sounds/
+│  └─ ui/                 # ribbon XML, qss themes, templates
+├─ scripts/
+│  ├─ gen_stubs/          # stub generator for functions & tests
+│  └─ ci/
+├─ docs/
+│  ├─ function_coverage.yaml   # canonical list (see §3)
+│  ├─ decompiled_map.csv       # Address→Name→Category
+│  └─ ui_specs/
+├─ tests/
+│  ├─ unit/
+│  └─ ui/
+└─ CMakeLists.txt
+
+2) Compatibility layer (name‑compatible shims)
+
+Goal: Allow implementing functions using the same names as in the decompiled file, while internally calling Qt/OCCT/Filament. This maximizes parity and keeps “implement every function” concrete.
+
+compat/win/
+
+Window.h/.cpp: wrappers for CreateWindowEx, DestroyWindow, ShowWindow, MoveWindow, SetWindowPos, Get/SetWindowText, etc., mapping to Qt equivalents (QWidget::show/hide/move/resize/setWindowTitle). Keep function names identical to the decompiled list and mark them [[deprecated]] internally; public code calls modern APIs, but we implement these to satisfy coverage.
+
+Menu.h/.cpp: wrap CreateMenu, CreatePopupMenu, EnableMenuItem, etc., mapping to QMenuBar/QMenu/QAction.
+
+Accel.h/.cpp: accelerator table rebuild mapped to Qt shortcuts (QShortcut).
+
+compat/mfc/
+
+Dialogs.h/.cpp: OnInitDialog, EndDialog, CFileDialog, CPrintDialog, CPageSetupDialog equivalents using Qt dialogs.
+
+Ribbon.h/.cpp: ConstructRibbonBar, SetRibbonSimplifiedMode, etc. wrap SARibbonBar.
+
+UpdateUI.h/.cpp: OnUpdateCmdUI* hooks to enable/disable actions.
+
+Theming: implement InitAutoColors, InitFont, “menu font/row height” using QPalette/QFont; keep function names for coverage.
+
+3) Function coverage: implement every function (no exceptions)
+
+Contract: docs/function_coverage.yaml is the single source of truth enumerating all functions from the decompiled document with a unique id, original name, address (if present), category, and our target implementation symbol. The build fails if any entry is missing a compiled symbol or a unit test.
+
+Seed categories (verbatim from analysis): UI management & control; BCGSoft framework; Window management; Dialog & form; Initialization; Ribbon interface; Menu & context menu; Command handlers; Creation & factory; Status bar & panel; Toolbar; Drawing & rendering; Control & interaction; Advanced UI; Text & font; Specialized application; Edition/license.
+
+Examples (extracts—fill the rest from the source doc):
+
+# docs/function_coverage.yaml
+functions:
+  - id: F-UI-0001
+    original: HideUI
+    address: 0x1401f1911
+    category: UI Management & Control
+    target_symbol: ui::html::HideUI
+    status: stubbed
+  - id: F-UI-0002
+    original: ShowUI
+    address: 0x1401f190b
+    category: UI Management & Control
+    target_symbol: ui::html::ShowUI
+    status: stubbed
+  - id: F-UI-0003
+    original: UpdateUI
+    address: 0x1401f1917
+    category: UI Management & Control
+    target_symbol: ui::html::UpdateUI
+    status: stubbed
+  - id: F-RIB-0101
+    original: ConstructRibbonBar
+    address: 0x1401f35d6
+    category: Ribbon Interface
+    target_symbol: ui::ribbon::ConstructRibbonBar
+    status: stubbed
+  - id: F-CMD-0201
+    original: OnCommandRibbonHomeEditCenter
+    address: 0x1400d7334
+    category: Command Handlers
+    target_symbol: cad::ops::OnCommandRibbonHomeEditCenter
+    status: stubbed
+  - id: F-STAT-0301
+    original: OnStatusBarAutoMergeButton
+    address: 0x1400d4e4c
+    category: Status Bar & Panel
+    target_symbol: ui::status::OnStatusBarAutoMergeButton
+    status: stubbed
+# ... enumerate every function from the source list (471+)
+
+
+Build integration:
+
+For every YAML entry, generate a C++ stub under src/ matching target_symbol.
+
+Add a Catch2 test in tests/unit/coverage/ asserting the symbol is linkable and (where meaningful) exercises expected state (e.g., toggling).
+
+Run the coverage gate target check:functions that compares docs/function_coverage.yaml with compiled symbols via nm/llvm-nm or CMake’s try_compile. Fail build on any mismatch.
+
+4) Command bus that matches WorkBox/dispatcher semantics
+
+The decompiled app routes ribbon/toolbar/menu commands through a universal WorkBox pattern ending in WBPopUpItem::PostCommandMessage(view, box, type, x, y) with minor offset differences across Center/Move/Rotate/Mirror operations. Implement a clean equivalent so all OnCommand... handlers call the same bus.
+
+API sketch:
+
+// src/framework/CommandBus.h
+namespace framework {
+  enum class CommandId { Center, Move, Rotate, Mirror, Group, Ungroup, EditShape, LightProps /*...*/ };
+
+  struct CommandContext {
+    ui::ViewHandle view;
+    cad::WorkBoxHandle box;
+    cad::WorkBoxType type;
+    double x{0}, y{0};
+  };
+
+  class CommandBus {
+  public:
+    static CommandBus& instance();
+    void post(CommandId id, const CommandContext& ctx);     // async-safe
+    void dispatch(CommandId id, const CommandContext& ctx); // immediate
+  };
+}
+
+// src/cad/ops/HomeEdit.cpp (examples)
+void OnCommandRibbonHomeEditCenter() { framework::CommandBus::instance().dispatch(framework::CommandId::Center,  currentCtx()); }
+void OnCommandRibbonHomeEditMove()   { framework::CommandBus::instance().dispatch(framework::CommandId::Move,    currentCtx()); }
+void OnCommandRibbonHomeEditRotate() { framework::CommandBus::instance().dispatch(framework::CommandId::Rotate,  currentCtx()); }
+void OnCommandRibbonHomeEditMirror() { framework::CommandBus::instance().dispatch(framework::CommandId::Mirror,  currentCtx()); }
+
+
+Map status/UI update handlers (OnUpdateUiRibbonHomeEdit*) to enable/disable QActions based on selection.
+
+Auto‑merge toggle: persist DefaultAutoMerge via QSettings, then trigger redraw of the current WorkBox view.
+
+5) Ribbon, menu, toolbar, status bar (build & wire)
+
+Ribbon: Build Home/Edit, Drawing Tools (walls, construction lines), Room Layout, Presentation, Print Preview controls. Use SARibbonBar categories + panels + QActions with IDs matching the coverage YAML so OnCommand... stubs bind one‑for‑one. Include simplified mode and backstage equivalents.
+
+Menus/context menus: Recreate creation/destroy, enable states, and pre‑show hooks (OnInitMenu, OnInitMenuPopup, OnBeforeShowContextMenu, EnableContextMenuItems, CanBeAddedToContextMenu*). Back actions with QMenu and guard enablement in OnUpdateCmdUI handlers.
+
+Toolbar/QAT: Create a QAT section; implement “Add to QAT” and “Customize” dialogs; wire accelerators (shortcuts) + tooltips regeneration (RebuildAccelerationKeys, RebuildToolTips).
+
+Status bar: Zoom readout, units, tool, selection count, and Auto Merge toggle button hooked to the setting.
+
+Print preview: next/prev/ratio buttons with enable update handlers.
+
+6) Dialogs & grids
+
+Implement all OnInitDialog functions and standard dialogs (CFileDialog, CPrintDialog, CPageSetupDialog, color dialogs) on Qt.
+
+For dialogs with discovered button offsets (3‑button pattern), layout three actions (OK/Apply, Cancel, Help/Options), and update text via string resources (QObject::tr() + .ts).
+
+Grid control (auto‑save/options dialogs): QTableView + model with in‑cell buttons (Edit/Delete/Add) to mirror discovered behavior.
+
+7) Windowing & MDI docking
+
+Main frame + MDI child frames with docking panels (properties, layers, navigation).
+
+Implement window creation, show/hide, move/resize, placement save/restore, subclassing hooks using QMainWindow::saveState()/restoreState() and QSettings.
+
+Provide wrappers named like the Win32/MFC calls so coverage functions are present and tested.
+
+8) Initialization sequence (fully covered)
+
+Recreate the startup chain—in order—with virtual/override points so behavior remains polymorphic:
+
+InitApplication (framework setup)
+
+MyInitInstance (COM init → replace with Qt init + optional COM gateway)
+
+AfxOleInit (stub via ActiveQt or no‑op if COM not required)
+
+Init2020Registry (map to QSettings namespaces)
+
+Colors/fonts (InitAutoColors, InitFont)
+
+Menu/Header/Navigation init
+
+Zoom/view init (InitZoom)
+
+Add unit tests that assert each init function is invoked in sequence and is idempotent.
+
+9) CAD kernel, views, and rendering
+
+OCCT scene model; selection & handles; 2D floor plan / elevation views mapping to OCCT projections, and 3D view with trackball.
+
+Implement CreateFloorPlanViewport, CreateElevation*, and the discovered BuildModel3D/build_fplan/build_elev equivalents against OCCT + Filament (triangulate shapes to render).
+
+Ray tracing: optional preview pipeline (DXR path via Falcor; CPU via Embree/OSPRay). Wire a “High Quality Preview” command.
+
+Viewpoint buttons: Front/Back/Left/Right/Top/Bottom/Iso/Perspective mapped to camera presets.
+
+10) Pro vs Regular features (feature flags)
+
+Implement capability checks where the original gated features (360° publish, cloud options, auto‑design dialogs, quick pricing, custom ribbon enable). Expose FeatureGate service (isEnabled("360_publish"), etc.). Do not replicate licensing internals; provide toggles in settings.json or build flags.
+
+11) Assets: icons, images, cursors, sounds
+
+Add to data/ and reference in ribbon/menus/status. Provide 16/20/24/32 px PNG and SVG variants; cursors as PNG + .cur where applicable; sounds as small WAV/OGG.
+
+Icon pack: Prefer RemixIcon (Apache‑2.0) and Feather (MIT); keep a LICENSES/ folder with copies.
+
+Minimum required set:
+
+Home/Edit: center, move, rotate, mirror, group, ungroup, edit‑shape, light‑props
+
+Drawing tools: wall‑single, wall‑double, const‑line‑single, const‑line‑double
+
+Room layout: elevation/floor‑plan display settings, launch‑settings
+
+Print/preview: print, preview, next/prev page, zoom 100/200, fit, page setup
+
+Ribbon controls: undo (with dropdown), redo, minimize ribbon, QAT customize, add‑to‑QAT
+
+Status bar: auto‑merge (toggle), zoom in/out/reset, units, selection count
+
+Viewpoints: front/back/left/right/top/bottom/iso/persp
+
+Menus/context: cut/copy/paste/delete/properties/select‑all
+
+Cursors: select, pan, rotate, measure, draw‑wall, draw‑line
+
+Sounds (optional, low volume): notification‑success, error, long‑task‑done
+
+Add an asset manifest (data/asset_manifest.json) listing each file with checksum; CI checks must pass.
+
+12) Strings & localization
+
+Extract button labels/tooltips/status texts to Qt .ts files with stable keys matching the original resource IDs where known (e.g., 0x42cf undo text, 0x42ce tooltip). Provide en, es, fr stubs.
+
+13) Input, grid, accessibility
+
+Mouse/keyboard routing for menus/ribbon/grid implemented via Qt events.
+
+Grid: keyboard navigation + cell tooltips and context menus.
+
+Accessibility: name every actionable (accessibleName, mirrors “GetMenuItemAccTestingName”).
+
+14) File I/O and dialogs
+
+Implement file open/save, export/import (XML, images), color picker, find/replace dialogs, and 360 publish launcher. Preserve command names and wire to stubs if backends are pending.
+
+15) Testing & QA gates (build must fail if anything is missing)
+
+A. Function coverage gate
+
+scripts/gen_stubs/scan_yaml.py reads docs/function_coverage.yaml.
+
+scripts/gen_stubs/scan_binary.py (or CMake symbol list) verifies each target_symbol exists in the built binary.
+
+tests/unit/coverage/ contains a tiny test per function that at least calls it (no‑op is acceptable initially).
+
+Fail if any listed function is missing, or any extra public symbol lacks a YAML entry.
+
+B. Asset coverage gate
+
+data/asset_manifest.json must enumerate every icon/cursor/sound used by code (collected by scanning Qt resource .qrc).
+
+CI compares required vs. present assets and fails on mismatch.
+
+C. Update‑UI invariants
+
+UI actions reflect selection state (e.g., Group requires multi‑selection; Undo enabled when history not empty).
+
+Provide UI tests (Qt Test) that simulate selection and verify QAction::isEnabled() results.
+
+D. Init order test
+
+Verify the exact sequence: InitApplication → MyInitInstance → AfxOleInit → Init2020Registry → InitializeSettings → InitFont → InitAutoColors → InitMenuBar → InitHeader → InitNavigationControl → InitZoom.
+
+Fail if order changes.
+
+E. Command bus regression
+
+For Center/Move/Rotate/Mirror, assert that the dispatcher receives the expected CommandId and a valid CommandContext; ensure view redraw is triggered.
+
+16) “Implement‑everything” checklists per category
+
+For each category below, instantiate stubs for every function name found in the source document; where a function appears multiple times (overloads/variants), create a distinct stub and add a test. (Examples; complete the rest from the source list.)
+
+A) UI management & control
+HideUI, ShowUI, UpdateUI, OnActivateUI, OnDeactivateUI (variants for OLE client/server/rich edit). Wire to Qt dialogs/webviews; OLE becomes no‑op or ActiveQt wrapper.
+
+B) Window management
+Creation/destruction/state/placement: CreateNewWindow, DestroyWindow (all variants), ShowWindow, MoveWindow (all), SetWindowPos, Get/SetWindowPlacement, ReloadWindowPlacement.
+Procedures & messages: WindowProc (map to event filters), DefWindowProcA (no‑op shim).
+Text & props: GetWindowTextA, SetWindowTextA, UpdateWindow, RegisterWindowMessageA.
+Subclassing: PreCreateWindow, PreSubclassWindow, SubclassWindow, UnsubclassWindow.
+
+C) Dialogs & forms
+Init & close: every OnInitDialog address variant; PreInitDialog, EndDialog.
+Standard dialogs: CFileDialog, CPrintDialog, CPageSetupDialog, color dialog helpers.
+Specialized: Show360PublishDialog (+ show/create alt), ShowCloudOptionsDialog, find/replace create/show.
+
+D) Initialization
+InitApplication, MyInitInstance, AfxClassInit, AfxOleInit, AfxInitRichEdit, Init2020Registry, InitializeSettings, InitializeCriticalSectionEx; colors/fonts/state icons; zoom/viewpoint buttons.
+
+E) Ribbon interface
+ConstructRibbonBar, IsMainRibbonBar, LoadFromVSRibbon (map to XML definition), SetParentRibbonBar, SetRibbonSimplifiedMode (all), font change hooks, backstage close; all OnCommandRibbon* handlers (Home Edit, Drawing Tools, Room Layout, etc.) and all OnUpdateUiRibbon*.
+
+F) Menus & context menus
+Creation & teardown (CreateMenu, CreatePopupMenu, DestroyMenu, CreateFromMenu), pre‑show (OnInitMenu, OnInitMenuPopup, OnBeforeShowContextMenu), item queries (GetMenuItem*, HasMenuItem), styling/drawing hooks (OnDrawMenuImage, GetMenuFont/RowHeight, IsPopupDefaultMenuLook), enabling (EnableContextMenuItems).
+
+G) Command handlers
+Core: all OnCommand variants; print preview apply/next/prev/ratios and their update handlers; render view update UI. Bind to QActions and to the command bus.
+
+H) Creation & factory
+All Create / CreateEx variants; OLE control/container/site shims; accessible proxy creation. Map to Qt constructs and ActiveQt where needed.
+
+I) Status bar & panels
+ConstructStatusBar, OnStatusBarAutoMergeButton; attribute panel setters and panel lifecycle (ConstructPanel, CreatePanel, GetParentPanel, placement rules).
+
+J) Toolbar/QAT
+FormatToolbar, LoadToolBar(Ex), toolbar customize/undo button/minimize button constructors, tooltips text getters, QAT add/customize checks.
+
+K) Drawing & rendering
+BuildModel3D, scene/render builder getters; build elevation/plan/side; parameter builders (ParmBuild*, VarBuild, SetRebuildParm)—call into OCCT + our param system. OnCreateRenderWindow wires Filament/Falcor surface.
+
+L) Control & interaction
+OnClickMenuItem, grid window proc / initial update / current cell init, scroll handling.
+
+M) Advanced UI
+Quick Access customize button checks, icons style, QAT popup test, accelerator rebuild, tooltips rebuild, ribbon enable checks, custom ribbon sub‑button registration.
+
+N) Text & font
+GetMenuFont, OnChangeRibbonFont, GetMenuName, GetControlBarMenuItemText.
+
+O) Specialized application
+Wall/construction‑line UI updates, BuildRite XML export/import stubs, incremental save UI, quick price and its update handler, idea center update, multi‑select menus (manage + impl). Bind to OCCT scene ops or leave TODO with tests marking not‑implemented‑yet.
+
+P) Edition/license
+OnCheckCustomRibbonEnable etc.—hook to FeatureGate (no proprietary logic).
+
+17) Performance, errors, telemetry
+
+Perf budgets: UI < 16 ms; run heavy CAD ops off the UI thread.
+
+Logging: central spdlog; error toasts routed to status bar.
+
+Telemetry: none. Optional crash dumps via breakpad/crashpad (opt‑in).
+
+18) CI/CD
+
+Matrix: Windows + Linux + macOS; cache package manager.
+
+Jobs: configure, build, test, check:functions, check:assets, package.
+
+Artifacts: installers (Windows MSI/QtIFW), portable zips, symbol packages.
+
+19) Deliverables checklist (sign‑off)
+
+docs/function_coverage.yaml lists every function from the decompiled analysis (471+), each with a compiling stub and a unit test (initially smoke). Build fails if any missing.
+
+All UI actions exist and are bindable in the ribbon/menus/toolbars/QAT/status (icons present).
+
+Assets present and enumerated in asset_manifest.json with checksums.
+
+Initialization order verified by test.
+
+Command bus routes Center/Move/Rotate/Mirror/Group/Ungroup/EditShape/LightProps handlers with correct enable/disable logic.
+
+Views: floor plan, elevation, 3D render window created; viewpoint buttons switch cameras.
+
+Pro flags wired for gated features—no license code included.
+
+Print preview next/prev/ratio operate and update UI states.
+
+20) What “done” looks like
+
+The function coverage gate is green (every function in the source doc exists in code + test).
+
+All UI surfaces present with icons and labels; actions toggle appropriately; dialogs instantiate.
+
+CAD views load and respond to commands; status bar reflects state (incl. Auto Merge toggle).
+
+Packaging produces a runnable app on supported OSes.
+
+Notes tied to the decompiled source (for Codex’s reference)
+
+The source shows multiple OnInitDialog addresses, standard 3‑button patterns, and grid allocations (BCG grid). Mirror those layouts with Qt; keep three core buttons.
+
+Ribbon Home/Edit command handlers all follow the same WorkBox dispatch pattern with slight offset differences—CommandBus unifies this.
+
+Status bar Auto Merge toggles a stored setting and refreshes the WorkBox. Use QSettings{"Settings/DefaultAutoMerge"} then force a view refresh.
+
+Menu APIs (create, popup, enable) and menu drawing functions must exist (even if thin wrappers) to satisfy parity and to enable accessibility naming.
+
+Initialization functions are polymorphic (virtual dispatch in MFC/BCG). Provide overridable hook classes so we can extend per‑edition behavior later.
+
+21) Database
+A. Scope & Responsibilities
+
+In DB (authoritative): catalogs/materials, SKUs, pricing, projects, designs/revisions, assets, audit logs, import jobs. (Supports features like Quick Price and BuildRite import/export.)
+
+Not in DB (remain as‑is): UI/view settings & toggles (e.g., DefaultAutoMerge), window placement, tool states — continue to live in the registry for compatibility.
+
+B. Engine & Environments
+
+Dev / Single‑user: SQLite (file‑based, zero‑install)
+
+Team / CI / Prod: PostgreSQL 14+
+
+Configuration (both):
+
+DATABASE_URL (Postgres): postgres://USER:PASS@HOST:PORT/DBNAME?sslmode=require
+
+SQLITE_DB_PATH (SQLite): absolute path to the .db file
+
+DB_POOL_MIN / DB_POOL_MAX (Postgres): 2 / 10 default
+
+DB_LOGGING: info|warn|error|debug
+
+Windows C++/MFC integration tips:
+SQLite: vendor the amalgamation (sqlite3.c/.h), compile with /O2 and define SQLITE_THREADSAFE=1, enable WAL (see below).
+Postgres: link libpq, ship libpq.dll and dependencies, set PQconninfoOption via DATABASE_URL.
+
+C. Schema (baseline)
+
+Use migrations (next section) to create these tables. Names and columns are minimal; extend as needed.
+
+-- catalogs & materials
+create table catalogs (
+  id bigserial primary key,
+  name text not null,
+  version text,
+  vendor text,
+  created_at timestamptz default now()
+);
+
+create table materials (
+  id bigserial primary key,
+  catalog_id bigint references catalogs(id) on delete cascade,
+  sku text not null,
+  code text,
+  name text not null,
+  finish text,
+  unit_cost numeric(12,4),
+  attributes jsonb,          -- dimensions, colorways, etc.
+  created_at timestamptz default now(),
+  unique (catalog_id, sku)
+);
+
+-- projects & designs
+create table projects (
+  id bigserial primary key,
+  name text not null,
+  client text,
+  status text default 'active',
+  created_at timestamptz default now()
+);
+
+create table designs (
+  id bigserial primary key,
+  project_id bigint references projects(id) on delete cascade,
+  name text not null,
+  rev int not null default 1,
+  storage_uri text,          -- path to design blob/zip
+  checksum text,
+  created_by text,
+  created_at timestamptz default now()
+);
+
+-- pricing (supports Quick Price)
+create table price_lists (
+  id bigserial primary key,
+  name text not null,
+  currency char(3) not null default 'USD',
+  valid_from date,
+  valid_to date
+);
+
+create table material_prices (
+  id bigserial primary key,
+  material_id bigint references materials(id) on delete cascade,
+  price_list_id bigint references price_lists(id) on delete cascade,
+  unit_price numeric(12,4) not null,
+  unique (material_id, price_list_id)
+);
+
+-- imports / jobs (e.g., BuildRite XML)
+create table import_jobs (
+  id bigserial primary key,
+  kind text not null,        -- 'buildrite', 'sketchup', etc.
+  source_uri text not null,
+  status text not null default 'queued', -- queued|running|done|failed
+  started_at timestamptz,
+  finished_at timestamptz,
+  log text
+);
+
+-- auditing
+create table audit_log (
+  id bigserial primary key,
+  ts timestamptz default now(),
+  actor text,
+  action text,               -- 'create_material', 'update_price', etc.
+  entity text,
+  entity_id text,
+  diff jsonb
+);
+
+
+Notes: The codebase mentions Quick Price and BuildRite XML import handlers; these tables support those workflows.
+
+D. Migrations
+
+Plain SQL files with a monotonic version (e.g., V0001__init.sql, V0002__prices.sql) and a schema_migrations(version text primary key, applied_at timestamptz) table.
+
+On startup: run pending migrations in order; fail fast if any migration fails.
+
+Tools (optional): Flyway or sqitch; for in‑app bootstrap keep a tiny runner that:
+
+checks/creates schema_migrations,
+
+finds unapplied files,
+
+wraps each in a transaction.
+
+E. Indexing & Performance
+
+Postgres:
+
+create index on materials (sku);
+create index on materials using gin (attributes);
+create index on material_prices (material_id, price_list_id);
+
+
+SQLite:
+
+create index materials_sku_idx on materials(sku);
+
+
+Enable FTS5 for name/description search if needed.
+
+SQLite Pragmas (run once per DB):
+
+PRAGMA journal_mode=WAL;
+PRAGMA synchronous=NORMAL;
+PRAGMA foreign_keys=ON;
+
+F. Data Access
+
+Read: parameterized queries (no string concatenation).
+
+Write: wrap multi‑row updates in transactions; use RETURNING (Postgres) to avoid TOCTOU.
+
+Pooling: for Postgres set pool max 10 (desktop) / 20 (server). SQLite is in‑process and does not need pooling.
+
+G. Seeding & Imports
+
+Seed catalogs/materials with vendor CSV/JSON where available.
+
+BuildRite XML: add an importer that maps elements → materials and material_prices; record each run in import_jobs. (The app exposes OnXMLExportToBuildRite/OnXMLImportFromBuildRitePost; the DB layer should be able to persist those outcomes.)
+
+H. Security & Backups
+
+Postgres: TLS to server; app creds via environment or Windows Credential Manager; least privilege (RW user, separate RO user if needed). Nightly pg_dump with retention (7/30 days).
+
+SQLite: store under %PROGRAMDATA%\OpenDesign\data\opendesign.db; protect folder with NTFS ACLs. If sensitive, use EFS or a SQLCipher build.
+
+PII: keep out of debug logs; audit on admin actions only.
+
+I. Testing
+
+Unit tests: ephemeral SQLite DB per run or Postgres schema per run.
+
+Fixtures: seed minimal catalogs/materials and one price_list.
+
+Golden‑path tests: Quick Price on a sample design hits materials/material_prices; import job transitions queued→running→done.
+
+J. Operational Readiness
+
+Health check: simple select 1 at app start; fail fast on error.
+
+Migration gate: refuse to run the app if there are unapplied migrations.
+
+Observability: log DB timings >200 ms with query label; aggregate counts of import_jobs by status.
+
+K. Mapping to Existing Code Paths (clarity)
+
+Quick Price → reads from materials/material_prices.
+
+BuildRite import/export → persists via import_jobs, populates catalogs/materials.
+
+UI preferences (e.g., Auto‑Merge) → remain in Registry (Settings\DefaultAutoMerge) per current behavior; not moved to DB.
+
+22) Visual Quality & UI Polish — Combined Standard (Concise)
+0) Principles
+
+Content first, chrome second.
+
+One accent, many neutrals.
+
+Dense but breathable (8‑pt spacing).
+
+Consistency > cleverness.
+
+States are clear, never loud.
+
+1) Design tokens (platform‑agnostic)
+
+Spacing: 4, 8, 12, 16, 24, 32, 48, 64
+Radii: inputs/buttons 4 px; menus/popups 6 px; large surfaces 8 px
+Borders: hairline 1 px; focus ring 2 px
+Shadows:
+
+Level 1 (menus/popups): 0 4 12 0 rgba(0,0,0,.10)
+
+Level 2 (dialogs): 0 6 20 0 rgba(0,0,0,.14)
+
+Typography (Windows): Segoe UI / Segoe UI Variable
+
+Title 18/24 600
+
+Section 14/20 600
+
+Body 12/18 400 (default control text)
+
+Caption 11/16 400 (helper, units)
+
+Focus Ring: 2 px outside stroke accent/600 + 2 px outer halo accent/200.
+Selection Fill: accent/200 bg + accent/600 1 px border.
+
+Brand color system (single accent = Iris)
+
+Neutrals (text/surfaces):
+
+ink #0B0A0B (primary text)
+
+neutral/50 #F1F1F2 (app bg)
+
+neutral/300 #D1D2D4 (panels)
+
+neutral/400 #BDBEC0 (grid major)
+
+neutral/500 #A8AAAD (hairlines/borders)
+
+charcoal/700 #5C5C5E (disabled text)
+
+Accent / Iris:
+
+#D1D9FE, #879AFC, #6E85FB, #5570FA, #3C5BFA
+
+Semantic: success #16A34A · warning #D97706 · danger #DC2626
+
+Example tokens payload
+
+{
+  "radius": { "sm": 4, "md": 6, "lg": 8 },
+  "space": [4,8,12,16,24,32,48,64],
+  "border": { "hairline": 1, "focus": 2 },
+  "elevation": {
+    "menu": "0 4 12 0 rgba(0,0,0,0.10)",
+    "dialog": "0 6 20 0 rgba(0,0,0,0.14)"
+  },
+  "color": {
+    "neutral": {
+      "50":"#F1F1F2","300":"#D1D2D4","400":"#BDBEC0","500":"#A8AAAD","700":"#5C5C5E","ink":"#0B0A0B"
+    },
+    "accent": { "200":"#D1D9FE","400":"#879AFC","500":"#6E85FB","600":"#5570FA","700":"#3C5BFA" },
+    "semantic": { "success":"#16A34A","warning":"#D97706","danger":"#DC2626" },
+    "brandSurface": { "steel500":"#6B809A" }
+  },
+  "type": {
+    "title": {"size":18,"line":24,"weight":"600"},
+    "section": {"size":14,"line":20,"weight":"600"},
+    "body": {"size":12,"line":18,"weight":"400"},
+    "caption": {"size":11,"line":16,"weight":"400"}
+  }
+}
+
+2) Component specs (do this exactly)
+
+Buttons
+Heights: 28 px (default), 24 px (compact toolbars)
+Padding: 8–12 px horizontal; icon–text gap 8 px
+Shape: radius 4 px; border 1 px neutral/500 on light surfaces
+Primary: bg accent/600, text #FFF; hover accent/700; active accent/700 (pressed)
+Secondary: transparent bg, text ink, border neutral/500; hover bg neutral/100 (~#F2F4F7)
+Toggles (on): fill accent/200 + 1 px border accent/600
+Disabled: text charcoal/700, border neutral/500, no shadow
+
+Inputs (text/number/dropdown)
+Height 28 px; padding 8 px L/R
+Border 1 px neutral/500; placeholder neutral/400
+Focus: border accent/600 + focus halo (per focus ring spec)
+Helper/counter uses Caption
+
+Toolbar / Ribbon
+Row height 40–44 px; icon 20–24 px; label position consistent (below or beside)
+Group separators 1 px neutral/500 with 16 px horizontal padding
+If >6 groups, collapse less-used behind chevron menu
+
+Panels (Properties / Cloud Browser / Placement)
+Width 320–360 px (min 280 px); resizable, snap at 320/360/420
+Header 40 px, Section style text, 1 px bottom divider neutral/500
+Inside: vertical rhythm 8 px; block separation 16 px
+Lists/tables: row 28 px, header 32 px; optional zebra neutral/100
+
+Context menus
+Item height 28 px; left icon column 20 px; gutters: L/R 12 px, inside 8 px
+Submenu arrow 16 px, neutral/400; hover row bg neutral/100
+
+Status bar
+Height 28 px; items separated by 1 px divider neutral/500 + 12 px padding
+Only interactive items get hover/press states
+
+Canvas / grids
+Background #FFFFFF
+Minor grid: 1 px #F2F4F7; Major grid (every 12/24 units): 1 px neutral/400 (#BDBEC0)
+Rulers/axes: neutral/300 text, Caption size, contrast ≥ 4.5:1
+
+3) Accessibility & quality bars
+
+Contrast: actionable text/icons ≥ 4.5:1; large headings ≥ 3:1
+
+Hit targets: ≥ 32×32 px (even in dense mode)
+
+Keyboard: tab order matches visual order; visible focus always
+
+Hi‑DPI: provide 100/150/200% icon assets (20/30/40 px)
+
+Motion: cubic-bezier(0.2, 0, 0, 1); 120–180 ms micro‑interactions; no bounce
+
+4) Guardrails (“don’t look like a toy”)
+
+One accent hue only (Iris).
+
+No radii > 8 px on everyday controls.
+
+No heavy drop shadows, glossy gradients, neon colors.
+
+One icon set; single stroke weight ~1.75–2 px at 24 px.
+
+Don’t stack outline + fill + glow; pick one emphasis.
+
+5) Pattern‑specific rules (apply to current screenshots)
+
+Room/Layout workspace (grid): reduce grid contrast; subtle rulers; right‑align numeric fields, left‑align labels; use Section headers for the “Placement” table.
+
+Cloud Browser over 3D render: fixed 360 px width, Level 2 shadow, 16 px safe margin from viewport edge; “Add/Replace” = Primary style; disabled when no item selected.
+
+Legacy orange ribbon: replace oranges → accent/600 only on Primary buttons; convert loud outlines → 1 px neutral borders; normalize ribbon groups to 44 px height and unify icon size.
+
+Attributes/properties: collapsible sections with chevrons; show units in Caption (not in labels); inline validation = danger red border + caption.
+
+6) Definition of Done — UI Polish (merge gate)
+
+Spacing follows 8‑pt grid; no odd gaps.
+
+Exactly one accent color present; all others from neutral ramp.
+
+Borders 1 px; radii 4/6/8 as specified.
+
+Icons: size 20–24 px, uniform stroke; no mixed sets.
+
+All interactive elements have hover, focus, active, disabled.
+
+Text styles use the defined scale; ≤ 3 font sizes per screen.
+
+Contrast checks pass; keyboard traversal complete with visible focus.
+
+Hi‑DPI assets crisp at 125/150/200%.
+
+Empty/loading states present (no blank panels).
+
+Semantics use success/warning/danger + icon + caption only.
+
+Context menus respect sizing/padding; no mixed item heights.
+
+Performance: panels/menus open <150 ms; no layout shift on hover.
+
+7) Drop‑in implementation snippets
+
+Web / Electron CSS variables (/theme/brand.css)
+
+:root{
+  /* Core tokens */
+  --space-4:4px; --space-8:8px; --space-12:12px; --space-16:16px; --space-24:24px; --space-32:32px; --space-48:48px; --space-64:64px;
+  --radius-sm:4px; --radius-md:6px; --radius-lg:8px;
+  --border-1:1px; --focus-2:2px;
+  --shadow-1:0 4px 12px rgba(0,0,0,.10); --shadow-2:0 6px 20px rgba(0,0,0,.14);
+
+  /* Colors */
+  --ink:#0B0A0B;
+  --n-50:#F1F1F2; --n-300:#D1D2D4; --n-400:#BDBEC0; --n-500:#A8AAAD; --ch-700:#5C5C5E;
+  --accent-200:#D1D9FE; --accent-400:#879AFC; --accent-500:#6E85FB; --accent-600:#5570FA; --accent-700:#3C5BFA;
+
+  /* Mappings */
+  --bg:var(--n-50); --surface:var(--n-300); --border:var(--n-500); --text:var(--ink);
+}
+
+/* Primary button */
+.btn-primary{ height:28px; padding:0 12px; border:var(--border-1) solid var(--accent-600);
+  border-radius:var(--radius-sm); background:var(--accent-600); color:#fff; }
+.btn-primary:hover{ background:var(--accent-700); border-color:var(--accent-700); }
+.btn-primary:active{ background:var(--accent-700); }
+
+/* Secondary button */
+.btn-secondary{ height:28px; padding:0 12px; border:var(--border-1) solid var(--n-500);
+  border-radius:var(--radius-sm); background:transparent; color:var(--ink); }
+.btn-secondary:hover{ background:#F2F4F7; }
+
+/* Toggle (on) */
+.toggle-on{ background:var(--accent-200); border:var(--border-1) solid var(--accent-600); }
+
+/* Input */
+.input{ height:28px; padding:0 8px; border:var(--border-1) solid var(--n-500); border-radius:var(--radius-sm); }
+.input:focus{ outline:0; box-shadow: 0 0 0 2px var(--accent-600), 0 0 0 4px var(--accent-200); }
+
+/* Panel */
+.panel{ background:var(--surface); border:var(--border-1) solid var(--n-500); border-radius:var(--radius-lg); }
+
+/* Menu */
+.menu{ box-shadow:var(--shadow-1); border:var(--border-1) solid var(--n-500); border-radius:var(--radius-md); }
+
+/* Status bar */
+.statusbar{ height:28px; border-top:var(--border-1) solid var(--n-500); }
+
+
+WPF/WinUI ResourceDictionary (/theme/BrandColors.xaml)
+
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+  <!-- Neutrals -->
+  <Color x:Key="Ink">#FF0B0A0B</Color>
+  <Color x:Key="Neutral50">#FFF1F1F2</Color>
+  <Color x:Key="Neutral300">#FFD1D2D4</Color>
+  <Color x:Key="Neutral400">#FFBDBEC0</Color>
+  <Color x:Key="Neutral500">#FFA8AAAD</Color>
+  <Color x:Key="Charcoal700">#FF5C5C5E</Color>
+
+  <!-- Accent (single hue) -->
+  <Color x:Key="Accent200">#FFD1D9FE</Color>
+  <Color x:Key="Accent400">#FF879AFC</Color>
+  <Color x:Key="Accent500">#FF6E85FB</Color>
+  <Color x:Key="Accent600">#FF5570FA</Color>
+  <Color x:Key="Accent700">#FF3C5BFA</Color>
+
+  <!-- Brushes -->
+  <SolidColorBrush x:Key="TextBrush" Color="{StaticResource Ink}"/>
+  <SolidColorBrush x:Key="AppBackgroundBrush" Color="{StaticResource Neutral50}"/>
+  <SolidColorBrush x:Key="PanelBrush" Color="{StaticResource Neutral300}"/>
+  <SolidColorBrush x:Key="BorderBrush" Color="{StaticResource Neutral500}"/>
+  <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Accent600}"/>
+  <SolidColorBrush x:Key="PrimaryBrushHover" Color="{StaticResource Accent700}"/>
+  <SolidColorBrush x:Key="FocusBrush" Color="{StaticResource Accent600}"/>
+  <SolidColorBrush x:Key="FocusHaloBrush" Color="{StaticResource Accent200}"/>
+</ResourceDictionary>
+
+8) Quick heuristics (fast visual check)
+
+Too many colors? (>1 strong hue) → Fail
+
+Corners bubbly? (>8 px) → Fail
+
+Thick outlines/heavy shadows? → Fail
+
+Mismatched icons (filled vs thin)? → Fail
+
+Gridlines louder than content? → Fail
+
+Notes
+Keep Iris as the only accent for actions/selection/focus. If you use Steel (#6B809A), treat it strictly as a muted surface tint, not a semantic/action color.
+Dark mode (optional): bg #0B0A0B, surface #2C3540, text #F1F1F2, borders #404E5F, use accent/400 for contrast.
