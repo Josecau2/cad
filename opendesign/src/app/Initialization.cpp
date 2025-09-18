@@ -7,6 +7,7 @@
 
 #include "compat/win/Menu.h"
 #include "framework/CommandBus.h"
+#include "framework/FeatureGate.h"
 #include "framework/FunctionRegistry.h"
 #include "io/Settings.h"
 
@@ -94,6 +95,18 @@ bool InitApplication() {
     return recordCall("InitApplication", mutableState().init_application,
                       [](InitState&) {
                           io::settings::SaveSetting("app.initialized", "true");
+                          framework::features::DeclareFeature(
+                              "360_publish", false,
+                              "Allow publishing designs to the cloud");
+                          framework::features::DeclareFeature(
+                              "custom_ribbon", true,
+                              "Enable ribbon customization options");
+                          framework::features::DeclareFeature(
+                              "high_quality_preview", false,
+                              "Access high quality rendering previews");
+                          framework::features::DeclareFeature(
+                              "quick_pricing", false,
+                              "Unlock quick pricing workflow panels");
                       });
 }
 

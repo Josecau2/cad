@@ -401,3 +401,27 @@ functions:
     category: Database
     target_symbol: db::RecordAudit
     status: implemented
+  - id: F-LC-1200
+    original: DeclareFeatureToggle
+    address: 0x1400f1200
+    category: Edition/license
+    target_symbol: framework::features::DeclareFeature
+    status: implemented
+  - id: F-LC-1201
+    original: EnableFeatureToggle
+    address: 0x1400f1210
+    category: Edition/license
+    target_symbol: framework::features::EnableFeature
+    status: implemented
+  - id: F-LC-1202
+    original: DisableFeatureToggle
+    address: 0x1400f1220
+    category: Edition/license
+    target_symbol: framework::features::DisableFeature
+    status: implemented
+  - id: F-LC-1203
+    original: IsFeatureEnabled
+    address: 0x1400f1230
+    category: Edition/license
+    target_symbol: framework::features::IsFeatureEnabled
+    status: implemented

@@ -42,3 +42,11 @@ The `opendesign/src/db` module provides a deterministic, in-memory representatio
 indexes, and pragmas, and exposes helpers for creating catalogs, materials, projects, designs, price lists, pricing records,
 import jobs, and audit log entries. The accompanying unit tests validate referential integrity, uniqueness constraints, and job
 state transitions without requiring external services.
+
+## Feature toggles
+
+`opendesign/src/framework/FeatureGate.cpp` implements a synchronized feature flag registry that mirrors the legacy edition
+gating logic in a clean, testable way. Features are declared with a default state, persisted to the settings store, and exposed
+through helpers such as `framework::features::IsFeatureEnabled`. The initialization runtime registers baseline toggles for cloud
+publishing, ribbon customization, high-quality preview rendering, and quick pricing so higher-level subsystems can check
+capabilities without embedding licensing logic. Unit tests cover persistence, reload behaviour, and initialization defaults.

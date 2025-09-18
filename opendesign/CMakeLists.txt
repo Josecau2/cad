@@ -17,6 +17,7 @@ add_library(opendesign STATIC
     src/ui/printpreview/PrintPreview.cpp
     src/ui/grid/Grid.cpp
     src/framework/CommandBus.cpp
+    src/framework/FeatureGate.cpp
     src/framework/FunctionRegistry.cpp
     src/cad/Document.cpp
     src/db/Database.cpp
