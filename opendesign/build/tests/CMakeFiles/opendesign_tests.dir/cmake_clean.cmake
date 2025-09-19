@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/opendesign_tests.dir/link.d"
   "CMakeFiles/opendesign_tests_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/opendesign_tests_autogen.dir/ParseCache.txt"
   "opendesign_tests_autogen"

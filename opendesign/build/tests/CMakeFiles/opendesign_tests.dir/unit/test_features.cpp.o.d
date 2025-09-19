@@ -1,7 +1,7 @@
 tests/CMakeFiles/opendesign_tests.dir/unit/test_features.cpp.o: \
- /workspaces/cad/opendesign/tests/unit/test_features.cpp \
+ /home/runner/work/cad/cad/opendesign/tests/unit/test_features.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/tests/unit/catch2.hpp \
+ /home/runner/work/cad/cad/opendesign/tests/unit/catch2.hpp \
  /usr/include/c++/13/exception \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -183,7 +183,7 @@ tests/CMakeFiles/opendesign_tests.dir/unit/test_features.cpp.o: \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /workspaces/cad/opendesign/src/app/Initialization.h \
- /workspaces/cad/opendesign/src/framework/FeatureGate.h \
- /workspaces/cad/opendesign/src/io/Settings.h \
+ /home/runner/work/cad/cad/opendesign/src/app/Initialization.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/FeatureGate.h \
+ /home/runner/work/cad/cad/opendesign/src/io/Settings.h \
  /usr/include/c++/13/optional

@@ -1,6 +1,7 @@
 CMakeFiles/opendesign.dir/src/cad/Document.cpp.o: \
- /workspaces/cad/opendesign/src/cad/Document.cpp \
- /usr/include/stdc-predef.h /workspaces/cad/opendesign/src/cad/Document.h \
+ /home/runner/work/cad/cad/opendesign/src/cad/Document.cpp \
+ /usr/include/stdc-predef.h \
+ /home/runner/work/cad/cad/opendesign/src/cad/Document.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -203,7 +204,7 @@ CMakeFiles/opendesign.dir/src/cad/Document.cpp.o: \
  /usr/include/c++/13/bits/node_handle.h \
  /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/utility \
  /usr/include/c++/13/bits/stl_relops.h \
- /workspaces/cad/opendesign/src/framework/FunctionRegistry.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/FunctionRegistry.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \

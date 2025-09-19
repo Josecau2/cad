@@ -1,9 +1,9 @@
 opendesign_tests_autogen/timestamp: \
-	/workspaces/cad/opendesign/tests/CMakeLists.txt \
-	/workspaces/cad/opendesign/tests/unit/test_application.cpp \
-	/workspaces/cad/opendesign/tests/unit/test_database.cpp \
-	/workspaces/cad/opendesign/tests/unit/test_features.cpp \
-	/workspaces/cad/opendesign/tests/unit/test_function_coverage.cpp \
-	/workspaces/cad/opendesign/tests/unit/test_initialization.cpp \
-	/workspaces/cad/opendesign/tests/unit/test_ui_commands.cpp \
-	/usr/bin/cmake
+	/home/runner/work/cad/cad/opendesign/tests/CMakeLists.txt \
+	/home/runner/work/cad/cad/opendesign/tests/unit/test_application.cpp \
+	/home/runner/work/cad/cad/opendesign/tests/unit/test_database.cpp \
+	/home/runner/work/cad/cad/opendesign/tests/unit/test_features.cpp \
+	/home/runner/work/cad/cad/opendesign/tests/unit/test_function_coverage.cpp \
+	/home/runner/work/cad/cad/opendesign/tests/unit/test_initialization.cpp \
+	/home/runner/work/cad/cad/opendesign/tests/unit/test_ui_commands.cpp \
+	/usr/local/bin/cmake

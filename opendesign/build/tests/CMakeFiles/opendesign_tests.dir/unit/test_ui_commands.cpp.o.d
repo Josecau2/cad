@@ -1,7 +1,7 @@
 tests/CMakeFiles/opendesign_tests.dir/unit/test_ui_commands.cpp.o: \
- /workspaces/cad/opendesign/tests/unit/test_ui_commands.cpp \
+ /home/runner/work/cad/cad/opendesign/tests/unit/test_ui_commands.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/tests/unit/catch2.hpp \
+ /home/runner/work/cad/cad/opendesign/tests/unit/catch2.hpp \
  /usr/include/c++/13/exception \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -255,13 +255,13 @@ tests/CMakeFiles/opendesign_tests.dir/unit/test_ui_commands.cpp.o: \
  /usr/include/c++/13/bits/this_thread_sleep.h \
  /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/semaphore.h \
  /usr/include/x86_64-linux-gnu/bits/semaphore.h /usr/include/c++/13/mutex \
- /workspaces/cad/opendesign/src/framework/CommandBus.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/CommandBus.h \
  /usr/include/c++/13/deque /usr/include/c++/13/bits/stl_deque.h \
  /usr/include/c++/13/bits/deque.tcc /usr/include/c++/13/map \
  /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/stl_multimap.h /usr/include/c++/13/thread \
- /workspaces/cad/opendesign/src/io/Settings.h \
- /workspaces/cad/opendesign/src/ui/grid/Grid.h \
- /workspaces/cad/opendesign/src/ui/printpreview/PrintPreview.h \
- /workspaces/cad/opendesign/src/ui/ribbon/RibbonCommands.h \
- /workspaces/cad/opendesign/src/ui/statusbar/StatusBar.h
+ /home/runner/work/cad/cad/opendesign/src/io/Settings.h \
+ /home/runner/work/cad/cad/opendesign/src/ui/grid/Grid.h \
+ /home/runner/work/cad/cad/opendesign/src/ui/printpreview/PrintPreview.h \
+ /home/runner/work/cad/cad/opendesign/src/ui/ribbon/RibbonCommands.h \
+ /home/runner/work/cad/cad/opendesign/src/ui/statusbar/StatusBar.h

@@ -1,7 +1,7 @@
 CMakeFiles/opendesign.dir/src/compat/win/Menu.cpp.o: \
- /workspaces/cad/opendesign/src/compat/win/Menu.cpp \
+ /home/runner/work/cad/cad/opendesign/src/compat/win/Menu.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/src/compat/win/Menu.h \
+ /home/runner/work/cad/cad/opendesign/src/compat/win/Menu.h \
  /usr/include/c++/13/functional \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

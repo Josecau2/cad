@@ -1,7 +1,7 @@
 CMakeFiles/opendesign.dir/src/render/Viewport.cpp.o: \
- /workspaces/cad/opendesign/src/render/Viewport.cpp \
+ /home/runner/work/cad/cad/opendesign/src/render/Viewport.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/src/render/Viewport.h \
+ /home/runner/work/cad/cad/opendesign/src/render/Viewport.h \
  /usr/include/c++/13/array /usr/include/c++/13/compare \
  /usr/include/c++/13/concepts /usr/include/c++/13/type_traits \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \

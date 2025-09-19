@@ -1,7 +1,7 @@
 CMakeFiles/opendesign.dir/src/ui/html/HtmlUI.cpp.o: \
- /workspaces/cad/opendesign/src/ui/html/HtmlUI.cpp \
+ /home/runner/work/cad/cad/opendesign/src/ui/html/HtmlUI.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/src/ui/html/HtmlUI.h \
+ /home/runner/work/cad/cad/opendesign/src/ui/html/HtmlUI.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -151,7 +151,7 @@ CMakeFiles/opendesign.dir/src/ui/html/HtmlUI.cpp.o: \
  /usr/include/c++/13/ext/atomicity.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
- /workspaces/cad/opendesign/src/framework/FunctionRegistry.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/FunctionRegistry.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \

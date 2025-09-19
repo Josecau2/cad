@@ -1,7 +1,7 @@
 CMakeFiles/opendesign.dir/src/compat/win/Accel.cpp.o: \
- /workspaces/cad/opendesign/src/compat/win/Accel.cpp \
+ /home/runner/work/cad/cad/opendesign/src/compat/win/Accel.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/src/compat/win/Accel.h \
+ /home/runner/work/cad/cad/opendesign/src/compat/win/Accel.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

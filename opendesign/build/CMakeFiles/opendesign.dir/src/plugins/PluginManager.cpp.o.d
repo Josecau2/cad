@@ -1,7 +1,7 @@
 CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.o: \
- /workspaces/cad/opendesign/src/plugins/PluginManager.cpp \
+ /home/runner/work/cad/cad/opendesign/src/plugins/PluginManager.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/src/plugins/PluginManager.h \
+ /home/runner/work/cad/cad/opendesign/src/plugins/PluginManager.h \
  /usr/include/c++/13/functional \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

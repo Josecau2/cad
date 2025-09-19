@@ -1,7 +1,7 @@
 CMakeFiles/opendesign.dir/src/ui/statusbar/StatusBar.cpp.o: \
- /workspaces/cad/opendesign/src/ui/statusbar/StatusBar.cpp \
+ /home/runner/work/cad/cad/opendesign/src/ui/statusbar/StatusBar.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/src/ui/statusbar/StatusBar.h \
+ /home/runner/work/cad/cad/opendesign/src/ui/statusbar/StatusBar.h \
  /usr/include/c++/13/mutex /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -150,7 +150,7 @@ CMakeFiles/opendesign.dir/src/ui/statusbar/StatusBar.cpp.o: \
  /usr/include/c++/13/bits/basic_string.tcc \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator_args.h \
- /workspaces/cad/opendesign/src/framework/CommandBus.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/CommandBus.h \
  /usr/include/c++/13/condition_variable \
  /usr/include/c++/13/bits/shared_ptr.h \
  /usr/include/c++/13/bits/shared_ptr_base.h \
@@ -221,6 +221,6 @@ CMakeFiles/opendesign.dir/src/ui/statusbar/StatusBar.cpp.o: \
  /usr/include/c++/13/bits/stl_tempbuf.h /usr/include/c++/13/map \
  /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/stl_multimap.h /usr/include/c++/13/thread \
- /workspaces/cad/opendesign/src/framework/FunctionRegistry.h \
- /workspaces/cad/opendesign/src/io/Settings.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/FunctionRegistry.h \
+ /home/runner/work/cad/cad/opendesign/src/io/Settings.h \
  /usr/include/c++/13/optional

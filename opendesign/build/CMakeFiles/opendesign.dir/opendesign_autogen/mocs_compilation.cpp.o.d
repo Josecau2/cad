@@ -1,7 +1,7 @@
 CMakeFiles/opendesign.dir/opendesign_autogen/mocs_compilation.cpp.o: \
- /workspaces/cad/opendesign/build/opendesign_autogen/mocs_compilation.cpp \
+ /home/runner/work/cad/cad/opendesign/build/opendesign_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/build/opendesign_autogen/U4N2I235NK/moc_MainWindow.cpp \
+ /home/runner/work/cad/cad/opendesign/build/opendesign_autogen/U4N2I235NK/moc_MainWindow.cpp \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -196,7 +196,7 @@ CMakeFiles/opendesign.dir/opendesign_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /workspaces/cad/opendesign/build/opendesign_autogen/U4N2I235NK/../../../src/ui/mainwindow/MainWindow.h \
+ /home/runner/work/cad/cad/opendesign/build/opendesign_autogen/U4N2I235NK/../../../src/ui/mainwindow/MainWindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \

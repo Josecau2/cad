@@ -1,6 +1,7 @@
 CMakeFiles/opendesign.dir/src/io/Settings.cpp.o: \
- /workspaces/cad/opendesign/src/io/Settings.cpp \
- /usr/include/stdc-predef.h /workspaces/cad/opendesign/src/io/Settings.h \
+ /home/runner/work/cad/cad/opendesign/src/io/Settings.cpp \
+ /usr/include/stdc-predef.h \
+ /home/runner/work/cad/cad/opendesign/src/io/Settings.h \
  /usr/include/c++/13/optional /usr/include/c++/13/type_traits \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -132,7 +133,7 @@ CMakeFiles/opendesign.dir/src/io/Settings.cpp.o: \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/bits/node_handle.h \
  /usr/include/c++/13/bits/erase_if.h \
- /workspaces/cad/opendesign/src/framework/FunctionRegistry.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/FunctionRegistry.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \

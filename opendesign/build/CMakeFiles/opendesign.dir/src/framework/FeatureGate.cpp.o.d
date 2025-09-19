@@ -1,7 +1,7 @@
 CMakeFiles/opendesign.dir/src/framework/FeatureGate.cpp.o: \
- /workspaces/cad/opendesign/src/framework/FeatureGate.cpp \
+ /home/runner/work/cad/cad/opendesign/src/framework/FeatureGate.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/src/framework/FeatureGate.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/FeatureGate.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -189,7 +189,8 @@ CMakeFiles/opendesign.dir/src/framework/FeatureGate.cpp.o: \
  /usr/include/c++/13/bits/node_handle.h \
  /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/utility \
  /usr/include/c++/13/bits/stl_relops.h \
- /workspaces/cad/opendesign/src/framework/FunctionRegistry.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/FunctionRegistry.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
- /usr/include/c++/13/array /workspaces/cad/opendesign/src/io/Settings.h \
+ /usr/include/c++/13/array \
+ /home/runner/work/cad/cad/opendesign/src/io/Settings.h \
  /usr/include/c++/13/optional

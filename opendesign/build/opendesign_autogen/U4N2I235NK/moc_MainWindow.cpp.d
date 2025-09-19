@@ -1,5 +1,5 @@
-/workspaces/cad/opendesign/build/opendesign_autogen/U4N2I235NK/moc_MainWindow.cpp: /workspaces/cad/opendesign/src/ui/mainwindow/MainWindow.h \
-  /workspaces/cad/opendesign/build/opendesign_autogen/moc_predefs.h \
+/home/runner/work/cad/cad/opendesign/build/opendesign_autogen/U4N2I235NK/moc_MainWindow.cpp: /home/runner/work/cad/cad/opendesign/src/ui/mainwindow/MainWindow.h \
+  /home/runner/work/cad/cad/opendesign/build/opendesign_autogen/moc_predefs.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \

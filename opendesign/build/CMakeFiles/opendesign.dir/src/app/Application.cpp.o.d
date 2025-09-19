@@ -1,7 +1,7 @@
 CMakeFiles/opendesign.dir/src/app/Application.cpp.o: \
- /workspaces/cad/opendesign/src/app/Application.cpp \
+ /home/runner/work/cad/cad/opendesign/src/app/Application.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/src/app/Application.h \
+ /home/runner/work/cad/cad/opendesign/src/app/Application.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -122,8 +122,8 @@ CMakeFiles/opendesign.dir/src/app/Application.cpp.o: \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
  /usr/include/c++/13/bits/ranges_util.h \
- /workspaces/cad/opendesign/src/compat/mfc/Ribbon.h \
- /workspaces/cad/opendesign/src/ui/ribbon/RibbonBar.h \
+ /home/runner/work/cad/cad/opendesign/src/compat/mfc/Ribbon.h \
+ /home/runner/work/cad/cad/opendesign/src/ui/ribbon/RibbonBar.h \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
  /usr/include/c++/13/bits/hashtable.h \
@@ -136,7 +136,7 @@ CMakeFiles/opendesign.dir/src/app/Application.cpp.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /workspaces/cad/opendesign/src/framework/CommandBus.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/CommandBus.h \
  /usr/include/c++/13/condition_variable /usr/include/c++/13/bits/chrono.h \
  /usr/include/c++/13/ratio /usr/include/c++/13/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
@@ -223,12 +223,14 @@ CMakeFiles/opendesign.dir/src/app/Application.cpp.o: \
  /usr/include/c++/13/bits/stl_tempbuf.h /usr/include/c++/13/map \
  /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/stl_multimap.h /usr/include/c++/13/mutex \
- /usr/include/c++/13/thread /workspaces/cad/opendesign/src/io/Settings.h \
+ /usr/include/c++/13/thread \
+ /home/runner/work/cad/cad/opendesign/src/io/Settings.h \
  /usr/include/c++/13/optional \
- /workspaces/cad/opendesign/src/ui/html/HtmlUI.h \
+ /home/runner/work/cad/cad/opendesign/src/ui/html/HtmlUI.h \
  /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
- /workspaces/cad/opendesign/src/app/Initialization.h \
- /workspaces/cad/opendesign/src/cad/Document.h /usr/include/c++/13/memory \
+ /home/runner/work/cad/cad/opendesign/src/app/Initialization.h \
+ /home/runner/work/cad/cad/opendesign/src/cad/Document.h \
+ /usr/include/c++/13/memory \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/shared_ptr_atomic.h \
  /usr/include/c++/13/backward/auto_ptr.h \
@@ -236,8 +238,8 @@ CMakeFiles/opendesign.dir/src/app/Application.cpp.o: \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /workspaces/cad/opendesign/src/framework/FunctionRegistry.h \
- /workspaces/cad/opendesign/src/ui/grid/Grid.h \
- /workspaces/cad/opendesign/src/ui/printpreview/PrintPreview.h \
- /workspaces/cad/opendesign/src/ui/ribbon/RibbonCommands.h \
- /workspaces/cad/opendesign/src/ui/statusbar/StatusBar.h
+ /home/runner/work/cad/cad/opendesign/src/framework/FunctionRegistry.h \
+ /home/runner/work/cad/cad/opendesign/src/ui/grid/Grid.h \
+ /home/runner/work/cad/cad/opendesign/src/ui/printpreview/PrintPreview.h \
+ /home/runner/work/cad/cad/opendesign/src/ui/ribbon/RibbonCommands.h \
+ /home/runner/work/cad/cad/opendesign/src/ui/statusbar/StatusBar.h

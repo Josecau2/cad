@@ -1,7 +1,7 @@
 CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonCommands.cpp.o: \
- /workspaces/cad/opendesign/src/ui/ribbon/RibbonCommands.cpp \
+ /home/runner/work/cad/cad/opendesign/src/ui/ribbon/RibbonCommands.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/src/ui/ribbon/RibbonCommands.h \
+ /home/runner/work/cad/cad/opendesign/src/ui/ribbon/RibbonCommands.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -161,7 +161,7 @@ CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonCommands.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
  /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
- /workspaces/cad/opendesign/src/framework/CommandBus.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/CommandBus.h \
  /usr/include/c++/13/condition_variable \
  /usr/include/c++/13/bits/shared_ptr.h \
  /usr/include/c++/13/bits/shared_ptr_base.h \
@@ -228,4 +228,4 @@ CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonCommands.cpp.o: \
  /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
  /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/stl_multimap.h /usr/include/c++/13/thread \
- /workspaces/cad/opendesign/src/framework/FunctionRegistry.h
+ /home/runner/work/cad/cad/opendesign/src/framework/FunctionRegistry.h

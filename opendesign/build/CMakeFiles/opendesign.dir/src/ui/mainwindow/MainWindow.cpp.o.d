@@ -1,7 +1,7 @@
 CMakeFiles/opendesign.dir/src/ui/mainwindow/MainWindow.cpp.o: \
- /workspaces/cad/opendesign/src/ui/mainwindow/MainWindow.cpp \
+ /home/runner/work/cad/cad/opendesign/src/ui/mainwindow/MainWindow.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/src/ui/mainwindow/MainWindow.h \
+ /home/runner/work/cad/cad/opendesign/src/ui/mainwindow/MainWindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -358,7 +358,7 @@ CMakeFiles/opendesign.dir/src/ui/mainwindow/MainWindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
- /workspaces/cad/opendesign/src/framework/CommandBus.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/CommandBus.h \
  /usr/include/c++/13/condition_variable \
  /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/stop_token \
  /usr/include/c++/13/bits/std_thread.h /usr/include/c++/13/semaphore \

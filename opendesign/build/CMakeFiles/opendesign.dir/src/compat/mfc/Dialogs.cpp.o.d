@@ -1,7 +1,7 @@
 CMakeFiles/opendesign.dir/src/compat/mfc/Dialogs.cpp.o: \
- /workspaces/cad/opendesign/src/compat/mfc/Dialogs.cpp \
+ /home/runner/work/cad/cad/opendesign/src/compat/mfc/Dialogs.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/src/compat/mfc/Dialogs.h \
+ /home/runner/work/cad/cad/opendesign/src/compat/mfc/Dialogs.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -122,7 +122,7 @@ CMakeFiles/opendesign.dir/src/compat/mfc/Dialogs.cpp.o: \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
  /usr/include/c++/13/bits/ranges_util.h \
- /workspaces/cad/opendesign/src/framework/FunctionRegistry.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/FunctionRegistry.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/typeinfo /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \

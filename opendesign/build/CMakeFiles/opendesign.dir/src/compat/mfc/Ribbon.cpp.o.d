@@ -1,8 +1,8 @@
 CMakeFiles/opendesign.dir/src/compat/mfc/Ribbon.cpp.o: \
- /workspaces/cad/opendesign/src/compat/mfc/Ribbon.cpp \
+ /home/runner/work/cad/cad/opendesign/src/compat/mfc/Ribbon.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/src/compat/mfc/Ribbon.h \
- /workspaces/cad/opendesign/src/ui/ribbon/RibbonBar.h \
+ /home/runner/work/cad/cad/opendesign/src/compat/mfc/Ribbon.h \
+ /home/runner/work/cad/cad/opendesign/src/ui/ribbon/RibbonBar.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

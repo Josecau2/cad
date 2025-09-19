@@ -1,7 +1,7 @@
 CMakeFiles/opendesign.dir/src/framework/FunctionRegistry.cpp.o: \
- /workspaces/cad/opendesign/src/framework/FunctionRegistry.cpp \
+ /home/runner/work/cad/cad/opendesign/src/framework/FunctionRegistry.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/src/framework/FunctionRegistry.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/FunctionRegistry.h \
  /usr/include/c++/13/functional \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

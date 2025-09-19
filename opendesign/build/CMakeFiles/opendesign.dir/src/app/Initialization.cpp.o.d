@@ -1,7 +1,7 @@
 CMakeFiles/opendesign.dir/src/app/Initialization.cpp.o: \
- /workspaces/cad/opendesign/src/app/Initialization.cpp \
+ /home/runner/work/cad/cad/opendesign/src/app/Initialization.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/src/app/Initialization.h \
+ /home/runner/work/cad/cad/opendesign/src/app/Initialization.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -156,7 +156,7 @@ CMakeFiles/opendesign.dir/src/app/Initialization.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
  /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
- /workspaces/cad/opendesign/src/compat/win/Menu.h \
+ /home/runner/work/cad/cad/opendesign/src/compat/win/Menu.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
@@ -220,7 +220,7 @@ CMakeFiles/opendesign.dir/src/app/Initialization.cpp.o: \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /workspaces/cad/opendesign/src/framework/CommandBus.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/CommandBus.h \
  /usr/include/c++/13/condition_variable /usr/include/c++/13/stop_token \
  /usr/include/c++/13/atomic /usr/include/c++/13/bits/std_thread.h \
  /usr/include/c++/13/semaphore /usr/include/c++/13/bits/semaphore_base.h \
@@ -232,7 +232,7 @@ CMakeFiles/opendesign.dir/src/app/Initialization.cpp.o: \
  /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
  /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/stl_multimap.h /usr/include/c++/13/thread \
- /workspaces/cad/opendesign/src/framework/FeatureGate.h \
- /workspaces/cad/opendesign/src/framework/FunctionRegistry.h \
- /workspaces/cad/opendesign/src/io/Settings.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/FeatureGate.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/FunctionRegistry.h \
+ /home/runner/work/cad/cad/opendesign/src/io/Settings.h \
  /usr/include/c++/13/optional

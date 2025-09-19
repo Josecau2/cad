@@ -1,7 +1,7 @@
 CMakeFiles/opendesign.dir/src/compat/win/Window.cpp.o: \
- /workspaces/cad/opendesign/src/compat/win/Window.cpp \
+ /home/runner/work/cad/cad/opendesign/src/compat/win/Window.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/src/compat/win/Window.h \
+ /home/runner/work/cad/cad/opendesign/src/compat/win/Window.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -196,7 +196,7 @@ CMakeFiles/opendesign.dir/src/compat/win/Window.cpp.o: \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /workspaces/cad/opendesign/src/framework/FunctionRegistry.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/FunctionRegistry.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \

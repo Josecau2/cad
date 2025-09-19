@@ -1,7 +1,7 @@
 CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonBar.cpp.o: \
- /workspaces/cad/opendesign/src/ui/ribbon/RibbonBar.cpp \
+ /home/runner/work/cad/cad/opendesign/src/ui/ribbon/RibbonBar.cpp \
  /usr/include/stdc-predef.h \
- /workspaces/cad/opendesign/src/ui/ribbon/RibbonBar.h \
+ /home/runner/work/cad/cad/opendesign/src/ui/ribbon/RibbonBar.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -143,7 +143,7 @@ CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonBar.cpp.o: \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/utility \
  /usr/include/c++/13/bits/stl_relops.h \
- /workspaces/cad/opendesign/src/framework/FunctionRegistry.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/FunctionRegistry.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/typeinfo /usr/include/c++/13/array \
  /usr/include/c++/13/mutex /usr/include/c++/13/exception \
