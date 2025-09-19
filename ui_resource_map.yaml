@@ -1,0 +1,138 @@
+{
+  "ribbon": {
+    "Home": [
+      {
+        "id": "OnCommandRibbonDoubleSidedConstLine",
+        "handler": "OnCommandRibbonDoubleSidedConstLine",
+        "update": "OnUpdateUiRibbonDoubleSidedConstLine"
+      },
+      {
+        "id": "OnCommandRibbonDoubleSidedWall",
+        "handler": "OnCommandRibbonDoubleSidedWall",
+        "update": "OnUpdateUiRibbonDoubleSidedWall"
+      },
+      {
+        "id": "OnCommandRibbonHomeEditCenter",
+        "handler": "OnCommandRibbonHomeEditCenter",
+        "update": "OnUpdateUiRibbonHomeEditCenter"
+      },
+      {
+        "id": "OnCommandRibbonHomeEditEditShape",
+        "handler": "OnCommandRibbonHomeEditEditShape",
+        "update": "OnUpdateUiRibbonHomeEditEditShape"
+      },
+      {
+        "id": "OnCommandRibbonHomeEditGroup",
+        "handler": "OnCommandRibbonHomeEditGroup",
+        "update": "OnUpdateUiRibbonHomeEditGroup"
+      },
+      {
+        "id": "OnCommandRibbonHomeEditLightProps",
+        "handler": "OnCommandRibbonHomeEditLightProps",
+        "update": "OnUpdateUiRibbonHomeEditLightProps"
+      },
+      {
+        "id": "OnCommandRibbonHomeEditMirror",
+        "handler": "OnCommandRibbonHomeEditMirror",
+        "update": "OnUpdateUiRibbonHomeEditMirror"
+      },
+      {
+        "id": "OnCommandRibbonHomeEditMove",
+        "handler": "OnCommandRibbonHomeEditMove",
+        "update": "OnUpdateUiRibbonHomeEditMove"
+      },
+      {
+        "id": "OnCommandRibbonHomeEditRotate",
+        "handler": "OnCommandRibbonHomeEditRotate",
+        "update": "OnUpdateUiRibbonHomeEditRotate"
+      },
+      {
+        "id": "OnCommandRibbonHomeEditUngroup",
+        "handler": "OnCommandRibbonHomeEditUngroup",
+        "update": "OnUpdateUiRibbonHomeEditUngroup"
+      },
+      {
+        "id": "OnCommandRibbonHomeSectionName",
+        "handler": "OnCommandRibbonHomeSectionName",
+        "update": "OnUpdateUiRibbonHomeSectionName"
+      },
+      {
+        "id": "OnCommandRibbonHomeSectionNameLaunch",
+        "handler": "OnCommandRibbonHomeSectionNameLaunch",
+        "update": "OnUpdateUiRibbonHomeSectionNameLaunch"
+      },
+      {
+        "id": "OnCommandRibbonOptionCombo",
+        "handler": "OnCommandRibbonOptionCombo",
+        "update": "OnUpdateUiRibbonOptionCombo"
+      },
+      {
+        "id": "OnCommandRibbonOptionCompare",
+        "handler": "OnCommandRibbonOptionCompare",
+        "update": "OnUpdateUiRibbonOptionCompare"
+      },
+      {
+        "id": "OnCommandRibbonSingleSidedConstLine",
+        "handler": "OnCommandRibbonSingleSidedConstLine",
+        "update": "OnUpdateUiRibbonSingleSidedConstLine"
+      },
+      {
+        "id": "OnCommandRibbonSingleSidedWall",
+        "handler": "OnCommandRibbonSingleSidedWall",
+        "update": "OnUpdateUiRibbonSingleSidedWall"
+      }
+    ],
+    "View": [
+      {
+        "id": "OnCommandRibbonPresentationViewName",
+        "handler": "OnCommandRibbonPresentationViewName",
+        "update": "OnUpdateUiRibbonPresentationViewName"
+      }
+    ],
+    "Layout": [
+      {
+        "id": "OnCommandRibbonRoomlayoutDispSettingsElev",
+        "handler": "OnCommandRibbonRoomlayoutDispSettingsElev",
+        "update": "OnUpdateUiRibbonRoomlayoutDispSettingsElev"
+      },
+      {
+        "id": "OnCommandRibbonRoomlayoutDispSettingsFPlan",
+        "handler": "OnCommandRibbonRoomlayoutDispSettingsFPlan",
+        "update": "OnUpdateUiRibbonRoomlayoutDispSettingsFPlan"
+      },
+      {
+        "id": "OnCommandRibbonRoomlayoutDispSettingsLaunch",
+        "handler": "OnCommandRibbonRoomlayoutDispSettingsLaunch",
+        "update": "OnUpdateUiRibbonRoomlayoutDispSettingsLaunch"
+      }
+    ]
+  },
+  "menus": {
+    "File": [
+      "New",
+      "Open",
+      "Save",
+      "Export",
+      "Print",
+      "Exit"
+    ],
+    "Edit": [
+      "Undo",
+      "Redo",
+      "Cut",
+      "Copy",
+      "Paste",
+      "Delete"
+    ]
+  },
+  "status": {
+    "panes": [
+      "message",
+      "zoom",
+      "units",
+      "tool",
+      "selection",
+      "AutoMergeToggle"
+    ]
+  }
+}
