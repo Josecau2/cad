@@ -63,7 +63,7 @@ add_library(opendesign STATIC
     src/compat/mfc/Ribbon.cpp
     src/compat/mfc/UpdateUI.cpp
     src/plugins/PluginManager.cpp
-    src/branch_map/BranchMapStubs.cpp
+    src/branch_map/BranchMapStubs_minimal.cpp
 )
 
 set_target_properties(opendesign PROPERTIES EXPORT_COMPILE_COMMANDS ON)

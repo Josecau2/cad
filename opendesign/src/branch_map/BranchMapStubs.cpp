@@ -808,21 +808,22 @@ unsigned long long FUN_140008080(long long param_1,unsigned int *param_2,unsigne
 // Calls error helper: False
 void FUN_1400081a0() {
 }
-}
 
 // Function: FUN_140008290
 // Address: 0x140008290
 // Calls error helper: True
 unsigned long long FUN_140008290(long long param_1,unsigned int *param_2,unsigned long long param_3) {
-}
     // TODO: This function calls error helper in original
+    return 0;
+}
     
 // Function: FUN_1400083b0
 // Address: 0x1400083b0
 // Calls error helper: True
 unsigned long long FUN_1400083b0(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4) {
-}
     // TODO: This function calls error helper in original
+    return 0;
+}
     
 // Function: FUN_1400084d0
 // Address: 0x1400084d0
@@ -830,20 +831,24 @@ unsigned long long FUN_1400083b0(long long param_1,unsigned int param_2,long lon
 unsigned long long FUN_1400084d0(long long param_1,unsigned int param_2,long long param_3,unsigned int param_4,
 unsigned long long param_5) {
     // TODO: This function calls error helper in original
+    return 0;
+}
     
 // Function: FUN_140008610
 // Address: 0x140008610
 // Calls error helper: True
 unsigned long long FUN_140008610(long long param_1,long long param_2,unsigned long long param_3) {
-}
     // TODO: This function calls error helper in original
+    return 0;
+}
     
 // Function: FUN_140008720
 // Address: 0x140008720
 // Calls error helper: True
 unsigned long long FUN_140008720(long long param_1,unsigned int *param_2,unsigned long long param_3) {
-}
     // TODO: This function calls error helper in original
+    return 0;
+}
     
 // Function: FUN_140008840
 // Address: 0x140008840
@@ -852,6 +857,8 @@ unsigned long long FUN_140008840(long long param_1,unsigned int param_2,long lon
 unsigned long long param_5,unsigned long long param_6,unsigned int param_7,unsigned long long param_8,
 unsigned long long param_9,unsigned long long param_10) {
     // TODO: This function calls error helper in original
+    return 0;
+}
     
 // Function: FUN_140008a10
 // Address: 0x140008a10

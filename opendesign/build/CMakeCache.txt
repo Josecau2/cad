@@ -201,8 +201,20 @@ OpenDesign_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 OpenDesign_SOURCE_DIR:STATIC=/home/runner/work/cad/cad/opendesign
 
+//The directory containing a CMake configuration file for Qt5Core.
+Qt5Core_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Core
+
+//The directory containing a CMake configuration file for Qt5Gui.
+Qt5Gui_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui
+
+//The directory containing a CMake configuration file for Qt5Sql.
+Qt5Sql_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Sql
+
+//The directory containing a CMake configuration file for Qt5Widgets.
+Qt5Widgets_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets
+
 //The directory containing a CMake configuration file for Qt5.
-Qt5_DIR:PATH=Qt5_DIR-NOTFOUND
+Qt5_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5
 
 
 ########################
@@ -295,7 +307,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
