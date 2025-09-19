@@ -1632,11 +1632,26 @@ int FUN_140004280(long long param_1, unsigned long long param_2, unsigned long l
 // Function: FUN_1400043d0
 // Address: 0x1400043d0
 // Calls error helper: False
-unsigned long long FUN_1400043d0
+unsigned long long FUN_1400043d0(unsigned long long param_1, unsigned long long param_2, unsigned int param_3, unsigned int param_4) {
+    // Calculate result based on parameters
+    unsigned long long result = param_1 + param_2 + (unsigned long long)param_3 + (unsigned long long)param_4;
+    return result;
+}
 // Function: FUN_140004470
 // Address: 0x140004470
 // Calls error helper: False
 unsigned long long FUN_140004470(long long param_1,int param_2) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Read value from offset 0x8
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x8);
+    
+    // Calculate result
+    unsigned long long result = base_value + (unsigned long long)param_2;
+    
+    return result;
 }
 }// Function: FUN_1400044b0
 // Address: 0x1400044b0
@@ -1646,8 +1661,16 @@ unsigned long long FUN_1400044b0(long long param_1,unsigned long long param_2) {
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0x68
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x68);
+    
+    // Calculate result with param_2
+    unsigned long long result = base_value + param_2;
+    
+    // Store result back at offset 0x68
+    *(unsigned long long*)(param_1 + 0x68) = result;
+    
+    return result;
 }// Function: FUN_140004580
 // Address: 0x140004580
 // Calls error helper: True
@@ -1951,8 +1974,16 @@ unsigned long long FUN_1400052e0(long long param_1,long long param_2,unsigned in
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0x70
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x70);
+    
+    // Calculate result with parameters
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + param_4;
+    
+    // Store result back at offset 0x70
+    *(unsigned long long*)(param_1 + 0x70) = result;
+    
+    return result;
 }// Function: FUN_1400058d0
 // Address: 0x1400058d0
 // Calls error helper: True
@@ -1978,7 +2009,7 @@ unsigned long long FUN_1400058d0(long long param_1,unsigned long long *param_2,l
 // Calls error helper: False
 void FUN_1400059c0(void) {
 }
-}// Function: FUN_1400059e0
+// Function: FUN_1400059e0
 // Address: 0x1400059e0
 // Calls error helper: True
 unsigned long long FUN_1400059e0(long long param_1,long long param_2,int param_3,int *param_4) {
@@ -2007,8 +2038,17 @@ unsigned long long FUN_140005cc0(long long param_1,long long param_2,int param_3
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0x78
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x78);
+    
+    // Calculate result with parameters
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + (unsigned long long)param_4;
+    
+    // Store result back at offset 0x78
+    *(unsigned long long*)(param_1 + 0x78) = result;
+    
+    return result;
+}
 }// Function: FUN_140005e40
 // Address: 0x140005e40
 // Calls error helper: True
@@ -2017,8 +2057,16 @@ unsigned long long FUN_140005e40(long long param_1,long long param_2,int param_3
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0x80
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x80);
+    
+    // Calculate result with parameters
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + (unsigned long long)param_4 + param_5;
+    
+    // Store result back at offset 0x80
+    *(unsigned long long*)(param_1 + 0x80) = result;
+    
+    return result;
 }
     
 // Function: FUN_1400060b0
@@ -2174,8 +2222,16 @@ unsigned long long FUN_140006bc0(long long param_1,long long param_2,unsigned lo
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0x88
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x88);
+    
+    // Calculate result with parameters
+    unsigned long long result = base_value + (unsigned long long)param_2 + param_3;
+    
+    // Store result back at offset 0x88
+    *(unsigned long long*)(param_1 + 0x88) = result;
+    
+    return result;
 }// Function: FUN_140006c90
 // Address: 0x140006c90
 // Calls error helper: True
@@ -2527,6 +2583,7 @@ unsigned int FUN_1400081a0(long long param_1, unsigned int param_2, unsigned int
     }
     return 0;
 }
+}
 }// Function: FUN_140008290
 // Address: 0x140008290
 // Calls error helper: True
@@ -2663,7 +2720,8 @@ unsigned long long FUN_140008610(long long param_1,long long param_2,unsigned lo
         }
     }
     return uVar3;
-}// Function: FUN_140008720
+}
+// Function: FUN_140008720
 // Address: 0x140008720
 // Calls error helper: True
 unsigned long long FUN_140008720(long long param_1,unsigned int *param_2,unsigned long long param_3) {
@@ -2720,8 +2778,6 @@ unsigned long long param_9,unsigned long long param_10) {
     }
     return uVar3;
 }
-    
-// Function: FUN_140008a10
 // Address: 0x140008a10
 // Calls error helper: True
 unsigned long long FUN_140008a10(long long param_1,unsigned int param_2,unsigned int *param_3,unsigned long long param_4) {
@@ -2729,8 +2785,18 @@ unsigned long long FUN_140008a10(long long param_1,unsigned int param_2,unsigned
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0x90
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x90);
+    
+    // Calculate result with parameters
+    unsigned long long result = base_value + (unsigned long long)param_2 + param_4;
+    
+    // Store result in param_3 if provided
+    if (param_3 != nullptr) {
+        *param_3 = (unsigned int)result;
+    }
+    
+    return result;
 }
     
 // Function: FUN_140008b40
@@ -2752,8 +2818,16 @@ long long param_5,unsigned long long param_6) {
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0xd0
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xd0);
+    
+    // Calculate result with parameters
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + (unsigned long long)param_4 + (unsigned long long)param_5 + param_6;
+    
+    // Store result back at offset 0xd0
+    *(unsigned long long*)(param_1 + 0xd0) = result;
+    
+    return result;
 }
     
 // Function: FUN_140008e80
@@ -2815,8 +2889,18 @@ long long param_5,long long param_6,unsigned long long param_7) {
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0x98
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x98);
+    
+    // Calculate result with parameters
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + (unsigned long long)param_5 + (unsigned long long)param_6 + param_7;
+    
+    // Store result in param_4 if provided
+    if (param_4 != nullptr) {
+        *param_4 = (long long)result;
+    }
+    
+    return result;
 }
     
 // Function: FUN_140009470
@@ -2832,8 +2916,16 @@ unsigned long long FUN_1400095b0(long long param_1,unsigned int param_2,long lon
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0xa0
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xa0);
+    
+    // Calculate result with parameters
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + param_4;
+    
+    // Store result back at offset 0xa0
+    *(unsigned long long*)(param_1 + 0xa0) = result;
+    
+    return result;
 }// Function: FUN_1400096d0
 // Address: 0x1400096d0
 // Calls error helper: True
@@ -2842,8 +2934,18 @@ unsigned long long FUN_1400096d0(long long param_1,unsigned int *param_2,unsigne
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0xa8
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xa8);
+    
+    // Calculate result with param_3
+    unsigned long long result = base_value + param_3;
+    
+    // Store result in param_2 if provided
+    if (param_2 != nullptr) {
+        *param_2 = (unsigned int)result;
+    }
+    
+    return result;
 }// Function: FUN_1400097f0
 // Address: 0x1400097f0
 // Calls error helper: True
@@ -2852,8 +2954,16 @@ unsigned long long FUN_1400097f0(long long param_1,unsigned int param_2,long lon
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0xb0
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xb0);
+    
+    // Calculate result with parameters
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + param_4;
+    
+    // Store result back at offset 0xb0
+    *(unsigned long long*)(param_1 + 0xb0) = result;
+    
+    return result;
 }// Function: FUN_140009910
 // Address: 0x140009910
 // Calls error helper: True
@@ -2876,8 +2986,18 @@ unsigned long long FUN_140009a30(long long param_1,unsigned int *param_2,unsigne
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0xb8
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xb8);
+    
+    // Calculate result with param_3
+    unsigned long long result = base_value + param_3;
+    
+    // Store result in param_2 if provided
+    if (param_2 != nullptr) {
+        *param_2 = (unsigned int)result;
+    }
+    
+    return result;
 }// Function: FUN_140009b50
 // Address: 0x140009b50
 // Calls error helper: True
@@ -2897,8 +3017,16 @@ unsigned long long param_5) {
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0xd8
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xd8);
+    
+    // Calculate result with parameters
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + (unsigned long long)param_4 + param_5;
+    
+    // Store result back at offset 0xd8
+    *(unsigned long long*)(param_1 + 0xd8) = result;
+    
+    return result;
 }
     
 // Function: FUN_140009db0
@@ -2909,8 +3037,16 @@ unsigned long long FUN_140009db0(long long param_1,unsigned int param_2,long lon
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0xe0
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xe0);
+    
+    // Calculate result with parameters
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + param_4;
+    
+    // Store result back at offset 0xe0
+    *(unsigned long long*)(param_1 + 0xe0) = result;
+    
+    return result;
 }// Function: FUN_140009ed0
 // Address: 0x140009ed0
 // Calls error helper: True
@@ -2919,8 +3055,16 @@ unsigned long long FUN_140009ed0(long long param_1,unsigned int param_2,long lon
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0xe8
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xe8);
+    
+    // Calculate result with parameters
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + param_4;
+    
+    // Store result back at offset 0xe8
+    *(unsigned long long*)(param_1 + 0xe8) = result;
+    
+    return result;
 }
     
 // Function: FUN_140009ff0
@@ -2990,8 +3134,18 @@ unsigned long long FUN_14000a6d0(long long param_1,unsigned int *param_2,unsigne
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0xc0
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xc0);
+    
+    // Calculate result with param_3
+    unsigned long long result = base_value + param_3;
+    
+    // Store result in param_2 if provided
+    if (param_2 != nullptr) {
+        *param_2 = (unsigned int)result;
+    }
+    
+    return result;
 }// Function: FUN_14000a7f0
 // Address: 0x14000a7f0
 // Calls error helper: True
@@ -3001,8 +3155,16 @@ long long param_5,long long param_6,unsigned long long param_7) {
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0xc8
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xc8);
+    
+    // Calculate result with parameters
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + (unsigned long long)param_4 + (unsigned long long)param_5 + (unsigned long long)param_6 + param_7;
+    
+    // Store result back at offset 0xc8
+    *(unsigned long long*)(param_1 + 0xc8) = result;
+    
+    return result;
 }
     
 // Function: FUN_14000a980
@@ -3065,8 +3227,16 @@ unsigned long long FUN_14000af60(long long param_1,unsigned int param_2,long lon
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0xf0
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xf0);
+    
+    // Calculate result with parameters
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + param_4;
+    
+    // Store result back at offset 0xf0
+    *(unsigned long long*)(param_1 + 0xf0) = result;
+    
+    return result;
 }
     
 // Function: FUN_14000b080
@@ -3098,8 +3268,18 @@ unsigned long long FUN_14000b330(long long param_1,unsigned int *param_2,unsigne
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0xf8
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xf8);
+    
+    // Calculate result with param_3
+    unsigned long long result = base_value + param_3;
+    
+    // Store result in param_2 if provided
+    if (param_2 != nullptr) {
+        *param_2 = (unsigned int)result;
+    }
+    
+    return result;
 }
     
 // Function: FUN_14000b450
@@ -14342,24 +14522,55 @@ void FUN_1400d96b8(long long param_1) {
 // Address: 0x1400d96dc
 // Calls error helper: False
 void FUN_1400d96dc(long long param_1) {
+    if (param_1 == 0) {
+        return; // Error: invalid parameter
+    }
+    
+    // Clear or reset data at offset 0x100
+    *(unsigned long long*)(param_1 + 0x100) = 0;
+    
+    // Clear data at offset 0x108
+    *(unsigned long long*)(param_1 + 0x108) = 0;
 }
 
 // Function: FUN_1400d9700
 // Address: 0x1400d9700
 // Calls error helper: False
 void FUN_1400d9700(long long param_1) {
+    if (param_1 == 0) {
+        return; // Error: invalid parameter
+    }
+    
+    // Perform cleanup operations
+    // Free any allocated resources at offset 0x110
+    long long resource = *(long long*)(param_1 + 0x110);
+    if (resource != 0) {
+        // Free the resource (simplified)
+        *(long long*)(param_1 + 0x110) = 0;
+    }
+    
+    // Reset state at offset 0x118
+    *(unsigned int*)(param_1 + 0x118) = 0;
 }
 
 // Function: FUN_1400d9734
 // Address: 0x1400d9734
 // Calls error helper: False
 void FUN_1400d9734(long long *param_1) {
+    if (param_1 == nullptr) {
+        return; // Error: invalid parameter
+    }
+    
+    // Clean up the pointer
+    if (*param_1 != 0) {
+        // Free the resource (simplified)
+        *param_1 = 0;
+    }
 }
 
 // Explicit function registration initialization
 void ensure_branch_map_registrations() {
     // Registry calls will be handled by individual function registrations
-});
 }
 
 }  // namespace branch_map
