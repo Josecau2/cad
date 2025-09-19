@@ -111,10 +111,52 @@ CMakeFiles/opendesign.dir/src/app/Initialization.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opendesign.dir/src/app/Initialization.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/cad/opendesign/src/app/Initialization.cpp -o CMakeFiles/opendesign.dir/src/app/Initialization.cpp.s
 
+CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.o: CMakeFiles/opendesign.dir/flags.make
+CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.o: /workspaces/cad/opendesign/src/app/AppSpecial.cpp
+CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.o -MF CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.o.d -o CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.o -c /workspaces/cad/opendesign/src/app/AppSpecial.cpp
+
+CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/cad/opendesign/src/app/AppSpecial.cpp > CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.i
+
+CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/cad/opendesign/src/app/AppSpecial.cpp -o CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.s
+
+CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.o: CMakeFiles/opendesign.dir/flags.make
+CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.o: /workspaces/cad/opendesign/src/app/AppLicense.cpp
+CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.o -MF CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.o.d -o CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.o -c /workspaces/cad/opendesign/src/app/AppLicense.cpp
+
+CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/cad/opendesign/src/app/AppLicense.cpp > CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.i
+
+CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/cad/opendesign/src/app/AppLicense.cpp -o CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.s
+
+CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.o: CMakeFiles/opendesign.dir/flags.make
+CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.o: /workspaces/cad/opendesign/src/app/AppDeps.cpp
+CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.o -MF CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.o.d -o CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.o -c /workspaces/cad/opendesign/src/app/AppDeps.cpp
+
+CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/cad/opendesign/src/app/AppDeps.cpp > CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.i
+
+CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/cad/opendesign/src/app/AppDeps.cpp -o CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.s
+
 CMakeFiles/opendesign.dir/src/ui/html/HtmlUI.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/ui/html/HtmlUI.cpp.o: /workspaces/cad/opendesign/src/ui/html/HtmlUI.cpp
 CMakeFiles/opendesign.dir/src/ui/html/HtmlUI.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/opendesign.dir/src/ui/html/HtmlUI.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/opendesign.dir/src/ui/html/HtmlUI.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/ui/html/HtmlUI.cpp.o -MF CMakeFiles/opendesign.dir/src/ui/html/HtmlUI.cpp.o.d -o CMakeFiles/opendesign.dir/src/ui/html/HtmlUI.cpp.o -c /workspaces/cad/opendesign/src/ui/html/HtmlUI.cpp
 
 CMakeFiles/opendesign.dir/src/ui/html/HtmlUI.cpp.i: cmake_force
@@ -128,7 +170,7 @@ CMakeFiles/opendesign.dir/src/ui/html/HtmlUI.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/ui/mainwindow/MainWindow.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/ui/mainwindow/MainWindow.cpp.o: /workspaces/cad/opendesign/src/ui/mainwindow/MainWindow.cpp
 CMakeFiles/opendesign.dir/src/ui/mainwindow/MainWindow.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/opendesign.dir/src/ui/mainwindow/MainWindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/opendesign.dir/src/ui/mainwindow/MainWindow.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/ui/mainwindow/MainWindow.cpp.o -MF CMakeFiles/opendesign.dir/src/ui/mainwindow/MainWindow.cpp.o.d -o CMakeFiles/opendesign.dir/src/ui/mainwindow/MainWindow.cpp.o -c /workspaces/cad/opendesign/src/ui/mainwindow/MainWindow.cpp
 
 CMakeFiles/opendesign.dir/src/ui/mainwindow/MainWindow.cpp.i: cmake_force
@@ -142,7 +184,7 @@ CMakeFiles/opendesign.dir/src/ui/mainwindow/MainWindow.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonBar.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonBar.cpp.o: /workspaces/cad/opendesign/src/ui/ribbon/RibbonBar.cpp
 CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonBar.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonBar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonBar.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonBar.cpp.o -MF CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonBar.cpp.o.d -o CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonBar.cpp.o -c /workspaces/cad/opendesign/src/ui/ribbon/RibbonBar.cpp
 
 CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonBar.cpp.i: cmake_force
@@ -156,7 +198,7 @@ CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonBar.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonCommands.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonCommands.cpp.o: /workspaces/cad/opendesign/src/ui/ribbon/RibbonCommands.cpp
 CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonCommands.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonCommands.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonCommands.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonCommands.cpp.o -MF CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonCommands.cpp.o.d -o CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonCommands.cpp.o -c /workspaces/cad/opendesign/src/ui/ribbon/RibbonCommands.cpp
 
 CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonCommands.cpp.i: cmake_force
@@ -170,7 +212,7 @@ CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonCommands.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/ui/UICommands.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/ui/UICommands.cpp.o: /workspaces/cad/opendesign/src/ui/UICommands.cpp
 CMakeFiles/opendesign.dir/src/ui/UICommands.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/opendesign.dir/src/ui/UICommands.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/opendesign.dir/src/ui/UICommands.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/ui/UICommands.cpp.o -MF CMakeFiles/opendesign.dir/src/ui/UICommands.cpp.o.d -o CMakeFiles/opendesign.dir/src/ui/UICommands.cpp.o -c /workspaces/cad/opendesign/src/ui/UICommands.cpp
 
 CMakeFiles/opendesign.dir/src/ui/UICommands.cpp.i: cmake_force
@@ -184,7 +226,7 @@ CMakeFiles/opendesign.dir/src/ui/UICommands.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/ui/UIComponents.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/ui/UIComponents.cpp.o: /workspaces/cad/opendesign/src/ui/UIComponents.cpp
 CMakeFiles/opendesign.dir/src/ui/UIComponents.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/opendesign.dir/src/ui/UIComponents.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/opendesign.dir/src/ui/UIComponents.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/ui/UIComponents.cpp.o -MF CMakeFiles/opendesign.dir/src/ui/UIComponents.cpp.o.d -o CMakeFiles/opendesign.dir/src/ui/UIComponents.cpp.o -c /workspaces/cad/opendesign/src/ui/UIComponents.cpp
 
 CMakeFiles/opendesign.dir/src/ui/UIComponents.cpp.i: cmake_force
@@ -195,10 +237,108 @@ CMakeFiles/opendesign.dir/src/ui/UIComponents.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opendesign.dir/src/ui/UIComponents.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/cad/opendesign/src/ui/UIComponents.cpp -o CMakeFiles/opendesign.dir/src/ui/UIComponents.cpp.s
 
+CMakeFiles/opendesign.dir/src/ui/UICore.cpp.o: CMakeFiles/opendesign.dir/flags.make
+CMakeFiles/opendesign.dir/src/ui/UICore.cpp.o: /workspaces/cad/opendesign/src/ui/UICore.cpp
+CMakeFiles/opendesign.dir/src/ui/UICore.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/opendesign.dir/src/ui/UICore.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/ui/UICore.cpp.o -MF CMakeFiles/opendesign.dir/src/ui/UICore.cpp.o.d -o CMakeFiles/opendesign.dir/src/ui/UICore.cpp.o -c /workspaces/cad/opendesign/src/ui/UICore.cpp
+
+CMakeFiles/opendesign.dir/src/ui/UICore.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opendesign.dir/src/ui/UICore.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/cad/opendesign/src/ui/UICore.cpp > CMakeFiles/opendesign.dir/src/ui/UICore.cpp.i
+
+CMakeFiles/opendesign.dir/src/ui/UICore.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opendesign.dir/src/ui/UICore.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/cad/opendesign/src/ui/UICore.cpp -o CMakeFiles/opendesign.dir/src/ui/UICore.cpp.s
+
+CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.o: CMakeFiles/opendesign.dir/flags.make
+CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.o: /workspaces/cad/opendesign/src/ui/UIDialogs.cpp
+CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.o -MF CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.o.d -o CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.o -c /workspaces/cad/opendesign/src/ui/UIDialogs.cpp
+
+CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/cad/opendesign/src/ui/UIDialogs.cpp > CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.i
+
+CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/cad/opendesign/src/ui/UIDialogs.cpp -o CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.s
+
+CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.o: CMakeFiles/opendesign.dir/flags.make
+CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.o: /workspaces/cad/opendesign/src/ui/UIFactories.cpp
+CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.o -MF CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.o.d -o CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.o -c /workspaces/cad/opendesign/src/ui/UIFactories.cpp
+
+CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/cad/opendesign/src/ui/UIFactories.cpp > CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.i
+
+CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/cad/opendesign/src/ui/UIFactories.cpp -o CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.s
+
+CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.o: CMakeFiles/opendesign.dir/flags.make
+CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.o: /workspaces/cad/opendesign/src/ui/UIStatus.cpp
+CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.o -MF CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.o.d -o CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.o -c /workspaces/cad/opendesign/src/ui/UIStatus.cpp
+
+CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/cad/opendesign/src/ui/UIStatus.cpp > CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.i
+
+CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/cad/opendesign/src/ui/UIStatus.cpp -o CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.s
+
+CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.o: CMakeFiles/opendesign.dir/flags.make
+CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.o: /workspaces/cad/opendesign/src/ui/UIInteraction.cpp
+CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.o -MF CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.o.d -o CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.o -c /workspaces/cad/opendesign/src/ui/UIInteraction.cpp
+
+CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/cad/opendesign/src/ui/UIInteraction.cpp > CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.i
+
+CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/cad/opendesign/src/ui/UIInteraction.cpp -o CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.s
+
+CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.o: CMakeFiles/opendesign.dir/flags.make
+CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.o: /workspaces/cad/opendesign/src/ui/UITextExt.cpp
+CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.o -MF CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.o.d -o CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.o -c /workspaces/cad/opendesign/src/ui/UITextExt.cpp
+
+CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/cad/opendesign/src/ui/UITextExt.cpp > CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.i
+
+CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/cad/opendesign/src/ui/UITextExt.cpp -o CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.s
+
+CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.o: CMakeFiles/opendesign.dir/flags.make
+CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.o: /workspaces/cad/opendesign/src/ui/UIButtonSpecial.cpp
+CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.o -MF CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.o.d -o CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.o -c /workspaces/cad/opendesign/src/ui/UIButtonSpecial.cpp
+
+CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/cad/opendesign/src/ui/UIButtonSpecial.cpp > CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.i
+
+CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/cad/opendesign/src/ui/UIButtonSpecial.cpp -o CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.s
+
 CMakeFiles/opendesign.dir/src/ui/statusbar/StatusBar.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/ui/statusbar/StatusBar.cpp.o: /workspaces/cad/opendesign/src/ui/statusbar/StatusBar.cpp
 CMakeFiles/opendesign.dir/src/ui/statusbar/StatusBar.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/opendesign.dir/src/ui/statusbar/StatusBar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/opendesign.dir/src/ui/statusbar/StatusBar.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/ui/statusbar/StatusBar.cpp.o -MF CMakeFiles/opendesign.dir/src/ui/statusbar/StatusBar.cpp.o.d -o CMakeFiles/opendesign.dir/src/ui/statusbar/StatusBar.cpp.o -c /workspaces/cad/opendesign/src/ui/statusbar/StatusBar.cpp
 
 CMakeFiles/opendesign.dir/src/ui/statusbar/StatusBar.cpp.i: cmake_force
@@ -212,7 +352,7 @@ CMakeFiles/opendesign.dir/src/ui/statusbar/StatusBar.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/ui/printpreview/PrintPreview.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/ui/printpreview/PrintPreview.cpp.o: /workspaces/cad/opendesign/src/ui/printpreview/PrintPreview.cpp
 CMakeFiles/opendesign.dir/src/ui/printpreview/PrintPreview.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/opendesign.dir/src/ui/printpreview/PrintPreview.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/opendesign.dir/src/ui/printpreview/PrintPreview.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/ui/printpreview/PrintPreview.cpp.o -MF CMakeFiles/opendesign.dir/src/ui/printpreview/PrintPreview.cpp.o.d -o CMakeFiles/opendesign.dir/src/ui/printpreview/PrintPreview.cpp.o -c /workspaces/cad/opendesign/src/ui/printpreview/PrintPreview.cpp
 
 CMakeFiles/opendesign.dir/src/ui/printpreview/PrintPreview.cpp.i: cmake_force
@@ -226,7 +366,7 @@ CMakeFiles/opendesign.dir/src/ui/printpreview/PrintPreview.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/ui/grid/Grid.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/ui/grid/Grid.cpp.o: /workspaces/cad/opendesign/src/ui/grid/Grid.cpp
 CMakeFiles/opendesign.dir/src/ui/grid/Grid.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/opendesign.dir/src/ui/grid/Grid.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/opendesign.dir/src/ui/grid/Grid.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/ui/grid/Grid.cpp.o -MF CMakeFiles/opendesign.dir/src/ui/grid/Grid.cpp.o.d -o CMakeFiles/opendesign.dir/src/ui/grid/Grid.cpp.o -c /workspaces/cad/opendesign/src/ui/grid/Grid.cpp
 
 CMakeFiles/opendesign.dir/src/ui/grid/Grid.cpp.i: cmake_force
@@ -240,7 +380,7 @@ CMakeFiles/opendesign.dir/src/ui/grid/Grid.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/framework/CommandBus.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/framework/CommandBus.cpp.o: /workspaces/cad/opendesign/src/framework/CommandBus.cpp
 CMakeFiles/opendesign.dir/src/framework/CommandBus.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/opendesign.dir/src/framework/CommandBus.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/opendesign.dir/src/framework/CommandBus.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/framework/CommandBus.cpp.o -MF CMakeFiles/opendesign.dir/src/framework/CommandBus.cpp.o.d -o CMakeFiles/opendesign.dir/src/framework/CommandBus.cpp.o -c /workspaces/cad/opendesign/src/framework/CommandBus.cpp
 
 CMakeFiles/opendesign.dir/src/framework/CommandBus.cpp.i: cmake_force
@@ -254,7 +394,7 @@ CMakeFiles/opendesign.dir/src/framework/CommandBus.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/framework/FeatureGate.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/framework/FeatureGate.cpp.o: /workspaces/cad/opendesign/src/framework/FeatureGate.cpp
 CMakeFiles/opendesign.dir/src/framework/FeatureGate.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/opendesign.dir/src/framework/FeatureGate.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/opendesign.dir/src/framework/FeatureGate.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/framework/FeatureGate.cpp.o -MF CMakeFiles/opendesign.dir/src/framework/FeatureGate.cpp.o.d -o CMakeFiles/opendesign.dir/src/framework/FeatureGate.cpp.o -c /workspaces/cad/opendesign/src/framework/FeatureGate.cpp
 
 CMakeFiles/opendesign.dir/src/framework/FeatureGate.cpp.i: cmake_force
@@ -268,7 +408,7 @@ CMakeFiles/opendesign.dir/src/framework/FeatureGate.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/framework/FunctionRegistry.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/framework/FunctionRegistry.cpp.o: /workspaces/cad/opendesign/src/framework/FunctionRegistry.cpp
 CMakeFiles/opendesign.dir/src/framework/FunctionRegistry.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/opendesign.dir/src/framework/FunctionRegistry.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/opendesign.dir/src/framework/FunctionRegistry.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/framework/FunctionRegistry.cpp.o -MF CMakeFiles/opendesign.dir/src/framework/FunctionRegistry.cpp.o.d -o CMakeFiles/opendesign.dir/src/framework/FunctionRegistry.cpp.o -c /workspaces/cad/opendesign/src/framework/FunctionRegistry.cpp
 
 CMakeFiles/opendesign.dir/src/framework/FunctionRegistry.cpp.i: cmake_force
@@ -282,7 +422,7 @@ CMakeFiles/opendesign.dir/src/framework/FunctionRegistry.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/cad/Document.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/cad/Document.cpp.o: /workspaces/cad/opendesign/src/cad/Document.cpp
 CMakeFiles/opendesign.dir/src/cad/Document.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Document.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Document.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/cad/Document.cpp.o -MF CMakeFiles/opendesign.dir/src/cad/Document.cpp.o.d -o CMakeFiles/opendesign.dir/src/cad/Document.cpp.o -c /workspaces/cad/opendesign/src/cad/Document.cpp
 
 CMakeFiles/opendesign.dir/src/cad/Document.cpp.i: cmake_force
@@ -296,7 +436,7 @@ CMakeFiles/opendesign.dir/src/cad/Document.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/cad/Modeling.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/cad/Modeling.cpp.o: /workspaces/cad/opendesign/src/cad/Modeling.cpp
 CMakeFiles/opendesign.dir/src/cad/Modeling.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Modeling.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Modeling.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/cad/Modeling.cpp.o -MF CMakeFiles/opendesign.dir/src/cad/Modeling.cpp.o.d -o CMakeFiles/opendesign.dir/src/cad/Modeling.cpp.o -c /workspaces/cad/opendesign/src/cad/Modeling.cpp
 
 CMakeFiles/opendesign.dir/src/cad/Modeling.cpp.i: cmake_force
@@ -310,7 +450,7 @@ CMakeFiles/opendesign.dir/src/cad/Modeling.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/cad/Geometry.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/cad/Geometry.cpp.o: /workspaces/cad/opendesign/src/cad/Geometry.cpp
 CMakeFiles/opendesign.dir/src/cad/Geometry.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Geometry.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Geometry.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/cad/Geometry.cpp.o -MF CMakeFiles/opendesign.dir/src/cad/Geometry.cpp.o.d -o CMakeFiles/opendesign.dir/src/cad/Geometry.cpp.o -c /workspaces/cad/opendesign/src/cad/Geometry.cpp
 
 CMakeFiles/opendesign.dir/src/cad/Geometry.cpp.i: cmake_force
@@ -324,7 +464,7 @@ CMakeFiles/opendesign.dir/src/cad/Geometry.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/db/Database.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/db/Database.cpp.o: /workspaces/cad/opendesign/src/db/Database.cpp
 CMakeFiles/opendesign.dir/src/db/Database.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/opendesign.dir/src/db/Database.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/opendesign.dir/src/db/Database.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/db/Database.cpp.o -MF CMakeFiles/opendesign.dir/src/db/Database.cpp.o.d -o CMakeFiles/opendesign.dir/src/db/Database.cpp.o -c /workspaces/cad/opendesign/src/db/Database.cpp
 
 CMakeFiles/opendesign.dir/src/db/Database.cpp.i: cmake_force
@@ -338,7 +478,7 @@ CMakeFiles/opendesign.dir/src/db/Database.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/cad/Analysis.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/cad/Analysis.cpp.o: /workspaces/cad/opendesign/src/cad/Analysis.cpp
 CMakeFiles/opendesign.dir/src/cad/Analysis.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Analysis.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Analysis.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/cad/Analysis.cpp.o -MF CMakeFiles/opendesign.dir/src/cad/Analysis.cpp.o.d -o CMakeFiles/opendesign.dir/src/cad/Analysis.cpp.o -c /workspaces/cad/opendesign/src/cad/Analysis.cpp
 
 CMakeFiles/opendesign.dir/src/cad/Analysis.cpp.i: cmake_force
@@ -352,7 +492,7 @@ CMakeFiles/opendesign.dir/src/cad/Analysis.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/cad/Advanced.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/cad/Advanced.cpp.o: /workspaces/cad/opendesign/src/cad/Advanced.cpp
 CMakeFiles/opendesign.dir/src/cad/Advanced.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Advanced.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Advanced.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/cad/Advanced.cpp.o -MF CMakeFiles/opendesign.dir/src/cad/Advanced.cpp.o.d -o CMakeFiles/opendesign.dir/src/cad/Advanced.cpp.o -c /workspaces/cad/opendesign/src/cad/Advanced.cpp
 
 CMakeFiles/opendesign.dir/src/cad/Advanced.cpp.i: cmake_force
@@ -366,7 +506,7 @@ CMakeFiles/opendesign.dir/src/cad/Advanced.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/cad/Core.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/cad/Core.cpp.o: /workspaces/cad/opendesign/src/cad/Core.cpp
 CMakeFiles/opendesign.dir/src/cad/Core.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Core.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Core.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/cad/Core.cpp.o -MF CMakeFiles/opendesign.dir/src/cad/Core.cpp.o.d -o CMakeFiles/opendesign.dir/src/cad/Core.cpp.o -c /workspaces/cad/opendesign/src/cad/Core.cpp
 
 CMakeFiles/opendesign.dir/src/cad/Core.cpp.i: cmake_force
@@ -380,7 +520,7 @@ CMakeFiles/opendesign.dir/src/cad/Core.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/cad/Utilities.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/cad/Utilities.cpp.o: /workspaces/cad/opendesign/src/cad/Utilities.cpp
 CMakeFiles/opendesign.dir/src/cad/Utilities.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Utilities.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Utilities.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/cad/Utilities.cpp.o -MF CMakeFiles/opendesign.dir/src/cad/Utilities.cpp.o.d -o CMakeFiles/opendesign.dir/src/cad/Utilities.cpp.o -c /workspaces/cad/opendesign/src/cad/Utilities.cpp
 
 CMakeFiles/opendesign.dir/src/cad/Utilities.cpp.i: cmake_force
@@ -394,7 +534,7 @@ CMakeFiles/opendesign.dir/src/cad/Utilities.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/cad/IO.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/cad/IO.cpp.o: /workspaces/cad/opendesign/src/cad/IO.cpp
 CMakeFiles/opendesign.dir/src/cad/IO.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/opendesign.dir/src/cad/IO.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/opendesign.dir/src/cad/IO.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/cad/IO.cpp.o -MF CMakeFiles/opendesign.dir/src/cad/IO.cpp.o.d -o CMakeFiles/opendesign.dir/src/cad/IO.cpp.o -c /workspaces/cad/opendesign/src/cad/IO.cpp
 
 CMakeFiles/opendesign.dir/src/cad/IO.cpp.i: cmake_force
@@ -408,7 +548,7 @@ CMakeFiles/opendesign.dir/src/cad/IO.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/cad/Extensions.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/cad/Extensions.cpp.o: /workspaces/cad/opendesign/src/cad/Extensions.cpp
 CMakeFiles/opendesign.dir/src/cad/Extensions.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Extensions.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Extensions.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/cad/Extensions.cpp.o -MF CMakeFiles/opendesign.dir/src/cad/Extensions.cpp.o.d -o CMakeFiles/opendesign.dir/src/cad/Extensions.cpp.o -c /workspaces/cad/opendesign/src/cad/Extensions.cpp
 
 CMakeFiles/opendesign.dir/src/cad/Extensions.cpp.i: cmake_force
@@ -422,7 +562,7 @@ CMakeFiles/opendesign.dir/src/cad/Extensions.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/cad/Collaboration.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/cad/Collaboration.cpp.o: /workspaces/cad/opendesign/src/cad/Collaboration.cpp
 CMakeFiles/opendesign.dir/src/cad/Collaboration.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Collaboration.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Collaboration.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/cad/Collaboration.cpp.o -MF CMakeFiles/opendesign.dir/src/cad/Collaboration.cpp.o.d -o CMakeFiles/opendesign.dir/src/cad/Collaboration.cpp.o -c /workspaces/cad/opendesign/src/cad/Collaboration.cpp
 
 CMakeFiles/opendesign.dir/src/cad/Collaboration.cpp.i: cmake_force
@@ -436,7 +576,7 @@ CMakeFiles/opendesign.dir/src/cad/Collaboration.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/cad/Documentation.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/cad/Documentation.cpp.o: /workspaces/cad/opendesign/src/cad/Documentation.cpp
 CMakeFiles/opendesign.dir/src/cad/Documentation.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Documentation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Documentation.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/cad/Documentation.cpp.o -MF CMakeFiles/opendesign.dir/src/cad/Documentation.cpp.o.d -o CMakeFiles/opendesign.dir/src/cad/Documentation.cpp.o -c /workspaces/cad/opendesign/src/cad/Documentation.cpp
 
 CMakeFiles/opendesign.dir/src/cad/Documentation.cpp.i: cmake_force
@@ -450,7 +590,7 @@ CMakeFiles/opendesign.dir/src/cad/Documentation.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/cad/External.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/cad/External.cpp.o: /workspaces/cad/opendesign/src/cad/External.cpp
 CMakeFiles/opendesign.dir/src/cad/External.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/opendesign.dir/src/cad/External.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/opendesign.dir/src/cad/External.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/cad/External.cpp.o -MF CMakeFiles/opendesign.dir/src/cad/External.cpp.o.d -o CMakeFiles/opendesign.dir/src/cad/External.cpp.o -c /workspaces/cad/opendesign/src/cad/External.cpp
 
 CMakeFiles/opendesign.dir/src/cad/External.cpp.i: cmake_force
@@ -464,7 +604,7 @@ CMakeFiles/opendesign.dir/src/cad/External.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/cad/Interface.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/cad/Interface.cpp.o: /workspaces/cad/opendesign/src/cad/Interface.cpp
 CMakeFiles/opendesign.dir/src/cad/Interface.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Interface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/opendesign.dir/src/cad/Interface.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/cad/Interface.cpp.o -MF CMakeFiles/opendesign.dir/src/cad/Interface.cpp.o.d -o CMakeFiles/opendesign.dir/src/cad/Interface.cpp.o -c /workspaces/cad/opendesign/src/cad/Interface.cpp
 
 CMakeFiles/opendesign.dir/src/cad/Interface.cpp.i: cmake_force
@@ -478,7 +618,7 @@ CMakeFiles/opendesign.dir/src/cad/Interface.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/render/Viewport.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/render/Viewport.cpp.o: /workspaces/cad/opendesign/src/render/Viewport.cpp
 CMakeFiles/opendesign.dir/src/render/Viewport.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/opendesign.dir/src/render/Viewport.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/opendesign.dir/src/render/Viewport.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/render/Viewport.cpp.o -MF CMakeFiles/opendesign.dir/src/render/Viewport.cpp.o.d -o CMakeFiles/opendesign.dir/src/render/Viewport.cpp.o -c /workspaces/cad/opendesign/src/render/Viewport.cpp
 
 CMakeFiles/opendesign.dir/src/render/Viewport.cpp.i: cmake_force
@@ -492,7 +632,7 @@ CMakeFiles/opendesign.dir/src/render/Viewport.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/render/Rendering.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/render/Rendering.cpp.o: /workspaces/cad/opendesign/src/render/Rendering.cpp
 CMakeFiles/opendesign.dir/src/render/Rendering.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/opendesign.dir/src/render/Rendering.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/opendesign.dir/src/render/Rendering.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/render/Rendering.cpp.o -MF CMakeFiles/opendesign.dir/src/render/Rendering.cpp.o.d -o CMakeFiles/opendesign.dir/src/render/Rendering.cpp.o -c /workspaces/cad/opendesign/src/render/Rendering.cpp
 
 CMakeFiles/opendesign.dir/src/render/Rendering.cpp.i: cmake_force
@@ -506,7 +646,7 @@ CMakeFiles/opendesign.dir/src/render/Rendering.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/io/Settings.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/io/Settings.cpp.o: /workspaces/cad/opendesign/src/io/Settings.cpp
 CMakeFiles/opendesign.dir/src/io/Settings.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/opendesign.dir/src/io/Settings.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/opendesign.dir/src/io/Settings.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/io/Settings.cpp.o -MF CMakeFiles/opendesign.dir/src/io/Settings.cpp.o.d -o CMakeFiles/opendesign.dir/src/io/Settings.cpp.o -c /workspaces/cad/opendesign/src/io/Settings.cpp
 
 CMakeFiles/opendesign.dir/src/io/Settings.cpp.i: cmake_force
@@ -517,10 +657,24 @@ CMakeFiles/opendesign.dir/src/io/Settings.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opendesign.dir/src/io/Settings.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/cad/opendesign/src/io/Settings.cpp -o CMakeFiles/opendesign.dir/src/io/Settings.cpp.s
 
+CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.o: CMakeFiles/opendesign.dir/flags.make
+CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.o: /workspaces/cad/opendesign/src/assets/CriticalAssets.cpp
+CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.o -MF CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.o.d -o CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.o -c /workspaces/cad/opendesign/src/assets/CriticalAssets.cpp
+
+CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/cad/opendesign/src/assets/CriticalAssets.cpp > CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.i
+
+CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/cad/opendesign/src/assets/CriticalAssets.cpp -o CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.s
+
 CMakeFiles/opendesign.dir/src/compat/win/Window.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/compat/win/Window.cpp.o: /workspaces/cad/opendesign/src/compat/win/Window.cpp
 CMakeFiles/opendesign.dir/src/compat/win/Window.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/opendesign.dir/src/compat/win/Window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/opendesign.dir/src/compat/win/Window.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/compat/win/Window.cpp.o -MF CMakeFiles/opendesign.dir/src/compat/win/Window.cpp.o.d -o CMakeFiles/opendesign.dir/src/compat/win/Window.cpp.o -c /workspaces/cad/opendesign/src/compat/win/Window.cpp
 
 CMakeFiles/opendesign.dir/src/compat/win/Window.cpp.i: cmake_force
@@ -534,7 +688,7 @@ CMakeFiles/opendesign.dir/src/compat/win/Window.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/compat/win/Menu.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/compat/win/Menu.cpp.o: /workspaces/cad/opendesign/src/compat/win/Menu.cpp
 CMakeFiles/opendesign.dir/src/compat/win/Menu.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/opendesign.dir/src/compat/win/Menu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/opendesign.dir/src/compat/win/Menu.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/compat/win/Menu.cpp.o -MF CMakeFiles/opendesign.dir/src/compat/win/Menu.cpp.o.d -o CMakeFiles/opendesign.dir/src/compat/win/Menu.cpp.o -c /workspaces/cad/opendesign/src/compat/win/Menu.cpp
 
 CMakeFiles/opendesign.dir/src/compat/win/Menu.cpp.i: cmake_force
@@ -548,7 +702,7 @@ CMakeFiles/opendesign.dir/src/compat/win/Menu.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/compat/win/Accel.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/compat/win/Accel.cpp.o: /workspaces/cad/opendesign/src/compat/win/Accel.cpp
 CMakeFiles/opendesign.dir/src/compat/win/Accel.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/opendesign.dir/src/compat/win/Accel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/opendesign.dir/src/compat/win/Accel.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/compat/win/Accel.cpp.o -MF CMakeFiles/opendesign.dir/src/compat/win/Accel.cpp.o.d -o CMakeFiles/opendesign.dir/src/compat/win/Accel.cpp.o -c /workspaces/cad/opendesign/src/compat/win/Accel.cpp
 
 CMakeFiles/opendesign.dir/src/compat/win/Accel.cpp.i: cmake_force
@@ -562,7 +716,7 @@ CMakeFiles/opendesign.dir/src/compat/win/Accel.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/compat/mfc/Dialogs.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/compat/mfc/Dialogs.cpp.o: /workspaces/cad/opendesign/src/compat/mfc/Dialogs.cpp
 CMakeFiles/opendesign.dir/src/compat/mfc/Dialogs.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/opendesign.dir/src/compat/mfc/Dialogs.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/opendesign.dir/src/compat/mfc/Dialogs.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/compat/mfc/Dialogs.cpp.o -MF CMakeFiles/opendesign.dir/src/compat/mfc/Dialogs.cpp.o.d -o CMakeFiles/opendesign.dir/src/compat/mfc/Dialogs.cpp.o -c /workspaces/cad/opendesign/src/compat/mfc/Dialogs.cpp
 
 CMakeFiles/opendesign.dir/src/compat/mfc/Dialogs.cpp.i: cmake_force
@@ -576,7 +730,7 @@ CMakeFiles/opendesign.dir/src/compat/mfc/Dialogs.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/compat/mfc/Ribbon.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/compat/mfc/Ribbon.cpp.o: /workspaces/cad/opendesign/src/compat/mfc/Ribbon.cpp
 CMakeFiles/opendesign.dir/src/compat/mfc/Ribbon.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/opendesign.dir/src/compat/mfc/Ribbon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/opendesign.dir/src/compat/mfc/Ribbon.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/compat/mfc/Ribbon.cpp.o -MF CMakeFiles/opendesign.dir/src/compat/mfc/Ribbon.cpp.o.d -o CMakeFiles/opendesign.dir/src/compat/mfc/Ribbon.cpp.o -c /workspaces/cad/opendesign/src/compat/mfc/Ribbon.cpp
 
 CMakeFiles/opendesign.dir/src/compat/mfc/Ribbon.cpp.i: cmake_force
@@ -590,7 +744,7 @@ CMakeFiles/opendesign.dir/src/compat/mfc/Ribbon.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/compat/mfc/UpdateUI.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/compat/mfc/UpdateUI.cpp.o: /workspaces/cad/opendesign/src/compat/mfc/UpdateUI.cpp
 CMakeFiles/opendesign.dir/src/compat/mfc/UpdateUI.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/opendesign.dir/src/compat/mfc/UpdateUI.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/opendesign.dir/src/compat/mfc/UpdateUI.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/compat/mfc/UpdateUI.cpp.o -MF CMakeFiles/opendesign.dir/src/compat/mfc/UpdateUI.cpp.o.d -o CMakeFiles/opendesign.dir/src/compat/mfc/UpdateUI.cpp.o -c /workspaces/cad/opendesign/src/compat/mfc/UpdateUI.cpp
 
 CMakeFiles/opendesign.dir/src/compat/mfc/UpdateUI.cpp.i: cmake_force
@@ -604,7 +758,7 @@ CMakeFiles/opendesign.dir/src/compat/mfc/UpdateUI.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.o: /workspaces/cad/opendesign/src/plugins/PluginManager.cpp
 CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.o -MF CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.o.d -o CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.o -c /workspaces/cad/opendesign/src/plugins/PluginManager.cpp
 
 CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.i: cmake_force
@@ -618,7 +772,7 @@ CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.s: cmake_force
 CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o: CMakeFiles/opendesign.dir/flags.make
 CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o: /workspaces/cad/opendesign/src/branch_map/BranchMapStubs.cpp
 CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o -MF CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o.d -o CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o -c /workspaces/cad/opendesign/src/branch_map/BranchMapStubs.cpp
 
 CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.i: cmake_force
@@ -634,12 +788,22 @@ opendesign_OBJECTS = \
 "CMakeFiles/opendesign.dir/opendesign_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/opendesign.dir/src/app/Application.cpp.o" \
 "CMakeFiles/opendesign.dir/src/app/Initialization.cpp.o" \
+"CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.o" \
+"CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.o" \
+"CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.o" \
 "CMakeFiles/opendesign.dir/src/ui/html/HtmlUI.cpp.o" \
 "CMakeFiles/opendesign.dir/src/ui/mainwindow/MainWindow.cpp.o" \
 "CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonBar.cpp.o" \
 "CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonCommands.cpp.o" \
 "CMakeFiles/opendesign.dir/src/ui/UICommands.cpp.o" \
 "CMakeFiles/opendesign.dir/src/ui/UIComponents.cpp.o" \
+"CMakeFiles/opendesign.dir/src/ui/UICore.cpp.o" \
+"CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.o" \
+"CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.o" \
+"CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.o" \
+"CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.o" \
+"CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.o" \
+"CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.o" \
 "CMakeFiles/opendesign.dir/src/ui/statusbar/StatusBar.cpp.o" \
 "CMakeFiles/opendesign.dir/src/ui/printpreview/PrintPreview.cpp.o" \
 "CMakeFiles/opendesign.dir/src/ui/grid/Grid.cpp.o" \
@@ -663,6 +827,7 @@ opendesign_OBJECTS = \
 "CMakeFiles/opendesign.dir/src/render/Viewport.cpp.o" \
 "CMakeFiles/opendesign.dir/src/render/Rendering.cpp.o" \
 "CMakeFiles/opendesign.dir/src/io/Settings.cpp.o" \
+"CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.o" \
 "CMakeFiles/opendesign.dir/src/compat/win/Window.cpp.o" \
 "CMakeFiles/opendesign.dir/src/compat/win/Menu.cpp.o" \
 "CMakeFiles/opendesign.dir/src/compat/win/Accel.cpp.o" \
@@ -678,12 +843,22 @@ opendesign_EXTERNAL_OBJECTS =
 libopendesign.a: CMakeFiles/opendesign.dir/opendesign_autogen/mocs_compilation.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/app/Application.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/app/Initialization.cpp.o
+libopendesign.a: CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.o
+libopendesign.a: CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.o
+libopendesign.a: CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/ui/html/HtmlUI.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/ui/mainwindow/MainWindow.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonBar.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/ui/ribbon/RibbonCommands.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/ui/UICommands.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/ui/UIComponents.cpp.o
+libopendesign.a: CMakeFiles/opendesign.dir/src/ui/UICore.cpp.o
+libopendesign.a: CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.o
+libopendesign.a: CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.o
+libopendesign.a: CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.o
+libopendesign.a: CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.o
+libopendesign.a: CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.o
+libopendesign.a: CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/ui/statusbar/StatusBar.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/ui/printpreview/PrintPreview.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/ui/grid/Grid.cpp.o
@@ -707,6 +882,7 @@ libopendesign.a: CMakeFiles/opendesign.dir/src/cad/Interface.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/render/Viewport.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/render/Rendering.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/io/Settings.cpp.o
+libopendesign.a: CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/compat/win/Window.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/compat/win/Menu.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/compat/win/Accel.cpp.o
@@ -717,7 +893,7 @@ libopendesign.a: CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/build.make
 libopendesign.a: CMakeFiles/opendesign.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Linking CXX static library libopendesign.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspaces/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Linking CXX static library libopendesign.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/opendesign.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opendesign.dir/link.txt --verbose=$(VERBOSE)
 

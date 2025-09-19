@@ -74,6 +74,24 @@
 	"HEADERS" : 
 	[
 		[
+			"/workspaces/cad/opendesign/src/app/AppDeps.h",
+			"MU",
+			"ISMKEKEPX5/moc_AppDeps.cpp",
+			null
+		],
+		[
+			"/workspaces/cad/opendesign/src/app/AppLicense.h",
+			"MU",
+			"ISMKEKEPX5/moc_AppLicense.cpp",
+			null
+		],
+		[
+			"/workspaces/cad/opendesign/src/app/AppSpecial.h",
+			"MU",
+			"ISMKEKEPX5/moc_AppSpecial.cpp",
+			null
+		],
+		[
 			"/workspaces/cad/opendesign/src/app/Application.h",
 			"MU",
 			"ISMKEKEPX5/moc_Application.cpp",
@@ -83,6 +101,12 @@
 			"/workspaces/cad/opendesign/src/app/Initialization.h",
 			"MU",
 			"ISMKEKEPX5/moc_Initialization.cpp",
+			null
+		],
+		[
+			"/workspaces/cad/opendesign/src/assets/CriticalAssets.h",
+			"MU",
+			"7WA7TAYJOR/moc_CriticalAssets.cpp",
 			null
 		],
 		[
@@ -254,6 +278,12 @@
 			null
 		],
 		[
+			"/workspaces/cad/opendesign/src/ui/UIButtonSpecial.h",
+			"MU",
+			"YPKJ5OE7LN/moc_UIButtonSpecial.cpp",
+			null
+		],
+		[
 			"/workspaces/cad/opendesign/src/ui/UICommands.h",
 			"MU",
 			"YPKJ5OE7LN/moc_UICommands.cpp",
@@ -263,6 +293,42 @@
 			"/workspaces/cad/opendesign/src/ui/UIComponents.h",
 			"MU",
 			"YPKJ5OE7LN/moc_UIComponents.cpp",
+			null
+		],
+		[
+			"/workspaces/cad/opendesign/src/ui/UICore.h",
+			"MU",
+			"YPKJ5OE7LN/moc_UICore.cpp",
+			null
+		],
+		[
+			"/workspaces/cad/opendesign/src/ui/UIDialogs.h",
+			"MU",
+			"YPKJ5OE7LN/moc_UIDialogs.cpp",
+			null
+		],
+		[
+			"/workspaces/cad/opendesign/src/ui/UIFactories.h",
+			"MU",
+			"YPKJ5OE7LN/moc_UIFactories.cpp",
+			null
+		],
+		[
+			"/workspaces/cad/opendesign/src/ui/UIInteraction.h",
+			"MU",
+			"YPKJ5OE7LN/moc_UIInteraction.cpp",
+			null
+		],
+		[
+			"/workspaces/cad/opendesign/src/ui/UIStatus.h",
+			"MU",
+			"YPKJ5OE7LN/moc_UIStatus.cpp",
+			null
+		],
+		[
+			"/workspaces/cad/opendesign/src/ui/UITextExt.h",
+			"MU",
+			"YPKJ5OE7LN/moc_UITextExt.cpp",
 			null
 		],
 		[
@@ -369,8 +435,16 @@
 	"SETTINGS_FILE" : "/workspaces/cad/opendesign/build/CMakeFiles/opendesign_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/workspaces/cad/opendesign/src/app/AppDeps.cpp", "MU", null ],
+		[ "/workspaces/cad/opendesign/src/app/AppLicense.cpp", "MU", null ],
+		[ "/workspaces/cad/opendesign/src/app/AppSpecial.cpp", "MU", null ],
 		[ "/workspaces/cad/opendesign/src/app/Application.cpp", "MU", null ],
 		[ "/workspaces/cad/opendesign/src/app/Initialization.cpp", "MU", null ],
+		[
+			"/workspaces/cad/opendesign/src/assets/CriticalAssets.cpp",
+			"MU",
+			null
+		],
 		[
 			"/workspaces/cad/opendesign/src/branch_map/BranchMapStubs.cpp",
 			"MU",
@@ -415,8 +489,15 @@
 		],
 		[ "/workspaces/cad/opendesign/src/render/Rendering.cpp", "MU", null ],
 		[ "/workspaces/cad/opendesign/src/render/Viewport.cpp", "MU", null ],
+		[ "/workspaces/cad/opendesign/src/ui/UIButtonSpecial.cpp", "MU", null ],
 		[ "/workspaces/cad/opendesign/src/ui/UICommands.cpp", "MU", null ],
 		[ "/workspaces/cad/opendesign/src/ui/UIComponents.cpp", "MU", null ],
+		[ "/workspaces/cad/opendesign/src/ui/UICore.cpp", "MU", null ],
+		[ "/workspaces/cad/opendesign/src/ui/UIDialogs.cpp", "MU", null ],
+		[ "/workspaces/cad/opendesign/src/ui/UIFactories.cpp", "MU", null ],
+		[ "/workspaces/cad/opendesign/src/ui/UIInteraction.cpp", "MU", null ],
+		[ "/workspaces/cad/opendesign/src/ui/UIStatus.cpp", "MU", null ],
+		[ "/workspaces/cad/opendesign/src/ui/UITextExt.cpp", "MU", null ],
 		[ "/workspaces/cad/opendesign/src/ui/grid/Grid.cpp", "MU", null ],
 		[ "/workspaces/cad/opendesign/src/ui/html/HtmlUI.cpp", "MU", null ],
 		[

@@ -291,6 +291,78 @@ opendesign_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/opendesign_autogen/mocs_compilation.cpp.s
 .PHONY : opendesign_autogen/mocs_compilation.cpp.s
 
+src/app/AppDeps.o: src/app/AppDeps.cpp.o
+.PHONY : src/app/AppDeps.o
+
+# target to build an object file
+src/app/AppDeps.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.o
+.PHONY : src/app/AppDeps.cpp.o
+
+src/app/AppDeps.i: src/app/AppDeps.cpp.i
+.PHONY : src/app/AppDeps.i
+
+# target to preprocess a source file
+src/app/AppDeps.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.i
+.PHONY : src/app/AppDeps.cpp.i
+
+src/app/AppDeps.s: src/app/AppDeps.cpp.s
+.PHONY : src/app/AppDeps.s
+
+# target to generate assembly for a file
+src/app/AppDeps.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.s
+.PHONY : src/app/AppDeps.cpp.s
+
+src/app/AppLicense.o: src/app/AppLicense.cpp.o
+.PHONY : src/app/AppLicense.o
+
+# target to build an object file
+src/app/AppLicense.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.o
+.PHONY : src/app/AppLicense.cpp.o
+
+src/app/AppLicense.i: src/app/AppLicense.cpp.i
+.PHONY : src/app/AppLicense.i
+
+# target to preprocess a source file
+src/app/AppLicense.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.i
+.PHONY : src/app/AppLicense.cpp.i
+
+src/app/AppLicense.s: src/app/AppLicense.cpp.s
+.PHONY : src/app/AppLicense.s
+
+# target to generate assembly for a file
+src/app/AppLicense.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.s
+.PHONY : src/app/AppLicense.cpp.s
+
+src/app/AppSpecial.o: src/app/AppSpecial.cpp.o
+.PHONY : src/app/AppSpecial.o
+
+# target to build an object file
+src/app/AppSpecial.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.o
+.PHONY : src/app/AppSpecial.cpp.o
+
+src/app/AppSpecial.i: src/app/AppSpecial.cpp.i
+.PHONY : src/app/AppSpecial.i
+
+# target to preprocess a source file
+src/app/AppSpecial.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.i
+.PHONY : src/app/AppSpecial.cpp.i
+
+src/app/AppSpecial.s: src/app/AppSpecial.cpp.s
+.PHONY : src/app/AppSpecial.s
+
+# target to generate assembly for a file
+src/app/AppSpecial.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.s
+.PHONY : src/app/AppSpecial.cpp.s
+
 src/app/Application.o: src/app/Application.cpp.o
 .PHONY : src/app/Application.o
 
@@ -362,6 +434,30 @@ src/app/main.s: src/app/main.cpp.s
 src/app/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign_app.dir/build.make CMakeFiles/opendesign_app.dir/src/app/main.cpp.s
 .PHONY : src/app/main.cpp.s
+
+src/assets/CriticalAssets.o: src/assets/CriticalAssets.cpp.o
+.PHONY : src/assets/CriticalAssets.o
+
+# target to build an object file
+src/assets/CriticalAssets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.o
+.PHONY : src/assets/CriticalAssets.cpp.o
+
+src/assets/CriticalAssets.i: src/assets/CriticalAssets.cpp.i
+.PHONY : src/assets/CriticalAssets.i
+
+# target to preprocess a source file
+src/assets/CriticalAssets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.i
+.PHONY : src/assets/CriticalAssets.cpp.i
+
+src/assets/CriticalAssets.s: src/assets/CriticalAssets.cpp.s
+.PHONY : src/assets/CriticalAssets.s
+
+# target to generate assembly for a file
+src/assets/CriticalAssets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.s
+.PHONY : src/assets/CriticalAssets.cpp.s
 
 src/branch_map/BranchMapStubs.o: src/branch_map/BranchMapStubs.cpp.o
 .PHONY : src/branch_map/BranchMapStubs.o
@@ -1035,6 +1131,30 @@ src/render/Viewport.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/render/Viewport.cpp.s
 .PHONY : src/render/Viewport.cpp.s
 
+src/ui/UIButtonSpecial.o: src/ui/UIButtonSpecial.cpp.o
+.PHONY : src/ui/UIButtonSpecial.o
+
+# target to build an object file
+src/ui/UIButtonSpecial.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.o
+.PHONY : src/ui/UIButtonSpecial.cpp.o
+
+src/ui/UIButtonSpecial.i: src/ui/UIButtonSpecial.cpp.i
+.PHONY : src/ui/UIButtonSpecial.i
+
+# target to preprocess a source file
+src/ui/UIButtonSpecial.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.i
+.PHONY : src/ui/UIButtonSpecial.cpp.i
+
+src/ui/UIButtonSpecial.s: src/ui/UIButtonSpecial.cpp.s
+.PHONY : src/ui/UIButtonSpecial.s
+
+# target to generate assembly for a file
+src/ui/UIButtonSpecial.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.s
+.PHONY : src/ui/UIButtonSpecial.cpp.s
+
 src/ui/UICommands.o: src/ui/UICommands.cpp.o
 .PHONY : src/ui/UICommands.o
 
@@ -1082,6 +1202,150 @@ src/ui/UIComponents.s: src/ui/UIComponents.cpp.s
 src/ui/UIComponents.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UIComponents.cpp.s
 .PHONY : src/ui/UIComponents.cpp.s
+
+src/ui/UICore.o: src/ui/UICore.cpp.o
+.PHONY : src/ui/UICore.o
+
+# target to build an object file
+src/ui/UICore.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UICore.cpp.o
+.PHONY : src/ui/UICore.cpp.o
+
+src/ui/UICore.i: src/ui/UICore.cpp.i
+.PHONY : src/ui/UICore.i
+
+# target to preprocess a source file
+src/ui/UICore.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UICore.cpp.i
+.PHONY : src/ui/UICore.cpp.i
+
+src/ui/UICore.s: src/ui/UICore.cpp.s
+.PHONY : src/ui/UICore.s
+
+# target to generate assembly for a file
+src/ui/UICore.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UICore.cpp.s
+.PHONY : src/ui/UICore.cpp.s
+
+src/ui/UIDialogs.o: src/ui/UIDialogs.cpp.o
+.PHONY : src/ui/UIDialogs.o
+
+# target to build an object file
+src/ui/UIDialogs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.o
+.PHONY : src/ui/UIDialogs.cpp.o
+
+src/ui/UIDialogs.i: src/ui/UIDialogs.cpp.i
+.PHONY : src/ui/UIDialogs.i
+
+# target to preprocess a source file
+src/ui/UIDialogs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.i
+.PHONY : src/ui/UIDialogs.cpp.i
+
+src/ui/UIDialogs.s: src/ui/UIDialogs.cpp.s
+.PHONY : src/ui/UIDialogs.s
+
+# target to generate assembly for a file
+src/ui/UIDialogs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.s
+.PHONY : src/ui/UIDialogs.cpp.s
+
+src/ui/UIFactories.o: src/ui/UIFactories.cpp.o
+.PHONY : src/ui/UIFactories.o
+
+# target to build an object file
+src/ui/UIFactories.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.o
+.PHONY : src/ui/UIFactories.cpp.o
+
+src/ui/UIFactories.i: src/ui/UIFactories.cpp.i
+.PHONY : src/ui/UIFactories.i
+
+# target to preprocess a source file
+src/ui/UIFactories.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.i
+.PHONY : src/ui/UIFactories.cpp.i
+
+src/ui/UIFactories.s: src/ui/UIFactories.cpp.s
+.PHONY : src/ui/UIFactories.s
+
+# target to generate assembly for a file
+src/ui/UIFactories.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.s
+.PHONY : src/ui/UIFactories.cpp.s
+
+src/ui/UIInteraction.o: src/ui/UIInteraction.cpp.o
+.PHONY : src/ui/UIInteraction.o
+
+# target to build an object file
+src/ui/UIInteraction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.o
+.PHONY : src/ui/UIInteraction.cpp.o
+
+src/ui/UIInteraction.i: src/ui/UIInteraction.cpp.i
+.PHONY : src/ui/UIInteraction.i
+
+# target to preprocess a source file
+src/ui/UIInteraction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.i
+.PHONY : src/ui/UIInteraction.cpp.i
+
+src/ui/UIInteraction.s: src/ui/UIInteraction.cpp.s
+.PHONY : src/ui/UIInteraction.s
+
+# target to generate assembly for a file
+src/ui/UIInteraction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.s
+.PHONY : src/ui/UIInteraction.cpp.s
+
+src/ui/UIStatus.o: src/ui/UIStatus.cpp.o
+.PHONY : src/ui/UIStatus.o
+
+# target to build an object file
+src/ui/UIStatus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.o
+.PHONY : src/ui/UIStatus.cpp.o
+
+src/ui/UIStatus.i: src/ui/UIStatus.cpp.i
+.PHONY : src/ui/UIStatus.i
+
+# target to preprocess a source file
+src/ui/UIStatus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.i
+.PHONY : src/ui/UIStatus.cpp.i
+
+src/ui/UIStatus.s: src/ui/UIStatus.cpp.s
+.PHONY : src/ui/UIStatus.s
+
+# target to generate assembly for a file
+src/ui/UIStatus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.s
+.PHONY : src/ui/UIStatus.cpp.s
+
+src/ui/UITextExt.o: src/ui/UITextExt.cpp.o
+.PHONY : src/ui/UITextExt.o
+
+# target to build an object file
+src/ui/UITextExt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.o
+.PHONY : src/ui/UITextExt.cpp.o
+
+src/ui/UITextExt.i: src/ui/UITextExt.cpp.i
+.PHONY : src/ui/UITextExt.i
+
+# target to preprocess a source file
+src/ui/UITextExt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.i
+.PHONY : src/ui/UITextExt.cpp.i
+
+src/ui/UITextExt.s: src/ui/UITextExt.cpp.s
+.PHONY : src/ui/UITextExt.s
+
+# target to generate assembly for a file
+src/ui/UITextExt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.s
+.PHONY : src/ui/UITextExt.cpp.s
 
 src/ui/grid/Grid.o: src/ui/grid/Grid.cpp.o
 .PHONY : src/ui/grid/Grid.o
@@ -1275,6 +1539,15 @@ help:
 	@echo "... opendesign_autogen/mocs_compilation.o"
 	@echo "... opendesign_autogen/mocs_compilation.i"
 	@echo "... opendesign_autogen/mocs_compilation.s"
+	@echo "... src/app/AppDeps.o"
+	@echo "... src/app/AppDeps.i"
+	@echo "... src/app/AppDeps.s"
+	@echo "... src/app/AppLicense.o"
+	@echo "... src/app/AppLicense.i"
+	@echo "... src/app/AppLicense.s"
+	@echo "... src/app/AppSpecial.o"
+	@echo "... src/app/AppSpecial.i"
+	@echo "... src/app/AppSpecial.s"
 	@echo "... src/app/Application.o"
 	@echo "... src/app/Application.i"
 	@echo "... src/app/Application.s"
@@ -1284,6 +1557,9 @@ help:
 	@echo "... src/app/main.o"
 	@echo "... src/app/main.i"
 	@echo "... src/app/main.s"
+	@echo "... src/assets/CriticalAssets.o"
+	@echo "... src/assets/CriticalAssets.i"
+	@echo "... src/assets/CriticalAssets.s"
 	@echo "... src/branch_map/BranchMapStubs.o"
 	@echo "... src/branch_map/BranchMapStubs.i"
 	@echo "... src/branch_map/BranchMapStubs.s"
@@ -1368,12 +1644,33 @@ help:
 	@echo "... src/render/Viewport.o"
 	@echo "... src/render/Viewport.i"
 	@echo "... src/render/Viewport.s"
+	@echo "... src/ui/UIButtonSpecial.o"
+	@echo "... src/ui/UIButtonSpecial.i"
+	@echo "... src/ui/UIButtonSpecial.s"
 	@echo "... src/ui/UICommands.o"
 	@echo "... src/ui/UICommands.i"
 	@echo "... src/ui/UICommands.s"
 	@echo "... src/ui/UIComponents.o"
 	@echo "... src/ui/UIComponents.i"
 	@echo "... src/ui/UIComponents.s"
+	@echo "... src/ui/UICore.o"
+	@echo "... src/ui/UICore.i"
+	@echo "... src/ui/UICore.s"
+	@echo "... src/ui/UIDialogs.o"
+	@echo "... src/ui/UIDialogs.i"
+	@echo "... src/ui/UIDialogs.s"
+	@echo "... src/ui/UIFactories.o"
+	@echo "... src/ui/UIFactories.i"
+	@echo "... src/ui/UIFactories.s"
+	@echo "... src/ui/UIInteraction.o"
+	@echo "... src/ui/UIInteraction.i"
+	@echo "... src/ui/UIInteraction.s"
+	@echo "... src/ui/UIStatus.o"
+	@echo "... src/ui/UIStatus.i"
+	@echo "... src/ui/UIStatus.s"
+	@echo "... src/ui/UITextExt.o"
+	@echo "... src/ui/UITextExt.i"
+	@echo "... src/ui/UITextExt.s"
 	@echo "... src/ui/grid/Grid.o"
 	@echo "... src/ui/grid/Grid.i"
 	@echo "... src/ui/grid/Grid.s"

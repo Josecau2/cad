@@ -66,9 +66,9 @@ include tests/CMakeFiles/opendesign_tests_autogen_timestamp_deps.dir/compiler_de
 # Include the progress variables for this target.
 include tests/CMakeFiles/opendesign_tests_autogen_timestamp_deps.dir/progress.make
 
+tests/CMakeFiles/opendesign_tests_autogen_timestamp_deps: libopendesign.a
 tests/CMakeFiles/opendesign_tests_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
 tests/CMakeFiles/opendesign_tests_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
-tests/CMakeFiles/opendesign_tests_autogen_timestamp_deps: libopendesign.a
 
 opendesign_tests_autogen_timestamp_deps: tests/CMakeFiles/opendesign_tests_autogen_timestamp_deps
 opendesign_tests_autogen_timestamp_deps: tests/CMakeFiles/opendesign_tests_autogen_timestamp_deps.dir/build.make

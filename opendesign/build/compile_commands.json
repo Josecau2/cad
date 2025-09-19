@@ -19,6 +19,24 @@
 },
 {
   "directory": "/workspaces/cad/opendesign/build",
+  "command": "/usr/bin/c++ -DOPEN_DESIGN_BUILD -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/workspaces/cad/opendesign/build/opendesign_autogen/include -I/workspaces/cad/opendesign/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSql -std=c++20 -fPIC -o CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.o -c /workspaces/cad/opendesign/src/app/AppSpecial.cpp",
+  "file": "/workspaces/cad/opendesign/src/app/AppSpecial.cpp",
+  "output": "CMakeFiles/opendesign.dir/src/app/AppSpecial.cpp.o"
+},
+{
+  "directory": "/workspaces/cad/opendesign/build",
+  "command": "/usr/bin/c++ -DOPEN_DESIGN_BUILD -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/workspaces/cad/opendesign/build/opendesign_autogen/include -I/workspaces/cad/opendesign/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSql -std=c++20 -fPIC -o CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.o -c /workspaces/cad/opendesign/src/app/AppLicense.cpp",
+  "file": "/workspaces/cad/opendesign/src/app/AppLicense.cpp",
+  "output": "CMakeFiles/opendesign.dir/src/app/AppLicense.cpp.o"
+},
+{
+  "directory": "/workspaces/cad/opendesign/build",
+  "command": "/usr/bin/c++ -DOPEN_DESIGN_BUILD -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/workspaces/cad/opendesign/build/opendesign_autogen/include -I/workspaces/cad/opendesign/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSql -std=c++20 -fPIC -o CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.o -c /workspaces/cad/opendesign/src/app/AppDeps.cpp",
+  "file": "/workspaces/cad/opendesign/src/app/AppDeps.cpp",
+  "output": "CMakeFiles/opendesign.dir/src/app/AppDeps.cpp.o"
+},
+{
+  "directory": "/workspaces/cad/opendesign/build",
   "command": "/usr/bin/c++ -DOPEN_DESIGN_BUILD -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/workspaces/cad/opendesign/build/opendesign_autogen/include -I/workspaces/cad/opendesign/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSql -std=c++20 -fPIC -o CMakeFiles/opendesign.dir/src/ui/html/HtmlUI.cpp.o -c /workspaces/cad/opendesign/src/ui/html/HtmlUI.cpp",
   "file": "/workspaces/cad/opendesign/src/ui/html/HtmlUI.cpp",
   "output": "CMakeFiles/opendesign.dir/src/ui/html/HtmlUI.cpp.o"
@@ -52,6 +70,48 @@
   "command": "/usr/bin/c++ -DOPEN_DESIGN_BUILD -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/workspaces/cad/opendesign/build/opendesign_autogen/include -I/workspaces/cad/opendesign/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSql -std=c++20 -fPIC -o CMakeFiles/opendesign.dir/src/ui/UIComponents.cpp.o -c /workspaces/cad/opendesign/src/ui/UIComponents.cpp",
   "file": "/workspaces/cad/opendesign/src/ui/UIComponents.cpp",
   "output": "CMakeFiles/opendesign.dir/src/ui/UIComponents.cpp.o"
+},
+{
+  "directory": "/workspaces/cad/opendesign/build",
+  "command": "/usr/bin/c++ -DOPEN_DESIGN_BUILD -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/workspaces/cad/opendesign/build/opendesign_autogen/include -I/workspaces/cad/opendesign/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSql -std=c++20 -fPIC -o CMakeFiles/opendesign.dir/src/ui/UICore.cpp.o -c /workspaces/cad/opendesign/src/ui/UICore.cpp",
+  "file": "/workspaces/cad/opendesign/src/ui/UICore.cpp",
+  "output": "CMakeFiles/opendesign.dir/src/ui/UICore.cpp.o"
+},
+{
+  "directory": "/workspaces/cad/opendesign/build",
+  "command": "/usr/bin/c++ -DOPEN_DESIGN_BUILD -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/workspaces/cad/opendesign/build/opendesign_autogen/include -I/workspaces/cad/opendesign/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSql -std=c++20 -fPIC -o CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.o -c /workspaces/cad/opendesign/src/ui/UIDialogs.cpp",
+  "file": "/workspaces/cad/opendesign/src/ui/UIDialogs.cpp",
+  "output": "CMakeFiles/opendesign.dir/src/ui/UIDialogs.cpp.o"
+},
+{
+  "directory": "/workspaces/cad/opendesign/build",
+  "command": "/usr/bin/c++ -DOPEN_DESIGN_BUILD -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/workspaces/cad/opendesign/build/opendesign_autogen/include -I/workspaces/cad/opendesign/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSql -std=c++20 -fPIC -o CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.o -c /workspaces/cad/opendesign/src/ui/UIFactories.cpp",
+  "file": "/workspaces/cad/opendesign/src/ui/UIFactories.cpp",
+  "output": "CMakeFiles/opendesign.dir/src/ui/UIFactories.cpp.o"
+},
+{
+  "directory": "/workspaces/cad/opendesign/build",
+  "command": "/usr/bin/c++ -DOPEN_DESIGN_BUILD -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/workspaces/cad/opendesign/build/opendesign_autogen/include -I/workspaces/cad/opendesign/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSql -std=c++20 -fPIC -o CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.o -c /workspaces/cad/opendesign/src/ui/UIStatus.cpp",
+  "file": "/workspaces/cad/opendesign/src/ui/UIStatus.cpp",
+  "output": "CMakeFiles/opendesign.dir/src/ui/UIStatus.cpp.o"
+},
+{
+  "directory": "/workspaces/cad/opendesign/build",
+  "command": "/usr/bin/c++ -DOPEN_DESIGN_BUILD -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/workspaces/cad/opendesign/build/opendesign_autogen/include -I/workspaces/cad/opendesign/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSql -std=c++20 -fPIC -o CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.o -c /workspaces/cad/opendesign/src/ui/UIInteraction.cpp",
+  "file": "/workspaces/cad/opendesign/src/ui/UIInteraction.cpp",
+  "output": "CMakeFiles/opendesign.dir/src/ui/UIInteraction.cpp.o"
+},
+{
+  "directory": "/workspaces/cad/opendesign/build",
+  "command": "/usr/bin/c++ -DOPEN_DESIGN_BUILD -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/workspaces/cad/opendesign/build/opendesign_autogen/include -I/workspaces/cad/opendesign/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSql -std=c++20 -fPIC -o CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.o -c /workspaces/cad/opendesign/src/ui/UITextExt.cpp",
+  "file": "/workspaces/cad/opendesign/src/ui/UITextExt.cpp",
+  "output": "CMakeFiles/opendesign.dir/src/ui/UITextExt.cpp.o"
+},
+{
+  "directory": "/workspaces/cad/opendesign/build",
+  "command": "/usr/bin/c++ -DOPEN_DESIGN_BUILD -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/workspaces/cad/opendesign/build/opendesign_autogen/include -I/workspaces/cad/opendesign/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSql -std=c++20 -fPIC -o CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.o -c /workspaces/cad/opendesign/src/ui/UIButtonSpecial.cpp",
+  "file": "/workspaces/cad/opendesign/src/ui/UIButtonSpecial.cpp",
+  "output": "CMakeFiles/opendesign.dir/src/ui/UIButtonSpecial.cpp.o"
 },
 {
   "directory": "/workspaces/cad/opendesign/build",
@@ -190,6 +250,12 @@
   "command": "/usr/bin/c++ -DOPEN_DESIGN_BUILD -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/workspaces/cad/opendesign/build/opendesign_autogen/include -I/workspaces/cad/opendesign/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSql -std=c++20 -fPIC -o CMakeFiles/opendesign.dir/src/io/Settings.cpp.o -c /workspaces/cad/opendesign/src/io/Settings.cpp",
   "file": "/workspaces/cad/opendesign/src/io/Settings.cpp",
   "output": "CMakeFiles/opendesign.dir/src/io/Settings.cpp.o"
+},
+{
+  "directory": "/workspaces/cad/opendesign/build",
+  "command": "/usr/bin/c++ -DOPEN_DESIGN_BUILD -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/workspaces/cad/opendesign/build/opendesign_autogen/include -I/workspaces/cad/opendesign/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSql -std=c++20 -fPIC -o CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.o -c /workspaces/cad/opendesign/src/assets/CriticalAssets.cpp",
+  "file": "/workspaces/cad/opendesign/src/assets/CriticalAssets.cpp",
+  "output": "CMakeFiles/opendesign.dir/src/assets/CriticalAssets.cpp.o"
 },
 {
   "directory": "/workspaces/cad/opendesign/build",

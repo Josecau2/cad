@@ -66,9 +66,9 @@ include CMakeFiles/opendesign_app_autogen_timestamp_deps.dir/compiler_depend.mak
 # Include the progress variables for this target.
 include CMakeFiles/opendesign_app_autogen_timestamp_deps.dir/progress.make
 
+CMakeFiles/opendesign_app_autogen_timestamp_deps: libopendesign.a
 CMakeFiles/opendesign_app_autogen_timestamp_deps: /usr/lib/qt5/bin/moc
 CMakeFiles/opendesign_app_autogen_timestamp_deps: /usr/lib/qt5/bin/uic
-CMakeFiles/opendesign_app_autogen_timestamp_deps: libopendesign.a
 
 opendesign_app_autogen_timestamp_deps: CMakeFiles/opendesign_app_autogen_timestamp_deps
 opendesign_app_autogen_timestamp_deps: CMakeFiles/opendesign_app_autogen_timestamp_deps.dir/build.make

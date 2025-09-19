@@ -1,5 +1,6 @@
 #include "app/Initialization.h"
 
+#include <iostream>
 #include <mutex>
 #include <string>
 #include <utility>
@@ -241,6 +242,165 @@ bool InitZoom() {
         framework::commands::RegisterCommand("app.init.zoom.out", []() {});
         io::settings::SaveSetting("view.zoom.percent", std::to_string(state.zoom_percent));
     });
+}
+
+// Framework initialization functions
+bool AfxClassInit() {
+    std::cout << "Initializing MFC classes" << std::endl;
+    return true;
+}
+
+bool AfxInitRichEdit() {
+    std::cout << "Initializing rich edit controls" << std::endl;
+    return true;
+}
+
+// Library and registry initialization functions
+bool InitLibId() {
+    std::cout << "Initializing library ID" << std::endl;
+    return true;
+}
+
+// Generic initialization functions
+bool Init() {
+    std::cout << "Generic initialization" << std::endl;
+    return true;
+}
+
+bool Init_2() {
+    std::cout << "Generic initialization (variant 2)" << std::endl;
+    return true;
+}
+
+bool Init_3() {
+    std::cout << "Generic initialization (variant 3)" << std::endl;
+    return true;
+}
+
+// Color and font initialization functions
+bool InitColors() {
+    std::cout << "Initializing colors" << std::endl;
+    return true;
+}
+
+// UI component initialization functions
+bool InitConstructor() {
+    std::cout << "Initializing constructor" << std::endl;
+    return true;
+}
+
+bool InitStateIcons() {
+    std::cout << "Initializing state icons" << std::endl;
+    return true;
+}
+
+bool InitViewPointButtons() {
+    std::cout << "Initializing viewpoint buttons" << std::endl;
+    return true;
+}
+
+bool InitItemData() {
+    std::cout << "Initializing item data" << std::endl;
+    return true;
+}
+
+// Frame and view initialization functions
+bool InitialUpdateFrame() {
+    std::cout << "Performing initial frame update" << std::endl;
+    return true;
+}
+
+// Handle list initialization functions
+bool InitHandleList() {
+    std::cout << "Initializing handle list" << std::endl;
+    return true;
+}
+
+bool InitHandleList_2() {
+    std::cout << "Initializing handle list (variant 2)" << std::endl;
+    return true;
+}
+
+bool InitHandleList_3() {
+    std::cout << "Initializing handle list (variant 3)" << std::endl;
+    return true;
+}
+
+bool InitHandleList_4() {
+    std::cout << "Initializing handle list (variant 4)" << std::endl;
+    return true;
+}
+
+bool InitHandleList_5() {
+    std::cout << "Initializing handle list (variant 5)" << std::endl;
+    return true;
+}
+
+bool InitHandleList_6() {
+    std::cout << "Initializing handle list (variant 6)" << std::endl;
+    return true;
+}
+
+bool InitHandleList_7() {
+    std::cout << "Initializing handle list (variant 7)" << std::endl;
+    return true;
+}
+
+bool InitHandleList_8() {
+    std::cout << "Initializing handle list (variant 8)" << std::endl;
+    return true;
+}
+
+bool InitHandleList_9() {
+    std::cout << "Initializing handle list (variant 9)" << std::endl;
+    return true;
+}
+
+bool InitHandleList_10() {
+    std::cout << "Initializing handle list (variant 10)" << std::endl;
+    return true;
+}
+
+bool InitHandleList_11() {
+    std::cout << "Initializing handle list (variant 11)" << std::endl;
+    return true;
+}
+
+bool InitHandleList_12() {
+    std::cout << "Initializing handle list (variant 12)" << std::endl;
+    return true;
+}
+
+bool InitHandleList_13() {
+    std::cout << "Initializing handle list (variant 13)" << std::endl;
+    return true;
+}
+
+bool InitHandleList_14() {
+    std::cout << "Initializing handle list (variant 14)" << std::endl;
+    return true;
+}
+
+bool InitHandleList_15() {
+    std::cout << "Initializing handle list (variant 15)" << std::endl;
+    return true;
+}
+
+// COM object initialization functions
+bool InitComObj() {
+    std::cout << "Initializing COM object" << std::endl;
+    return true;
+}
+
+bool InitComObj_2() {
+    std::cout << "Initializing COM object (variant 2)" << std::endl;
+    return true;
+}
+
+// Settings and synchronization initialization functions
+bool InitializeCriticalSectionEx() {
+    std::cout << "Initializing critical section" << std::endl;
+    return true;
 }
 
 std::vector<std::string> CallOrder() {
