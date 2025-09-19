@@ -10,7 +10,6 @@
 #include "ui/UICommands.h"
 #include "ui/UIComponents.h"
 #include "render/Rendering.h"
-// #include "db/Database.h"  // Temporarily commented out to isolate namespace issue
 #include "cad/Analysis.h"
 #include "cad/Advanced.h"
 #include "cad/Core.h"
