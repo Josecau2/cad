@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/opendesign_app.dir/opendesign_app_autogen/mocs_compilation.cpp.o CMakeFiles/opendesign_app.dir/src/app/main.cpp.o -o opendesign_app  libopendesign.a /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13 /usr/lib/x86_64-linux-gnu/libQt5Sql.so.5.15.13 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13 

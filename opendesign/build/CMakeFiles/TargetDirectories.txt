@@ -1,0 +1,15 @@
+/workspaces/cad/opendesign/build/CMakeFiles/opendesign.dir
+/workspaces/cad/opendesign/build/CMakeFiles/opendesign_app.dir
+/workspaces/cad/opendesign/build/CMakeFiles/test.dir
+/workspaces/cad/opendesign/build/CMakeFiles/edit_cache.dir
+/workspaces/cad/opendesign/build/CMakeFiles/rebuild_cache.dir
+/workspaces/cad/opendesign/build/CMakeFiles/opendesign_autogen_timestamp_deps.dir
+/workspaces/cad/opendesign/build/CMakeFiles/opendesign_autogen.dir
+/workspaces/cad/opendesign/build/CMakeFiles/opendesign_app_autogen_timestamp_deps.dir
+/workspaces/cad/opendesign/build/CMakeFiles/opendesign_app_autogen.dir
+/workspaces/cad/opendesign/build/tests/CMakeFiles/opendesign_tests.dir
+/workspaces/cad/opendesign/build/tests/CMakeFiles/test.dir
+/workspaces/cad/opendesign/build/tests/CMakeFiles/edit_cache.dir
+/workspaces/cad/opendesign/build/tests/CMakeFiles/rebuild_cache.dir
+/workspaces/cad/opendesign/build/tests/CMakeFiles/opendesign_tests_autogen_timestamp_deps.dir
+/workspaces/cad/opendesign/build/tests/CMakeFiles/opendesign_tests_autogen.dir
