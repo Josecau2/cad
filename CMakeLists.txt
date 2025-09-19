@@ -19,3 +19,7 @@ target_include_directories(branchmap PUBLIC
 
 add_executable(compile_check examples/compile_check.cpp)
 target_link_libraries(compile_check PRIVATE branchmap)
+
+# Enable basic testing and register a smoke test that ensures branch map registration works
+enable_testing()
+add_test(NAME compile_check COMMAND $<TARGET_FILE:compile_check>)
