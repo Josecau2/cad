@@ -10,6 +10,7 @@ set(TEST_SOURCES
     unit/test_extensions.cpp
     unit/test_collaboration.cpp
     unit/test_documentation.cpp
+    unit/test_geometry_actual.cpp
 )
 
 add_executable(opendesign_tests ${TEST_SOURCES})
