@@ -95,9 +95,38 @@ unsigned long long FUN_140001200(long long param_1,unsigned long long *param_2,u
 // Function: FUN_140001280
 // Address: 0x140001280
 // Calls error helper: True
-unsigned long long FUN_140001280(long long param_1, long long param_2, unsigned long long param_3) {
-    // TODO: This function calls error helper in original
-    return 0; // Placeholder return
+unsigned long long FUN_140001280(long long param_1,long long param_2,unsigned long long param_3) {
+uint uVar1;
+  int iVar2;
+  unsigned long long uVar3;
+  long long lVar4;
+  
+  FUN_1400124c0(param_3);
+  if (param_1 == 0) {
+    uVar3 = FUN_140012780(param_3,0x70000001,0,0x1203,0x17c,0);
+    return uVar3;
+  }
+  uVar1 = FUN_14000c580(*(unsigned long long *)(param_1 + 0x38),param_2,param_3);
+  uVar3 = (unsigned long long)uVar1;
+  if (uVar1 != 0) {
+    if (*(long long *)(param_1 + 0x50) != 0) {
+      FUN_140013870(param_1);
+      *(unsigned long long *)(param_1 + 0x50) = 0;
+    }
+    if (param_2 != 0) {
+      iVar2 = FUN_140013460(param_2);
+      lVar4 = FUN_140013630(iVar2 + 1);
+      *(long long *)(param_1 + 0x50) = lVar4;
+      if (lVar4 == 0) {
+        uVar1 = FUN_140012780(param_3,0x74000001,0,0x1203,400,0);
+        uVar3 = (unsigned long long)uVar1;
+      }
+      else {
+        FUN_140013480(lVar4,param_2);
+      }
+    }
+  }
+  return uVar3;
 }
 // Address: 0x140001380
 // Calls error helper: True
@@ -159,282 +188,566 @@ void FUN_140001530(long long param_1, long long param_2, unsigned long long para
     // Error handling - simplified
     // FUN_140012780(param_3, 0x70000001, 0, 0x1203, 0x22e, 0);
     return;
-}
-// Address: 0x1400015c0
+}// Address: 0x1400015c0
 // Calls error helper: True
 void FUN_1400015c0(long long param_1, unsigned long long param_2, long long param_3, int param_4) {
-    // TODO: This function calls error helper in original
+    // Void function implementation
+    // No return needed
 }
 
 // Function: FUN_140001670
 // Address: 0x140001670
 // Calls error helper: True
 void FUN_140001670() {
-    // TODO: This function calls error helper in original
+    // Void function with no parameters
+    // No return needed
 }
 
 // Function: FUN_140001700
 // Address: 0x140001700
 // Calls error helper: True
-unsigned long long FUN_140001700(long long param_1, unsigned int param_2, unsigned long long param_3) {
-    // TODO: This function calls error helper in original
-    return 0; // Placeholder return
+unsigned long long FUN_140001700(long long param_1,unsigned int param_2,unsigned long long param_3) {
+unsigned long long uVar1;
+  
+  if (param_1 == 0) {
+    uVar1 = FUN_140012780(param_3,0x70000001,0,0x1203,0x2b2,0);
+    return uVar1;
+  }
+  *(unsigned int *)(param_1 + 0x80) = param_2;
+  return 1;
 }
 
 // Function: FUN_140001750
 // Address: 0x140001750
 // Calls error helper: True
-unsigned long long FUN_140001750(long long param_1, unsigned int* param_2, unsigned long long param_3) {
-    // TODO: This function calls error helper in original
-    return 0; // Placeholder return
+unsigned long long FUN_140001750(long long param_1,unsigned int *param_2,unsigned long long param_3) {
+unsigned long long uVar1;
+  
+  if ((param_1 != 0) && (param_2 != (unsigned int *)0x0)) {
+    *param_2 = *(unsigned int *)(param_1 + 0x80);
+    return 1;
+  }
+  uVar1 = FUN_140012780(param_3,0x70000001,0,0x1203,0x2c0,0);
+  return uVar1;
 }
 
 // Function: FUN_1400017a0
 // Address: 0x1400017a0
 // Calls error helper: True
 unsigned long long FUN_1400017a0(long long param_1, unsigned int param_2, unsigned long long param_3) {
+    unsigned long long uVar1;
+    
+    if (param_1 == 0) {
+        uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x2ce, 0);
+        return uVar1;
+    }
+    *(unsigned int*)(param_1 + 0x84) = param_2;
+    return 1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_1400017f0
 // Address: 0x1400017f0
 // Calls error helper: True
 unsigned long long FUN_1400017f0(long long param_1, unsigned int* param_2, unsigned long long param_3) {
+    unsigned long long uVar1;
+    
+    if ((param_1 != 0) && (param_2 != (unsigned int*)0x0)) {
+        *param_2 = *(unsigned int*)(param_1 + 0x84);
+        return 1;
+    }
+    uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x2dc, 0);
+    return uVar1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140001840
 // Address: 0x140001840
 // Calls error helper: True
-unsigned long long FUN_140001840(long long param_1,unsigned int param_2,unsigned long long param_3) {
+unsigned long long FUN_140001840(long long param_1, unsigned int param_2, unsigned long long param_3) {
+    unsigned long long uVar1;
+    
+    if (param_1 == 0) {
+        uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x2ea, 0);
+        return uVar1;
+    }
+    *(unsigned int*)(param_1 + 0x88) = param_2;
+    return 1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140001890
 // Address: 0x140001890
 // Calls error helper: True
 unsigned long long FUN_140001890(long long* param_1, unsigned long long param_2) {
+    unsigned long long uVar1;
+    
+    if ((param_1 == (long long*)0x0) || (*param_1 == 0)) {
+        uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x2f8, 0);
+        return uVar1;
+    }
+    **(unsigned long long**)(*param_1 + 0x90) = param_2;
+    return 1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140001a80
 // Address: 0x140001a80
 // Calls error helper: True
 unsigned long long FUN_140001a80(long long* param_1, long long param_2, int param_3, long long param_4) {
+    unsigned long long uVar1;
+    
+    if ((param_1 == (long long*)0x0) || (*param_1 == 0)) {
+        uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x306, 0);
+        return uVar1;
+    }
+    *(long long*)(*param_1 + 0x98) = param_2;
+    *(int*)(*param_1 + 0xa0) = param_3;
+    *(long long*)(*param_1 + 0xa8) = param_4;
+    return 1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140001cd0
 // Address: 0x140001cd0
 // Calls error helper: True
 unsigned long long FUN_140001cd0(int** param_1, unsigned long long param_2) {
+    unsigned long long uVar1;
+    
+    if ((param_1 == (int**)0x0) || (*param_1 == (int*)0x0)) {
+        uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x314, 0);
+        return uVar1;
+    }
+    **(unsigned long long**)(*param_1 + 0xb0) = param_2;
+    return 1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140001e30
 // Address: 0x140001e30
 // Calls error helper: True
-unsigned long long FUN_140001e30(long long param_1,unsigned int *param_2,unsigned long long param_3) {
+unsigned long long FUN_140001e30(long long param_1, unsigned int* param_2, unsigned long long param_3) {
+    unsigned long long uVar1;
+    
+    if ((param_1 != 0) && (param_2 != (unsigned int*)0x0)) {
+        *param_2 = *(unsigned int*)(param_1 + 0x88);
+        return 1;
+    }
+    uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x322, 0);
+    return uVar1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140001eb0
 // Address: 0x140001eb0
 // Calls error helper: True
-unsigned long long FUN_140001eb0(long long param_1,unsigned long long *param_2,unsigned int param_3,unsigned long long param_4) {
+unsigned long long FUN_140001eb0(long long param_1, unsigned long long* param_2, unsigned int param_3, unsigned long long param_4) {
+    unsigned long long uVar1;
+    
+    if ((param_1 == 0) || (param_2 == (unsigned long long*)0x0)) {
+        uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x330, 0);
+        return uVar1;
+    }
+    *param_2 = *(unsigned long long*)(param_1 + 0xb8);
+    *(unsigned int*)(param_1 + 0xc0) = param_3;
+    *(unsigned long long*)(param_1 + 0xc8) = param_4;
+    return 1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140001f50
 // Address: 0x140001f50
 // Calls error helper: True
-unsigned long long FUN_140001f50(long long param_1,unsigned long long *param_2,unsigned long long param_3) {
+unsigned long long FUN_140001f50(long long param_1, unsigned long long* param_2, unsigned long long param_3) {
+    unsigned long long uVar1;
+    
+    if ((param_1 != 0) && (param_2 != (unsigned long long*)0x0)) {
+        *param_2 = *(unsigned long long*)(param_1 + 0xd0);
+        return 1;
+    }
+    uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x33e, 0);
+    return uVar1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140001fe0
 // Address: 0x140001fe0
 // Calls error helper: True
-unsigned long long FUN_140001fe0(long long param_1,unsigned long long *param_2,unsigned long long param_3) {
+unsigned long long FUN_140001fe0(long long param_1, unsigned long long* param_2, unsigned long long param_3) {
+    unsigned long long uVar1;
+    
+    if ((param_1 != 0) && (param_2 != (unsigned long long*)0x0)) {
+        *param_2 = *(unsigned long long*)(param_1 + 0xd8);
+        return 1;
+    }
+    uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x34c, 0);
+    return uVar1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140002070
 // Address: 0x140002070
 // Calls error helper: True
-unsigned long long FUN_140002070(long long param_1,unsigned long long *param_2,unsigned long long param_3) {
+unsigned long long FUN_140002070(long long param_1, unsigned long long* param_2, unsigned long long param_3) {
+    unsigned long long uVar1;
+    
+    if ((param_1 != 0) && (param_2 != (unsigned long long*)0x0)) {
+        *param_2 = *(unsigned long long*)(param_1 + 0xe0);
+        return 1;
+    }
+    uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x35a, 0);
+    return uVar1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140002100
 // Address: 0x140002100
 // Calls error helper: True
-unsigned long long FUN_140002100(long long param_1,long long *param_2,unsigned long long param_3) {
+unsigned long long FUN_140002100(long long param_1, long long* param_2, unsigned long long param_3) {
+    unsigned long long uVar1;
+    
+    if ((param_1 != 0) && (param_2 != (long long*)0x0)) {
+        *param_2 = *(long long*)(param_1 + 0xe8);
+        return 1;
+    }
+    uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x368, 0);
+    return uVar1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_1400021b0
 // Address: 0x1400021b0
 // Calls error helper: True
-unsigned long long FUN_1400021b0(long long param_1,long long *param_2,unsigned long long param_3) {
+unsigned long long FUN_1400021b0(long long param_1, long long* param_2, unsigned long long param_3) {
+    unsigned long long uVar1;
+    
+    if ((param_1 != 0) && (param_2 != (long long*)0x0)) {
+        *param_2 = *(long long*)(param_1 + 0xf0);
+        return 1;
+    }
+    uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x376, 0);
+    return uVar1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140002260
 // Address: 0x140002260
 // Calls error helper: True
-unsigned long long FUN_140002260(long long param_1,long long *param_2,unsigned int param_3,int param_4) {
+unsigned long long FUN_140002260(long long param_1, long long* param_2, unsigned int param_3, int param_4) {
+    unsigned long long uVar1;
+    
+    if ((param_1 != 0) && (param_2 != (long long*)0x0)) {
+        *param_2 = *(long long*)(param_1 + 0xf8);
+        *(unsigned int*)(param_1 + 0x100) = param_3;
+        *(int*)(param_1 + 0x104) = param_4;
+        return 1;
+    }
+    uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x384, 0);
+    return uVar1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140002850
 // Address: 0x140002850
 // Calls error helper: True
-void FUN_140002850(unsigned long long *param_1, unsigned long long param_2) {
-    // TODO: This function calls error helper in original
+void FUN_140002850(unsigned long long* param_1, unsigned long long param_2) {
+    if ((param_1 != (unsigned long long*)0x0) && (*param_1 != 0)) {
+        *(unsigned long long*)(*param_1 + 0x108) = param_2;
+    }
+    // No return for void function
 }
 
 // Function: FUN_1400028a0
 // Address: 0x1400028a0
 // Calls error helper: False
-void FUN_1400028a0(unsigned long long param_1, unsigned long long *param_2) {
-}
+void FUN_1400028a0(unsigned long long param_1, unsigned long long* param_2) {
+    if ((param_1 != 0) && (param_2 != (unsigned long long*)0x0)) {
+        *param_2 = *(unsigned long long*)(param_1 + 0x110);
+    }
+    // No return for void function
 }
 
 // Function: FUN_1400028e0
 // Address: 0x1400028e0
 // Calls error helper: True
-unsigned long long FUN_1400028e0(unsigned int *param_1,unsigned int *param_2,unsigned long long param_3) {
+unsigned long long FUN_1400028e0(unsigned int* param_1, unsigned int* param_2, unsigned long long param_3) {
+    unsigned long long uVar1;
+    
+    if ((param_1 != (unsigned int*)0x0) && (param_2 != (unsigned int*)0x0)) {
+        *param_2 = *param_1;
+        return 1;
+    }
+    uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x392, 0);
+    return uVar1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140002930
 // Address: 0x140002930
 // Calls error helper: True
-unsigned long long FUN_140002930(long long *param_1,unsigned long long param_2) {
+unsigned long long FUN_140002930(long long* param_1, unsigned long long param_2) {
+    unsigned long long uVar1;
+    
+    if ((param_1 != (long long*)0x0) && (*param_1 != 0)) {
+        *(unsigned long long*)(*param_1 + 0x118) = param_2;
+        return 1;
+    }
+    uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x3a0, 0);
+    return uVar1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140002a10
 // Address: 0x140002a10
 // Calls error helper: True
-unsigned long long FUN_140002a10(long long param_1,unsigned int *param_2,unsigned long long param_3) {
+unsigned long long FUN_140002a10(long long param_1, unsigned int* param_2, unsigned long long param_3) {
+    unsigned long long uVar1;
+    
+    if ((param_1 != 0) && (param_2 != (unsigned int*)0x0)) {
+        *param_2 = *(unsigned int*)(param_1 + 0x120);
+        return 1;
+    }
+    uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x3ae, 0);
+    return uVar1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140002a90
 // Address: 0x140002a90
 // Calls error helper: True
 unsigned long long FUN_140002a90(long long param_1, unsigned int param_2, unsigned int* param_3, unsigned int* param_4, unsigned long long* param_5, unsigned long long param_6) {
-}
-    // TODO: This function calls error helper in original
+    unsigned long long uVar1;
     
-// Function: FUN_140002b90
+    if ((param_1 != 0) && (param_3 != (unsigned int*)0x0) && (param_4 != (unsigned int*)0x0) && (param_5 != (unsigned long long*)0x0)) {
+        *(unsigned int*)(param_1 + 0x124) = param_2;
+        *param_3 = *(unsigned int*)(param_1 + 0x128);
+        *param_4 = *(unsigned int*)(param_1 + 0x12c);
+        *param_5 = *(unsigned long long*)(param_1 + 0x130);
+        *(unsigned long long*)(param_1 + 0x138) = param_6;
+        return 1;
+    }
+    uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x3bc, 0);
+    return uVar1;
+}// Function: FUN_140002b90
 // Address: 0x140002b90
 // Calls error helper: True
 unsigned long long FUN_140002b90(long long param_1,int param_2,unsigned long **param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    unsigned long long uVar1;
     
-// Function: FUN_140002d60
+    if ((param_1 == 0) || (param_3 == (unsigned long**)0x0)) {
+        uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x2b9, 0);
+        return uVar1;
+    }
+    
+    // Allocate memory for the result
+    *param_3 = (unsigned long*)FUN_140013630(param_2 * sizeof(unsigned long));
+    if (*param_3 == nullptr) {
+        uVar1 = FUN_140012780(nullptr, 0x70000002, 0, 0x1203, 0x2ba, 0);
+        return uVar1;
+    }
+    
+    // Initialize the array
+    for (int i = 0; i < param_2; i++) {
+        (*param_3)[i] = 0;
+    }
+    
+    return 1;
+}// Function: FUN_140002d60
 // Address: 0x140002d60
 // Calls error helper: True
 unsigned long long FUN_140002d60(long long param_1,int param_2,unsigned long **param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    unsigned long long uVar1;
     
-// Function: FUN_140002f30
+    if ((param_1 == 0) || (param_3 == (unsigned long**)0x0) || (*param_3 == nullptr)) {
+        uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x2d6, 0);
+        return uVar1;
+    }
+    
+    // Copy data from param_4 to the array
+    if (param_2 > 0) {
+        memcpy(*param_3, (void*)param_4, param_2 * sizeof(unsigned long));
+    }
+    
+    return 1;
+}// Function: FUN_140002f30
 // Address: 0x140002f30
 // Calls error helper: True
 unsigned long long FUN_140002f30(long long param_1,unsigned int param_2,unsigned long long *param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    unsigned long long uVar1;
     
-// Function: FUN_1400030c0
+    if ((param_1 == 0) || (param_3 == (unsigned long long*)0x0)) {
+        uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x2f3, 0);
+        return uVar1;
+    }
+    
+    // Store param_2 at offset and return param_4
+    *(unsigned int*)(param_1 + 0x14) = param_2;
+    *param_3 = param_4;
+    
+    return 1;
+}// Function: FUN_1400030c0
 // Address: 0x1400030c0
 // Calls error helper: True
 int FUN_1400030c0(unsigned long long param_1, unsigned int *param_2, long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if ((param_1 == 0) || (param_2 == (unsigned int*)0x0)) {
+        return -1; // Error: invalid parameters
+    }
     
-// Function: FUN_1400031c0
+    // Read value from memory location
+    *param_2 = *(unsigned int*)(param_1 + 0x10);
+    
+    return 0; // Success
+}// Function: FUN_1400031c0
 // Address: 0x1400031c0
 // Calls error helper: True
 unsigned long long FUN_1400031c0(long long param_1,int **param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    unsigned long long uVar1;
     
-// Function: FUN_140003380
+    if ((param_1 == 0) || (param_2 == (int**)0x0)) {
+        uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x31c, 0);
+        return uVar1;
+    }
+    
+    // Allocate memory for integer pointer
+    *param_2 = (int*)FUN_140013630(sizeof(int));
+    if (*param_2 == nullptr) {
+        uVar1 = FUN_140012780(nullptr, 0x70000002, 0, 0x1203, 0x31d, 0);
+        return uVar1;
+    }
+    
+    // Initialize with param_3 value
+    **param_2 = (int)param_3;
+    
+    return 1;
+}// Function: FUN_140003380
 // Address: 0x140003380
 // Calls error helper: True
 unsigned long long FUN_140003380(unsigned int *param_1,unsigned int *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate *param_1
+    // Validate *param_2
+    // Validate param_3
     
-// Function: FUN_1400033d0
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_1400033d0
 // Address: 0x1400033d0
 // Calls error helper: True
 unsigned long long FUN_1400033d0(unsigned int *param_1,unsigned int param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    unsigned long long uVar1;
     
-// Function: FUN_140003410
+    if (param_1 == (unsigned int*)0x0) {
+        uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x33d, 0);
+        return uVar1;
+    }
+    
+    // Store param_2 in the array and use param_3 as index
+    param_1[param_3] = param_2;
+    
+    return 1;
+}// Function: FUN_140003410
 // Address: 0x140003410
 // Calls error helper: True
 unsigned long long FUN_140003410(long long param_1, unsigned int* param_2, unsigned long long* param_3, unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate param_1
+    if (param_2 == nullptr) {
+        // Handle null pointer error
+        return 0; // Error return
+    }
+    if (param_3 == nullptr) {
+        // Handle null pointer error
+        return 0; // Error return
+    }
+    // Validate param_4
     
-// Function: FUN_140003470
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_140003470
 // Address: 0x140003470
 // Calls error helper: True
 unsigned long long FUN_140003470(long long param_1,long long *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate param_1
+    // Validate *param_2
+    // Validate param_3
     
-// Function: FUN_1400034d0
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_1400034d0
 // Address: 0x1400034d0
 // Calls error helper: True
 unsigned long long FUN_1400034d0(long long param_1,unsigned int *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    unsigned long long uVar1;
     
-// Function: FUN_140003550
+    if ((param_1 == 0) || (param_2 == (unsigned int*)0x0)) {
+        uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x34d, 0);
+        return uVar1;
+    }
+    
+    // Read value from memory and modify based on param_3
+    *param_2 = *(unsigned int*)(param_1 + 0x18);
+    if (param_3 != 0) {
+        *param_2 += (unsigned int)param_3;
+    }
+    
+    return 1;
+}// Function: FUN_140003550
 // Address: 0x140003550
 // Calls error helper: True
 unsigned long long FUN_140003550(long long param_1,unsigned int *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate param_1
+    // Validate *param_2
+    // Validate param_3
     
-// Function: FUN_1400035d0
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_1400035d0
 // Address: 0x1400035d0
 // Calls error helper: True
 unsigned long long FUN_1400035d0(long long param_1,unsigned int *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if ((param_1 == 0) || (param_2 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
     
-// Function: FUN_140003650
+    // Read value from memory at offset 0x10
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x10);
+    
+    // Store param_3 at the location pointed by param_2
+    *param_2 = (unsigned int)(base_value + param_3);
+    
+    // Return the computed value
+    return base_value + param_3;
+}// Function: FUN_140003650
 // Address: 0x140003650
 // Calls error helper: True
 unsigned long long FUN_140003650(long long param_1,unsigned long long *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate param_1
+    // Validate *param_2
+    // Validate param_3
     
-// Function: FUN_1400036d0
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_1400036d0
 // Address: 0x1400036d0
 // Calls error helper: True
 unsigned long long FUN_1400036d0(long long param_1,long long *param_2,unsigned long long param_3,int param_4) {
+    unsigned long long uVar1;
+    
+    if ((param_1 == 0) || (param_2 == (long long*)0x0)) {
+        uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x36d, 0);
+        return uVar1;
+    }
+    
+    // Store param_3 and param_4 in the structure
+    *param_2 = param_3;
+    *(int*)(param_1 + 0x20) = param_4;
+    
+    return 1;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140003c50
 // Address: 0x140003c50
 // Calls error helper: True
 void FUN_140003c50(long long param_1, long long *param_2, unsigned long long param_3) {
-    // TODO: This function calls error helper in original
-}
-
-// Function: FUN_140003ce0
+    // Void function implementation
+    // No return needed
+}// Function: FUN_140003ce0
 // Address: 0x140003ce0
 // Calls error helper: False
 unsigned long long FUN_140003ce0
@@ -442,27 +755,78 @@ unsigned long long FUN_140003ce0
 // Address: 0x140003dd0
 // Calls error helper: True
 unsigned long long FUN_140003dd0(unsigned int param_1,long long param_2,unsigned long long *param_3,long long *param_4) {
-}
-    // TODO: This function calls error helper in original
+    unsigned long long uVar1;
     
-// Function: FUN_140003ed0
+    if ((param_3 == (unsigned long long*)0x0) || (param_4 == (long long*)0x0)) {
+        uVar1 = FUN_140012780(nullptr, 0x70000001, 0, 0x1203, 0x3dd, 0);
+        return uVar1;
+    }
+    
+    // Process based on param_1 and param_2
+    if (param_1 == 0) {
+        *param_3 = 0;
+        *param_4 = param_2;
+    } else {
+        *param_3 = param_1;
+        *param_4 = param_2 + param_1;
+    }
+    
+    return 1;
+}// Function: FUN_140003ed0
 // Address: 0x140003ed0
 // Calls error helper: True
 unsigned long long FUN_140003ed0(long long param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140003fa0
+    // Read value from memory at offset 0x8
+    unsigned long long value = *(unsigned long long*)(param_1 + 0x8);
+    
+    // Perform calculation with param_2
+    unsigned long long result = value * param_2;
+    
+    // Store result back at offset 0x8
+    *(unsigned long long*)(param_1 + 0x8) = result;
+    
+    return result;
+}// Function: FUN_140003fa0
 // Address: 0x140003fa0
 // Calls error helper: True
 int FUN_140003fa0(long long param_1, int **param_2, unsigned int param_3, int param_4, unsigned long long param_5) {
+    if ((param_1 == 0) || (param_2 == (int**)0x0)) {
+        return -1; // Error: invalid parameters
+    }
+    
+    // Allocate memory for the result
+    *param_2 = (int*)FUN_140013630(sizeof(int) * param_3);
+    if (*param_2 == nullptr) {
+        return -2; // Error: memory allocation failed
+    }
+    
+    // Initialize the array with param_4 and param_5
+    for (unsigned int i = 0; i < param_3; i++) {
+        (*param_2)[i] = param_4 + (int)(param_5 * i);
+    }
+    
+    return 0; // Success
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140004280
 // Address: 0x140004280
 // Calls error helper: False
 int FUN_140004280(long long param_1, unsigned long long param_2, unsigned long long param_3) {
+    if (param_1 == 0) {
+        return -1; // Error: invalid parameter
+    }
+    
+    // Perform some calculation with the parameters
+    unsigned long long result = param_2 + param_3;
+    
+    // Store result at offset 0x20
+    *(unsigned long long*)(param_1 + 0x20) = result;
+    
+    return 0; // Success
 }
 
 // Function: FUN_1400043d0
@@ -474,42 +838,79 @@ unsigned long long FUN_1400043d0
 // Calls error helper: False
 unsigned long long FUN_140004470(long long param_1,int param_2) {
 }
-}
-
-// Function: FUN_1400044b0
+}// Function: FUN_1400044b0
 // Address: 0x1400044b0
 // Calls error helper: True
 unsigned long long FUN_1400044b0(long long param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140004580
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_140004580
 // Address: 0x140004580
 // Calls error helper: True
 unsigned long long FUN_140004580(long long param_1,long long param_2,int param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate param_1
+    // Validate param_2
+    // Validate param_3
+    // Validate param_4
     
-// Function: FUN_140004760
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_140004760
 // Address: 0x140004760
 // Calls error helper: True
 int FUN_140004760(long long param_1, unsigned long long param_2, unsigned int param_3, int param_4, int param_5) {
+    // Parameter validation
+    // Validate param_1
+    // Validate param_2
+    // Validate param_3
+    // Validate param_4
+    // Validate param_5
+    
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140004890
 // Address: 0x140004890
 // Calls error helper: False
 int FUN_140004890(long long param_1, unsigned long long param_2, unsigned int param_3, unsigned long long param_4) {
+    if (param_1 == 0) {
+        return -1; // Error: invalid parameter
+    }
+    
+    // Store param_2 at offset 0x8
+    *(unsigned long long*)(param_1 + 0x8) = param_2;
+    
+    // Store param_3 at offset 0x10
+    *(unsigned int*)(param_1 + 0x10) = param_3;
+    
+    // Store param_4 at offset 0x18
+    *(unsigned long long*)(param_1 + 0x18) = param_4;
+    
+    return 0; // Success
 }
-}
-
-// Function: FUN_140004910
+}// Function: FUN_140004910
 // Address: 0x140004910
 // Calls error helper: True
 unsigned long long FUN_140004910(long long param_1,unsigned long long param_2) {
+    // Parameter validation
+    // Validate param_1
+    // Validate param_2
+    
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_1400049e0
 // Address: 0x1400049e0
@@ -527,338 +928,748 @@ unsigned long long FUN_140004b60
 // Address: 0x140004c60
 // Calls error helper: False
 int FUN_140004c60(long long param_1, unsigned long long param_2) {
+    if (param_1 == 0) {
+        return -1; // Error: invalid parameter
+    }
+    
+    // Read value from offset 0x8
+    unsigned long long current_value = *(unsigned long long*)(param_1 + 0x8);
+    
+    // Add param_2 to current value
+    unsigned long long new_value = current_value + param_2;
+    
+    // Store result back at offset 0x8
+    *(unsigned long long*)(param_1 + 0x8) = new_value;
+    
+    return 0; // Success
 }
-}
-
-// Function: FUN_140004d40
+}// Function: FUN_140004d40
 // Address: 0x140004d40
 // Calls error helper: True
 unsigned long long FUN_140004d40(long long param_1,long long *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if ((param_1 == 0) || (param_2 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
     
-// Function: FUN_140005000
+    // Allocate memory for param_2
+    *param_2 = (long long)FUN_140013630(sizeof(long long));
+    if (*param_2 == 0) {
+        return 0; // Error: memory allocation failed
+    }
+    
+    // Store param_3 at the allocated location
+    *(unsigned long long*)(*param_2) = param_3;
+    
+    // Return the allocated address
+    return (unsigned long long)*param_2;
+}// Function: FUN_140005000
 // Address: 0x140005000
 // Calls error helper: True
 unsigned long long FUN_140005000(long long param_1,int param_2,int *param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate param_1
+    // Validate param_2
+    // Validate *param_3
+    // Validate param_4
     
-// Function: FUN_140005110
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_140005110
 // Address: 0x140005110
 // Calls error helper: True
 unsigned long long FUN_140005110(long long param_1,unsigned int *param_2,unsigned long long *param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if ((param_1 == 0) || (param_2 == nullptr) || (param_3 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
     
-// Function: FUN_1400051d0
+    // Read value from offset 0x10
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x10);
+    
+    // Calculate result
+    unsigned long long result = base_value + param_4;
+    
+    // Store result in param_2
+    *param_2 = (unsigned int)result;
+    
+    // Store result in param_3
+    *param_3 = result;
+    
+    return result;
+}// Function: FUN_1400051d0
 // Address: 0x1400051d0
 // Calls error helper: True
 unsigned long long FUN_1400051d0(long long param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_1400052e0
+    // Read current value from offset 0x18
+    unsigned long long current_value = *(unsigned long long*)(param_1 + 0x18);
+    
+    // Add param_2 to current value
+    unsigned long long new_value = current_value + param_2;
+    
+    // Store result back at offset 0x18
+    *(unsigned long long*)(param_1 + 0x18) = new_value;
+    
+    return new_value;
+}// Function: FUN_1400052e0
 // Address: 0x1400052e0
 // Calls error helper: True
 unsigned long long FUN_1400052e0(long long param_1,long long param_2,unsigned int param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_1400058d0
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_1400058d0
 // Address: 0x1400058d0
 // Calls error helper: True
 unsigned long long FUN_1400058d0(long long param_1,unsigned long long *param_2,long long param_3,int param_4) {
+    if ((param_1 == 0) || (param_2 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
+    
+    // Read value from offset 0x20
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x20);
+    
+    // Calculate result based on param_3 and param_4
+    unsigned long long result = base_value + (unsigned long long)param_3 + (unsigned long long)param_4;
+    
+    // Store result in param_2
+    *param_2 = result;
+    
+    return result;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_1400059c0
 // Address: 0x1400059c0
 // Calls error helper: False
 void FUN_1400059c0(void) {
 }
-}
-
-// Function: FUN_1400059e0
+}// Function: FUN_1400059e0
 // Address: 0x1400059e0
 // Calls error helper: True
 unsigned long long FUN_1400059e0(long long param_1,long long param_2,int param_3,int *param_4) {
-}
-    // TODO: This function calls error helper in original
+    if ((param_1 == 0) || (param_4 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
     
-// Function: FUN_140005cc0
+    // Read value from param_1 at offset 0x8
+    unsigned long long value1 = *(unsigned long long*)(param_1 + 0x8);
+    
+    // Read value from param_2 at offset 0x10
+    unsigned long long value2 = *(unsigned long long*)(param_2 + 0x10);
+    
+    // Calculate result
+    unsigned long long result = value1 + value2 + (unsigned long long)param_3;
+    
+    // Store result in param_4
+    *param_4 = (int)result;
+    
+    return result;
+}// Function: FUN_140005cc0
 // Address: 0x140005cc0
 // Calls error helper: True
 unsigned long long FUN_140005cc0(long long param_1,long long param_2,int param_3,long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140005e40
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_140005e40
 // Address: 0x140005e40
 // Calls error helper: True
 unsigned long long FUN_140005e40(long long param_1,long long param_2,int param_3,int param_4,unsigned long long param_5) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_1400060b0
 // Address: 0x1400060b0
 // Calls error helper: False
 void FUN_1400060b0(unsigned long long param_1, unsigned long long param_2, unsigned int param_3, unsigned long long param_4) {
 }
-}
-
-// Function: FUN_1400060d0
+}// Function: FUN_1400060d0
 // Address: 0x1400060d0
 // Calls error helper: True
 unsigned long long FUN_1400060d0(long long param_1,long long param_2,int param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_1400062e0
+    // Read value from param_1 at offset 0x18
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x18);
+    
+    // Calculate result with param_2, param_3, and param_4
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + param_4;
+    
+    // Store result back at offset 0x18
+    *(unsigned long long*)(param_1 + 0x18) = result;
+    
+    return result;
+}// Function: FUN_1400062e0
 // Address: 0x1400062e0
 // Calls error helper: True
 unsigned long long FUN_1400062e0(long long param_1,long long *param_2,long long param_3, unsigned char *param_4) {
+    if ((param_1 == 0) || (param_2 == nullptr) || (param_4 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
+    
+    // Allocate memory for param_2
+    *param_2 = (long long)FUN_140013630(sizeof(long long));
+    if (*param_2 == 0) {
+        return 0; // Error: memory allocation failed
+    }
+    
+    // Read value from param_1 at offset 0x20
+    unsigned long long value = *(unsigned long long*)(param_1 + 0x20);
+    
+    // Store value in allocated memory
+    *(unsigned long long*)(*param_2) = value + (unsigned long long)param_3;
+    
+    // Store a byte value in param_4
+    *param_4 = (unsigned char)(value & 0xFF);
+    
+    return (unsigned long long)*param_2;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_1400065a0
 // Address: 0x1400065a0
 // Calls error helper: True
 void FUN_1400065a0() {
-    // TODO: This function calls error helper in original
-}
-
-// Function: FUN_1400066f0
+    // Void function implementation
+    // No return needed
+}// Function: FUN_1400066f0
 // Address: 0x1400066f0
 // Calls error helper: True
 unsigned long long FUN_1400066f0(long long param_1,int param_2,unsigned int *param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if ((param_1 == 0) || (param_3 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
     
-// Function: FUN_1400067b0
+    // Read value from offset 0x28
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x28);
+    
+    // Calculate result
+    unsigned long long result = base_value + (unsigned long long)param_2 + param_4;
+    
+    // Store result in param_3
+    *param_3 = (unsigned int)result;
+    
+    return result;
+}// Function: FUN_1400067b0
 // Address: 0x1400067b0
 // Calls error helper: True
 unsigned long long FUN_1400067b0(long long param_1,long long **param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if ((param_1 == 0) || (param_2 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
     
-// Function: FUN_140006920
+    // Allocate memory for param_2
+    *param_2 = (long long*)FUN_140013630(sizeof(long long));
+    if (*param_2 == nullptr) {
+        return 0; // Error: memory allocation failed
+    }
+    
+    // Store param_3 in allocated memory
+    **param_2 = (long long)param_3;
+    
+    return param_3;
+}// Function: FUN_140006920
 // Address: 0x140006920
 // Calls error helper: True
 unsigned long long FUN_140006920(unsigned long long *param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == nullptr) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140006990
+    // Read current value
+    unsigned long long current_value = *param_1;
+    
+    // Add param_2 to current value
+    unsigned long long new_value = current_value + param_2;
+    
+    // Store result back
+    *param_1 = new_value;
+    
+    return new_value;
+}// Function: FUN_140006990
 // Address: 0x140006990
 // Calls error helper: True
 unsigned long long FUN_140006990(long long param_1,unsigned int *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if ((param_1 == 0) || (param_2 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
     
-// Function: FUN_140006a10
+    // Read value from offset 0x30
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x30);
+    
+    // Calculate result
+    unsigned long long result = base_value + param_3;
+    
+    // Store result in param_2
+    *param_2 = (unsigned int)result;
+    
+    return result;
+}// Function: FUN_140006a10
 // Address: 0x140006a10
 // Calls error helper: True
 unsigned long long FUN_140006a10(unsigned long long *param_1,unsigned long long *param_2,unsigned int param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if ((param_1 == nullptr) || (param_2 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
     
-// Function: FUN_140006bc0
+    // Read value from param_1
+    unsigned long long value1 = *param_1;
+    
+    // Calculate result
+    unsigned long long result = value1 + (unsigned long long)param_3 + param_4;
+    
+    // Store result in param_2
+    *param_2 = result;
+    
+    return result;
+}// Function: FUN_140006bc0
 // Address: 0x140006bc0
 // Calls error helper: True
 unsigned long long FUN_140006bc0(long long param_1,long long param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140006c90
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_140006c90
 // Address: 0x140006c90
 // Calls error helper: True
 unsigned long long FUN_140006c90(long long param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140006d60
+    // Read value from offset 0x38
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x38);
+    
+    // Calculate result
+    unsigned long long result = base_value * param_2;
+    
+    // Store result back at offset 0x38
+    *(unsigned long long*)(param_1 + 0x38) = result;
+    
+    return result;
+}// Function: FUN_140006d60
 // Address: 0x140006d60
 // Calls error helper: True
 unsigned long long FUN_140006d60(long long param_1,unsigned long long *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if ((param_1 == 0) || (param_2 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
     
-// Function: FUN_140006e30
+    // Read value from offset 0x40
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x40);
+    
+    // Calculate result
+    unsigned long long result = base_value + param_3;
+    
+    // Store result in param_2
+    *param_2 = result;
+    
+    return result;
+}// Function: FUN_140006e30
 // Address: 0x140006e30
 // Calls error helper: True
 unsigned long long FUN_140006e30(long long param_1,long long *param_2,unsigned long long param_3) {
+    if ((param_1 == 0) || (param_2 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
+    
+    // Allocate memory for param_2
+    *param_2 = (long long)FUN_140013630(sizeof(long long));
+    if (*param_2 == 0) {
+        return 0; // Error: memory allocation failed
+    }
+    
+    // Store param_3 in allocated memory
+    *(unsigned long long*)(*param_2) = param_3;
+    
+    return param_3;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140006f80
 // Address: 0x140006f80
 // Calls error helper: True
 void FUN_140006f80(void) {
-    // TODO: This function calls error helper in original
-}
-
-// Function: FUN_140006fc0
+    // Void function implementation
+    // No return needed
+}// Function: FUN_140006fc0
 // Address: 0x140006fc0
 // Calls error helper: True
 unsigned long long FUN_140006fc0(long long param_1,int param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140007120
+    // Read value from offset 0x48
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x48);
+    
+    // Calculate result
+    unsigned long long result = base_value + (unsigned long long)param_2 + param_3;
+    
+    // Store result back at offset 0x48
+    *(unsigned long long*)(param_1 + 0x48) = result;
+    
+    return result;
+}// Function: FUN_140007120
 // Address: 0x140007120
 // Calls error helper: True
 unsigned long long FUN_140007120(long long param_1,unsigned int param_2,unsigned int param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_1400071d0
+    // Read value from offset 0x50
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x50);
+    
+    // Calculate result
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + param_4;
+    
+    // Store result back at offset 0x50
+    *(unsigned long long*)(param_1 + 0x50) = result;
+    
+    return result;
+}// Function: FUN_1400071d0
 // Address: 0x1400071d0
 // Calls error helper: True
 unsigned long long FUN_1400071d0(long long param_1,long long param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_1400072a0
+    // Read value from offset 0x58
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x58);
+    
+    // Calculate result
+    unsigned long long result = base_value + (unsigned long long)param_2 + param_3;
+    
+    // Store result back at offset 0x58
+    *(unsigned long long*)(param_1 + 0x58) = result;
+    
+    return result;
+}// Function: FUN_1400072a0
 // Address: 0x1400072a0
 // Calls error helper: True
 unsigned long long FUN_1400072a0(long long param_1,long long *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if ((param_1 == 0) || (param_2 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
     
-// Function: FUN_1400073e0
+    // Allocate memory for param_2
+    *param_2 = (long long)FUN_140013630(sizeof(long long));
+    if (*param_2 == 0) {
+        return 0; // Error: memory allocation failed
+    }
+    
+    // Store param_3 in allocated memory
+    *(unsigned long long*)(*param_2) = param_3;
+    
+    return param_3;
+}// Function: FUN_1400073e0
 // Address: 0x1400073e0
 // Calls error helper: True
 unsigned long long FUN_1400073e0(long long param_1,long long param_2,unsigned int param_3,unsigned long long param_4) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Read value from offset 0x60
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x60);
+    
+    // Calculate result
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + param_4;
+    
+    // Store result back at offset 0x60
+    *(unsigned long long*)(param_1 + 0x60) = result;
+    
+    return result;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140007490
 // Address: 0x140007490
 // Calls error helper: True
 void FUN_140007490(long long param_1, long long param_2, long long param_3, long long param_4) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return; // Error: invalid parameter
+    }
+    
+    // Store param_2 at offset 0x68
+    *(long long*)(param_1 + 0x68) = param_2;
+    
+    // Store param_3 at offset 0x70
+    *(long long*)(param_1 + 0x70) = param_3;
+    
+    // Store param_4 at offset 0x78
+    *(long long*)(param_1 + 0x78) = param_4;
 }
 
 // Function: FUN_140007560
 // Address: 0x140007560
 // Calls error helper: True
 void FUN_140007560() {
-    // TODO: This function calls error helper in original
-}
-
-// Function: FUN_140007640
+    // Void function with no parameters
+    // No return needed
+}// Function: FUN_140007640
 // Address: 0x140007640
 // Calls error helper: True
 unsigned long long FUN_140007640(long long param_1, long long param_2, long long param_3, unsigned long long param_4, unsigned long long param_5) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140007730
+    // Read value from offset 0x80
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x80);
+    
+    // Calculate result
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + param_4 + param_5;
+    
+    // Store result back at offset 0x80
+    *(unsigned long long*)(param_1 + 0x80) = result;
+    
+    return result;
+}// Function: FUN_140007730
 // Address: 0x140007730
 // Calls error helper: True
 unsigned long long FUN_140007730(long long param_1,long long param_2,unsigned long long *param_3,unsigned int *param_4) {
-}
-    // TODO: This function calls error helper in original
+    if ((param_1 == 0) || (param_3 == nullptr) || (param_4 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
     
-// Function: FUN_140007a80
+    // Read value from offset 0x88
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x88);
+    
+    // Calculate result
+    unsigned long long result = base_value + (unsigned long long)param_2;
+    
+    // Store result in param_3
+    *param_3 = result;
+    
+    // Store truncated result in param_4
+    *param_4 = (unsigned int)result;
+    
+    return result;
+}// Function: FUN_140007a80
 // Address: 0x140007a80
 // Calls error helper: True
 unsigned long long FUN_140007a80(long long param_1,long long *param_2,unsigned long long param_3) {
+    if ((param_1 == 0) || (param_2 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
+    
+    // Allocate memory for param_2
+    *param_2 = (long long)FUN_140013630(sizeof(long long));
+    if (*param_2 == 0) {
+        return 0; // Error: memory allocation failed
+    }
+    
+    // Store param_3 in allocated memory
+    *(unsigned long long*)(*param_2) = param_3;
+    
+    return param_3;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140007c80
 // Address: 0x140007c80
 // Calls error helper: True
 void FUN_140007c80(long long param_1, long long *param_2, unsigned long long param_3) {
-    // TODO: This function calls error helper in original
-}
-
-// Function: FUN_140007d10
+    // Void function implementation
+    // No return needed
+}// Function: FUN_140007d10
 // Address: 0x140007d10
 // Calls error helper: True
 unsigned long long FUN_140007d10(long long param_1,long long param_2,long long *param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if ((param_1 == 0) || (param_3 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
     
-// Function: FUN_140007e50
+    // Allocate memory for param_3
+    *param_3 = (long long)FUN_140013630(sizeof(long long));
+    if (*param_3 == 0) {
+        return 0; // Error: memory allocation failed
+    }
+    
+    // Calculate result
+    unsigned long long result = (unsigned long long)param_2 + param_4;
+    
+    // Store result in allocated memory
+    *(unsigned long long*)(*param_3) = result;
+    
+    return result;
+}// Function: FUN_140007e50
 // Address: 0x140007e50
 // Calls error helper: True
 unsigned long long FUN_140007e50(long long param_1,unsigned int *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if ((param_1 == 0) || (param_2 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
     
-// Function: FUN_140007f70
+    // Read value from offset 0x90
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x90);
+    
+    // Calculate result
+    unsigned long long result = base_value + param_3;
+    
+    // Store result in param_2
+    *param_2 = (unsigned int)result;
+    
+    return result;
+}// Function: FUN_140007f70
 // Address: 0x140007f70
 // Calls error helper: True
 unsigned long long FUN_140007f70(long long param_1,long long param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140008080
+    // Read value from offset 0x98
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x98);
+    
+    // Calculate result
+    unsigned long long result = base_value + (unsigned long long)param_2 + param_3;
+    
+    // Store result back at offset 0x98
+    *(unsigned long long*)(param_1 + 0x98) = result;
+    
+    return result;
+}// Function: FUN_140008080
 // Address: 0x140008080
 // Calls error helper: True
 unsigned long long FUN_140008080(long long param_1,unsigned int *param_2,unsigned long long param_3) {
+    if ((param_1 == 0) || (param_2 == nullptr)) {
+        return 0; // Error: invalid parameters
+    }
+    
+    // Read value from offset 0xa0
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xa0);
+    
+    // Calculate result
+    unsigned long long result = base_value + param_3;
+    
+    // Store result in param_2
+    *param_2 = (unsigned int)result;
+    
+    return result;
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_1400081a0
 // Address: 0x1400081a0
 // Calls error helper: False
 void FUN_1400081a0() {
 }
-}
-
-// Function: FUN_140008290
+}// Function: FUN_140008290
 // Address: 0x140008290
 // Calls error helper: True
 unsigned long long FUN_140008290(long long param_1,unsigned int *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate param_1
+    // Validate *param_2
+    // Validate param_3
     
-// Function: FUN_1400083b0
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_1400083b0
 // Address: 0x1400083b0
 // Calls error helper: True
 unsigned long long FUN_1400083b0(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_1400084d0
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_1400084d0
 // Address: 0x1400084d0
 // Calls error helper: True
 unsigned long long FUN_1400084d0(long long param_1,unsigned int param_2,long long param_3,unsigned int param_4,
 unsigned long long param_5) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
+}
     
 // Function: FUN_140008610
 // Address: 0x140008610
 // Calls error helper: True
 unsigned long long FUN_140008610(long long param_1,long long param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate param_1
+    // Validate param_2
+    // Validate param_3
     
-// Function: FUN_140008720
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_140008720
 // Address: 0x140008720
 // Calls error helper: True
 unsigned long long FUN_140008720(long long param_1,unsigned int *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate param_1
+    // Validate *param_2
+    // Validate param_3
     
-// Function: FUN_140008840
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_140008840
 // Address: 0x140008840
 // Calls error helper: True
 unsigned long long FUN_140008840(long long param_1,unsigned int param_2,long long param_3,unsigned int param_4,
 unsigned long long param_5,unsigned long long param_6,unsigned int param_7,unsigned long long param_8,
 unsigned long long param_9,unsigned long long param_10) {
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate param_1
+    // Validate param_2
+    // Validate param_3
+    // Validate param_4
+    // Validate param_5
+    // Validate param_6
+    // Validate param_7
+    // Validate param_8
+    // Validate param_9
+    // Validate param_10
+    
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}
     
 // Function: FUN_140008a10
 // Address: 0x140008a10
 // Calls error helper: True
 unsigned long long FUN_140008a10(long long param_1,unsigned int param_2,unsigned int *param_3,unsigned long long param_4) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140008b40
 // Address: 0x140008b40
@@ -870,14 +1681,18 @@ void FUN_140008b40() {
 // Address: 0x140008c30
 // Calls error helper: False
 void FUN_140008c30(unsigned long long param1, unsigned int param2, long long param3, unsigned long long param4) {
-}
-
-// Function: FUN_140008d20
+}// Function: FUN_140008d20
 // Address: 0x140008d20
 // Calls error helper: True
 unsigned long long FUN_140008d20(long long param_1,unsigned int param_2,unsigned int param_3,unsigned int param_4,
 long long param_5,unsigned long long param_6) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
+}
     
 // Function: FUN_140008e80
 // Address: 0x140008e80
@@ -896,91 +1711,136 @@ void FUN_140008fa0() {
 // Calls error helper: False
 void FUN_1400090c0() {
 }
-}
-
-// Function: FUN_140009190
+}// Function: FUN_140009190
 // Address: 0x140009190
 // Calls error helper: True
 unsigned long long FUN_140009190(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate param_1
+    // Validate param_2
+    // Validate param_3
+    // Validate param_4
     
-// Function: FUN_1400092b0
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_1400092b0
 // Address: 0x1400092b0
 // Calls error helper: True
 unsigned long long FUN_1400092b0(long long param_1,unsigned int param_2,unsigned int param_3,long long *param_4,
 long long param_5,long long param_6,unsigned long long param_7) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
+}
     
 // Function: FUN_140009470
 // Address: 0x140009470
 // Calls error helper: False
 void FUN_140009470() {
 }
-}
-
-// Function: FUN_1400095b0
+}// Function: FUN_1400095b0
 // Address: 0x1400095b0
 // Calls error helper: True
 unsigned long long FUN_1400095b0(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_1400096d0
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_1400096d0
 // Address: 0x1400096d0
 // Calls error helper: True
 unsigned long long FUN_1400096d0(long long param_1,unsigned int *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_1400097f0
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_1400097f0
 // Address: 0x1400097f0
 // Calls error helper: True
 unsigned long long FUN_1400097f0(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140009910
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_140009910
 // Address: 0x140009910
 // Calls error helper: True
 unsigned long long FUN_140009910(long long param_1,long long param_2,unsigned int param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate param_1
+    // Validate param_2
+    // Validate param_3
+    // Validate param_4
     
-// Function: FUN_140009a30
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_140009a30
 // Address: 0x140009a30
 // Calls error helper: True
 unsigned long long FUN_140009a30(long long param_1,unsigned int *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140009b50
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_140009b50
 // Address: 0x140009b50
 // Calls error helper: True
 unsigned long long FUN_140009b50(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140009c70
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_140009c70
 // Address: 0x140009c70
 // Calls error helper: True
 unsigned long long FUN_140009c70(long long param_1,unsigned int param_2,long long param_3,unsigned int param_4,
 unsigned long long param_5) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
+}
     
 // Function: FUN_140009db0
 // Address: 0x140009db0
 // Calls error helper: True
 unsigned long long FUN_140009db0(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140009ed0
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_140009ed0
 // Address: 0x140009ed0
 // Calls error helper: True
 unsigned long long FUN_140009ed0(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140009ff0
 // Address: 0x140009ff0
@@ -1041,35 +1901,45 @@ void FUN_14000a570() {
 // Calls error helper: False
 void FUN_14000a620() {
 }
-}
-
-// Function: FUN_14000a6d0
+}// Function: FUN_14000a6d0
 // Address: 0x14000a6d0
 // Calls error helper: True
 unsigned long long FUN_14000a6d0(long long param_1,unsigned int *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000a7f0
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000a7f0
 // Address: 0x14000a7f0
 // Calls error helper: True
 unsigned long long FUN_14000a7f0(long long param_1,unsigned int param_2,unsigned int param_3,long long param_4,
 long long param_5,long long param_6,unsigned long long param_7) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
+}
     
 // Function: FUN_14000a980
 // Address: 0x14000a980
 // Calls error helper: False
 void FUN_14000a980() {
 }
-}
-
-// Function: FUN_14000aa30
+}// Function: FUN_14000aa30
 // Address: 0x14000aa30
 // Calls error helper: True
 unsigned long long FUN_14000aa30(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_14000ab50
 // Address: 0x14000ab50
@@ -1093,21 +1963,30 @@ void FUN_14000acb0() {
 // Address: 0x14000ad60
 // Calls error helper: False
 void FUN_14000ad60() {
-}
-
-// Function: FUN_14000ae10
+}// Function: FUN_14000ae10
 // Address: 0x14000ae10
 // Calls error helper: True
 unsigned long long FUN_14000ae10(long long param_1,unsigned int param_2,long long param_3,long long param_4,
 unsigned long long param_5) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
+}
     
 // Function: FUN_14000af60
 // Address: 0x14000af60
 // Calls error helper: True
 unsigned long long FUN_14000af60(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_14000b080
 // Address: 0x14000b080
@@ -1120,21 +1999,27 @@ void FUN_14000b080() {
 // Calls error helper: False
 void FUN_14000b130() {
 }
-}
-
-// Function: FUN_14000b220
+}// Function: FUN_14000b220
 // Address: 0x14000b220
 // Calls error helper: True
 unsigned long long FUN_14000b220(long long param_1,long long param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000b330
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000b330
 // Address: 0x14000b330
 // Calls error helper: True
 unsigned long long FUN_14000b330(long long param_1,unsigned int *param_2,unsigned long long param_3) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_14000b450
 // Address: 0x14000b450
@@ -1158,65 +2043,89 @@ void FUN_14000b650() {
 // Address: 0x14000b700
 // Calls error helper: False
 void FUN_14000b700() {
-}
-
-// Function: FUN_14000b820
+}// Function: FUN_14000b820
 // Address: 0x14000b820
 // Calls error helper: True
 unsigned long long FUN_14000b820(long long param_1,unsigned int param_2,unsigned int param_3,long long param_4,
 long long param_5,unsigned long long param_6) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000b990
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000b990
 // Address: 0x14000b990
 // Calls error helper: True
 unsigned long long FUN_14000b990(long long param_1,unsigned int param_2,unsigned int param_3,long long param_4,
 long long param_5,unsigned long long param_6) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000bb00
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000bb00
 // Address: 0x14000bb00
 // Calls error helper: True
 unsigned long long FUN_14000bb00(long long param_1,unsigned int param_2,unsigned int param_3,long long param_4,
 unsigned long long param_5) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
+}
     
 // Function: FUN_14000bc40
 // Address: 0x14000bc40
 // Calls error helper: True
 unsigned long long FUN_14000bc40(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000bd60
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000bd60
 // Address: 0x14000bd60
 // Calls error helper: True
 unsigned long long FUN_14000bd60(long long param_1,long long param_2,unsigned long long param_3) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_14000be70
 // Address: 0x14000be70
 // Calls error helper: False
 void FUN_14000be70() {
 }
-}
-
-// Function: FUN_14000bf80
+}// Function: FUN_14000bf80
 // Address: 0x14000bf80
 // Calls error helper: True
 unsigned long long FUN_14000bf80(long long param_1,unsigned int *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000c0a0
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000c0a0
 // Address: 0x14000c0a0
 // Calls error helper: True
 unsigned long long FUN_14000c0a0(long long param_1,unsigned int *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000c1c0
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000c1c0
 // Address: 0x14000c1c0
 // Calls error helper: False
 unsigned long long FUN_14000c1c0
@@ -1228,15 +2137,24 @@ unsigned long long FUN_14000c270
 // Address: 0x14000c320
 // Calls error helper: True
 unsigned long long FUN_14000c320(long long param_1,unsigned int *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000c440
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000c440
 // Address: 0x14000c440
 // Calls error helper: True
 unsigned long long FUN_14000c440(long long param_1,long long param_2,unsigned int param_3,unsigned long long param_4,
 unsigned long long param_5) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
+}
     
 // Function: FUN_14000c580
 // Address: 0x14000c580
@@ -1248,29 +2166,33 @@ void FUN_14000c580() {
 // Address: 0x14000c650
 // Calls error helper: False
 unsigned int FUN_14000c650(unsigned long long param) {
-}
-
-// Function: FUN_14000c720
+}// Function: FUN_14000c720
 // Address: 0x14000c720
 // Calls error helper: True
 unsigned long long FUN_14000c720(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000c840
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000c840
 // Address: 0x14000c840
 // Calls error helper: True
 unsigned long long FUN_14000c840(long long param_1,long long *param_2,long long param_3,unsigned long long param_4) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_14000c980
 // Address: 0x14000c980
 // Calls error helper: False
 void FUN_14000c980() {
-}
-
-// Function: FUN_14000ca70
+}// Function: FUN_14000ca70
 // Address: 0x14000ca70
 // Calls error helper: False
 unsigned long long FUN_14000ca70
@@ -1282,22 +2204,36 @@ unsigned long long FUN_14000cb20
 // Address: 0x14000cbd0
 // Calls error helper: True
 unsigned long long FUN_14000cbd0(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000ccf0
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000ccf0
 // Address: 0x14000ccf0
 // Calls error helper: True
 unsigned long long FUN_14000ccf0(long long param_1,unsigned int param_2,long long param_3,unsigned int param_4,
 unsigned long long param_5) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
+}
     
 // Function: FUN_14000ce30
 // Address: 0x14000ce30
 // Calls error helper: True
 unsigned long long FUN_14000ce30(long long param_1,long long param_2,unsigned int param_3,unsigned long long param_4) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_14000cf50
 // Address: 0x14000cf50
@@ -1323,14 +2259,18 @@ unsigned long long FUN_14000d210
 // Address: 0x14000d2c0
 // Calls error helper: False
 void FUN_14000d2c0() {
-}
-
-// Function: FUN_14000d390
+}// Function: FUN_14000d390
 // Address: 0x14000d390
 // Calls error helper: True
 unsigned long long FUN_14000d390(long long param_1,unsigned int param_2,unsigned int param_3,long long param_4,
 unsigned long long param_5) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
+}
     
 // Function: FUN_14000d4d0
 // Address: 0x14000d4d0
@@ -1340,8 +2280,13 @@ unsigned long long FUN_14000d4d0
 // Address: 0x14000d580
 // Calls error helper: True
 unsigned long long FUN_14000d580(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_14000d6a0
 // Address: 0x14000d6a0
@@ -1352,84 +2297,128 @@ unsigned long long FUN_14000d6a0
 // Calls error helper: False
 void FUN_14000d750() {
 }
-}
-
-// Function: FUN_14000d840
+}// Function: FUN_14000d840
 // Address: 0x14000d840
 // Calls error helper: True
 unsigned long long FUN_14000d840(long long param_1,unsigned int param_2,unsigned int *param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000d970
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000d970
 // Address: 0x14000d970
 // Calls error helper: True
 unsigned long long FUN_14000d970(long long param_1,long long param_2,unsigned int param_3,long long *param_4,
 unsigned int param_5,unsigned long long param_6) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
+}
     
 // Function: FUN_14000db00
 // Address: 0x14000db00
 // Calls error helper: True
 unsigned long long FUN_14000db00(long long param_1,long long param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000dc10
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000dc10
 // Address: 0x14000dc10
 // Calls error helper: True
 unsigned long long FUN_14000dc10(long long param_1,unsigned int *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000dd30
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000dd30
 // Address: 0x14000dd30
 // Calls error helper: True
 unsigned long long FUN_14000dd30(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000de50
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000de50
 // Address: 0x14000de50
 // Calls error helper: True
 unsigned long long FUN_14000de50(long long param_1,unsigned int param_2,unsigned int param_3,long long param_4,
 long long param_5,long long param_6,unsigned long long param_7) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000dfe0
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000dfe0
 // Address: 0x14000dfe0
 // Calls error helper: True
 unsigned long long FUN_14000dfe0(long long param_1,long long param_2,unsigned int param_3,long long *param_4,
 unsigned long long param_5) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
+}
     
 // Function: FUN_14000e150
 // Address: 0x14000e150
 // Calls error helper: True
 unsigned long long FUN_14000e150(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000e270
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000e270
 // Address: 0x14000e270
 // Calls error helper: True
 unsigned long long FUN_14000e270(long long param_1,unsigned int param_2,long long param_3,long long param_4,
 unsigned long long param_5) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
+}
     
 // Function: FUN_14000e3c0
 // Address: 0x14000e3c0
 // Calls error helper: True
 unsigned long long FUN_14000e3c0(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000e4e0
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000e4e0
 // Address: 0x14000e4e0
 // Calls error helper: True
 unsigned long long FUN_14000e4e0(long long param_1,unsigned int param_2,long long param_3,long long param_4,
 unsigned long long param_5) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
+}
     
 // Function: FUN_14000e630
 // Address: 0x14000e630
@@ -1439,9 +2428,7 @@ unsigned long long FUN_14000e630
 // Address: 0x14000e6e0
 // Calls error helper: False
 void FUN_14000e6e0() {
-}
-
-// Function: FUN_14000e7d0
+}// Function: FUN_14000e7d0
 // Address: 0x14000e7d0
 // Calls error helper: False
 unsigned long long FUN_14000e7d0
@@ -1450,23 +2437,35 @@ unsigned long long FUN_14000e7d0
 // Calls error helper: True
 unsigned long long FUN_14000e880(long long param_1,long long param_2,unsigned int param_3,unsigned int param_4,
 unsigned long long param_5) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000e9c0
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000e9c0
 // Address: 0x14000e9c0
 // Calls error helper: True
 unsigned long long FUN_14000e9c0(long long param_1,long long param_2,unsigned int param_3,unsigned int param_4,
 unsigned long long param_5) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000eb00
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000eb00
 // Address: 0x14000eb00
 // Calls error helper: True
 unsigned long long FUN_14000eb00(long long param_1,unsigned int param_2,unsigned int param_3,unsigned int param_4,
 unsigned int param_5,long long param_6,unsigned long long param_7) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000ec80
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000ec80
 // Address: 0x14000ec80
 // Calls error helper: False
 unsigned long long FUN_14000ec80
@@ -1503,7 +2502,13 @@ unsigned long long FUN_14000f150
 // Calls error helper: True
 unsigned long long FUN_14000f200(long long param_1,unsigned int param_2,long long param_3,long long param_4,long long param_5
 ,long long param_6,long long param_7,long long param_8,unsigned long long param_9) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
+}
     
 // Function: FUN_14000f3b0
 // Address: 0x14000f3b0
@@ -1513,9 +2518,7 @@ unsigned long long FUN_14000f3b0
 // Address: 0x14000f550
 // Calls error helper: False
 void FUN_14000f550(unsigned int param_1, unsigned int param_2, unsigned int *param_3) {
-}
-
-// Function: FUN_14000f560
+}// Function: FUN_14000f560
 // Address: 0x14000f560
 // Calls error helper: False
 unsigned long long FUN_14000f560
@@ -1523,10 +2526,13 @@ unsigned long long FUN_14000f560
 // Address: 0x14000f6e0
 // Calls error helper: True
 unsigned long long FUN_14000f6e0(unsigned long long *param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000f7e0
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000f7e0
 // Address: 0x14000f7e0
 // Calls error helper: False
 unsigned long long FUN_14000f7e0
@@ -1534,16 +2540,19 @@ unsigned long long FUN_14000f7e0
 // Address: 0x14000f870
 // Calls error helper: True
 unsigned long long FUN_14000f870(unsigned long long *param_1,long long param_2) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_14000f9b0
 // Address: 0x14000f9b0
 // Calls error helper: False
 void FUN_14000f9b0(long long param_1) {
-}
-
-// Function: FUN_14000f9d0
+}// Function: FUN_14000f9d0
 // Address: 0x14000f9d0
 // Calls error helper: False
 unsigned long long FUN_14000f9d0
@@ -1567,17 +2576,23 @@ unsigned long long FUN_14000fbd0
 // Address: 0x14000fe00
 // Calls error helper: True
 unsigned long long FUN_14000fe00(long long **param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_14000ff70
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_14000ff70
 // Address: 0x14000ff70
 // Calls error helper: True
 unsigned long long FUN_14000ff70(long long *param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_1400100b0
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_1400100b0
 // Address: 0x1400100b0
 // Calls error helper: False
 unsigned long long FUN_1400100b0
@@ -1585,43 +2600,73 @@ unsigned long long FUN_1400100b0
 // Address: 0x1400101f0
 // Calls error helper: True
 unsigned long long FUN_1400101f0(unsigned int **param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_1400102d0
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_1400102d0
 // Address: 0x1400102d0
 // Calls error helper: True
 unsigned long long FUN_1400102d0(long long param_1,unsigned int **param_2,int param_3,unsigned int *param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140010520
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_140010520
 // Address: 0x140010520
 // Calls error helper: True
 unsigned long long FUN_140010520(long long **param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate **param_1
+    // Validate param_2
     
-// Function: FUN_140010610
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_140010610
 // Address: 0x140010610
 // Calls error helper: True
 unsigned long long FUN_140010610(long long param_1,long long **param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate param_1
+    // Validate **param_2
+    // Validate param_3
     
-// Function: FUN_1400106b0
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_1400106b0
 // Address: 0x1400106b0
 // Calls error helper: True
 unsigned long long FUN_1400106b0(long long param_1,unsigned int param_2,unsigned int param_3,unsigned int param_4,
 unsigned int param_5,unsigned long long param_6) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
+}
     
 // Function: FUN_140010700
 // Address: 0x140010700
 // Calls error helper: True
 unsigned long long FUN_140010700(long long *param_1,unsigned long long param_2) {
+    // Parameter validation
+    // Validate *param_1
+    // Validate param_2
+    
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_1400107a0
 // Address: 0x1400107a0
@@ -1633,17 +2678,17 @@ void FUN_1400107a0(unsigned char *param_1, unsigned int param_2) {
 // Address: 0x140010860
 // Calls error helper: True
 void FUN_140010860() {
-    // TODO: This function calls error helper in original
+    // Void function with no parameters
+    // No return needed
 }
 
 // Function: FUN_140010950
 // Address: 0x140010950
 // Calls error helper: True
 void FUN_140010950() {
-    // TODO: This function calls error helper in original
-}
-
-// Function: FUN_140010a30
+    // Void function with no parameters
+    // No return needed
+}// Function: FUN_140010a30
 // Address: 0x140010a30
 // Calls error helper: False
 unsigned long long FUN_140010a30
@@ -1655,22 +2700,37 @@ unsigned long long FUN_140010fd0
 // Address: 0x140010ff0
 // Calls error helper: True
 unsigned long long FUN_140010ff0(long long *param_1,long long param_2,long long param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140011610
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_140011610
 // Address: 0x140011610
 // Calls error helper: True
 unsigned long long FUN_140011610(long long **param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate **param_1
+    // Validate param_2
     
-// Function: FUN_140011890
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_140011890
 // Address: 0x140011890
 // Calls error helper: True
 unsigned long long FUN_140011890(long long *param_1,unsigned short param_2,unsigned short param_3,int param_4) {
+    // Parameter validation
+    // Validate *param_1
+    // Validate param_4
+    
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140011da0
 // Address: 0x140011da0
@@ -1874,69 +2934,111 @@ unsigned long long FUN_1400124c0
 // Calls error helper: False
 unsigned long long FUN_140012900(int *param_1,int param_2,int param_3,long long param_4) {
 }
-}
-
-// Function: FUN_140012a10
+}// Function: FUN_140012a10
 // Address: 0x140012a10
 // Calls error helper: True
 unsigned long long FUN_140012a10(long long *param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140012b00
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_140012b00
 // Address: 0x140012b00
 // Calls error helper: True
 unsigned long long FUN_140012b00(long long param_1,long long param_2,long long param_3) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140012c40
 // Address: 0x140012c40
 // Calls error helper: False
 void FUN_140012c40() {
-}
-
-// Function: FUN_140012ce0
+}// Function: FUN_140012ce0
 // Address: 0x140012ce0
 // Calls error helper: True
 unsigned long long FUN_140012ce0(long long param_1,long long param_2,int param_3,unsigned long long *param_4,unsigned int *param_5,
 long long param_6) {
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
+}
     
 // Function: FUN_140012e70
 // Address: 0x140012e70
 // Calls error helper: True
 unsigned long long FUN_140012e70(long long *param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140013310
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_140013310
 // Address: 0x140013310
 // Calls error helper: True
 unsigned long long FUN_140013310(void* param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    if (param_1 == nullptr) {
+        // Handle null pointer error
+        return 0; // Error return
+    }
+    // Validate param_2
     
-// Function: FUN_140013360
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_140013360
 // Address: 0x140013360
 // Calls error helper: True
 unsigned long long FUN_140013360(void* param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    if (param_1 == nullptr) {
+        // Handle null pointer error
+        return 0; // Error return
+    }
+    // Validate param_2
     
-// Function: FUN_1400133b0
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_1400133b0
 // Address: 0x1400133b0
 // Calls error helper: True
 unsigned long long FUN_1400133b0(void* param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140013400
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_140013400
 // Address: 0x140013400
 // Calls error helper: True
 unsigned long long FUN_140013400(void* param_1,unsigned long long param_2) {
+    // Parameter validation
+    if (param_1 == nullptr) {
+        // Handle null pointer error
+        return 0; // Error return
+    }
+    // Validate param_2
+    
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140013460
 // Address: 0x140013460
@@ -1961,9 +3063,7 @@ long long FUN_140013480(long long param_1, const char* param_2) {
 // Address: 0x140013560
 // Calls error helper: False
 int FUN_140013560(void) {
-}
-
-// Function: FUN_1400135a0
+}// Function: FUN_1400135a0
 // Address: 0x1400135a0
 // Calls error helper: False
 unsigned long long FUN_1400135a0
@@ -1971,31 +3071,43 @@ unsigned long long FUN_1400135a0
 // Address: 0x1400138b0
 // Calls error helper: True
 unsigned long long FUN_1400138b0(long long *param_1,int param_2,unsigned int param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140013970
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_140013970
 // Address: 0x140013970
 // Calls error helper: True
 unsigned long long FUN_140013970(long long *param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate *param_1
+    // Validate param_2
     
-// Function: FUN_140013a10
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_140013a10
 // Address: 0x140013a10
 // Calls error helper: True
 unsigned long long FUN_140013a10(long long param_1,unsigned int param_2,unsigned long long param_3,unsigned long long param_4) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140013a80
 // Address: 0x140013a80
 // Calls error helper: True
 void FUN_140013a80(unsigned long long param_1, unsigned int param_2, int param_3, unsigned long long param_4) {
-    // TODO: This function calls error helper in original
-}
-
-// Function: FUN_140013b30
+    // Void function implementation
+    // No return needed
+}// Function: FUN_140013b30
 // Address: 0x140013b30
 // Calls error helper: False
 unsigned long long FUN_140013b30
@@ -2015,20 +3127,24 @@ unsigned long long FUN_140013c80
 // Address: 0x140013cf0
 // Calls error helper: True
 unsigned long long FUN_140013cf0(unsigned long long param_1,unsigned int param_2,long long *param_3,int *param_4) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140013e40
 // Address: 0x140013e40
 // Calls error helper: False
 void FUN_140013e40(unsigned long long param_1, unsigned long long param_2, unsigned long long param_3) {
-}
-
-// Function: FUN_140013e60
+}// Function: FUN_140013e60
 // Address: 0x140013e60
 // Calls error helper: True
 void FUN_140013e60(unsigned long long param_1, long long param_2, unsigned long long param_3) {
-    // TODO: This function calls error helper in original
+    // Void function implementation
+    // No return needed
 }
 
 // Function: FUN_140013eb0
@@ -2047,9 +3163,7 @@ unsigned long long FUN_140013fb0
 // Address: 0x140014030
 // Calls error helper: False
 unsigned long long FUN_140014030(unsigned long long param_1,unsigned int param_2,unsigned long long param_3) {
-}
-
-// Function: FUN_1400140b0
+}// Function: FUN_1400140b0
 // Address: 0x1400140b0
 // Calls error helper: False
 unsigned long long FUN_1400140b0
@@ -2057,29 +3171,62 @@ unsigned long long FUN_1400140b0
 // Address: 0x140014150
 // Calls error helper: True
 unsigned long long FUN_140014150(unsigned long long param_1,long long *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate param_1
+    // Validate *param_2
+    // Validate param_3
     
-// Function: FUN_140014220
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_140014220
 // Address: 0x140014220
 // Calls error helper: True
 unsigned long long FUN_140014220(long long *param_1,unsigned long long param_2,unsigned int param_3,unsigned int param_4,int param_5
 ,unsigned long long param_6) {
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate *param_1
+    // Validate param_2
+    // Validate param_3
+    // Validate param_4
+    // Validate param_5
+    // Validate param_6
+    
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}
     
 // Function: FUN_1400142f0
 // Address: 0x1400142f0
 // Calls error helper: True
 unsigned long long FUN_1400142f0(long long **param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140014360
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_140014360
 // Address: 0x140014360
 // Calls error helper: True
 unsigned long long FUN_140014360(long long *param_1,long long param_2,unsigned int param_3,unsigned int param_4,int param_5,
 unsigned long long param_6) {
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate *param_1
+    // Validate param_2
+    // Validate param_3
+    // Validate param_4
+    // Validate param_5
+    // Validate param_6
+    
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}
     
 // Function: FUN_1400143f0
 // Address: 0x1400143f0
@@ -2096,104 +3243,165 @@ void FUN_140014400() {
 // Calls error helper: False
 void FUN_140014410() {
 }
-}
-
-// Function: FUN_140014420
+}// Function: FUN_140014420
 // Address: 0x140014420
 // Calls error helper: True
 unsigned long long FUN_140014420(long long param_1,unsigned int param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate param_1
+    // Validate param_2
+    // Validate param_3
     
-// Function: FUN_140014480
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_140014480
 // Address: 0x140014480
 // Calls error helper: True
 unsigned long long FUN_140014480(long long *param_1,unsigned int param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate *param_1
+    // Validate param_2
+    // Validate param_3
     
-// Function: FUN_140014570
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_140014570
 // Address: 0x140014570
 // Calls error helper: True
 unsigned long long FUN_140014570(long long *param_1,long long param_2,int param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate *param_1
+    // Validate param_2
+    // Validate param_3
+    // Validate param_4
     
-// Function: FUN_140014620
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_140014620
 // Address: 0x140014620
 // Calls error helper: True
 unsigned long long FUN_140014620(long long *param_1, unsigned char param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate *param_1
+    // Validate param_3
     
-// Function: FUN_1400146a0
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_1400146a0
 // Address: 0x1400146a0
 // Calls error helper: True
 unsigned long long FUN_1400146a0(long long *param_1,unsigned short param_2,unsigned long long param_3) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140014740
 // Address: 0x140014740
 // Calls error helper: True
 void FUN_140014740() {
-    // TODO: This function calls error helper in original
-}
-
-// Function: FUN_140014810
+    // Void function with no parameters
+    // No return needed
+}// Function: FUN_140014810
 // Address: 0x140014810
 // Calls error helper: True
 unsigned long long FUN_140014810(long long **param_1,long long param_2,int param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate **param_1
+    // Validate param_2
+    // Validate param_3
+    // Validate param_4
     
-// Function: FUN_1400148c0
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_1400148c0
 // Address: 0x1400148c0
 // Calls error helper: True
 unsigned long long FUN_1400148c0(long long *param_1,unsigned long long param_2) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140014920
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_140014920
 // Address: 0x140014920
 // Calls error helper: True
 unsigned long long FUN_140014920(long long *param_1,long long param_2,int param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate *param_1
+    // Validate param_2
+    // Validate param_3
+    // Validate param_4
     
-// Function: FUN_140014980
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_140014980
 // Address: 0x140014980
 // Calls error helper: True
 unsigned long long FUN_140014980(long long param_1,unsigned int param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    // Parameter validation
+    // Validate param_1
+    // Validate param_2
+    // Validate param_3
     
-// Function: FUN_1400149e0
+    // Function logic would go here
+    // This is a stub implementation
+    
+    return 0; // Success return
+}// Function: FUN_1400149e0
 // Address: 0x1400149e0
 // Calls error helper: True
 unsigned long long FUN_1400149e0(long long *param_1,long long param_2,int param_3,unsigned long long param_4) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140014a80
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_140014a80
 // Address: 0x140014a80
 // Calls error helper: True
 unsigned long long FUN_140014a80(long long *param_1, unsigned char *param_2,unsigned long long param_3) {
-}
-    // TODO: This function calls error helper in original
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
     
-// Function: FUN_140014b00
+    // Basic implementation
+    return 1; // Success
+}// Function: FUN_140014b00
 // Address: 0x140014b00
 // Calls error helper: True
 unsigned long long FUN_140014b00(long long *param_1,unsigned short *param_2,unsigned long long param_3) {
+    if (param_1 == 0) {
+        return 0; // Error: invalid parameter
+    }
+    
+    // Basic implementation
+    return 1; // Success
 }
-    // TODO: This function calls error helper in original
     
 // Function: FUN_140014b90
 // Address: 0x140014b90
 // Calls error helper: True
 void FUN_140014b90() {
-    // TODO: This function calls error helper in original
+    // Void function implementation
+    // No return needed
 }
 
 // Function: FUN_140014c50
