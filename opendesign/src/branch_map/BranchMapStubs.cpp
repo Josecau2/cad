@@ -1,5 +1,6 @@
-#include "branch_map/BranchMapStubs.h"
+#include "BranchMapStubs.h"
 #include<cstring>
+#include <ctime>
 
 namespace branch_map {
 
@@ -1633,25 +1634,45 @@ int FUN_140004280(long long param_1, unsigned long long param_2, unsigned long l
 // Address: 0x1400043d0
 // Calls error helper: False
 unsigned long long FUN_1400043d0(unsigned long long param_1, unsigned long long param_2, unsigned int param_3, unsigned int param_4) {
-    // Calculate result based on parameters
-    unsigned long long result = param_1 + param_2 + (unsigned long long)param_3 + (unsigned long long)param_4;
-    return result;
+    // Decompiled pattern:
+    // local_18[0] = 0;
+    // uVar2 = FUN_1400097f0(param_1,param_5,local_18,param_6);
+    // if (uVar2 != 0) { uVar1 = FUN_140002260(param_1,param_2,param_4,param_3,local_18[0],param_6); FUN_140009a30(param_1,local_18,0); }
+    // Since header provides only 4 params, we map missing decompiled extras to defaults.
+    unsigned long long uVar2;
+    unsigned int local_18[1];
+    local_18[0] = 0;
+    // Default placeholders for omitted decompiled parameters
+    unsigned int param_5 = 0; // category/type selector
+    unsigned long long param_6 = 0; // context
+    uVar2 = FUN_1400097f0((long long)param_1, param_5, (long long)local_18, param_6);
+    if ((int)uVar2 != 0) {
+        unsigned int uVar1 = (unsigned int)FUN_140002260((long long)param_1, (long long*)param_2, param_4, (int)param_3);
+        uVar2 = (unsigned long long)uVar1;
+        FUN_140009a30((long long)param_1, (unsigned int*)local_18, 0);
+    }
+    return uVar2;
 }
 // Function: FUN_140004470
 // Address: 0x140004470
 // Calls error helper: False
 unsigned long long FUN_140004470(long long param_1,int param_2) {
-    if (param_1 == 0) {
-        return 0; // Error: invalid parameter
+    // Decompiled logic scans an array of ints at [param_1+0x220] with count at [param_1+0x21c].
+    if (param_1 != 0) {
+        int* piVar = *(int**)(param_1 + 0x220);
+        if (piVar != (int*)0x0) {
+            unsigned int i = 0;
+            unsigned int count = *(unsigned int*)(param_1 + 0x21c);
+            while (i < count) {
+                if ((*piVar != 0) && (*piVar == param_2)) {
+                    return 1;
+                }
+                ++i;
+                ++piVar;
+            }
+        }
     }
-    
-    // Read value from offset 0x8
-    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x8);
-    
-    // Calculate result
-    unsigned long long result = base_value + (unsigned long long)param_2;
-    
-    return result;
+    return 0;
 }
 }// Function: FUN_1400044b0
 // Address: 0x1400044b0
@@ -1835,15 +1856,89 @@ unsigned long long FUN_140004910(long long param_1,unsigned long long param_2) {
 // Function: FUN_1400049e0
 // Address: 0x1400049e0
 // Calls error helper: False
-unsigned long long FUN_1400049e0
+unsigned long long FUN_1400049e0(long long param_1, long long* param_2) {
+    // Find slot for current thread in array [param_1+0x230], count at [param_1+0x22c]
+    // Using 0 as placeholder for thread id
+    unsigned int threadId = 0;
+    if (*(int*)(param_1 + 0x22c) == 0) return 0;
+    unsigned long long idx = 0;
+    long long offset = 0;
+    while (idx < *(unsigned int*)(param_1 + 0x22c)) {
+        long long entry = *(long long*)(offset + *(long long*)(param_1 + 0x230));
+        if (entry != 0) {
+            unsigned int local_res8[1] = {0};
+            int ok = (int)FUN_1400028e0((unsigned int*)entry, local_res8, 0);
+            if (ok != 0 && threadId == local_res8[0]) {
+                *param_2 = *(long long*)(param_1 + 0x230) + idx * 8;
+                return 1;
+            }
+        }
+        idx++; offset += 8;
+    }
+    return 0;
+}
 // Function: FUN_140004a80
 // Address: 0x140004a80
 // Calls error helper: False
-unsigned long long FUN_140004a80
+unsigned long long FUN_140004a80(long long param_1, long long param_2, unsigned long long param_3) {
+    // Try to replace slot for current thread; else append via FUN_140004910
+    unsigned int threadId = 0;
+    unsigned long long count = *(unsigned int*)(param_1 + 0x22c);
+    if (count != 0) {
+        for (unsigned long long i = 0, off = 0; i < count; ++i, off += 8) {
+            long long entry = *(long long*)(off + *(long long*)(param_1 + 0x230));
+            if (entry != 0) {
+                unsigned int local_res8[1] = {0};
+                int ok = (int)FUN_1400028e0((unsigned int*)entry, local_res8, 0);
+                if (ok != 0 && threadId == local_res8[0]) {
+                    long long* slot = (long long*)(*(long long*)(param_1 + 0x230) + i * 8);
+                    if (slot != nullptr && *slot != 0) {
+                        FUN_140002930(slot, 0);
+                        *slot = param_2;
+                        return 0;
+                    }
+                    break;
+                }
+            }
+        }
+    }
+    unsigned long long uVar = FUN_140004910(param_1, param_3);
+    if ((int)uVar != 0) {
+        *(long long*)(*(long long*)(param_1 + 0x230) + (unsigned long long)*(unsigned int*)(param_1 + 0x22c) * 8) = param_2;
+        *(int*)(param_1 + 0x22c) = *(int*)(param_1 + 0x22c) + 1;
+    }
+    return uVar;
+}
 // Function: FUN_140004b60
 // Address: 0x140004b60
 // Calls error helper: False
-unsigned long long FUN_140004b60
+unsigned long long FUN_140004b60(long long param_1, unsigned long long param_2) {
+    // Remove entry for current thread if present
+    unsigned int threadId = 0;
+    unsigned long long count = *(unsigned int*)(param_1 + 0x22c);
+    if (count == 0) return 1;
+    for (unsigned long long i = 0, off = 0; i < count; ++i, off += 8) {
+        long long entry = *(long long*)(off + *(long long*)(param_1 + 0x230));
+        unsigned int idx = (unsigned int)i;
+        if (entry != 0) {
+            unsigned int local_res8[1] = {0};
+            int ok = (int)FUN_1400028e0((unsigned int*)entry, local_res8, param_2);
+            if (ok != 0 && threadId == local_res8[0]) {
+                unsigned long long uVar = FUN_140002930(*(long long*)(param_1 + 0x230) + i * 8, param_2);
+                if ((int)uVar == 0) return uVar;
+                if (idx < *(int*)(param_1 + 0x22c) - 1U) {
+                    FUN_1400134f0(*(long long*)(param_1 + 0x230) + i * 8,
+                                  *(long long*)(param_1 + 0x230) + (unsigned long long)(idx + 1) * 8,
+                                  (*(int*)(param_1 + 0x22c) - idx) * 8 + -8);
+                }
+                *(int*)(param_1 + 0x22c) = *(int*)(param_1 + 0x22c) + -1;
+                *(unsigned long long*)(*(long long*)(param_1 + 0x230) + (unsigned long long)*(unsigned int*)(param_1 + 0x22c) * 8) = 0;
+                return uVar & 0xffffffffULL;
+            }
+        }
+    }
+    return 1;
+}
 // Function: FUN_140004c60
 // Address: 0x140004c60
 // Calls error helper: False
@@ -2009,7 +2104,7 @@ unsigned long long FUN_1400058d0(long long param_1,unsigned long long *param_2,l
 // Calls error helper: False
 void FUN_1400059c0(void) {
 }
-// Function: FUN_1400059e0
+}// Function: FUN_1400059e0
 // Address: 0x1400059e0
 // Calls error helper: True
 unsigned long long FUN_1400059e0(long long param_1,long long param_2,int param_3,int *param_4) {
@@ -2048,7 +2143,6 @@ unsigned long long FUN_140005cc0(long long param_1,long long param_2,int param_3
     *(unsigned long long*)(param_1 + 0x78) = result;
     
     return result;
-}
 }// Function: FUN_140005e40
 // Address: 0x140005e40
 // Calls error helper: True
@@ -2222,16 +2316,8 @@ unsigned long long FUN_140006bc0(long long param_1,long long param_2,unsigned lo
         return 0; // Error: invalid parameter
     }
     
-    // Read value from offset 0x88
-    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x88);
-    
-    // Calculate result with parameters
-    unsigned long long result = base_value + (unsigned long long)param_2 + param_3;
-    
-    // Store result back at offset 0x88
-    *(unsigned long long*)(param_1 + 0x88) = result;
-    
-    return result;
+    // Basic implementation
+    return 1; // Success
 }// Function: FUN_140006c90
 // Address: 0x140006c90
 // Calls error helper: True
@@ -2583,7 +2669,6 @@ unsigned int FUN_1400081a0(long long param_1, unsigned int param_2, unsigned int
     }
     return 0;
 }
-}
 }// Function: FUN_140008290
 // Address: 0x140008290
 // Calls error helper: True
@@ -2720,8 +2805,7 @@ unsigned long long FUN_140008610(long long param_1,long long param_2,unsigned lo
         }
     }
     return uVar3;
-}
-// Function: FUN_140008720
+}// Function: FUN_140008720
 // Address: 0x140008720
 // Calls error helper: True
 unsigned long long FUN_140008720(long long param_1,unsigned int *param_2,unsigned long long param_3) {
@@ -2778,6 +2862,8 @@ unsigned long long param_9,unsigned long long param_10) {
     }
     return uVar3;
 }
+    
+// Function: FUN_140008a10
 // Address: 0x140008a10
 // Calls error helper: True
 unsigned long long FUN_140008a10(long long param_1,unsigned int param_2,unsigned int *param_3,unsigned long long param_4) {
@@ -2818,16 +2904,8 @@ long long param_5,unsigned long long param_6) {
         return 0; // Error: invalid parameter
     }
     
-    // Read value from offset 0xd0
-    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xd0);
-    
-    // Calculate result with parameters
-    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + (unsigned long long)param_4 + (unsigned long long)param_5 + param_6;
-    
-    // Store result back at offset 0xd0
-    *(unsigned long long*)(param_1 + 0xd0) = result;
-    
-    return result;
+    // Basic implementation
+    return 1; // Success
 }
     
 // Function: FUN_140008e80
@@ -2986,18 +3064,8 @@ unsigned long long FUN_140009a30(long long param_1,unsigned int *param_2,unsigne
         return 0; // Error: invalid parameter
     }
     
-    // Read value from offset 0xb8
-    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xb8);
-    
-    // Calculate result with param_3
-    unsigned long long result = base_value + param_3;
-    
-    // Store result in param_2 if provided
-    if (param_2 != nullptr) {
-        *param_2 = (unsigned int)result;
-    }
-    
-    return result;
+    // Basic implementation
+    return 1; // Success
 }// Function: FUN_140009b50
 // Address: 0x140009b50
 // Calls error helper: True
@@ -3017,16 +3085,8 @@ unsigned long long param_5) {
         return 0; // Error: invalid parameter
     }
     
-    // Read value from offset 0xd8
-    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xd8);
-    
-    // Calculate result with parameters
-    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + (unsigned long long)param_4 + param_5;
-    
-    // Store result back at offset 0xd8
-    *(unsigned long long*)(param_1 + 0xd8) = result;
-    
-    return result;
+    // Basic implementation
+    return 1; // Success
 }
     
 // Function: FUN_140009db0
@@ -3037,16 +3097,8 @@ unsigned long long FUN_140009db0(long long param_1,unsigned int param_2,long lon
         return 0; // Error: invalid parameter
     }
     
-    // Read value from offset 0xe0
-    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xe0);
-    
-    // Calculate result with parameters
-    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + param_4;
-    
-    // Store result back at offset 0xe0
-    *(unsigned long long*)(param_1 + 0xe0) = result;
-    
-    return result;
+    // Basic implementation
+    return 1; // Success
 }// Function: FUN_140009ed0
 // Address: 0x140009ed0
 // Calls error helper: True
@@ -3155,16 +3207,8 @@ long long param_5,long long param_6,unsigned long long param_7) {
         return 0; // Error: invalid parameter
     }
     
-    // Read value from offset 0xc8
-    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xc8);
-    
-    // Calculate result with parameters
-    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + (unsigned long long)param_4 + (unsigned long long)param_5 + (unsigned long long)param_6 + param_7;
-    
-    // Store result back at offset 0xc8
-    *(unsigned long long*)(param_1 + 0xc8) = result;
-    
-    return result;
+    // Basic implementation
+    return 1; // Success
 }
     
 // Function: FUN_14000a980
@@ -3180,8 +3224,16 @@ unsigned long long FUN_14000aa30(long long param_1,unsigned int param_2,long lon
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0xf8
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xf8);
+    
+    // Calculate result with parameters
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + param_4;
+    
+    // Store result back at offset 0xf8
+    *(unsigned long long*)(param_1 + 0xf8) = result;
+    
+    return result;
 }
     
 // Function: FUN_14000ab50
@@ -3215,8 +3267,16 @@ unsigned long long param_5) {
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0x100
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x100);
+    
+    // Calculate result with parameters
+    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + (unsigned long long)param_4 + param_5;
+    
+    // Store result back at offset 0x100
+    *(unsigned long long*)(param_1 + 0x100) = result;
+    
+    return result;
 }
     
 // Function: FUN_14000af60
@@ -3227,16 +3287,8 @@ unsigned long long FUN_14000af60(long long param_1,unsigned int param_2,long lon
         return 0; // Error: invalid parameter
     }
     
-    // Read value from offset 0xf0
-    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xf0);
-    
-    // Calculate result with parameters
-    unsigned long long result = base_value + (unsigned long long)param_2 + (unsigned long long)param_3 + param_4;
-    
-    // Store result back at offset 0xf0
-    *(unsigned long long*)(param_1 + 0xf0) = result;
-    
-    return result;
+    // Basic implementation
+    return 1; // Success
 }
     
 // Function: FUN_14000b080
@@ -3258,8 +3310,16 @@ unsigned long long FUN_14000b220(long long param_1,long long param_2,unsigned lo
         return 0; // Error: invalid parameter
     }
     
-    // Basic implementation
-    return 1; // Success
+    // Read value from offset 0x108
+    unsigned long long base_value = *(unsigned long long*)(param_1 + 0x108);
+    
+    // Calculate result with parameters
+    unsigned long long result = base_value + (unsigned long long)param_2 + param_3;
+    
+    // Store result back at offset 0x108
+    *(unsigned long long*)(param_1 + 0x108) = result;
+    
+    return result;
 }// Function: FUN_14000b330
 // Address: 0x14000b330
 // Calls error helper: True
@@ -3268,18 +3328,8 @@ unsigned long long FUN_14000b330(long long param_1,unsigned int *param_2,unsigne
         return 0; // Error: invalid parameter
     }
     
-    // Read value from offset 0xf8
-    unsigned long long base_value = *(unsigned long long*)(param_1 + 0xf8);
-    
-    // Calculate result with param_3
-    unsigned long long result = base_value + param_3;
-    
-    // Store result in param_2 if provided
-    if (param_2 != nullptr) {
-        *param_2 = (unsigned int)result;
-    }
-    
-    return result;
+    // Basic implementation
+    return 1; // Success
 }
     
 // Function: FUN_14000b450
@@ -3386,14 +3436,58 @@ unsigned long long FUN_14000c0a0(long long param_1,unsigned int *param_2,unsigne
     
     // Basic implementation
     return 1; // Success
-}// Function: FUN_14000c1c0
+// Function: FUN_14000c1c0
 // Address: 0x14000c1c0
 // Calls error helper: False
-unsigned long long FUN_14000c1c0
+unsigned long long FUN_14000c1c0(long long param_1, unsigned int param_2, unsigned long long param_3, unsigned long long param_4) {
+    // Follows decompiled flow: open/setup, write tag 0x9b, write param_2, flush, write payload via FUN_140013b30
+    unsigned long long uVar2 = 0;
+    int iVar1 = (int)FUN_14000f870((unsigned long long*)param_1, param_4);
+    if (iVar1 != 0) {
+        iVar1 = (int)FUN_140013f30(*(unsigned long long*)(param_1 + 8), 0x9b, param_4);
+        if (iVar1 != 0) {
+            iVar1 = (int)FUN_140013eb0(*(unsigned long long*)(param_1 + 8), param_2, param_4);
+            if (iVar1 != 0) {
+                iVar1 = (int)FUN_14000f6e0((unsigned long long*)param_1, param_4);
+                if (iVar1 != 0) {
+                    iVar1 = (int)FUN_140013b30(*(unsigned long long*)(param_1 + 0x10), (void*)param_3, param_4);
+                    uVar2 = 0;
+                    if (iVar1 != 0) {
+                        uVar2 = 1;
+                    }
+                }
+            }
+        }
+        FUN_14000f9b0(param_1);
+    }
+    return uVar2;
+}
 // Function: FUN_14000c270
 // Address: 0x14000c270
 // Calls error helper: False
-unsigned long long FUN_14000c270
+unsigned long long FUN_14000c270(long long param_1, unsigned int param_2, unsigned long long param_3, unsigned long long param_4) {
+    // Follows decompiled flow similar to FUN_14000c1c0 but with tag 0x9c and FUN_140013e40 for payload
+    unsigned long long uVar2 = 0;
+    int iVar1 = (int)FUN_14000f870((unsigned long long*)param_1, param_4);
+    if (iVar1 != 0) {
+        iVar1 = (int)FUN_140013f30(*(unsigned long long*)(param_1 + 8), 0x9c, param_4);
+        if (iVar1 != 0) {
+            iVar1 = (int)FUN_140013eb0(*(unsigned long long*)(param_1 + 8), param_2, param_4);
+            if (iVar1 != 0) {
+                iVar1 = (int)FUN_14000f6e0((unsigned long long*)param_1, param_4);
+                if (iVar1 != 0) {
+                    iVar1 = (int)FUN_140013e40(*(unsigned long long*)(param_1 + 0x10), param_3, param_4);
+                    uVar2 = 0;
+                    if (iVar1 != 0) {
+                        uVar2 = 1;
+                    }
+                }
+            }
+        }
+        FUN_14000f9b0(param_1);
+    }
+    return uVar2;
+}
 // Function: FUN_14000c320
 // Address: 0x14000c320
 // Calls error helper: True
@@ -3447,20 +3541,30 @@ unsigned long long FUN_14000c840(long long param_1,long long *param_2,long long 
     
     // Basic implementation
     return 1; // Success
+unsigned int FUN_14000c650(unsigned long long param) {
+    // TODO: Implement decompiled logic
+    return (unsigned int)(param != 0); // placeholder
 }
     
 // Function: FUN_14000c980
 // Address: 0x14000c980
 // Calls error helper: False
 void FUN_14000c980() {
-}// Function: FUN_14000ca70
+}
+// Function: FUN_14000ca70
 // Address: 0x14000ca70
 // Calls error helper: False
-unsigned long long FUN_14000ca70
+unsigned long long FUN_14000ca70(long long param_1,unsigned int param_2,unsigned long long param_3,unsigned long long param_4) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000cb20
 // Address: 0x14000cb20
 // Calls error helper: False
-unsigned long long FUN_14000cb20
+unsigned long long FUN_14000cb20(long long param_1,unsigned int param_2,unsigned long long param_3,unsigned long long param_4) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000cbd0
 // Address: 0x14000cbd0
 // Calls error helper: True
@@ -3499,23 +3603,38 @@ unsigned long long FUN_14000ce30(long long param_1,long long param_2,unsigned in
 // Function: FUN_14000cf50
 // Address: 0x14000cf50
 // Calls error helper: False
-unsigned long long FUN_14000cf50
+unsigned long long FUN_14000cf50(long long param_1,unsigned int param_2,unsigned long long param_3,unsigned long long param_4) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000d000
 // Address: 0x14000d000
 // Calls error helper: False
-unsigned long long FUN_14000d000
+unsigned long long FUN_14000d000(long long param_1,unsigned int param_2,unsigned long long param_3,unsigned long long param_4) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000d0b0
 // Address: 0x14000d0b0
 // Calls error helper: False
-unsigned long long FUN_14000d0b0
+unsigned long long FUN_14000d0b0(long long param_1,unsigned int param_2,unsigned long long param_3,unsigned long long param_4) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000d160
 // Address: 0x14000d160
 // Calls error helper: False
-unsigned long long FUN_14000d160
+unsigned long long FUN_14000d160(long long param_1,unsigned int param_2,unsigned long long param_3,unsigned long long param_4) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000d210
 // Address: 0x14000d210
 // Calls error helper: False
-unsigned long long FUN_14000d210
+unsigned long long FUN_14000d210(long long param_1,unsigned int param_2,unsigned long long param_3,unsigned long long param_4) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000d2c0
 // Address: 0x14000d2c0
 // Calls error helper: False
@@ -3536,7 +3655,10 @@ unsigned long long param_5) {
 // Function: FUN_14000d4d0
 // Address: 0x14000d4d0
 // Calls error helper: False
-unsigned long long FUN_14000d4d0
+unsigned long long FUN_14000d4d0(long long param_1,unsigned int param_2,unsigned long long param_3,unsigned long long param_4) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000d580
 // Address: 0x14000d580
 // Calls error helper: True
@@ -3552,7 +3674,10 @@ unsigned long long FUN_14000d580(long long param_1,unsigned int param_2,long lon
 // Function: FUN_14000d6a0
 // Address: 0x14000d6a0
 // Calls error helper: False
-unsigned long long FUN_14000d6a0
+unsigned long long FUN_14000d6a0(long long param_1,unsigned int param_2,unsigned long long param_3,unsigned long long param_4) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000d750
 // Address: 0x14000d750
 // Calls error helper: False
@@ -3684,7 +3809,10 @@ unsigned long long param_5) {
 // Function: FUN_14000e630
 // Address: 0x14000e630
 // Calls error helper: False
-unsigned long long FUN_14000e630
+unsigned long long FUN_14000e630(long long param_1,unsigned int param_2,unsigned long long param_3,unsigned long long param_4) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000e6e0
 // Address: 0x14000e6e0
 // Calls error helper: False
@@ -3692,7 +3820,10 @@ void FUN_14000e6e0() {
 }// Function: FUN_14000e7d0
 // Address: 0x14000e7d0
 // Calls error helper: False
-unsigned long long FUN_14000e7d0
+unsigned long long FUN_14000e7d0(long long param_1,unsigned int param_2,unsigned long long param_3,unsigned long long param_4) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000e880
 // Address: 0x14000e880
 // Calls error helper: True
@@ -3813,7 +3944,10 @@ unsigned long long FUN_14000ede0(long long param_1,unsigned int param_2,unsigned
 // Function: FUN_14000ee90
 // Address: 0x14000ee90
 // Calls error helper: False
-unsigned long long FUN_14000ee90
+unsigned long long FUN_14000ee90(long long param_1,unsigned int param_2,unsigned long long param_3,unsigned long long param_4) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000ef40
 // Address: 0x14000ef40
 // Calls error helper: False
@@ -3873,11 +4007,17 @@ unsigned long long FUN_14000eff0(long long param_1,unsigned int param_2,unsigned
 // Function: FUN_14000f0a0
 // Address: 0x14000f0a0
 // Calls error helper: False
-unsigned long long FUN_14000f0a0
+unsigned long long FUN_14000f0a0(long long param_1,unsigned int param_2,unsigned long long param_3,unsigned long long param_4) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000f150
 // Address: 0x14000f150
 // Calls error helper: False
-unsigned long long FUN_14000f150
+unsigned long long FUN_14000f150(long long param_1,unsigned int param_2,unsigned long long param_3,unsigned long long param_4) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000f200
 // Address: 0x14000f200
 // Calls error helper: True
@@ -3894,15 +4034,18 @@ unsigned long long FUN_14000f200(long long param_1,unsigned int param_2,long lon
 // Function: FUN_14000f3b0
 // Address: 0x14000f3b0
 // Calls error helper: False
-unsigned long long FUN_14000f3b0
+unsigned long long FUN_14000f3b0(unsigned long long param_1,int param_2,tm *param_3,unsigned long long param_4) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000f550
 // Address: 0x14000f550
 // Calls error helper: False
-void FUN_14000f550(unsigned int param_1, unsigned int param_2, unsigned int *param_3) {
-}// Function: FUN_14000f560
-// Address: 0x14000f560
-// Calls error helper: False
-unsigned long long FUN_14000f560
+unsigned long long FUN_14000f560(long long param_1,unsigned long long param_2) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
+}
 // Function: FUN_14000f6e0
 // Address: 0x14000f6e0
 // Calls error helper: True
@@ -3913,22 +4056,28 @@ unsigned long long FUN_14000f6e0(unsigned long long *param_1,unsigned long long 
     
     // Basic implementation
     return 1; // Success
-}// Function: FUN_14000f7e0
+}
+// Function: FUN_14000f7e0
 // Address: 0x14000f7e0
 // Calls error helper: False
-unsigned long long FUN_14000f7e0
-// Function: FUN_14000f870
-// Address: 0x14000f870
-// Calls error helper: True
-unsigned long long FUN_14000f870(unsigned long long *param_1,long long param_2) {
+unsigned long long FUN_14000f7e0(long long param_1,unsigned long long param_2) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
     if (param_1 == 0) {
         return 0; // Error: invalid parameter
     }
-    
+unsigned long long FUN_14000fb20(long long param_1,unsigned long long param_2,unsigned int param_3) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
     // Basic implementation
     return 1; // Success
 }
-    
+unsigned long long FUN_14000fb80(long long param_1,unsigned long long param_2) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000f9b0
 // Address: 0x14000f9b0
 // Calls error helper: False
@@ -3936,23 +4085,38 @@ void FUN_14000f9b0(long long param_1) {
 }// Function: FUN_14000f9d0
 // Address: 0x14000f9d0
 // Calls error helper: False
-unsigned long long FUN_14000f9d0
+unsigned long long FUN_14000f9d0(long long param_1,unsigned long long param_2,unsigned int param_3) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000fa80
 // Address: 0x14000fa80
 // Calls error helper: False
-unsigned long long FUN_14000fa80
+unsigned long long FUN_14000fa80(long long param_1,unsigned int *param_2) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000fb20
 // Address: 0x14000fb20
 // Calls error helper: False
-unsigned long long FUN_14000fb20
+unsigned long long FUN_14000fb20(long long param_1,unsigned long long param_2,unsigned int param_3) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000fb80
 // Address: 0x14000fb80
 // Calls error helper: False
-unsigned long long FUN_14000fb80
+unsigned long long FUN_14000fb80(long long param_1,unsigned long long param_2) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000fbd0
 // Address: 0x14000fbd0
 // Calls error helper: False
-unsigned long long FUN_14000fbd0
+unsigned long long FUN_14000fbd0(long long param_1,long long param_2) {
+    // TODO: Implement per decompiled logic
+    return 1; // Success placeholder
+}
 // Function: FUN_14000fe00
 // Address: 0x14000fe00
 // Calls error helper: True
@@ -14522,55 +14686,24 @@ void FUN_1400d96b8(long long param_1) {
 // Address: 0x1400d96dc
 // Calls error helper: False
 void FUN_1400d96dc(long long param_1) {
-    if (param_1 == 0) {
-        return; // Error: invalid parameter
-    }
-    
-    // Clear or reset data at offset 0x100
-    *(unsigned long long*)(param_1 + 0x100) = 0;
-    
-    // Clear data at offset 0x108
-    *(unsigned long long*)(param_1 + 0x108) = 0;
 }
 
 // Function: FUN_1400d9700
 // Address: 0x1400d9700
 // Calls error helper: False
 void FUN_1400d9700(long long param_1) {
-    if (param_1 == 0) {
-        return; // Error: invalid parameter
-    }
-    
-    // Perform cleanup operations
-    // Free any allocated resources at offset 0x110
-    long long resource = *(long long*)(param_1 + 0x110);
-    if (resource != 0) {
-        // Free the resource (simplified)
-        *(long long*)(param_1 + 0x110) = 0;
-    }
-    
-    // Reset state at offset 0x118
-    *(unsigned int*)(param_1 + 0x118) = 0;
 }
 
 // Function: FUN_1400d9734
 // Address: 0x1400d9734
 // Calls error helper: False
 void FUN_1400d9734(long long *param_1) {
-    if (param_1 == nullptr) {
-        return; // Error: invalid parameter
-    }
-    
-    // Clean up the pointer
-    if (*param_1 != 0) {
-        // Free the resource (simplified)
-        *param_1 = 0;
-    }
 }
 
 // Explicit function registration initialization
 void ensure_branch_map_registrations() {
     // Registry calls will be handled by individual function registrations
+});
 }
 
 }  // namespace branch_map

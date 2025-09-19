@@ -1,5 +1,5 @@
 #pragma once
-#include "framework/FunctionRegistry.h"
+#include "../framework/FunctionRegistry.h"
 namespace branch_map {
 // Function to ensure all branch map stubs are registered
 void ensure_branch_map_registrations();
