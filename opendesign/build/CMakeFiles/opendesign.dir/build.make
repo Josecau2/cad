@@ -408,6 +408,20 @@ CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/cad/cad/opendesign/src/plugins/PluginManager.cpp -o CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.s
 
+CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o: CMakeFiles/opendesign.dir/flags.make
+CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o: /home/runner/work/cad/cad/opendesign/src/branch_map/BranchMapStubs.cpp
+CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o: CMakeFiles/opendesign.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/cad/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o -MF CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o.d -o CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o -c /home/runner/work/cad/cad/opendesign/src/branch_map/BranchMapStubs.cpp
+
+CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/cad/cad/opendesign/src/branch_map/BranchMapStubs.cpp > CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.i
+
+CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/cad/cad/opendesign/src/branch_map/BranchMapStubs.cpp -o CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.s
+
 # Object files for target opendesign
 opendesign_OBJECTS = \
 "CMakeFiles/opendesign.dir/opendesign_autogen/mocs_compilation.cpp.o" \
@@ -433,7 +447,8 @@ opendesign_OBJECTS = \
 "CMakeFiles/opendesign.dir/src/compat/mfc/Dialogs.cpp.o" \
 "CMakeFiles/opendesign.dir/src/compat/mfc/Ribbon.cpp.o" \
 "CMakeFiles/opendesign.dir/src/compat/mfc/UpdateUI.cpp.o" \
-"CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.o"
+"CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.o" \
+"CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o"
 
 # External object files for target opendesign
 opendesign_EXTERNAL_OBJECTS =
@@ -462,9 +477,10 @@ libopendesign.a: CMakeFiles/opendesign.dir/src/compat/mfc/Dialogs.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/compat/mfc/Ribbon.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/compat/mfc/UpdateUI.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/src/plugins/PluginManager.cpp.o
+libopendesign.a: CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o
 libopendesign.a: CMakeFiles/opendesign.dir/build.make
 libopendesign.a: CMakeFiles/opendesign.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/runner/work/cad/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX static library libopendesign.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/runner/work/cad/cad/opendesign/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX static library libopendesign.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/opendesign.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opendesign.dir/link.txt --verbose=$(VERBOSE)
 

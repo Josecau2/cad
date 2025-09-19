@@ -1,6 +1,7 @@
 opendesign_tests_autogen/timestamp: \
 	/home/runner/work/cad/cad/opendesign/tests/CMakeLists.txt \
 	/home/runner/work/cad/cad/opendesign/tests/unit/test_application.cpp \
+	/home/runner/work/cad/cad/opendesign/tests/unit/test_branch_map.cpp \
 	/home/runner/work/cad/cad/opendesign/tests/unit/test_database.cpp \
 	/home/runner/work/cad/cad/opendesign/tests/unit/test_features.cpp \
 	/home/runner/work/cad/cad/opendesign/tests/unit/test_function_coverage.cpp \

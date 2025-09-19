@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/runner/work/cad/cad/opendesign/build/opendesign_autogen/mocs_compilation.cpp" "CMakeFiles/opendesign.dir/opendesign_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/opendesign.dir/opendesign_autogen/mocs_compilation.cpp.o.d"
   "/home/runner/work/cad/cad/opendesign/src/app/Application.cpp" "CMakeFiles/opendesign.dir/src/app/Application.cpp.o" "gcc" "CMakeFiles/opendesign.dir/src/app/Application.cpp.o.d"
   "/home/runner/work/cad/cad/opendesign/src/app/Initialization.cpp" "CMakeFiles/opendesign.dir/src/app/Initialization.cpp.o" "gcc" "CMakeFiles/opendesign.dir/src/app/Initialization.cpp.o.d"
+  "/home/runner/work/cad/cad/opendesign/src/branch_map/BranchMapStubs.cpp" "CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o" "gcc" "CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o.d"
   "/home/runner/work/cad/cad/opendesign/src/cad/Document.cpp" "CMakeFiles/opendesign.dir/src/cad/Document.cpp.o" "gcc" "CMakeFiles/opendesign.dir/src/cad/Document.cpp.o.d"
   "/home/runner/work/cad/cad/opendesign/src/compat/mfc/Dialogs.cpp" "CMakeFiles/opendesign.dir/src/compat/mfc/Dialogs.cpp.o" "gcc" "CMakeFiles/opendesign.dir/src/compat/mfc/Dialogs.cpp.o.d"
   "/home/runner/work/cad/cad/opendesign/src/compat/mfc/Ribbon.cpp" "CMakeFiles/opendesign.dir/src/compat/mfc/Ribbon.cpp.o" "gcc" "CMakeFiles/opendesign.dir/src/compat/mfc/Ribbon.cpp.o.d"

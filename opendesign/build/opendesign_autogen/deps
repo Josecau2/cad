@@ -7,6 +7,8 @@ opendesign_autogen/timestamp: \
 	/home/runner/work/cad/cad/opendesign/src/app/Application.h \
 	/home/runner/work/cad/cad/opendesign/src/app/Initialization.cpp \
 	/home/runner/work/cad/cad/opendesign/src/app/Initialization.h \
+	/home/runner/work/cad/cad/opendesign/src/branch_map/BranchMapStubs.cpp \
+	/home/runner/work/cad/cad/opendesign/src/branch_map/BranchMapStubs.h \
 	/home/runner/work/cad/cad/opendesign/src/cad/Document.cpp \
 	/home/runner/work/cad/cad/opendesign/src/cad/Document.h \
 	/home/runner/work/cad/cad/opendesign/src/compat/mfc/Dialogs.cpp \

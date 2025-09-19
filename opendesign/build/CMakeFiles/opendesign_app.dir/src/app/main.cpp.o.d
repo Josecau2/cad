@@ -345,6 +345,8 @@ CMakeFiles/opendesign_app.dir/src/app/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
+ /home/runner/work/cad/cad/opendesign/src/branch_map/BranchMapStubs.h \
+ /home/runner/work/cad/cad/opendesign/src/framework/FunctionRegistry.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h \

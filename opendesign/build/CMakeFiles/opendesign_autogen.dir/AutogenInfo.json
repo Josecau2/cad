@@ -94,6 +94,12 @@
 			null
 		],
 		[
+			"/home/runner/work/cad/cad/opendesign/src/branch_map/BranchMapStubs.h",
+			"MU",
+			"OKHVAYXCKP/moc_BranchMapStubs.cpp",
+			null
+		],
+		[
 			"/home/runner/work/cad/cad/opendesign/src/cad/Document.h",
 			"MU",
 			"LPD5QU26FD/moc_Document.cpp",
@@ -288,6 +294,11 @@
 		],
 		[
 			"/home/runner/work/cad/cad/opendesign/src/app/Initialization.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/runner/work/cad/cad/opendesign/src/branch_map/BranchMapStubs.cpp",
 			"MU",
 			null
 		],

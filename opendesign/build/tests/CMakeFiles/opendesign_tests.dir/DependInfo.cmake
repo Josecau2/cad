@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/runner/work/cad/cad/opendesign/build/tests/opendesign_tests_autogen/mocs_compilation.cpp" "tests/CMakeFiles/opendesign_tests.dir/opendesign_tests_autogen/mocs_compilation.cpp.o" "gcc" "tests/CMakeFiles/opendesign_tests.dir/opendesign_tests_autogen/mocs_compilation.cpp.o.d"
   "/home/runner/work/cad/cad/opendesign/tests/unit/test_application.cpp" "tests/CMakeFiles/opendesign_tests.dir/unit/test_application.cpp.o" "gcc" "tests/CMakeFiles/opendesign_tests.dir/unit/test_application.cpp.o.d"
+  "/home/runner/work/cad/cad/opendesign/tests/unit/test_branch_map.cpp" "tests/CMakeFiles/opendesign_tests.dir/unit/test_branch_map.cpp.o" "gcc" "tests/CMakeFiles/opendesign_tests.dir/unit/test_branch_map.cpp.o.d"
   "/home/runner/work/cad/cad/opendesign/tests/unit/test_database.cpp" "tests/CMakeFiles/opendesign_tests.dir/unit/test_database.cpp.o" "gcc" "tests/CMakeFiles/opendesign_tests.dir/unit/test_database.cpp.o.d"
   "/home/runner/work/cad/cad/opendesign/tests/unit/test_features.cpp" "tests/CMakeFiles/opendesign_tests.dir/unit/test_features.cpp.o" "gcc" "tests/CMakeFiles/opendesign_tests.dir/unit/test_features.cpp.o.d"
   "/home/runner/work/cad/cad/opendesign/tests/unit/test_function_coverage.cpp" "tests/CMakeFiles/opendesign_tests.dir/unit/test_function_coverage.cpp.o" "gcc" "tests/CMakeFiles/opendesign_tests.dir/unit/test_function_coverage.cpp.o.d"

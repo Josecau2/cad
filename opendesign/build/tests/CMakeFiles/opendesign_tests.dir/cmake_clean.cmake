@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/opendesign_tests.dir/opendesign_tests_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/opendesign_tests.dir/unit/test_application.cpp.o"
   "CMakeFiles/opendesign_tests.dir/unit/test_application.cpp.o.d"
+  "CMakeFiles/opendesign_tests.dir/unit/test_branch_map.cpp.o"
+  "CMakeFiles/opendesign_tests.dir/unit/test_branch_map.cpp.o.d"
   "CMakeFiles/opendesign_tests.dir/unit/test_database.cpp.o"
   "CMakeFiles/opendesign_tests.dir/unit/test_database.cpp.o.d"
   "CMakeFiles/opendesign_tests.dir/unit/test_features.cpp.o"

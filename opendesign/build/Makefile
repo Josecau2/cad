@@ -363,6 +363,30 @@ src/app/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign_app.dir/build.make CMakeFiles/opendesign_app.dir/src/app/main.cpp.s
 .PHONY : src/app/main.cpp.s
 
+src/branch_map/BranchMapStubs.o: src/branch_map/BranchMapStubs.cpp.o
+.PHONY : src/branch_map/BranchMapStubs.o
+
+# target to build an object file
+src/branch_map/BranchMapStubs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o
+.PHONY : src/branch_map/BranchMapStubs.cpp.o
+
+src/branch_map/BranchMapStubs.i: src/branch_map/BranchMapStubs.cpp.i
+.PHONY : src/branch_map/BranchMapStubs.i
+
+# target to preprocess a source file
+src/branch_map/BranchMapStubs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.i
+.PHONY : src/branch_map/BranchMapStubs.cpp.i
+
+src/branch_map/BranchMapStubs.s: src/branch_map/BranchMapStubs.cpp.s
+.PHONY : src/branch_map/BranchMapStubs.s
+
+# target to generate assembly for a file
+src/branch_map/BranchMapStubs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opendesign.dir/build.make CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.s
+.PHONY : src/branch_map/BranchMapStubs.cpp.s
+
 src/cad/Document.o: src/cad/Document.cpp.o
 .PHONY : src/cad/Document.o
 
@@ -900,6 +924,9 @@ help:
 	@echo "... src/app/main.o"
 	@echo "... src/app/main.i"
 	@echo "... src/app/main.s"
+	@echo "... src/branch_map/BranchMapStubs.o"
+	@echo "... src/branch_map/BranchMapStubs.i"
+	@echo "... src/branch_map/BranchMapStubs.s"
 	@echo "... src/cad/Document.o"
 	@echo "... src/cad/Document.i"
 	@echo "... src/cad/Document.s"

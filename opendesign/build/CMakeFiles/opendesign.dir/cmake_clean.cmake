@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/opendesign.dir/src/app/Application.cpp.o.d"
   "CMakeFiles/opendesign.dir/src/app/Initialization.cpp.o"
   "CMakeFiles/opendesign.dir/src/app/Initialization.cpp.o.d"
+  "CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o"
+  "CMakeFiles/opendesign.dir/src/branch_map/BranchMapStubs.cpp.o.d"
   "CMakeFiles/opendesign.dir/src/cad/Document.cpp.o"
   "CMakeFiles/opendesign.dir/src/cad/Document.cpp.o.d"
   "CMakeFiles/opendesign.dir/src/compat/mfc/Dialogs.cpp.o"

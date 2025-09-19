@@ -216,6 +216,30 @@ unit/test_application.cpp.s:
 	cd /home/runner/work/cad/cad/opendesign/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/opendesign_tests.dir/build.make tests/CMakeFiles/opendesign_tests.dir/unit/test_application.cpp.s
 .PHONY : unit/test_application.cpp.s
 
+unit/test_branch_map.o: unit/test_branch_map.cpp.o
+.PHONY : unit/test_branch_map.o
+
+# target to build an object file
+unit/test_branch_map.cpp.o:
+	cd /home/runner/work/cad/cad/opendesign/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/opendesign_tests.dir/build.make tests/CMakeFiles/opendesign_tests.dir/unit/test_branch_map.cpp.o
+.PHONY : unit/test_branch_map.cpp.o
+
+unit/test_branch_map.i: unit/test_branch_map.cpp.i
+.PHONY : unit/test_branch_map.i
+
+# target to preprocess a source file
+unit/test_branch_map.cpp.i:
+	cd /home/runner/work/cad/cad/opendesign/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/opendesign_tests.dir/build.make tests/CMakeFiles/opendesign_tests.dir/unit/test_branch_map.cpp.i
+.PHONY : unit/test_branch_map.cpp.i
+
+unit/test_branch_map.s: unit/test_branch_map.cpp.s
+.PHONY : unit/test_branch_map.s
+
+# target to generate assembly for a file
+unit/test_branch_map.cpp.s:
+	cd /home/runner/work/cad/cad/opendesign/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/opendesign_tests.dir/build.make tests/CMakeFiles/opendesign_tests.dir/unit/test_branch_map.cpp.s
+.PHONY : unit/test_branch_map.cpp.s
+
 unit/test_database.o: unit/test_database.cpp.o
 .PHONY : unit/test_database.o
 
@@ -354,6 +378,9 @@ help:
 	@echo "... unit/test_application.o"
 	@echo "... unit/test_application.i"
 	@echo "... unit/test_application.s"
+	@echo "... unit/test_branch_map.o"
+	@echo "... unit/test_branch_map.i"
+	@echo "... unit/test_branch_map.s"
 	@echo "... unit/test_database.o"
 	@echo "... unit/test_database.i"
 	@echo "... unit/test_database.s"

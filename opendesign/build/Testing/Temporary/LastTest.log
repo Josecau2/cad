@@ -1,10 +1,10 @@
-Start testing: Sep 19 03:53 UTC
+Start testing: Sep 19 04:03 UTC
 ----------------------------------------------------------
 1/1 Testing: opendesign_tests
 1/1 Test: opendesign_tests
 Command: "/home/runner/work/cad/cad/opendesign/build/tests/opendesign_tests"
 Directory: /home/runner/work/cad/cad/opendesign/build/tests
-"opendesign_tests" start time: Sep 19 03:53 UTC
+"opendesign_tests" start time: Sep 19 04:03 UTC
 Output:
 ----------------------------------------------------------
 [ OK ] Application lifecycle
@@ -31,13 +31,15 @@ Output:
 [ OK ] Typed command bus dispatches synchronously and asynchronously
 [ OK ] Feature gate toggles persist through settings
 [ OK ] Initialization declares baseline feature flags
-24 test(s) passed.
+[ OK ] branch map functions are registered
+[ OK ] branch map function count matches expectations
+26 test(s) passed.
 <end of output>
-Test time =   0.14 sec
+Test time =   0.13 sec
 ----------------------------------------------------------
 Test Passed.
-"opendesign_tests" end time: Sep 19 03:53 UTC
+"opendesign_tests" end time: Sep 19 04:03 UTC
 "opendesign_tests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Sep 19 03:53 UTC
+End testing: Sep 19 04:03 UTC

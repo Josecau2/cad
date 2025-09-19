@@ -9,6 +9,7 @@ opendesign_tests: \
   CMakeFiles/opendesign_tests.dir/unit/test_database.cpp.o \
   CMakeFiles/opendesign_tests.dir/unit/test_ui_commands.cpp.o \
   CMakeFiles/opendesign_tests.dir/unit/test_features.cpp.o \
+  CMakeFiles/opendesign_tests.dir/unit/test_branch_map.cpp.o \
   ../libopendesign.a \
   /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13 \
   /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13 \
@@ -61,6 +62,8 @@ CMakeFiles/opendesign_tests.dir/unit/test_database.cpp.o:
 CMakeFiles/opendesign_tests.dir/unit/test_ui_commands.cpp.o:
 
 CMakeFiles/opendesign_tests.dir/unit/test_features.cpp.o:
+
+CMakeFiles/opendesign_tests.dir/unit/test_branch_map.cpp.o:
 
 ../libopendesign.a:
 
