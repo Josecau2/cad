@@ -59,7 +59,7 @@ unsigned long long FUN_1400043d0(unsigned long long param_1,unsigned long long p
 unsigned long long FUN_140004470(long long param_1,int param_2);
 unsigned long long FUN_1400044b0(long long param_1,unsigned long long param_2);
 unsigned long long FUN_140004580(long long param_1,long long param_2,int param_3,unsigned long long param_4);
-int FUN_140004760(long long param_1,unsigned long long param_2,unsigned int param_3,int param_4,int param_5);
+int FUN_140004760(long long param_1,unsigned long long param_2,unsigned int param_3,int param_4,int param_5,long long param_6);
 int FUN_140004890(long long param_1,unsigned long long param_2,unsigned int param_3,unsigned long long param_4);
 unsigned long long FUN_140004910(long long param_1,unsigned long long param_2);
 unsigned long long FUN_1400049e0(long long param_1,long long *param_2);
@@ -104,7 +104,7 @@ unsigned long long FUN_140007d10(long long param_1,long long param_2,long long *
 unsigned long long FUN_140007e50(long long param_1,unsigned int *param_2,unsigned long long param_3);
 unsigned long long FUN_140007f70(long long param_1,long long param_2,unsigned long long param_3);
 unsigned long long FUN_140008080(long long param_1,unsigned int *param_2,unsigned long long param_3);
-void FUN_1400081a0();
+unsigned int FUN_1400081a0(long long param_1, unsigned int param_2, unsigned int param_3, unsigned long long param_4);
 unsigned long long FUN_140008290(long long param_1,unsigned int *param_2,unsigned long long param_3);
 unsigned long long FUN_1400083b0(long long param_1,unsigned int param_2,long long param_3,unsigned long long param_4);
 unsigned long long FUN_1400084d0(long long param_1,unsigned int param_2,long long param_3,unsigned int param_4,

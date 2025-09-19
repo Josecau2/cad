@@ -103,6 +103,7 @@
     "python-envs.defaultEnvManager": "ms-python.python:system",
     "python-envs.pythonProjects": [],
     "files.associations": {
-        "streambuf": "cpp"
+        "streambuf": "cpp",
+        "cstring": "cpp"
     }
 }
