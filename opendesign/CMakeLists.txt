@@ -63,7 +63,7 @@ add_library(opendesign STATIC
     src/compat/mfc/Ribbon.cpp
     src/compat/mfc/UpdateUI.cpp
     src/plugins/PluginManager.cpp
-    src/branch_map/BranchMapStubs_minimal.cpp
+    src/branch_map/BranchMapStubs.cpp
     # Header-only files for geometry system
     src/cad/GeometryTypes.h
     src/cad/GeometryManager.h
@@ -86,6 +86,7 @@ target_link_libraries(opendesign
 target_compile_definitions(opendesign
     PRIVATE
         OPEN_DESIGN_BUILD
+        CAD_SOURCE_DIR="${CMAKE_SOURCE_DIR}"
 )
 
 add_executable(opendesign_app src/app/main.cpp)

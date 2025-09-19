@@ -8,10 +8,13 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 add_library(branchmap STATIC
   opendesign/src/branch_map/BranchMapStubs.cpp
+  opendesign/src/framework/FunctionRegistry.cpp
 )
 
+target_compile_definitions(branchmap PRIVATE CAD_SOURCE_DIR="${CMAKE_SOURCE_DIR}")
+
 target_include_directories(branchmap PUBLIC
-  ${CMAKE_CURRENT_SOURCE_DIR}/opendesign/src/branch_map
+  ${CMAKE_CURRENT_SOURCE_DIR}/opendesign/src
 )
 
 add_executable(compile_check examples/compile_check.cpp)
