@@ -1,18 +1,17 @@
 {
-	"BUILD_DIR" : "/home/runner/work/cad/cad/opendesign/build/tests/opendesign_tests_autogen",
-	"CMAKE_BINARY_DIR" : "/home/runner/work/cad/cad/opendesign/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/runner/work/cad/cad/opendesign/build/tests",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/runner/work/cad/cad/opendesign/tests",
-	"CMAKE_EXECUTABLE" : "/usr/local/bin/cmake",
-	"CMAKE_LIST_FILES" : [ "/home/runner/work/cad/cad/opendesign/tests/CMakeLists.txt" ],
-	"CMAKE_SOURCE_DIR" : "/home/runner/work/cad/cad/opendesign",
-	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "/home/runner/work/cad/cad/opendesign/build/tests/opendesign_tests_autogen/deps",
+	"BUILD_DIR" : "/workspaces/cad/opendesign/build/tests/opendesign_tests_autogen",
+	"CMAKE_BINARY_DIR" : "/workspaces/cad/opendesign/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/workspaces/cad/opendesign/build/tests",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/workspaces/cad/opendesign/tests",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : [ "/workspaces/cad/opendesign/tests/CMakeLists.txt" ],
+	"CMAKE_SOURCE_DIR" : "/workspaces/cad/opendesign",
+	"DEP_FILE" : "/workspaces/cad/opendesign/build/tests/opendesign_tests_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "opendesign_tests_autogen/timestamp",
 	"HEADERS" : [],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/runner/work/cad/cad/opendesign/build/tests/opendesign_tests_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/runner/work/cad/cad/opendesign/build/tests/opendesign_tests_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/workspaces/cad/opendesign/build/tests/opendesign_tests_autogen/include",
+	"MOC_COMPILATION_FILE" : "/workspaces/cad/opendesign/build/tests/opendesign_tests_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
@@ -30,8 +29,8 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/runner/work/cad/cad/opendesign/tests/unit",
-		"/home/runner/work/cad/cad/opendesign/src",
+		"/workspaces/cad/opendesign/tests/unit",
+		"/workspaces/cad/opendesign/src",
 		"/usr/include/x86_64-linux-gnu/qt5",
 		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
 		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
@@ -56,53 +55,61 @@
 		"-dM",
 		"-E",
 		"-c",
-		"/usr/local/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp"
+		"/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/runner/work/cad/cad/opendesign/build/tests/opendesign_tests_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/workspaces/cad/opendesign/build/tests/opendesign_tests_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 2,
-	"PARSE_CACHE_FILE" : "/home/runner/work/cad/cad/opendesign/build/tests/CMakeFiles/opendesign_tests_autogen.dir/ParseCache.txt",
+	"PARALLEL" : 1,
+	"PARSE_CACHE_FILE" : "/workspaces/cad/opendesign/build/tests/CMakeFiles/opendesign_tests_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
 	"QT_VERSION_MAJOR" : 5,
 	"QT_VERSION_MINOR" : 15,
-	"SETTINGS_FILE" : "/home/runner/work/cad/cad/opendesign/build/tests/CMakeFiles/opendesign_tests_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/workspaces/cad/opendesign/build/tests/CMakeFiles/opendesign_tests_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/home/runner/work/cad/cad/opendesign/tests/unit/test_application.cpp",
+			"/workspaces/cad/opendesign/tests/unit/test_application.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/runner/work/cad/cad/opendesign/tests/unit/test_branch_map.cpp",
+			"/workspaces/cad/opendesign/tests/unit/test_branch_map.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/runner/work/cad/cad/opendesign/tests/unit/test_database.cpp",
+			"/workspaces/cad/opendesign/tests/unit/test_collaboration.cpp",
+			"MU",
+			null
+		],
+		[ "/workspaces/cad/opendesign/tests/unit/test_database.cpp", "MU", null ],
+		[
+			"/workspaces/cad/opendesign/tests/unit/test_documentation.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/runner/work/cad/cad/opendesign/tests/unit/test_features.cpp",
+			"/workspaces/cad/opendesign/tests/unit/test_extensions.cpp",
+			"MU",
+			null
+		],
+		[ "/workspaces/cad/opendesign/tests/unit/test_features.cpp", "MU", null ],
+		[
+			"/workspaces/cad/opendesign/tests/unit/test_function_coverage.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/runner/work/cad/cad/opendesign/tests/unit/test_function_coverage.cpp",
+			"/workspaces/cad/opendesign/tests/unit/test_initialization.cpp",
 			"MU",
 			null
 		],
+		[ "/workspaces/cad/opendesign/tests/unit/test_io.cpp", "MU", null ],
 		[
-			"/home/runner/work/cad/cad/opendesign/tests/unit/test_initialization.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/runner/work/cad/cad/opendesign/tests/unit/test_ui_commands.cpp",
+			"/workspaces/cad/opendesign/tests/unit/test_ui_commands.cpp",
 			"MU",
 			null
 		]
@@ -111,6 +118,5 @@
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : [],
 	"UIC_UI_FILES" : [],
-	"USE_BETTER_GRAPH" : false,
 	"VERBOSITY" : 0
 }

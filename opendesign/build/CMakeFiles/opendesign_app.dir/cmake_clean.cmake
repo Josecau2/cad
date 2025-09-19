@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/opendesign_app.dir/link.d"
   "CMakeFiles/opendesign_app_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/opendesign_app_autogen.dir/ParseCache.txt"
   "opendesign_app_autogen"

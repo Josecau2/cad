@@ -20,6 +20,8 @@ add_library(opendesign STATIC
     src/ui/mainwindow/MainWindow.cpp
     src/ui/ribbon/RibbonBar.cpp
     src/ui/ribbon/RibbonCommands.cpp
+    src/ui/UICommands.cpp
+    src/ui/UIComponents.cpp
     src/ui/statusbar/StatusBar.cpp
     src/ui/printpreview/PrintPreview.cpp
     src/ui/grid/Grid.cpp
@@ -27,8 +29,21 @@ add_library(opendesign STATIC
     src/framework/FeatureGate.cpp
     src/framework/FunctionRegistry.cpp
     src/cad/Document.cpp
+    src/cad/Modeling.cpp
+    src/cad/Geometry.cpp
     src/db/Database.cpp
+    src/cad/Analysis.cpp
+    src/cad/Advanced.cpp
+    src/cad/Core.cpp
+    src/cad/Utilities.cpp
+    src/cad/IO.cpp
+    src/cad/Extensions.cpp
+    src/cad/Collaboration.cpp
+    src/cad/Documentation.cpp
+    src/cad/External.cpp
+    src/cad/Interface.cpp
     src/render/Viewport.cpp
+    src/render/Rendering.cpp
     src/io/Settings.cpp
     src/compat/win/Window.cpp
     src/compat/win/Menu.cpp

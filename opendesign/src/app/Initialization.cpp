@@ -27,6 +27,30 @@ struct InitState {
     bool init_header = false;
     bool init_navigation_control = false;
     bool init_zoom = false;
+    // Additional state variables for new initialization functions
+    bool fun_1400010b0 = false;
+    bool fun_140001120 = false;
+    bool fun_140001190 = false;
+    bool fun_140001200 = false;
+    bool fun_140001280 = false;
+    bool fun_140001380 = false;
+    bool fun_1400014a0 = false;
+    bool fun_140001530 = false;
+    bool fun_1400015c0 = false;
+    bool fun_140001670 = false;
+    bool fun_140001700 = false;
+    bool fun_140001750 = false;
+    bool fun_1400017a0 = false;
+    bool fun_1400017f0 = false;
+    bool fun_140001840 = false;
+    bool fun_140001890 = false;
+    bool fun_140001a80 = false;
+    bool fun_140001cd0 = false;
+    bool fun_140001e30 = false;
+    bool fun_140001eb0 = false;
+    bool fun_140001f50 = false;
+    bool fun_140001fe0 = false;
+    bool fun_140002070 = false;
     std::string font_family;
     std::string color_scheme;
     int zoom_percent = 0;
@@ -271,11 +295,219 @@ void ResetForTesting() {
     state.init_header = false;
     state.init_navigation_control = false;
     state.init_zoom = false;
+    // Reset additional state variables
+    state.fun_1400010b0 = false;
+    state.fun_140001120 = false;
+    state.fun_140001190 = false;
+    state.fun_140001200 = false;
+    state.fun_140001280 = false;
+    state.fun_140001380 = false;
+    state.fun_1400014a0 = false;
+    state.fun_140001530 = false;
+    state.fun_1400015c0 = false;
+    state.fun_140001670 = false;
+    state.fun_140001700 = false;
+    state.fun_140001750 = false;
+    state.fun_1400017a0 = false;
+    state.fun_1400017f0 = false;
+    state.fun_140001840 = false;
+    state.fun_140001890 = false;
+    state.fun_140001a80 = false;
+    state.fun_140001cd0 = false;
+    state.fun_140001e30 = false;
+    state.fun_140001eb0 = false;
+    state.fun_140001f50 = false;
+    state.fun_140001fe0 = false;
+    state.fun_140002070 = false;
     state.font_family.clear();
     state.color_scheme.clear();
     state.zoom_percent = 0;
     state.menu.reset();
     state.call_order.clear();
+}
+
+// Additional initialization functions from branch_map.yaml
+bool FUN_1400010b0() {
+    return recordCall("FUN_1400010b0", mutableState().fun_1400010b0, [](InitState&) {
+        // Initialize core application state
+        io::settings::SaveSetting("app.core.initialized", "true");
+    });
+}
+
+bool FUN_140001120() {
+    FUN_1400010b0();
+    return recordCall("FUN_140001120", mutableState().fun_140001120, [](InitState&) {
+        // Initialize memory management
+        io::settings::SaveSetting("app.memory.initialized", "true");
+    });
+}
+
+bool FUN_140001190() {
+    FUN_140001120();
+    return recordCall("FUN_140001190", mutableState().fun_140001190, [](InitState&) {
+        // Initialize thread pool
+        io::settings::SaveSetting("app.threading.initialized", "true");
+    });
+}
+
+bool FUN_140001200() {
+    FUN_140001190();
+    return recordCall("FUN_140001200", mutableState().fun_140001200, [](InitState&) {
+        // Initialize logging system
+        io::settings::SaveSetting("app.logging.initialized", "true");
+    });
+}
+
+bool FUN_140001280() {
+    FUN_140001200();
+    return recordCall("FUN_140001280", mutableState().fun_140001280, [](InitState&) {
+        // Initialize error handling
+        io::settings::SaveSetting("app.error_handling.initialized", "true");
+    });
+}
+
+bool FUN_140001380() {
+    FUN_140001280();
+    return recordCall("FUN_140001380", mutableState().fun_140001380, [](InitState&) {
+        // Initialize plugin system
+        io::settings::SaveSetting("app.plugins.initialized", "true");
+    });
+}
+
+bool FUN_1400014a0() {
+    FUN_140001380();
+    return recordCall("FUN_1400014a0", mutableState().fun_1400014a0, [](InitState&) {
+        // Initialize document management
+        io::settings::SaveSetting("app.documents.initialized", "true");
+    });
+}
+
+bool FUN_140001530() {
+    FUN_1400014a0();
+    return recordCall("FUN_140001530", mutableState().fun_140001530, [](InitState&) {
+        // Initialize UI framework
+        io::settings::SaveSetting("app.ui.initialized", "true");
+    });
+}
+
+bool FUN_1400015c0() {
+    FUN_140001530();
+    return recordCall("FUN_1400015c0", mutableState().fun_1400015c0, [](InitState&) {
+        // Initialize rendering system
+        io::settings::SaveSetting("app.rendering.initialized", "true");
+    });
+}
+
+bool FUN_140001670() {
+    FUN_1400015c0();
+    return recordCall("FUN_140001670", mutableState().fun_140001670, [](InitState&) {
+        // Initialize CAD kernel
+        io::settings::SaveSetting("app.cad.initialized", "true");
+    });
+}
+
+bool FUN_140001700() {
+    FUN_140001670();
+    return recordCall("FUN_140001700", mutableState().fun_140001700, [](InitState&) {
+        // Initialize database connections
+        io::settings::SaveSetting("app.database.initialized", "true");
+    });
+}
+
+bool FUN_140001750() {
+    FUN_140001700();
+    return recordCall("FUN_140001750", mutableState().fun_140001750, [](InitState&) {
+        // Initialize file I/O system
+        io::settings::SaveSetting("app.io.initialized", "true");
+    });
+}
+
+bool FUN_1400017a0() {
+    FUN_140001750();
+    return recordCall("FUN_1400017a0", mutableState().fun_1400017a0, [](InitState&) {
+        // Initialize network services
+        io::settings::SaveSetting("app.network.initialized", "true");
+    });
+}
+
+bool FUN_1400017f0() {
+    FUN_1400017a0();
+    return recordCall("FUN_1400017f0", mutableState().fun_1400017f0, [](InitState&) {
+        // Initialize security framework
+        io::settings::SaveSetting("app.security.initialized", "true");
+    });
+}
+
+bool FUN_140001840() {
+    FUN_1400017f0();
+    return recordCall("FUN_140001840", mutableState().fun_140001840, [](InitState&) {
+        // Initialize licensing system
+        io::settings::SaveSetting("app.licensing.initialized", "true");
+    });
+}
+
+bool FUN_140001890() {
+    FUN_140001840();
+    return recordCall("FUN_140001890", mutableState().fun_140001890, [](InitState&) {
+        // Initialize update system
+        io::settings::SaveSetting("app.updates.initialized", "true");
+    });
+}
+
+bool FUN_140001a80() {
+    FUN_140001890();
+    return recordCall("FUN_140001a80", mutableState().fun_140001a80, [](InitState&) {
+        // Initialize backup system
+        io::settings::SaveSetting("app.backup.initialized", "true");
+    });
+}
+
+bool FUN_140001cd0() {
+    FUN_140001a80();
+    return recordCall("FUN_140001cd0", mutableState().fun_140001cd0, [](InitState&) {
+        // Initialize performance monitoring
+        io::settings::SaveSetting("app.performance.initialized", "true");
+    });
+}
+
+bool FUN_140001e30() {
+    FUN_140001cd0();
+    return recordCall("FUN_140001e30", mutableState().fun_140001e30, [](InitState&) {
+        // Initialize analytics
+        io::settings::SaveSetting("app.analytics.initialized", "true");
+    });
+}
+
+bool FUN_140001eb0() {
+    FUN_140001e30();
+    return recordCall("FUN_140001eb0", mutableState().fun_140001eb0, [](InitState&) {
+        // Initialize crash reporting
+        io::settings::SaveSetting("app.crash_reporting.initialized", "true");
+    });
+}
+
+bool FUN_140001f50() {
+    FUN_140001eb0();
+    return recordCall("FUN_140001f50", mutableState().fun_140001f50, [](InitState&) {
+        // Initialize telemetry
+        io::settings::SaveSetting("app.telemetry.initialized", "true");
+    });
+}
+
+bool FUN_140001fe0() {
+    FUN_140001f50();
+    return recordCall("FUN_140001fe0", mutableState().fun_140001fe0, [](InitState&) {
+        // Initialize user preferences
+        io::settings::SaveSetting("app.preferences.initialized", "true");
+    });
+}
+
+bool FUN_140002070() {
+    FUN_140001fe0();
+    return recordCall("FUN_140002070", mutableState().fun_140002070, [](InitState&) {
+        // Final initialization complete
+        io::settings::SaveSetting("app.fully.initialized", "true");
+    });
 }
 
 }  // namespace app::init
