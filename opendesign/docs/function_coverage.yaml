@@ -1,0 +1,427 @@
+functions:
+  - id: F-UI-0001
+    original: HideUI
+    address: 0x1401f1911
+    category: UI Management & Control
+    target_symbol: ui::html::HideUI
+    status: implemented
+  - id: F-UI-0002
+    original: ShowUI
+    address: 0x1401f190b
+    category: UI Management & Control
+    target_symbol: ui::html::ShowUI
+    status: implemented
+  - id: F-RB-0100
+    original: ConstructRibbonBar
+    address: 0x140245311
+    category: Ribbon Interface
+    target_symbol: ui::ribbon::ConstructRibbonBar
+    status: implemented
+  - id: F-RB-0101
+    original: SetRibbonSimplifiedMode
+    address: 0x140245390
+    category: Ribbon Interface
+    target_symbol: ui::ribbon::SetRibbonSimplifiedMode
+    status: implemented
+  - id: F-WN-0200
+    original: CreateWindowEx
+    address: 0x140012390
+    category: Window Management
+    target_symbol: compat::win::CreateWindowEx
+    status: implemented
+  - id: F-WN-0201
+    original: ShowWindow
+    address: 0x1400123F0
+    category: Window Management
+    target_symbol: compat::win::ShowWindow
+    status: implemented
+  - id: F-MF-0300
+    original: OnInitDialog
+    address: 0x140031411
+    category: Dialog & Form
+    target_symbol: compat::mfc::OnInitDialog
+    status: implemented
+  - id: F-MF-0301
+    original: EndDialog
+    address: 0x1400314B2
+    category: Dialog & Form
+    target_symbol: compat::mfc::EndDialog
+    status: implemented
+  - id: F-FW-0400
+    original: RegisterCommand
+    address: 0x140041920
+    category: Framework
+    target_symbol: framework::commands::RegisterCommand
+    status: implemented
+  - id: F-FW-0401
+    original: ExecuteCommand
+    address: 0x140041A00
+    category: Framework
+    target_symbol: framework::commands::ExecuteCommand
+    status: implemented
+  - id: F-IO-0500
+    original: LoadSetting
+    address: 0x140053910
+    category: Settings
+    target_symbol: io::settings::LoadSetting
+    status: implemented
+  - id: F-IO-0501
+    original: SaveSetting
+    address: 0x140053950
+    category: Settings
+    target_symbol: io::settings::SaveSetting
+    status: implemented
+  - id: F-CD-0600
+    original: NewDocument
+    address: 0x140063210
+    category: CAD Document
+    target_symbol: cad::document::NewDocument
+    status: implemented
+  - id: F-CD-0601
+    original: CloseDocument
+    address: 0x1400632F0
+    category: CAD Document
+    target_symbol: cad::document::CloseDocument
+    status: implemented
+  - id: F-UI-0003
+    original: OnCommandRibbonHomeEditMove
+    address: 0x1400d7410
+    category: Command handlers
+    target_symbol: ui::ribbon::OnCommandRibbonHomeEditMove
+    status: implemented
+  - id: F-UI-0004
+    original: OnCommandRibbonHomeEditRotate
+    address: 0x1400d743c
+    category: Command handlers
+    target_symbol: ui::ribbon::OnCommandRibbonHomeEditRotate
+    status: implemented
+  - id: F-UI-0005
+    original: OnCommandRibbonHomeEditMirror
+    address: 0x1400d73e4
+    category: Command handlers
+    target_symbol: ui::ribbon::OnCommandRibbonHomeEditMirror
+    status: implemented
+  - id: F-UI-0006
+    original: OnCommandRibbonHomeEditGroup
+    address: 0x1400d738c
+    category: Command handlers
+    target_symbol: ui::ribbon::OnCommandRibbonHomeEditGroup
+    status: implemented
+  - id: F-UI-0007
+    original: OnCommandRibbonHomeEditUngroup
+    address: 0x1400d7468
+    category: Command handlers
+    target_symbol: ui::ribbon::OnCommandRibbonHomeEditUngroup
+    status: implemented
+  - id: F-UI-0008
+    original: OnCommandRibbonHomeEditLightProps
+    address: 0x1400d73b8
+    category: Command handlers
+    target_symbol: ui::ribbon::OnCommandRibbonHomeEditLightProps
+    status: implemented
+  - id: F-UI-0009
+    original: OnUpdateUiRibbonHomeEditMove
+    address: 0x1400d7758
+    category: Command handlers
+    target_symbol: ui::ribbon::OnUpdateUiRibbonHomeEditMove
+    status: implemented
+  - id: F-UI-0010
+    original: OnUpdateUiRibbonHomeEditRotate
+    address: 0x1400d778c
+    category: Command handlers
+    target_symbol: ui::ribbon::OnUpdateUiRibbonHomeEditRotate
+    status: implemented
+  - id: F-UI-0011
+    original: OnUpdateUiRibbonHomeEditMirror
+    address: 0x1400d7724
+    category: Command handlers
+    target_symbol: ui::ribbon::OnUpdateUiRibbonHomeEditMirror
+    status: implemented
+  - id: F-UI-0012
+    original: OnUpdateUiRibbonHomeEditGroup
+    address: 0x1400d76bc
+    category: Command handlers
+    target_symbol: ui::ribbon::OnUpdateUiRibbonHomeEditGroup
+    status: implemented
+  - id: F-UI-0013
+    original: OnUpdateUiRibbonHomeEditUngroup
+    address: 0x1400d77c0
+    category: Command handlers
+    target_symbol: ui::ribbon::OnUpdateUiRibbonHomeEditUngroup
+    status: implemented
+  - id: F-UI-0014
+    original: OnUpdateUiRibbonHomeEditLightProps
+    address: 0x1400d76f0
+    category: Command handlers
+    target_symbol: ui::ribbon::OnUpdateUiRibbonHomeEditLightProps
+    status: implemented
+  - id: F-UI-0015
+    original: OnCommandRibbonSingleSidedWall
+    address: 0x1400d75f4
+    category: Command handlers
+    target_symbol: ui::ribbon::OnCommandRibbonSingleSidedWall
+    status: implemented
+  - id: F-UI-0016
+    original: OnCommandRibbonDoubleSidedWall
+    address: 0x1400d7308
+    category: Command handlers
+    target_symbol: ui::ribbon::OnCommandRibbonDoubleSidedWall
+    status: implemented
+  - id: F-UI-0017
+    original: OnCommandRibbonSingleSidedConstLine
+    address: 0x1400d75c8
+    category: Command handlers
+    target_symbol: ui::ribbon::OnCommandRibbonSingleSidedConstLine
+    status: implemented
+  - id: F-UI-0018
+    original: OnCommandRibbonDoubleSidedConstLine
+    address: 0x1400d72dc
+    category: Command handlers
+    target_symbol: ui::ribbon::OnCommandRibbonDoubleSidedConstLine
+    status: implemented
+  - id: F-UI-0019
+    original: OnCommandRibbonHomeEditCenter
+    address: 0x1400d7334
+    category: Command handlers
+    target_symbol: ui::ribbon::OnCommandRibbonHomeEditCenter
+    status: implemented
+  - id: F-UI-0020
+    original: OnUpdateUiRibbonHomeEditCenter
+    address: 0x1400d7700
+    category: Command handlers
+    target_symbol: ui::ribbon::OnUpdateUiRibbonHomeEditCenter
+    status: implemented
+  - id: F-UI-0021
+    original: OnCommandRibbonHomeEditEditShape
+    address: 0x1400d74a0
+    category: Command handlers
+    target_symbol: ui::ribbon::OnCommandRibbonHomeEditEditShape
+    status: implemented
+  - id: F-UI-0022
+    original: OnUpdateUiRibbonHomeEditEditShape
+    address: 0x1400d77f4
+    category: Command handlers
+    target_symbol: ui::ribbon::OnUpdateUiRibbonHomeEditEditShape
+    status: implemented
+  - id: F-SB-0700
+    original: OnStatusBarAutoMergeButton
+    address: 0x1400d4e4c
+    category: Status bar & panel
+    target_symbol: ui::statusbar::OnStatusBarAutoMergeButton
+    status: implemented
+  - id: F-GR-0900
+    original: ToggleGridSnap
+    address: 0x1400d6000
+    category: Control & interaction
+    target_symbol: ui::grid::ToggleSnap
+    status: implemented
+  - id: F-GR-0901
+    original: SetGridSpacing
+    address: 0x1400d6010
+    category: Control & interaction
+    target_symbol: ui::grid::SetSpacing
+    status: implemented
+  - id: F-GR-0902
+    original: SetGridMajorSpacing
+    address: 0x1400d6020
+    category: Control & interaction
+    target_symbol: ui::grid::SetMajorSpacing
+    status: implemented
+  - id: F-GR-0903
+    original: InitializeGridCommands
+    address: 0x1400d6030
+    category: Control & interaction
+    target_symbol: ui::grid::InitializeGridCommands
+    status: implemented
+  - id: F-PP-0800
+    original: OnCommandPrintPreviewNextPage
+    address: 0x1400d3c60
+    category: Advanced UI
+    target_symbol: ui::printpreview::OnCommandPrintPreviewNextPage
+    status: implemented
+  - id: F-PP-0801
+    original: OnCommandPrintPreviewPreviousPage
+    address: 0x1400d3d28
+    category: Advanced UI
+    target_symbol: ui::printpreview::OnCommandPrintPreviewPreviousPage
+    status: implemented
+  - id: F-PP-0802
+    original: OnCommandPrintPreviewRatio1
+    address: 0x1400d3df0
+    category: Advanced UI
+    target_symbol: ui::printpreview::OnCommandPrintPreviewRatio1
+    status: implemented
+  - id: F-PP-0803
+    original: OnCommandPrintPreviewRatio2
+    address: 0x1400d3f58
+    category: Advanced UI
+    target_symbol: ui::printpreview::OnCommandPrintPreviewRatio2
+    status: implemented
+  - id: F-PP-0804
+    original: OnUpdateUiPrintPreviewPreviousPage
+    address: 0x1400d515c
+    category: Advanced UI
+    target_symbol: ui::printpreview::OnUpdateUiPrintPreviewPreviousPage
+    status: implemented
+  - id: F-PP-0805
+    original: OnUpdateUiPrintPreviewNextPage
+    address: 0x0
+    category: Advanced UI
+    target_symbol: ui::printpreview::OnUpdateUiPrintPreviewNextPage
+    status: implemented
+  - id: F-IN-0800
+    original: InitApplication
+    address: 0x140080000
+    category: Initialization
+    target_symbol: app::init::InitApplication
+    status: implemented
+  - id: F-IN-0801
+    original: MyInitInstance
+    address: 0x140080010
+    category: Initialization
+    target_symbol: app::init::MyInitInstance
+    status: implemented
+  - id: F-IN-0802
+    original: AfxOleInit
+    address: 0x140080020
+    category: Initialization
+    target_symbol: app::init::AfxOleInit
+    status: implemented
+  - id: F-IN-0803
+    original: Init2020Registry
+    address: 0x140080030
+    category: Initialization
+    target_symbol: app::init::Init2020Registry
+    status: implemented
+  - id: F-IN-0804
+    original: InitializeSettings
+    address: 0x140080040
+    category: Initialization
+    target_symbol: app::init::InitializeSettings
+    status: implemented
+  - id: F-IN-0805
+    original: InitFont
+    address: 0x140080050
+    category: Initialization
+    target_symbol: app::init::InitFont
+    status: implemented
+  - id: F-IN-0806
+    original: InitAutoColors
+    address: 0x140080060
+    category: Initialization
+    target_symbol: app::init::InitAutoColors
+    status: implemented
+  - id: F-IN-0807
+    original: InitMenuBar
+    address: 0x140080070
+    category: Initialization
+    target_symbol: app::init::InitMenuBar
+    status: implemented
+  - id: F-IN-0808
+    original: InitHeader
+    address: 0x140080080
+    category: Initialization
+    target_symbol: app::init::InitHeader
+    status: implemented
+  - id: F-IN-0809
+    original: InitNavigationControl
+    address: 0x140080090
+    category: Initialization
+    target_symbol: app::init::InitNavigationControl
+    status: implemented
+  - id: F-IN-0810
+    original: InitZoom
+    address: 0x1400800A0
+    category: Initialization
+    target_symbol: app::init::InitZoom
+    status: implemented
+  - id: F-DB-1000
+    original: ConfigureDatabase
+    address: 0x140090100
+    category: Database
+    target_symbol: db::Configure
+    status: implemented
+  - id: F-DB-1001
+    original: ApplyDatabaseMigration
+    address: 0x140090110
+    category: Database
+    target_symbol: db::ApplyMigration
+    status: implemented
+  - id: F-DB-1002
+    original: CreateCatalogRecord
+    address: 0x140090120
+    category: Database
+    target_symbol: db::CreateCatalog
+    status: implemented
+  - id: F-DB-1003
+    original: CreateMaterialRecord
+    address: 0x140090130
+    category: Database
+    target_symbol: db::CreateMaterial
+    status: implemented
+  - id: F-DB-1004
+    original: CreateProjectRecord
+    address: 0x140090140
+    category: Database
+    target_symbol: db::CreateProject
+    status: implemented
+  - id: F-DB-1005
+    original: CreateDesignRecord
+    address: 0x140090150
+    category: Database
+    target_symbol: db::CreateDesign
+    status: implemented
+  - id: F-DB-1006
+    original: CreatePriceListRecord
+    address: 0x140090160
+    category: Database
+    target_symbol: db::CreatePriceList
+    status: implemented
+  - id: F-DB-1007
+    original: SetMaterialPriceRecord
+    address: 0x140090170
+    category: Database
+    target_symbol: db::SetMaterialPrice
+    status: implemented
+  - id: F-DB-1008
+    original: CreateImportJobRecord
+    address: 0x140090180
+    category: Database
+    target_symbol: db::CreateImportJob
+    status: implemented
+  - id: F-DB-1009
+    original: UpdateImportJobRecord
+    address: 0x140090190
+    category: Database
+    target_symbol: db::UpdateImportJobStatus
+    status: implemented
+  - id: F-DB-1010
+    original: RecordAuditEntry
+    address: 0x1400901A0
+    category: Database
+    target_symbol: db::RecordAudit
+    status: implemented
+  - id: F-LC-1200
+    original: DeclareFeatureToggle
+    address: 0x1400f1200
+    category: Edition/license
+    target_symbol: framework::features::DeclareFeature
+    status: implemented
+  - id: F-LC-1201
+    original: EnableFeatureToggle
+    address: 0x1400f1210
+    category: Edition/license
+    target_symbol: framework::features::EnableFeature
+    status: implemented
+  - id: F-LC-1202
+    original: DisableFeatureToggle
+    address: 0x1400f1220
+    category: Edition/license
+    target_symbol: framework::features::DisableFeature
+    status: implemented
+  - id: F-LC-1203
+    original: IsFeatureEnabled
+    address: 0x1400f1230
+    category: Edition/license
+    target_symbol: framework::features::IsFeatureEnabled
+    status: implemented
