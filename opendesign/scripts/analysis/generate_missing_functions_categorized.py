@@ -42,6 +42,8 @@ DOCS = ROOT / "opendesign" / "docs"
 GHIDRA_FILE = ROOT / "ghidradecompile.txt"
 MISSING_TXT = DOCS / "missing_functions.txt"
 COVERAGE_YAML = DOCS / "function_coverage.yaml"
+# Additional, large coverage file at repo root (contains many Decompiled entries)
+ADDL_COVERAGE_YAML = ROOT / "function_coverage.yaml"
 CSV_MAP = DOCS / "decompiled_map.csv"
 OUT_YAML = DOCS / "missing_functions_categorized.yaml"
 MD_DECOMP_GLOBS = [
@@ -91,7 +93,49 @@ def build_prefix_votes_from_coverage(pfx_len: int = 6, weight: int = 3) -> Count
         cat = entry.get("category")
         if not addr or not cat:
             continue
-        m = ADDR_RE.match(str(addr))
+        # Normalize address (handles YAML ints and strings)
+        if isinstance(addr, int):
+            addr_str = hex(addr)
+        else:
+            addr_str = str(addr)
+            # If it's a bare hex without 0x, add it
+            if addr_str and not addr_str.startswith("0x") and re.fullmatch(r"[0-9a-fA-F]+", addr_str):
+                addr_str = "0x" + addr_str
+        m = ADDR_RE.match(addr_str)
+        if not m:
+            continue
+        p = prefix(m.group(0), pfx_len)
+        votes[(p, cat)] += weight
+    return votes
+
+
+def build_prefix_votes_from_additional_coverage(pfx_len: int = 6, weight: int = 1,
+                                                include_categories: set[str] | None = None) -> Counter[tuple[str, str]]:
+    """Optional, low-weight votes from the large root-level coverage file.
+    Defaults to only including 'Decompiled' category to avoid overriding strong UI signals.
+    """
+    votes: Counter[tuple[str, str]] = Counter()
+    if not ADDL_COVERAGE_YAML.exists():
+        return votes
+    try:
+        data = safe_yaml_load(ADDL_COVERAGE_YAML)
+    except Exception:
+        return votes
+    if include_categories is None:
+        include_categories = {"Decompiled"}
+    for entry in data.get("functions", []):
+        addr = entry.get("address")
+        cat = entry.get("category")
+        if not addr or not cat or cat not in include_categories:
+            continue
+        # Normalize address (handles YAML ints and strings)
+        if isinstance(addr, int):
+            addr_str = hex(addr)
+        else:
+            addr_str = str(addr)
+            if addr_str and not addr_str.startswith("0x") and re.fullmatch(r"[0-9a-fA-F]+", addr_str):
+                addr_str = "0x" + addr_str
+        m = ADDR_RE.match(addr_str)
         if not m:
             continue
         p = prefix(m.group(0), pfx_len)
@@ -464,6 +508,8 @@ def main() -> int:
     # Build votes from multiple sources with weights (coverage>csv>ghidra)
     votes = Counter()
     votes += build_prefix_votes_from_coverage(weight=3)
+    # Use root-level coverage as a low-weight fallback (primarily 'Decompiled')
+    votes += build_prefix_votes_from_additional_coverage(weight=1)
     votes += build_prefix_votes_from_csv(weight=2)
     votes += build_prefix_votes_from_ghidra(weight=1)
     pfx_map = derive_prefix_category(votes)
