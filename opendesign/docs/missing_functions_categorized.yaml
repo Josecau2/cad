@@ -1,5 +1,5 @@
 missing_functions_categorized:
-  generated_on: 2025-09-20 00:18:27 UTC
+  generated_on: 2025-09-20 00:23:39 UTC
   source_files:
     missing_functions: opendesign/docs/missing_functions.txt
     ghidra: ghidradecompile.txt
