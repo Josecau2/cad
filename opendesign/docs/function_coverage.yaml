@@ -425,3 +425,19 @@ functions:
     category: Edition/license
     target_symbol: framework::features::IsFeatureEnabled
     status: implemented
+
+# Auto-generated summary of functions missing from app vs. decompiled codex
+# This section is maintained by automation; list file lives in docs for review.
+missing_report:
+  codex_source: decompiledcodex.txt
+  app_scan_paths:
+    - opendesign/src
+  codex_count: 7318
+  app_count: 2790
+  missing_count: 4972
+  list_path: opendesign/docs/missing_functions.txt
+  generated_on: 2025-09-19
+  methodology: |
+    Extract unique symbols matching pattern "FUN_[0-9a-fA-F]+" from the codex and
+    from app sources, then compute set difference (codex minus app). The full list
+    of missing functions is stored at the path above.

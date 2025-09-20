@@ -5,6 +5,12 @@ set(TEST_SOURCES
     unit/test_database.cpp
     unit/test_ui_commands.cpp
     unit/test_features.cpp
+    unit/test_branch_map.cpp
+    unit/test_io.cpp
+    unit/test_extensions.cpp
+    unit/test_collaboration.cpp
+    unit/test_documentation.cpp
+    unit/test_geometry_actual.cpp
 )
 
 add_executable(opendesign_tests ${TEST_SOURCES})

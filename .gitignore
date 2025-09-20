@@ -1,2 +1,8 @@
 /build/
 /opendesign/.cache/
+/opendesign/build/
+build/
+*.o
+*.a
+*.exe
+/tmp/
