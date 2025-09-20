@@ -44,6 +44,10 @@ MISSING_TXT = DOCS / "missing_functions.txt"
 COVERAGE_YAML = DOCS / "function_coverage.yaml"
 CSV_MAP = DOCS / "decompiled_map.csv"
 OUT_YAML = DOCS / "missing_functions_categorized.yaml"
+MD_DECOMP_GLOBS = [
+    DOCS / "design.exe.md",
+    DOCS / "design.exe (2).md",
+]
 
 
 ADDR_RE = re.compile(r"0x([0-9a-fA-F]+)")
@@ -75,7 +79,7 @@ def safe_yaml_load(p: Path) -> dict:
     return yaml.safe_load(p.read_text())
 
 
-def build_prefix_votes_from_coverage(pfx_len: int = 6) -> Counter[tuple[str, str]]:
+def build_prefix_votes_from_coverage(pfx_len: int = 6, weight: int = 3) -> Counter[tuple[str, str]]:
     votes: Counter[tuple[str, str]] = Counter()
     if not COVERAGE_YAML.exists():
         return votes
@@ -89,11 +93,11 @@ def build_prefix_votes_from_coverage(pfx_len: int = 6) -> Counter[tuple[str, str
         if not m:
             continue
         p = prefix(m.group(0), pfx_len)
-        votes[(p, cat)] += 1
+        votes[(p, cat)] += weight
     return votes
 
 
-def build_prefix_votes_from_csv(pfx_len: int = 6) -> Counter[tuple[str, str]]:
+def build_prefix_votes_from_csv(pfx_len: int = 6, weight: int = 2) -> Counter[tuple[str, str]]:
     votes: Counter[tuple[str, str]] = Counter()
     if not CSV_MAP.exists():
         return votes
@@ -139,11 +143,11 @@ def build_prefix_votes_from_csv(pfx_len: int = 6) -> Counter[tuple[str, str]]:
             if not cat:
                 continue
             p = prefix(m.group(0), pfx_len)
-            votes[(p, cat)] += 1
+        votes[(p, cat)] += weight
     return votes
 
 
-def build_prefix_votes_from_ghidra(pfx_len: int = 6) -> Counter[tuple[str, str]]:
+def build_prefix_votes_from_ghidra(pfx_len: int = 6, weight: int = 1) -> Counter[tuple[str, str]]:
     votes: Counter[tuple[str, str]] = Counter()
     if not GHIDRA_FILE.exists():
         return votes
@@ -201,8 +205,132 @@ def build_prefix_votes_from_ghidra(pfx_len: int = 6) -> Counter[tuple[str, str]]
                 if m:
                     addr = "0x" + m.group(1).lower()
                     p = prefix(addr, pfx_len)
-                    votes[(p, current_cat)] += 1
+                    votes[(p, current_cat)] += weight
     return votes
+
+
+def _load_md_texts() -> list[str]:
+    texts: list[str] = []
+    for p in MD_DECOMP_GLOBS:
+        if p.exists():
+            try:
+                texts.append(p.read_text(encoding="utf-8", errors="ignore"))
+            except Exception:
+                pass
+    return texts
+
+
+def build_per_fun_body_category(missing: list[str]) -> dict[str, str]:
+    """Infer categories per function using body-based keyword hints from decompilation markdown files."""
+    texts = _load_md_texts()
+    if not texts:
+        return {}
+    wanted = set(missing)
+    per_fun_cat: dict[str, Counter[str]] = defaultdict(Counter)
+
+    # Pre-compile keyword patterns per category
+    cat_keywords: dict[str, list[re.Pattern]] = {
+        "Ribbon Interface": [
+            re.compile(r"CBCGPRibbon", re.I),
+            re.compile(r"Ribbon", re.I),
+        ],
+        "Toolbar": [
+            re.compile(r"ToolBar", re.I),
+            re.compile(r"CMFCToolBar", re.I),
+            re.compile(r"CBCGP(Base)?ToolBar", re.I),
+        ],
+        "Status Bar & Panel": [
+            re.compile(r"StatusBar", re.I),
+            re.compile(r"CBCGPStatusBar", re.I),
+            re.compile(r"Status\s*Bar", re.I),
+        ],
+        "Dialog & Form": [
+            re.compile(r"Dialog", re.I),
+            re.compile(r"\bDlg\b", re.I),
+            re.compile(r"OnInitDialog|EndDialog|DoModal|CreateDialog", re.I),
+            re.compile(r"CDialog", re.I),
+            re.compile(r"CFormView", re.I),
+        ],
+        "Window Management": [
+            re.compile(r"CreateWindow(Ex)?", re.I),
+            re.compile(r"ShowWindow", re.I),
+            re.compile(r"MoveWindow|SetWindowPos", re.I),
+            re.compile(r"DefWindowProc|WNDPROC|GetWindowPlacement|SetWindowLong", re.I),
+            re.compile(r"SubclassWindow|UnsubclassWindow", re.I),
+        ],
+        "Menu & Context Menu": [
+            re.compile(r"\bMenu\b|TrackPopupMenu|AppendMenu|GetMenu|SetMenu", re.I),
+        ],
+        "Advanced UI": [
+            re.compile(r"\bBCGP\b|CBCGP", re.I),  # generic BCGP when ribbon/toolbar/status not matched
+            re.compile(r"DockingControlBar|TabbedBar", re.I),
+        ],
+        "Command handlers": [
+            re.compile(r"OnUpdateCmdUI|WM_COMMAND|ON_COMMAND|ON_UPDATE_COMMAND_UI", re.I),
+        ],
+        "Settings": [
+            re.compile(r"Reg(Open|Set|Query)|WritePrivateProfile|GetPrivateProfile", re.I),
+        ],
+        "CAD Document": [
+            re.compile(r"\bOCDocument\b|\bCDocument\b", re.I),
+        ],
+    }
+
+    # Build a combined regex to locate function heads: any FUN_XXXXXXXX pattern followed by '('
+    head_re = re.compile(r"\b(FUN_[0-9A-Fa-f]{8,})\s*\(")
+
+    # For performance, process texts and slice around function definitions
+    for text in texts:
+        # Find all function head positions
+        positions = [(m.group(1), m.start()) for m in re.finditer(r"\b(FUN_[0-9A-Fa-f]{8,})\s*\(", text)]
+        if not positions:
+            continue
+        # Add sentinel end
+        positions.sort(key=lambda x: x[1])
+        for idx, (fun, start_pos) in enumerate(positions):
+            if fun not in wanted:
+                continue
+            end_pos = positions[idx + 1][1] if idx + 1 < len(positions) else len(text)
+            body = text[start_pos:end_pos]
+            # Score categories by keyword presence
+            scores: Counter[str] = Counter()
+            for cat, patterns in cat_keywords.items():
+                for pat in patterns:
+                    # count occurrences to give weight
+                    hits = len(pat.findall(body))
+                    if hits:
+                        scores[cat] += hits
+            if not scores:
+                continue
+            # Prefer more specific UI categories over generic 'Advanced UI'
+            # We'll pick highest score; tie-breaker by preferred order
+            preference = [
+                "Ribbon Interface",
+                "Toolbar",
+                "Status Bar & Panel",
+                "Dialog & Form",
+                "Window Management",
+                "Menu & Context Menu",
+                "Command handlers",
+                "Settings",
+                "CAD Document",
+                "Advanced UI",
+            ]
+            best_cat = None
+            best_score = -1
+            for cat, sc in scores.items():
+                if sc > best_score or (sc == best_score and best_cat is not None and preference.index(cat) < preference.index(best_cat)):
+                    best_score = sc
+                    best_cat = cat
+            if best_cat:
+                per_fun_cat[fun][best_cat] += best_score
+
+    # Resolve to a single category per function
+    resolved: dict[str, str] = {}
+    for fun, cnts in per_fun_cat.items():
+        best = sorted(cnts.items(), key=lambda x: (-x[1], x[0]))[0][0]
+        resolved[fun] = best
+    return resolved
 
 
 def derive_prefix_category(votes: Counter[tuple[str, str]]) -> dict[str, str]:
@@ -217,9 +345,13 @@ def derive_prefix_category(votes: Counter[tuple[str, str]]) -> dict[str, str]:
     return mapping
 
 
-def categorize_missing(missing: list[str], pfx_map: dict[str, str], pfx_len: int = 6) -> dict[str, list[str]]:
+def categorize_missing(missing: list[str], pfx_map: dict[str, str], pfx_len: int = 6, per_fun_cat: dict[str, str] | None = None) -> dict[str, list[str]]:
     cats: dict[str, list[str]] = defaultdict(list)
     for fun in missing:
+        # If we have a direct per-function category from body hints, use it first
+        if per_fun_cat and fun in per_fun_cat:
+            cats[per_fun_cat[fun]].append(fun)
+            continue
         addr = hex_from_fun(fun)
         if not addr:
             cats["Uncategorized"].append(fun)
@@ -272,14 +404,17 @@ def emit_yaml(categories: dict[str, list[str]], total: int) -> str:
 
 def main() -> int:
     missing = read_missing()
-    # Build votes from multiple sources
+    # Build votes from multiple sources with weights (coverage>csv>ghidra)
     votes = Counter()
-    votes += build_prefix_votes_from_coverage()
-    votes += build_prefix_votes_from_csv()
-    votes += build_prefix_votes_from_ghidra()
+    votes += build_prefix_votes_from_coverage(weight=3)
+    votes += build_prefix_votes_from_csv(weight=2)
+    votes += build_prefix_votes_from_ghidra(weight=1)
     pfx_map = derive_prefix_category(votes)
 
-    categories = categorize_missing(missing, pfx_map)
+    # Try per-function categorization using MD decomp body hints
+    per_fun_cat = build_per_fun_body_category(missing)
+
+    categories = categorize_missing(missing, pfx_map, per_fun_cat=per_fun_cat)
     out = emit_yaml(categories, total=len(missing))
     OUT_YAML.write_text(out, encoding="utf-8")
     print(f"Wrote {OUT_YAML} with {len(missing)} items across {len(categories)} categories.")

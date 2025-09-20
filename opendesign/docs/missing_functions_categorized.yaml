@@ -1,21 +1,27 @@
 missing_functions_categorized:
-  generated_on: 2025-09-20 00:06:14 UTC
+  generated_on: 2025-09-20 00:14:19 UTC
   source_files:
     missing_functions: opendesign/docs/missing_functions.txt
     ghidra: ghidradecompile.txt
     coverage_yaml: opendesign/docs/function_coverage.yaml
     decompiled_map_csv: opendesign/docs/decompiled_map.csv
   total_missing: 4972
-  categories_count: 5
+  categories_count: 9
   category_counts:
-    Uncategorized: 4051
-    CAD Document: 1
-    Settings: 5
-    Toolbar: 913
-    Window Management: 2
+    Uncategorized: 3550
+    Advanced UI: 226
+    CAD Document: 20
+    Dialog & Form: 246
+    Menu & Context Menu: 6
+    Ribbon Interface: 119
+    Settings: 2
+    Toolbar: 726
+    Window Management: 77
   categories:
     Uncategorized:
     - FUN_140002b60
+    - FUN_1400126e0
+    - FUN_140012750
     - FUN_1400134f0
     - FUN_140013510
     - FUN_1400136b0
@@ -33,7 +39,6 @@ missing_functions_categorized:
     - FUN_140018b6c
     - FUN_140018c50
     - FUN_140018eb4
-    - FUN_140018edc
     - FUN_1400190f4
     - FUN_140019280
     - FUN_140019410
@@ -43,8 +48,6 @@ missing_functions_categorized:
     - FUN_14001a6ec
     - FUN_14001a888
     - FUN_14001a9e4
-    - FUN_14001aac8
-    - FUN_14001ac20
     - FUN_14001ad88
     - FUN_14001af20
     - FUN_14001b0d0
@@ -124,7 +127,6 @@ missing_functions_categorized:
     - FUN_14002bb70
     - FUN_14002bbd8
     - FUN_14002bc48
-    - FUN_14002bcf0
     - FUN_14002bd60
     - FUN_14002bf74
     - FUN_14002c024
@@ -151,7 +153,6 @@ missing_functions_categorized:
     - FUN_14002dc28
     - FUN_14002dc6c
     - FUN_14002dcb0
-    - FUN_14002dd4c
     - FUN_14002dd90
     - FUN_14002de0c
     - FUN_14002de64
@@ -166,7 +167,6 @@ missing_functions_categorized:
     - FUN_14002e0fc
     - FUN_14002e160
     - FUN_14002e1b4
-    - FUN_14002eb00
     - FUN_140032424
     - FUN_140032938
     - FUN_140032bb0
@@ -174,8 +174,6 @@ missing_functions_categorized:
     - FUN_140032de4
     - FUN_1400334c4
     - FUN_140034108
-    - FUN_140034558
-    - FUN_140034c70
     - FUN_140035198
     - FUN_140035498
     - FUN_140048028
@@ -214,7 +212,6 @@ missing_functions_categorized:
     - FUN_14004c19c
     - FUN_14004d104
     - FUN_14004ddc4
-    - FUN_14004e1ec
     - FUN_14004e248
     - FUN_14004e324
     - FUN_14004e400
@@ -230,6 +227,11 @@ missing_functions_categorized:
     - FUN_140051e38
     - FUN_14005285c
     - FUN_140052b6c
+    - FUN_1400537b0
+    - FUN_140053950
+    - FUN_140053b00
+    - FUN_140053d20
+    - FUN_140053ed4
     - FUN_140054138
     - FUN_140054350
     - FUN_140054520
@@ -336,6 +338,7 @@ missing_functions_categorized:
     - FUN_140062a60
     - FUN_140062ce4
     - FUN_140062e0c
+    - FUN_140063f48
     - FUN_140064820
     - FUN_140064860
     - FUN_1400648b8
@@ -347,11 +350,7 @@ missing_functions_categorized:
     - FUN_1400650c4
     - FUN_1400650cc
     - FUN_1400650d4
-    - FUN_1400665f0
-    - FUN_1400666a8
     - FUN_14006685c
-    - FUN_1400668f8
-    - FUN_140066948
     - FUN_140068240
     - FUN_1400683f8
     - FUN_140068478
@@ -370,10 +369,8 @@ missing_functions_categorized:
     - FUN_14006a814
     - FUN_14006a87c
     - FUN_14006cdb4
-    - FUN_14006cf04
     - FUN_14006d090
     - FUN_14006d0c8
-    - FUN_14006d3c8
     - FUN_14006d7ac
     - FUN_14006e0a0
     - FUN_14006e100
@@ -381,11 +378,7 @@ missing_functions_categorized:
     - FUN_14006e570
     - FUN_14006e5bc
     - FUN_14006e5c4
-    - FUN_1400701cc
-    - FUN_140070324
-    - FUN_140070464
     - FUN_1400704b0
-    - FUN_140070508
     - FUN_140070564
     - FUN_140070664
     - FUN_1400707a0
@@ -394,9 +387,6 @@ missing_functions_categorized:
     - FUN_140070940
     - FUN_1400709c0
     - FUN_140070a60
-    - FUN_140070b38
-    - FUN_140070bf8
-    - FUN_14007172c
     - FUN_14007246c
     - FUN_14007247c
     - FUN_140072484
@@ -408,22 +398,11 @@ missing_functions_categorized:
     - FUN_1400724b4
     - FUN_1400724bc
     - FUN_1400724c4
-    - FUN_1400724cc
-    - FUN_1400724d4
-    - FUN_1400724dc
-    - FUN_1400724e4
-    - FUN_1400724ec
-    - FUN_1400724f4
-    - FUN_1400724fc
-    - FUN_140072504
-    - FUN_14007250c
-    - FUN_140072514
     - FUN_14007251c
     - FUN_1400763d4
     - FUN_140076bb4
     - FUN_140076c94
     - FUN_140076ef4
-    - FUN_140076f74
     - FUN_140077370
     - FUN_1400773e0
     - FUN_140077448
@@ -488,7 +467,6 @@ missing_functions_categorized:
     - FUN_14008caa8
     - FUN_14008cb54
     - FUN_14008cc00
-    - FUN_14008ccac
     - FUN_14008e40c
     - FUN_14008e484
     - FUN_14008e7d4
@@ -499,7 +477,6 @@ missing_functions_categorized:
     - FUN_140097050
     - FUN_1400970e4
     - FUN_1400971f8
-    - FUN_140097284
     - FUN_140097444
     - FUN_140097524
     - FUN_1400976e4
@@ -513,7 +490,6 @@ missing_functions_categorized:
     - FUN_1400986bc
     - FUN_14009d2b0
     - FUN_14009d6c0
-    - FUN_14009d798
     - FUN_14009dba4
     - FUN_1400ae6bc
     - FUN_1400ae814
@@ -522,9 +498,6 @@ missing_functions_categorized:
     - FUN_1400aebac
     - FUN_1400aed20
     - FUN_1400aeeb0
-    - FUN_1400aef00
-    - FUN_1400b15b8
-    - FUN_1400b1fdc
     - FUN_1400b61b4
     - FUN_1400b64c0
     - FUN_1400b6618
@@ -539,10 +512,7 @@ missing_functions_categorized:
     - FUN_1400b6d38
     - FUN_1400baee4
     - FUN_1400baf1c
-    - FUN_1400bc738
-    - FUN_1400c03cc
     - FUN_1400c0b8c
-    - FUN_1400c0bfc
     - FUN_1400c498c
     - FUN_1400d8f08
     - FUN_1400d946c
@@ -566,14 +536,11 @@ missing_functions_categorized:
     - FUN_1400dacec
     - FUN_1400dad30
     - FUN_1400dade4
-    - FUN_1400dae60
     - FUN_1400daf20
     - FUN_1400dafa0
     - FUN_1400daff0
     - FUN_1400db034
     - FUN_1400db080
-    - FUN_1400db09c
-    - FUN_1400db180
     - FUN_1400db194
     - FUN_1400db1bc
     - FUN_1400db1f0
@@ -582,8 +549,6 @@ missing_functions_categorized:
     - FUN_1400db274
     - FUN_1400db280
     - FUN_1400db28c
-    - FUN_1400db298
-    - FUN_1400db2dc
     - FUN_1400db324
     - FUN_1400db378
     - FUN_1400db3cc
@@ -594,9 +559,7 @@ missing_functions_categorized:
     - FUN_1400db434
     - FUN_1400db46c
     - FUN_1400db478
-    - FUN_1400db484
     - FUN_1400db4c4
-    - FUN_1400db4e8
     - FUN_1400db650
     - FUN_1400db704
     - FUN_1400db7c8
@@ -609,7 +572,6 @@ missing_functions_categorized:
     - FUN_1400dbd10
     - FUN_1400dbdd4
     - FUN_1400dbe34
-    - FUN_1400dbee4
     - FUN_1400dbf00
     - FUN_1400dbf24
     - FUN_1400dbf78
@@ -647,7 +609,6 @@ missing_functions_categorized:
     - FUN_1400dda74
     - FUN_1400ddb2c
     - FUN_1400ddb60
-    - FUN_1400ddda8
     - FUN_1400dde88
     - FUN_1400ddfa8
     - FUN_1400de24c
@@ -655,17 +616,12 @@ missing_functions_categorized:
     - FUN_1400de750
     - FUN_1400de7f8
     - FUN_1400deb3c
-    - FUN_1400def60
     - FUN_1400f007f
-    - FUN_1400f0338
     - FUN_1400f0ac8
     - FUN_1400f1a30
-    - FUN_1400f1dc0
-    - FUN_1400f1f5c
     - FUN_1400f20f4
     - FUN_1400f2518
     - FUN_1400f2708
-    - FUN_1400f2830
     - FUN_1400f29f8
     - FUN_1400f2a04
     - FUN_1400f2a10
@@ -674,7 +630,6 @@ missing_functions_categorized:
     - FUN_1400f2a34
     - FUN_1400f2a40
     - FUN_1400f2a4c
-    - FUN_1400f2a84
     - FUN_1400f2bd4
     - FUN_1400f2c5c
     - FUN_1400f2ce4
@@ -685,7 +640,6 @@ missing_functions_categorized:
     - FUN_1400f2f8c
     - FUN_1400f3014
     - FUN_1400f3890
-    - FUN_1400f3c58
     - FUN_1400f4024
     - FUN_1400f40ec
     - FUN_1400f4174
@@ -698,7 +652,6 @@ missing_functions_categorized:
     - FUN_1400f50f0
     - FUN_1400f515c
     - FUN_1400f51e4
-    - FUN_1400f526c
     - FUN_1400f52d0
     - FUN_1400f54b8
     - FUN_1400f54d0
@@ -710,9 +663,6 @@ missing_functions_categorized:
     - FUN_1400f55c4
     - FUN_1400f5640
     - FUN_1400f580c
-    - FUN_1400f58c8
-    - FUN_1400f58d4
-    - FUN_1400f5918
     - FUN_1400f6200
     - FUN_1400f6518
     - FUN_1400f6830
@@ -804,7 +754,6 @@ missing_functions_categorized:
     - FUN_1400fd4c0
     - FUN_1400fd4f8
     - FUN_1400fd530
-    - FUN_1400fd568
     - FUN_1400fd640
     - FUN_1400fd90c
     - FUN_1400fd9a0
@@ -841,20 +790,7 @@ missing_functions_categorized:
     - FUN_140105020
     - FUN_14010503c
     - FUN_140105058
-    - FUN_14010506c
-    - FUN_1401051e4
-    - FUN_14010527c
-    - FUN_1401052ec
-    - FUN_1401053f8
-    - FUN_1401054ac
-    - FUN_140105530
     - FUN_14010555c
-    - FUN_140105570
-    - FUN_140105644
-    - FUN_140105774
-    - FUN_1401058b8
-    - FUN_140105924
-    - FUN_140105938
     - FUN_1401059a8
     - FUN_140105a30
     - FUN_140105a7c
@@ -863,7 +799,6 @@ missing_functions_categorized:
     - FUN_140105b88
     - FUN_140105bb8
     - FUN_140105bc8
-    - FUN_140105c60
     - FUN_140105cc4
     - FUN_140105f40
     - FUN_1401061bc
@@ -874,25 +809,8 @@ missing_functions_categorized:
     - FUN_140106f30
     - FUN_14010750c
     - FUN_140107934
-    - FUN_140107b9c
-    - FUN_140107c70
-    - FUN_140107d48
-    - FUN_140107e28
-    - FUN_140107f00
-    - FUN_140107fd0
-    - FUN_140108044
-    - FUN_140108118
-    - FUN_140108210
-    - FUN_1401082fc
-    - FUN_1401083e8
-    - FUN_1401084bc
-    - FUN_140108590
-    - FUN_1401086a4
     - FUN_140108778
     - FUN_140108a38
-    - FUN_140108e68
-    - FUN_140108ecc
-    - FUN_140108fe0
     - FUN_1401090b4
     - FUN_1401090cc
     - FUN_140109434
@@ -908,8 +826,6 @@ missing_functions_categorized:
     - FUN_140109830
     - FUN_140109920
     - FUN_140109990
-    - FUN_1401099a8
-    - FUN_140109a28
     - FUN_140109b70
     - FUN_140109c74
     - FUN_14010a4b0
@@ -919,14 +835,12 @@ missing_functions_categorized:
     - FUN_14010a764
     - FUN_14010a7ac
     - FUN_14010a7dc
-    - FUN_14010ae9c
     - FUN_14010b38c
     - FUN_14010b3e8
     - FUN_14010b400
     - FUN_14010b410
     - FUN_14010b43c
     - FUN_14010b4ac
-    - FUN_14010b51c
     - FUN_14010b5b4
     - FUN_14010b698
     - FUN_14010b998
@@ -936,39 +850,30 @@ missing_functions_categorized:
     - FUN_14010cae4
     - FUN_14010cb30
     - FUN_14010cbc0
-    - FUN_14010cc40
-    - FUN_14010cc74
-    - FUN_14010ce4c
     - FUN_14010cff8
     - FUN_14010d03c
     - FUN_14010d2ac
     - FUN_14010d56c
-    - FUN_14010d5b4
     - FUN_14010d618
     - FUN_14010d654
     - FUN_14010d83c
     - FUN_14010e038
-    - FUN_14010e3e0
     - FUN_14010e5e8
     - FUN_14010e98c
     - FUN_14010ea34
     - FUN_14010ea40
     - FUN_14010ea84
     - FUN_14010eb0c
-    - FUN_14010eb78
     - FUN_14010ebb0
     - FUN_14010ec24
     - FUN_14010ef18
-    - FUN_14010eff0
     - FUN_14010f0d8
     - FUN_14010f270
     - FUN_14010f298
     - FUN_14010f370
-    - FUN_14010f424
     - FUN_14010f504
     - FUN_14010f528
     - FUN_14010f544
-    - FUN_14010f560
     - FUN_14010f5ec
     - FUN_14010f674
     - FUN_14010f6b8
@@ -993,7 +898,6 @@ missing_functions_categorized:
     - FUN_140110708
     - FUN_1401107c0
     - FUN_1401107c8
-    - FUN_14011085c
     - FUN_1401108bc
     - FUN_140110910
     - FUN_14011096c
@@ -1003,7 +907,6 @@ missing_functions_categorized:
     - FUN_140110b4c
     - FUN_140110c00
     - FUN_140110c64
-    - FUN_140110c88
     - FUN_140110cac
     - FUN_140110d1c
     - FUN_140110f68
@@ -1026,7 +929,6 @@ missing_functions_categorized:
     - FUN_140112be8
     - FUN_140112d58
     - FUN_140112e60
-    - FUN_140112ed8
     - FUN_140112ff0
     - FUN_140113134
     - FUN_1401131f0
@@ -1038,8 +940,6 @@ missing_functions_categorized:
     - FUN_140113714
     - FUN_140113794
     - FUN_14011389c
-    - FUN_140113908
-    - FUN_140113954
     - FUN_140113998
     - FUN_1401139dc
     - FUN_140113a58
@@ -1071,7 +971,6 @@ missing_functions_categorized:
     - FUN_140114aa8
     - FUN_140114ac0
     - FUN_140114aec
-    - FUN_140114b30
     - FUN_140114b9c
     - FUN_140114f8c
     - FUN_140114f98
@@ -1200,7 +1099,6 @@ missing_functions_categorized:
     - FUN_140119388
     - FUN_1401194ac
     - FUN_14011a218
-    - FUN_14011a3bc
     - FUN_14011ac60
     - FUN_14011ad3c
     - FUN_14011add0
@@ -1237,7 +1135,6 @@ missing_functions_categorized:
     - FUN_14011ca60
     - FUN_14011cacc
     - FUN_14011cb20
-    - FUN_14011cb84
     - FUN_14011cba8
     - FUN_14011cc10
     - FUN_14011cc8c
@@ -1285,47 +1182,33 @@ missing_functions_categorized:
     - FUN_14011e8b4
     - FUN_14011e918
     - FUN_14011e988
-    - FUN_14011e990
     - FUN_14011ea38
     - FUN_14011eb2c
-    - FUN_14011eba0
-    - FUN_14011eea4
-    - FUN_14011ef50
     - FUN_14011ef94
-    - FUN_14011efd8
     - FUN_14011f058
     - FUN_14011f1f8
-    - FUN_14011f3ac
     - FUN_14011f3b4
     - FUN_14011f3ec
-    - FUN_14011f3f4
-    - FUN_14011f428
     - FUN_14011f468
     - FUN_14011f4b0
-    - FUN_14011f4f8
-    - FUN_14011f968
     - FUN_14011faac
     - FUN_14011fae4
     - FUN_14011fb1c
     - FUN_14011fb54
     - FUN_14011fb8c
-    - FUN_14011fbec
     - FUN_14011fdbc
     - FUN_14011fe08
     - FUN_14011fe30
-    - FUN_14011fe7c
     - FUN_140120034
     - FUN_140120040
     - FUN_140120074
     - FUN_1401200b8
-    - FUN_140120258
     - FUN_140120390
     - FUN_140120510
     - FUN_140120560
     - FUN_1401205b0
     - FUN_1401205bc
     - FUN_1401205c8
-    - FUN_140120b34
     - FUN_140121018
     - FUN_140121098
     - FUN_140121468
@@ -1346,22 +1229,13 @@ missing_functions_categorized:
     - FUN_140121d10
     - FUN_140121d74
     - FUN_140121f34
-    - FUN_1401220a4
-    - FUN_1401220fc
-    - FUN_140122380
     - FUN_140122468
-    - FUN_1401228c0
-    - FUN_140122b24
     - FUN_140122c08
-    - FUN_140122c18
     - FUN_140122c4c
-    - FUN_140122cf8
     - FUN_140122d3c
     - FUN_140122d4c
     - FUN_140122d58
     - FUN_140122d68
-    - FUN_140122d74
-    - FUN_140122e9c
     - FUN_1401231b8
     - FUN_140123240
     - FUN_1401232b0
@@ -1379,7 +1253,6 @@ missing_functions_categorized:
     - FUN_1401235fc
     - FUN_140123608
     - FUN_1401237c0
-    - FUN_140124384
     - FUN_140124464
     - FUN_140124474
     - FUN_140124480
@@ -1389,39 +1262,28 @@ missing_functions_categorized:
     - FUN_1401246a4
     - FUN_140124794
     - FUN_1401247c8
-    - FUN_14012480c
-    - FUN_140124f5c
     - FUN_1401251bc
     - FUN_1401254d4
     - FUN_1401256a4
     - FUN_1401256e0
-    - FUN_1401259cc
     - FUN_140125ae8
     - FUN_140125b24
-    - FUN_140125b50
     - FUN_140125c44
     - FUN_140125cbc
-    - FUN_140125d18
     - FUN_140125e48
     - FUN_140125ebc
-    - FUN_140125f1c
-    - FUN_14012730c
-    - FUN_140127b44
     - FUN_140127b6c
     - FUN_140127cf8
     - FUN_140127d04
     - FUN_140127d48
     - FUN_140127d88
     - FUN_140127dd4
-    - FUN_140127f30
     - FUN_1401280d8
     - FUN_140128188
     - FUN_1401281c0
     - FUN_140128234
-    - FUN_140128510
     - FUN_140128934
     - FUN_140128a08
-    - FUN_140128ac8
     - FUN_140128b28
     - FUN_140128b74
     - FUN_140128bc0
@@ -1445,7 +1307,6 @@ missing_functions_categorized:
     - FUN_14012a210
     - FUN_14012a220
     - FUN_14012a234
-    - FUN_14012a2dc
     - FUN_14012a314
     - FUN_14012a34c
     - FUN_14012a3b0
@@ -1476,63 +1337,25 @@ missing_functions_categorized:
     - FUN_14012b9bc
     - FUN_14012c0d8
     - FUN_14012c3dc
-    - FUN_14012c500
-    - FUN_14012c580
-    - FUN_14012c630
-    - FUN_14012c6e4
     - FUN_14012c7e4
     - FUN_14012c88c
     - FUN_14012c898
     - FUN_14012c8a4
     - FUN_14012c8b0
-    - FUN_14012c8bc
-    - FUN_14012c938
     - FUN_14012c97c
-    - FUN_14012c9c0
-    - FUN_14012cb18
-    - FUN_14012cee4
-    - FUN_14012d0a0
-    - FUN_14012d274
-    - FUN_14012d394
-    - FUN_14012d68c
     - FUN_14012d7e8
     - FUN_14012d8c8
-    - FUN_14012d950
     - FUN_14012da98
     - FUN_14012db0c
-    - FUN_14012db80
-    - FUN_14012df50
-    - FUN_14012e13c
-    - FUN_14012e2fc
-    - FUN_14012e3a0
     - FUN_14012e960
     - FUN_14012e9f4
     - FUN_14012ea70
-    - FUN_14012ead8
-    - FUN_14012eb14
-    - FUN_14012f174
-    - FUN_14012f1d4
-    - FUN_14012f390
-    - FUN_14012f3ac
-    - FUN_14012f3c4
-    - FUN_14012f488
-    - FUN_14012f868
     - FUN_14012f97c
     - FUN_14012f984
-    - FUN_14012f9c0
     - FUN_14012f9e0
-    - FUN_14012faa8
-    - FUN_14012fb38
-    - FUN_14012fb54
-    - FUN_14012fb70
-    - FUN_14012fbc4
-    - FUN_14012fe44
-    - FUN_14012fef8
     - FUN_14012ff60
     - FUN_14012ff80
     - FUN_140130048
-    - FUN_1401300a4
-    - FUN_1401301ac
     - FUN_1401301e4
     - FUN_1401302a4
     - FUN_1401302d8
@@ -1541,29 +1364,20 @@ missing_functions_categorized:
     - FUN_1401303c8
     - FUN_1401303d4
     - FUN_140130418
-    - FUN_140130460
-    - FUN_1401304b4
     - FUN_140130590
-    - FUN_14013077c
     - FUN_1401307d4
-    - FUN_14013089c
-    - FUN_140130ab8
     - FUN_140130d1c
     - FUN_140131104
     - FUN_140131178
     - FUN_140131240
     - FUN_140131258
     - FUN_140131510
-    - FUN_1401318c8
-    - FUN_140131a38
     - FUN_140131aa0
     - FUN_140137054
     - FUN_14013721c
-    - FUN_140137298
     - FUN_1401372f0
     - FUN_1401372fc
     - FUN_140137344
-    - FUN_140137370
     - FUN_140137478
     - FUN_1401374ec
     - FUN_140137540
@@ -1577,12 +1391,10 @@ missing_functions_categorized:
     - FUN_140137964
     - FUN_140137998
     - FUN_140137b08
-    - FUN_140137b80
     - FUN_140137cc4
     - FUN_140137d00
     - FUN_140137df0
     - FUN_140137e34
-    - FUN_140137e6c
     - FUN_14013811c
     - FUN_1401381d0
     - FUN_1401384c4
@@ -1614,22 +1426,13 @@ missing_functions_categorized:
     - FUN_14013b554
     - FUN_14013b654
     - FUN_14013b700
-    - FUN_14013b7a4
     - FUN_14013b8ac
     - FUN_14013b928
-    - FUN_14013b9b8
-    - FUN_14013ba3c
-    - FUN_14013ba84
     - FUN_14013bd78
-    - FUN_14013bde4
     - FUN_14013e0c4
-    - FUN_14013e1a8
-    - FUN_14013e1fc
     - FUN_14013e258
     - FUN_14013e278
     - FUN_14013e3a0
-    - FUN_14013e450
-    - FUN_14013e558
     - FUN_14013e5f0
     - FUN_14013e5fc
     - FUN_14013e61c
@@ -1638,22 +1441,12 @@ missing_functions_categorized:
     - FUN_14013e6a4
     - FUN_14013e6d4
     - FUN_14013e6e0
-    - FUN_14013e84c
     - FUN_14013e984
-    - FUN_14013eaf0
     - FUN_14013ebd8
-    - FUN_14013ec30
     - FUN_14013ed60
-    - FUN_14013f384
-    - FUN_14013f43c
     - FUN_14013f4d0
-    - FUN_14013f514
-    - FUN_14013f594
-    - FUN_14013f614
     - FUN_14013f6f8
-    - FUN_14013f798
     - FUN_14013f7a0
-    - FUN_14013f8b0
     - FUN_14013fd40
     - FUN_14013fe20
     - FUN_14013fe58
@@ -1661,7 +1454,6 @@ missing_functions_categorized:
     - FUN_14013fe9c
     - FUN_14013fea8
     - FUN_14013ff64
-    - FUN_140140014
     - FUN_140140094
     - FUN_1401400dc
     - FUN_1401400e8
@@ -1694,7 +1486,6 @@ missing_functions_categorized:
     - FUN_140140f1c
     - FUN_1401416f0
     - FUN_1401419e8
-    - FUN_140141aa0
     - FUN_140141e4c
     - FUN_1401428e8
     - FUN_140142974
@@ -1703,88 +1494,56 @@ missing_functions_categorized:
     - FUN_140142a38
     - FUN_140142a70
     - FUN_140142aa8
-    - FUN_140142b2c
-    - FUN_140142bb0
     - FUN_140142be4
     - FUN_140142c28
     - FUN_140142c6c
     - FUN_140142cac
     - FUN_140142f04
-    - FUN_140142f30
-    - FUN_140143098
-    - FUN_140143190
     - FUN_1401432a8
     - FUN_140143320
     - FUN_140143364
     - FUN_14014339c
     - FUN_140143468
     - FUN_1401434a8
-    - FUN_1401435c8
     - FUN_140143b0c
     - FUN_140143b14
     - FUN_140143b88
     - FUN_140143b90
-    - FUN_140143c1c
-    - FUN_140143c3c
     - FUN_140143cec
     - FUN_140143d8c
     - FUN_140143e14
     - FUN_140143ef0
     - FUN_140143f80
     - FUN_140143fb0
-    - FUN_1401451d8
     - FUN_140145204
     - FUN_1401452a8
     - FUN_140145334
     - FUN_14014539c
     - FUN_1401453a8
-    - FUN_1401453b4
-    - FUN_1401453c0
-    - FUN_140145404
-    - FUN_140145448
     - FUN_140145490
-    - FUN_1401454d4
-    - FUN_140145518
     - FUN_140145570
     - FUN_1401455b8
-    - FUN_1401455f0
-    - FUN_140145634
     - FUN_14014567c
-    - FUN_1401456c0
     - FUN_1401457e0
-    - FUN_140145870
-    - FUN_14014591c
     - FUN_140145950
     - FUN_14014595c
     - FUN_140145a40
-    - FUN_1401468cc
     - FUN_140146e58
-    - FUN_14014709c
     - FUN_140147214
     - FUN_140147278
     - FUN_140147324
-    - FUN_1401473e0
     - FUN_1401474d0
-    - FUN_140147684
     - FUN_1401477f0
-    - FUN_1401477fc
     - FUN_1401493c4
     - FUN_14014955c
     - FUN_140149598
     - FUN_14014980c
-    - FUN_140149a90
-    - FUN_140149c28
     - FUN_14014a814
-    - FUN_14014aa98
     - FUN_14014ab38
     - FUN_14014ac3c
     - FUN_14014ace8
-    - FUN_14014ad94
-    - FUN_14014ade4
     - FUN_14014ae40
     - FUN_14014ae88
-    - FUN_14014aeb8
-    - FUN_14014b124
     - FUN_14014b1ec
     - FUN_14014b204
     - FUN_14014b240
@@ -1794,71 +1553,51 @@ missing_functions_categorized:
     - FUN_14014b370
     - FUN_14014b378
     - FUN_14014b380
-    - FUN_14014b3ec
     - FUN_14014b4b0
     - FUN_14014b4b8
     - FUN_14014b4c0
     - FUN_14014b4dc
-    - FUN_14014b4f4
     - FUN_14014b560
     - FUN_14014b568
     - FUN_14014b578
     - FUN_14014b580
-    - FUN_14014b588
     - FUN_14014b628
     - FUN_14014b630
     - FUN_14014b638
-    - FUN_14014b640
     - FUN_14014b730
     - FUN_140150090
     - FUN_1401500ac
     - FUN_1401502e0
-    - FUN_1401503e4
     - FUN_140150484
     - FUN_1401504cc
     - FUN_140150670
     - FUN_140150778
     - FUN_1401507a0
-    - FUN_1401507ec
-    - FUN_140150940
     - FUN_1401509ac
     - FUN_140150c5c
     - FUN_140150d24
-    - FUN_14015111c
     - FUN_14015118c
     - FUN_1401511b8
     - FUN_1401511f8
     - FUN_1401515bc
     - FUN_140151b2c
-    - FUN_140152174
     - FUN_14015249c
     - FUN_14015282c
     - FUN_14015286c
-    - FUN_1401528ac
     - FUN_1401528c0
-    - FUN_140152924
     - FUN_140152a70
     - FUN_140152bdc
     - FUN_140152c84
-    - FUN_140152fb4
     - FUN_140152ffc
     - FUN_140153700
-    - FUN_14015373c
     - FUN_140153784
     - FUN_140153b2c
     - FUN_140153be8
     - FUN_140153c28
-    - FUN_1401547b4
     - FUN_140154a4c
-    - FUN_140154c10
     - FUN_140155088
-    - FUN_1401554c0
-    - FUN_140155508
-    - FUN_1401555ec
-    - FUN_140155710
     - FUN_1401557bc
     - FUN_14015678c
-    - FUN_1401567d4
     - FUN_140156888
     - FUN_140156904
     - FUN_140156934
@@ -1898,42 +1637,23 @@ missing_functions_categorized:
     - FUN_140158bd4
     - FUN_140158ca0
     - FUN_140158fec
-    - FUN_14015a448
     - FUN_14015a708
     - FUN_14015a7ec
     - FUN_14015aa5c
     - FUN_14015ace4
-    - FUN_14015af84
-    - FUN_14015afc0
-    - FUN_14015b0e0
-    - FUN_14015b27c
-    - FUN_14015b2dc
     - FUN_14015b470
     - FUN_14015b820
-    - FUN_14015b828
-    - FUN_14015b864
     - FUN_14015b898
     - FUN_14015b8a8
     - FUN_14015b944
     - FUN_14015b9f8
-    - FUN_14015ba24
     - FUN_14015baf4
-    - FUN_14015bb08
-    - FUN_14015bb50
     - FUN_14015bb8c
-    - FUN_14015bb9c
-    - FUN_14015bc28
-    - FUN_14015bd28
     - FUN_14015bf7c
     - FUN_14015c03c
     - FUN_14015c0a0
     - FUN_14015c120
     - FUN_14015c2f8
-    - FUN_14015c320
-    - FUN_14015c37c
-    - FUN_14015c4a0
-    - FUN_14015c53c
-    - FUN_14015c588
     - FUN_14015cac4
     - FUN_14015cb34
     - FUN_14015ce08
@@ -1941,26 +1661,16 @@ missing_functions_categorized:
     - FUN_14015cfa0
     - FUN_14015d114
     - FUN_14015d144
-    - FUN_14015d1bc
     - FUN_14015d220
     - FUN_14015d3f8
     - FUN_14015d45c
     - FUN_14015d4d8
     - FUN_14015d508
     - FUN_14015d51c
-    - FUN_14015d524
-    - FUN_14015d5c8
     - FUN_14015d618
     - FUN_14015d6bc
-    - FUN_14015d730
-    - FUN_14015d798
-    - FUN_14015d860
-    - FUN_14015d998
-    - FUN_14015db7c
-    - FUN_14015dbc4
     - FUN_14015dbf0
     - FUN_14015dcc8
-    - FUN_14015dd74
     - FUN_14015dde4
     - FUN_14015e300
     - FUN_14015e308
@@ -1973,87 +1683,49 @@ missing_functions_categorized:
     - FUN_14015edc8
     - FUN_14015ef08
     - FUN_14015efbc
-    - FUN_140160020
     - FUN_140160144
     - FUN_140160360
-    - FUN_1401604a8
-    - FUN_140160510
     - FUN_140160838
     - FUN_1401608a8
     - FUN_140160a1c
     - FUN_140160afc
     - FUN_140160c88
     - FUN_140160cfc
-    - FUN_1401610bc
-    - FUN_1401612e0
     - FUN_140161470
     - FUN_1401615b0
     - FUN_14016162c
-    - FUN_14016166c
-    - FUN_140161764
     - FUN_140161854
     - FUN_140161904
     - FUN_1401619b8
     - FUN_140161bac
     - FUN_140161c0c
-    - FUN_140161cc4
     - FUN_140161d50
     - FUN_140161d8c
     - FUN_140161de4
-    - FUN_140161ebc
-    - FUN_140161f14
-    - FUN_140161fa4
-    - FUN_140161fb8
-    - FUN_140161ffc
-    - FUN_140162044
-    - FUN_14016261c
     - FUN_140162624
     - FUN_14016272c
     - FUN_14016273c
     - FUN_1401627b0
     - FUN_140162858
-    - FUN_140162b34
-    - FUN_140162c10
     - FUN_140162c38
-    - FUN_140162c68
-    - FUN_140162cf4
-    - FUN_140162d88
-    - FUN_140162d9c
     - FUN_140162ea4
     - FUN_140162eb0
-    - FUN_140162ebc
-    - FUN_140162ec8
-    - FUN_140162f10
-    - FUN_140162f54
     - FUN_140162fcc
     - FUN_1401630d0
     - FUN_140163228
     - FUN_14016329c
     - FUN_1401632c0
-    - FUN_1401632f0
-    - FUN_14016331c
-    - FUN_1401633a8
-    - FUN_14016342c
     - FUN_140163484
-    - FUN_1401636a4
     - FUN_14016374c
     - FUN_1401637b4
-    - FUN_1401637c0
-    - FUN_1401637cc
-    - FUN_140163834
     - FUN_1401638b4
     - FUN_1401638f4
     - FUN_140163a5c
     - FUN_140163a64
     - FUN_140163b40
     - FUN_140163bb4
-    - FUN_140163ce0
-    - FUN_1401640bc
     - FUN_140164360
     - FUN_1401643b0
-    - FUN_1401643cc
-    - FUN_140164410
-    - FUN_140164674
     - FUN_140164858
     - FUN_14016489c
     - FUN_1401648e0
@@ -2067,14 +1739,9 @@ missing_functions_categorized:
     - FUN_140164c74
     - FUN_140164cf0
     - FUN_140164eb8
-    - FUN_140164ff4
-    - FUN_14016507c
-    - FUN_1401650c0
-    - FUN_1401659f8
     - FUN_140167210
     - FUN_140167574
     - FUN_1401675e0
-    - FUN_140167608
     - FUN_140167678
     - FUN_14016768c
     - FUN_1401676dc
@@ -2149,7 +1816,6 @@ missing_functions_categorized:
     - FUN_14016c2e0
     - FUN_14016c354
     - FUN_14016c4ec
-    - FUN_14016c568
     - FUN_14016c788
     - FUN_14016c84c
     - FUN_14016cab0
@@ -2162,17 +1828,12 @@ missing_functions_categorized:
     - FUN_14016d3cc
     - FUN_14016d3d4
     - FUN_14016d3dc
-    - FUN_14016d430
-    - FUN_14016d43c
     - FUN_14016d4a4
     - FUN_14016d4c4
     - FUN_14016d5c4
     - FUN_14016d638
-    - FUN_14016d648
     - FUN_14016d730
     - FUN_14016d7b8
-    - FUN_14016d7fc
-    - FUN_14016d808
     - FUN_14016d860
     - FUN_14016d880
     - FUN_14016d930
@@ -2196,10 +1857,8 @@ missing_functions_categorized:
     - FUN_14016ee70
     - FUN_14016ef4c
     - FUN_14016f0f8
-    - FUN_14016f16c
     - FUN_14016f1cc
     - FUN_14016f240
-    - FUN_14016f2d4
     - FUN_14016f344
     - FUN_14016f3b4
     - FUN_14016f424
@@ -2209,7 +1868,6 @@ missing_functions_categorized:
     - FUN_14016f5f0
     - FUN_14016f660
     - FUN_14016f6d0
-    - FUN_14016f744
     - FUN_14016f7b4
     - FUN_14016f824
     - FUN_14016f898
@@ -2217,30 +1875,16 @@ missing_functions_categorized:
     - FUN_14016f97c
     - FUN_14016f9ec
     - FUN_14016fa5c
-    - FUN_14016faf0
-    - FUN_14016fb34
     - FUN_14016fb9c
-    - FUN_14016fbdc
     - FUN_14016fd20
-    - FUN_14016fd38
-    - FUN_14016fd5c
-    - FUN_14016fd68
-    - FUN_14016fdac
-    - FUN_14016fde0
     - FUN_14016fe38
     - FUN_14016fe7c
     - FUN_14016fec0
     - FUN_14016ff24
-    - FUN_14016ff68
-    - FUN_14017010c
-    - FUN_140170118
-    - FUN_140170160
     - FUN_140170190
-    - FUN_1401701b4
     - FUN_1401701c4
     - FUN_140170330
     - FUN_1401703fc
-    - FUN_1401716f0
     - FUN_140171ae8
     - FUN_140171b9c
     - FUN_140171c7c
@@ -2256,22 +1900,16 @@ missing_functions_categorized:
     - FUN_140171ea0
     - FUN_140171ef0
     - FUN_140172028
-    - FUN_1401720a8
     - FUN_1401725d8
     - FUN_14017260c
-    - FUN_14017263c
     - FUN_140172660
     - FUN_140172684
     - FUN_1401726c0
     - FUN_140172774
     - FUN_140172780
     - FUN_14017281c
-    - FUN_140172858
-    - FUN_140172864
     - FUN_140172870
     - FUN_1401728dc
-    - FUN_140172938
-    - FUN_140172944
     - FUN_1401729fc
     - FUN_140172aac
     - FUN_140172ae4
@@ -2280,8 +1918,6 @@ missing_functions_categorized:
     - FUN_140172d1c
     - FUN_140172d8c
     - FUN_140172dbc
-    - FUN_140172e14
-    - FUN_140172e20
     - FUN_140172e88
     - FUN_140172ed4
     - FUN_140172f84
@@ -2310,7 +1946,6 @@ missing_functions_categorized:
     - FUN_1401766f0
     - FUN_1401767a0
     - FUN_1401767d8
-    - FUN_14017684c
     - FUN_140176a0c
     - FUN_140176a2c
     - FUN_140176b64
@@ -2332,9 +1967,7 @@ missing_functions_categorized:
     - FUN_1401783c4
     - FUN_140178474
     - FUN_1401784ac
-    - FUN_140179068
     - FUN_14017915c
-    - FUN_1401792b8
     - FUN_1401795c4
     - FUN_14017966c
     - FUN_1401796e8
@@ -2350,7 +1983,6 @@ missing_functions_categorized:
     - FUN_140179c8c
     - FUN_140179cc4
     - FUN_140179cfc
-    - FUN_140179d70
     - FUN_140179fa0
     - FUN_140179ff0
     - FUN_14017a2a8
@@ -2359,36 +1991,27 @@ missing_functions_categorized:
     - FUN_14017a3c8
     - FUN_14017a420
     - FUN_14017a474
-    - FUN_14017a4c4
-    - FUN_14017a670
     - FUN_14017a708
     - FUN_14017a96c
     - FUN_14017a9c0
     - FUN_14017a9fc
-    - FUN_14017aa14
     - FUN_14017ab2c
     - FUN_14017ab80
     - FUN_14017ad74
     - FUN_14017add4
     - FUN_14017ae3c
-    - FUN_14017ae90
     - FUN_14017b2fc
     - FUN_14017b4a0
     - FUN_14017b4ec
     - FUN_14017b540
-    - FUN_14017b5d8
-    - FUN_14017b8d4
     - FUN_14017b9bc
     - FUN_14017b9ec
     - FUN_14017bb0c
-    - FUN_14017bb18
     - FUN_14017bc70
     - FUN_14017bd20
     - FUN_14017bd58
     - FUN_14017bdcc
     - FUN_1401800b8
-    - FUN_140180370
-    - FUN_14018086c
     - FUN_1401808fc
     - FUN_140180970
     - FUN_140180a40
@@ -2397,13 +2020,11 @@ missing_functions_categorized:
     - FUN_140180d00
     - FUN_140180d98
     - FUN_140180da4
-    - FUN_140180de8
     - FUN_14018113c
     - FUN_1401811ec
     - FUN_140181224
     - FUN_140181298
     - FUN_140181744
-    - FUN_140181770
     - FUN_1401818bc
     - FUN_140181a48
     - FUN_140181a70
@@ -2457,20 +2078,15 @@ missing_functions_categorized:
     - FUN_1401848f4
     - FUN_1401849a0
     - FUN_140184a14
-    - FUN_140185314
-    - FUN_14018568c
     - FUN_140185cb0
     - FUN_140185d2c
     - FUN_140185e20
     - FUN_140185f28
-    - FUN_140185fec
     - FUN_140187094
     - FUN_140187130
     - FUN_1401871b8
-    - FUN_1401872c0
     - FUN_1401873d8
     - FUN_140187420
-    - FUN_14018748c
     - FUN_140187524
     - FUN_140187548
     - FUN_140187554
@@ -2478,14 +2094,9 @@ missing_functions_categorized:
     - FUN_1401875b0
     - FUN_1401875f4
     - FUN_140187638
-    - FUN_14018768c
     - FUN_1401878dc
-    - FUN_140187978
     - FUN_140187abc
     - FUN_140187ac4
-    - FUN_14018829c
-    - FUN_1401882f4
-    - FUN_140188850
     - FUN_140188a58
     - FUN_140188ae4
     - FUN_140188ae8
@@ -2543,16 +2154,13 @@ missing_functions_categorized:
     - FUN_14018c4b4
     - FUN_14018c668
     - FUN_14018ca40
-    - FUN_14018cd44
     - FUN_14018cdd8
-    - FUN_14018ceb4
     - FUN_14018cf40
     - FUN_14018e03c
     - FUN_14018e080
     - FUN_14018e0b8
     - FUN_14018e110
     - FUN_14018e154
-    - FUN_14018e1f4
     - FUN_14018e468
     - FUN_14018e4a8
     - FUN_14018e580
@@ -2564,7 +2172,6 @@ missing_functions_categorized:
     - FUN_14018e89c
     - FUN_14018e8a4
     - FUN_14018e918
-    - FUN_14018e984
     - FUN_14018eb8c
     - FUN_14018ec9c
     - FUN_14018ecec
@@ -2591,8 +2198,6 @@ missing_functions_categorized:
     - FUN_140190cac
     - FUN_140191718
     - FUN_140191874
-    - FUN_140191970
-    - FUN_140191ae0
     - FUN_140191b70
     - FUN_140191c34
     - FUN_140191c88
@@ -2602,19 +2207,12 @@ missing_functions_categorized:
     - FUN_140191d50
     - FUN_140191d94
     - FUN_140191da0
-    - FUN_140191dac
     - FUN_140191e7c
     - FUN_140191f40
     - FUN_140191fa4
-    - FUN_140194684
-    - FUN_140194708
     - FUN_140194758
-    - FUN_140194764
-    - FUN_1401947a8
     - FUN_140194800
     - FUN_140194814
-    - FUN_140194854
-    - FUN_140194910
     - FUN_140194a34
     - FUN_140194bf0
     - FUN_140194c08
@@ -2623,11 +2221,8 @@ missing_functions_categorized:
     - FUN_140194c68
     - FUN_140194c70
     - FUN_140194ce4
-    - FUN_140194eb4
-    - FUN_140194fb0
     - FUN_140195190
     - FUN_1401951f0
-    - FUN_140195234
     - FUN_140195250
     - FUN_1401952a4
     - FUN_1401954bc
@@ -2655,7 +2250,6 @@ missing_functions_categorized:
     - FUN_140195b84
     - FUN_140195bac
     - FUN_140195be0
-    - FUN_140195c30
     - FUN_140195c64
     - FUN_140195c98
     - FUN_140195d00
@@ -2674,12 +2268,8 @@ missing_functions_categorized:
     - FUN_140195fcc
     - FUN_140197264
     - FUN_140197314
-    - FUN_140197878
     - FUN_140197af8
-    - FUN_140197bbc
     - FUN_140197cb4
-    - FUN_14019848c
-    - FUN_140198520
     - FUN_140198720
     - FUN_140198e94
     - FUN_140198edc
@@ -2690,7 +2280,6 @@ missing_functions_categorized:
     - FUN_1401997a8
     - FUN_1401997d8
     - FUN_14019984c
-    - FUN_14019985c
     - FUN_140199904
     - FUN_140199968
     - FUN_1401999a4
@@ -2698,34 +2287,22 @@ missing_functions_categorized:
     - FUN_1401999f0
     - FUN_140199b20
     - FUN_140199b28
-    - FUN_140199b3c
-    - FUN_140199bc4
     - FUN_140199c34
-    - FUN_140199c58
-    - FUN_140199cd8
     - FUN_140199d5c
     - FUN_140199da8
-    - FUN_140199ef0
     - FUN_14019e008
     - FUN_14019e04c
     - FUN_14019e0a8
     - FUN_14019e0e8
-    - FUN_14019e12c
     - FUN_14019e294
     - FUN_14019e348
     - FUN_14019e350
     - FUN_14019e3b4
     - FUN_14019e428
-    - FUN_14019e49c
     - FUN_14019e7f0
     - FUN_14019e8ac
-    - FUN_14019e8dc
     - FUN_14019e8f4
-    - FUN_14019ec2c
-    - FUN_14019ed2c
     - FUN_14019ed54
-    - FUN_14019edb0
-    - FUN_14019edd4
     - FUN_1401a0b80
     - FUN_1401a114c
     - FUN_1401a11c0
@@ -2734,7 +2311,6 @@ missing_functions_categorized:
     - FUN_1401a1454
     - FUN_1401a148c
     - FUN_1401a14e4
-    - FUN_1401a15b0
     - FUN_1401a164c
     - FUN_1401a1740
     - FUN_1401a1774
@@ -2758,14 +2334,10 @@ missing_functions_categorized:
     - FUN_1401a7e1c
     - FUN_1401a7ec0
     - FUN_1401a829c
-    - FUN_1401a84ac
     - FUN_1401a8540
     - FUN_1401a8df8
-    - FUN_1401aa084
     - FUN_1401aa0c8
     - FUN_1401aa0d4
-    - FUN_1401aa0e0
-    - FUN_1401aa124
     - FUN_1401aa198
     - FUN_1401aa270
     - FUN_1401aa380
@@ -2780,12 +2352,9 @@ missing_functions_categorized:
     - FUN_1401ab67c
     - FUN_1401ab780
     - FUN_1401aba58
-    - FUN_1401abdc8
-    - FUN_1401abdf0
     - FUN_1401abe84
     - FUN_1401ac4c4
     - FUN_1401acb58
-    - FUN_1401acbd0
     - FUN_1401acc00
     - FUN_1401acc20
     - FUN_1401acc34
@@ -2799,7 +2368,6 @@ missing_functions_categorized:
     - FUN_1401ace8c
     - FUN_1401ace94
     - FUN_1401ace9c
-    - FUN_1401ae030
     - FUN_1401ae308
     - FUN_1401ae51c
     - FUN_1401ae53c
@@ -2818,24 +2386,17 @@ missing_functions_categorized:
     - FUN_1401af348
     - FUN_1401af38c
     - FUN_1401af3d0
-    - FUN_1401af72c
     - FUN_1401af74c
-    - FUN_1401af7ac
     - FUN_1401af8f8
-    - FUN_1401afa64
     - FUN_1401aff94
     - FUN_1401b0318
     - FUN_1401b04a8
     - FUN_1401b055c
-    - FUN_1401b0674
-    - FUN_1401b07a4
     - FUN_1401b0810
     - FUN_1401b0854
-    - FUN_1401b0928
     - FUN_1401b0a08
     - FUN_1401b0a64
     - FUN_1401b0b04
-    - FUN_1401b0d28
     - FUN_1401b0ee0
     - FUN_1401b21a8
     - FUN_1401b223c
@@ -2849,7 +2410,6 @@ missing_functions_categorized:
     - FUN_1401b2604
     - FUN_1401b2694
     - FUN_1401b27f4
-    - FUN_1401b2b40
     - FUN_1401b2fa0
     - FUN_1401b32b0
     - FUN_1401b33a8
@@ -2873,9 +2433,7 @@ missing_functions_categorized:
     - FUN_1401b6474
     - FUN_1401b6580
     - FUN_1401b6990
-    - FUN_1401b69b4
     - FUN_1401b6b28
-    - FUN_1401b6e6c
     - FUN_1401b8104
     - FUN_1401b8110
     - FUN_1401b813c
@@ -2893,7 +2451,6 @@ missing_functions_categorized:
     - FUN_1401b9014
     - FUN_1401b9088
     - FUN_1401b9090
-    - FUN_1401b9098
     - FUN_1401b9104
     - FUN_1401b9110
     - FUN_1401b92bc
@@ -2907,34 +2464,26 @@ missing_functions_categorized:
     - FUN_1401b99f4
     - FUN_1401b9a00
     - FUN_1401b9a10
-    - FUN_1401b9a94
     - FUN_1401b9e80
     - FUN_1401b9f68
     - FUN_1401ba090
     - FUN_1401ba150
     - FUN_1401ba17c
-    - FUN_1401ba3f4
     - FUN_1401ba53c
     - FUN_1401ba54c
     - FUN_1401ba554
     - FUN_1401bad1c
-    - FUN_1401bad64
     - FUN_1401baf4c
     - FUN_1401baf90
-    - FUN_1401bb20c
     - FUN_1401bb288
-    - FUN_1401bb54c
-    - FUN_1401bb8e0
     - FUN_1401bb91c
     - FUN_1401bb94c
     - FUN_1401bc438
     - FUN_1401bc488
     - FUN_1401bd278
-    - FUN_1401bd2bc
     - FUN_1401bd444
     - FUN_1401bd47c
     - FUN_1401bd4b0
-    - FUN_1401bd4e4
     - FUN_1401bd58c
     - FUN_1401bd658
     - FUN_1401bd748
@@ -2944,19 +2493,16 @@ missing_functions_categorized:
     - FUN_1401bdcb8
     - FUN_1401bdcf0
     - FUN_1401bde90
-    - FUN_1401be0c4
     - FUN_1401be0dc
     - FUN_1401be1c0
     - FUN_1401be320
     - FUN_1401be338
     - FUN_1401be350
-    - FUN_1401be35c
     - FUN_1401beac8
     - FUN_1401bead0
     - FUN_1401bead8
     - FUN_1401bed24
     - FUN_1401bf2b4
-    - FUN_1401bf38c
     - FUN_1401bf458
     - FUN_1401bf464
     - FUN_1401bf470
@@ -2968,28 +2514,18 @@ missing_functions_categorized:
     - FUN_1401c14a8
     - FUN_1401c14b4
     - FUN_1401c14c0
-    - FUN_1401c1520
     - FUN_1401c1584
     - FUN_1401c1590
     - FUN_1401c159c
-    - FUN_1401c15e0
     - FUN_1401c16b8
     - FUN_1401c16c0
-    - FUN_1401c1734
-    - FUN_1401c18c8
-    - FUN_1401c1ae4
-    - FUN_1401c1cbc
-    - FUN_1401c1d64
-    - FUN_1401c1dbc
     - FUN_1401c1df0
     - FUN_1401c1e34
     - FUN_1401c1e54
     - FUN_1401c1e5c
     - FUN_1401c1edc
-    - FUN_1401c1f18
     - FUN_1401c3014
     - FUN_1401c3058
-    - FUN_1401c3240
     - FUN_1401c32c0
     - FUN_1401c32c8
     - FUN_1401c3330
@@ -3002,22 +2538,9 @@ missing_functions_categorized:
     - FUN_1401c347c
     - FUN_1401c3484
     - FUN_1401c34f8
-    - FUN_1401c3854
-    - FUN_1401c38f0
     - FUN_1401c3a1c
-    - FUN_1401c3ba8
-    - FUN_1401c4a88
     - FUN_1401c5040
-    - FUN_1401c5560
-    - FUN_1401c55e8
-    - FUN_1401c58e8
-    - FUN_1401c5cc8
-    - FUN_1401c6090
-    - FUN_1401c6488
-    - FUN_1401c6520
     - FUN_1401c6618
-    - FUN_1401c66e8
-    - FUN_1401c6784
     - FUN_1401c6840
     - FUN_1401c6878
     - FUN_1401c6884
@@ -3049,8 +2572,6 @@ missing_functions_categorized:
     - FUN_1401c8918
     - FUN_1401c8990
     - FUN_1401c8a08
-    - FUN_1401c8a30
-    - FUN_1401c8cfc
     - FUN_1401c9144
     - FUN_1401c93fc
     - FUN_1401c9408
@@ -3068,26 +2589,19 @@ missing_functions_categorized:
     - FUN_1401c9528
     - FUN_1401c9534
     - FUN_1401c9540
-    - FUN_1401c954c
     - FUN_1401c95c0
     - FUN_1401c9774
-    - FUN_1401c995c
-    - FUN_1401c9bb0
     - FUN_1401c9c20
     - FUN_1401c9c2c
     - FUN_1401c9c74
     - FUN_1401c9d8c
     - FUN_1401c9d94
     - FUN_1401ca32c
-    - FUN_1401ca334
-    - FUN_1401ca4b8
     - FUN_1401ca570
     - FUN_1401cab14
     - FUN_1401cab48
-    - FUN_1401cac78
     - FUN_1401cb524
     - FUN_1401cbce4
-    - FUN_1401cbedc
     - FUN_1401cc858
     - FUN_1401cd458
     - FUN_1401cd5cc
@@ -3114,7 +2628,6 @@ missing_functions_categorized:
     - FUN_1401ce604
     - FUN_1401ce83c
     - FUN_1401ce870
-    - FUN_1401ce8d8
     - FUN_1401ce940
     - FUN_1401ce990
     - FUN_1401ceb08
@@ -3133,7 +2646,6 @@ missing_functions_categorized:
     - FUN_1401cff78
     - FUN_1401cffe0
     - FUN_1401d00e4
-    - FUN_1401d05f8
     - FUN_1401d067c
     - FUN_1401d0710
     - FUN_1401d0718
@@ -3301,7 +2813,6 @@ missing_functions_categorized:
     - FUN_1401dcbcc
     - FUN_1401dcc84
     - FUN_1401dcd20
-    - FUN_1401dcd64
     - FUN_1401dd760
     - FUN_1401dd82c
     - FUN_1401dd92c
@@ -3335,20 +2846,16 @@ missing_functions_categorized:
     - FUN_1401df224
     - FUN_1401df2ac
     - FUN_1401df2f0
-    - FUN_1401df3e4
     - FUN_1401df5c0
     - FUN_1401df63c
     - FUN_1401df734
     - FUN_1401df820
-    - FUN_1401df884
     - FUN_1401df91c
-    - FUN_1401df95c
     - FUN_1401dfa40
     - FUN_1401dfa6c
     - FUN_1401dfa78
     - FUN_1401dfab4
     - FUN_1401dfae0
-    - FUN_1401dfb0c
     - FUN_1401dfbc8
     - FUN_1401dfc84
     - FUN_1401dfc94
@@ -3383,7 +2890,6 @@ missing_functions_categorized:
     - FUN_1401e18f0
     - FUN_1401e1934
     - FUN_1401e1be4
-    - FUN_1401e1bf8
     - FUN_1401e1db4
     - FUN_1401e1df8
     - FUN_1401e1ed4
@@ -3400,7 +2906,6 @@ missing_functions_categorized:
     - FUN_1401e3688
     - FUN_1401e37c8
     - FUN_1401e38e0
-    - FUN_1401e3a1c
     - FUN_1401e3b40
     - FUN_1401e3b9c
     - FUN_1401e3bc8
@@ -3472,7 +2977,6 @@ missing_functions_categorized:
     - FUN_1401e6df4
     - FUN_1401e6e20
     - FUN_1401ed06c
-    - FUN_1401ed22c
     - FUN_1401ed640
     - FUN_1401ed72c
     - FUN_1401ed7a4
@@ -3911,7 +3415,6 @@ missing_functions_categorized:
     - FUN_140227994
     - FUN_1402279a4
     - FUN_1402279b4
-    - FUN_1402279c4
     - FUN_1402279e0
     - FUN_1402279f0
     - FUN_140227a00
@@ -4066,48 +3569,524 @@ missing_functions_categorized:
     - FUN_140228420
     - FUN_140228494
     - FUN_1402284a0
+    Advanced UI:
+    - FUN_14001ac20
+    - FUN_14004e1ec
+    - FUN_1400665f0
+    - FUN_1400666a8
+    - FUN_140066948
+    - FUN_14006cf04
+    - FUN_14006d3c8
+    - FUN_140070464
+    - FUN_140070508
+    - FUN_14007172c
+    - FUN_140076f74
+    - FUN_14008ccac
+    - FUN_14009d798
+    - FUN_1400f1dc0
+    - FUN_1400f1f5c
+    - FUN_1400f2830
+    - FUN_14010506c
+    - FUN_14010527c
+    - FUN_1401052ec
+    - FUN_1401053f8
+    - FUN_1401054ac
+    - FUN_140105570
+    - FUN_140105644
+    - FUN_140105774
+    - FUN_1401058b8
+    - FUN_140105938
+    - FUN_140108118
+    - FUN_14010f424
+    - FUN_14010f560
+    - FUN_14011e990
+    - FUN_14011fe7c
+    - FUN_1401259cc
+    - FUN_140125b50
+    - FUN_1401265bc
+    - FUN_140126650
+    - FUN_1401268fc
+    - FUN_140126924
+    - FUN_1401269bc
+    - FUN_1401269dc
+    - FUN_140126a20
+    - FUN_14012730c
+    - FUN_14012a2dc
+    - FUN_14012c500
+    - FUN_14012c630
+    - FUN_14012c8bc
+    - FUN_14012c938
+    - FUN_14012c9c0
+    - FUN_14012cb18
+    - FUN_14012cee4
+    - FUN_14012d0a0
+    - FUN_14012d274
+    - FUN_14012d394
+    - FUN_14012d950
+    - FUN_14012db80
+    - FUN_14012df50
+    - FUN_14012e13c
+    - FUN_14012e3a0
+    - FUN_14012ead8
+    - FUN_14012f174
+    - FUN_14012f1d4
+    - FUN_14012f3ac
+    - FUN_14012f3c4
+    - FUN_14012f9c0
+    - FUN_14012fe44
+    - FUN_14012fef8
+    - FUN_14013b7a4
+    - FUN_14013b9b8
+    - FUN_14013ba3c
+    - FUN_14013ba84
+    - FUN_14013bde4
+    - FUN_14013c128
+    - FUN_14013c428
+    - FUN_14013c514
+    - FUN_14013c5dc
+    - FUN_14013c8b0
+    - FUN_14013c8bc
+    - FUN_14013ca00
+    - FUN_14013f384
+    - FUN_140142b2c
+    - FUN_140142bb0
+    - FUN_140142f30
+    - FUN_140143098
+    - FUN_1401444d0
+    - FUN_140144558
+    - FUN_1401455f0
+    - FUN_140145634
+    - FUN_14014591c
+    - FUN_14014aa98
+    - FUN_14014ad94
+    - FUN_14014ade4
+    - FUN_14014b3ec
+    - FUN_14014e4d8
+    - FUN_14014f108
+    - FUN_14014f510
+    - FUN_1401503e4
+    - FUN_140150940
+    - FUN_1401528ac
+    - FUN_140152924
+    - FUN_14015373c
+    - FUN_14015943c
+    - FUN_140159534
+    - FUN_140159b38
+    - FUN_14015af84
+    - FUN_14015afc0
+    - FUN_14015b27c
+    - FUN_14015ba24
+    - FUN_14015bb9c
+    - FUN_14015bd28
+    - FUN_14015d5c8
+    - FUN_14015db7c
+    - FUN_14015dbc4
+    - FUN_14015dd74
+    - FUN_14015f31c
+    - FUN_14015f3f0
+    - FUN_14015f450
+    - FUN_14015f4c4
+    - FUN_14015f580
+    - FUN_14015f670
+    - FUN_140160020
+    - FUN_1401604a8
+    - FUN_140160510
+    - FUN_1401610bc
+    - FUN_140161cc4
+    - FUN_140161ebc
+    - FUN_140161f14
+    - FUN_140161fa4
+    - FUN_140161fb8
+    - FUN_140161ffc
+    - FUN_140162d88
+    - FUN_140162d9c
+    - FUN_140162ebc
+    - FUN_140162ec8
+    - FUN_140162f10
+    - FUN_140162f54
+    - FUN_1401632f0
+    - FUN_14016342c
+    - FUN_1401637cc
+    - FUN_140163834
+    - FUN_140163ce0
+    - FUN_1401643cc
+    - FUN_140164410
+    - FUN_140164674
+    - FUN_140164ff4
+    - FUN_14016507c
+    - FUN_1401650c0
+    - FUN_1401659f8
+    - FUN_14016d43c
+    - FUN_14016fb34
+    - FUN_14016fbdc
+    - FUN_140172e20
+    - FUN_14017ccd4
+    - FUN_14017cf4c
+    - FUN_14017ef60
+    - FUN_14017fc9c
+    - FUN_14018568c
+    - FUN_140185fec
+    - FUN_140186108
+    - FUN_1401861bc
+    - FUN_1401872c0
+    - FUN_14018748c
+    - FUN_14018768c
+    - FUN_140187978
+    - FUN_1401882f4
+    - FUN_14018af14
+    - FUN_14018cd44
+    - FUN_14018ceb4
+    - FUN_14018d0f4
+    - FUN_14018d1a4
+    - FUN_14018d8e4
+    - FUN_14018dec8
+    - FUN_140191ae0
+    - FUN_1401925d4
+    - FUN_140192fb8
+    - FUN_140192ff0
+    - FUN_140193610
+    - FUN_140194684
+    - FUN_140194708
+    - FUN_140194764
+    - FUN_1401947a8
+    - FUN_140194910
+    - FUN_140194eb4
+    - FUN_140195234
+    - FUN_140195c30
+    - FUN_14019622c
+    - FUN_14019985c
+    - FUN_140199c58
+    - FUN_140199cd8
+    - FUN_14019cc9c
+    - FUN_14019ce24
+    - FUN_14019dcb8
+    - FUN_14019ddf8
+    - FUN_14019de50
+    - FUN_14019ec2c
+    - FUN_14019ed2c
+    - FUN_14019fab0
+    - FUN_14019fbe8
+    - FUN_1401b0674
+    - FUN_1401b11e8
+    - FUN_1401b12d0
+    - FUN_1401b13a8
+    - FUN_1401b18c0
+    - FUN_1401b1900
+    - FUN_1401b75e0
+    - FUN_1401ba3f4
+    - FUN_1401bb20c
+    - FUN_1401bb8e0
+    - FUN_1401bd4e4
+    - FUN_1401be0c4
+    - FUN_1401c1520
+    - FUN_1401c15e0
+    - FUN_1401c18c8
+    - FUN_1401c1ae4
+    - FUN_1401c1cbc
+    - FUN_1401c1d64
+    - FUN_1401c1dbc
+    - FUN_1401c29d4
+    - FUN_1401c2d24
+    - FUN_1401c6488
+    - FUN_1401c6520
+    - FUN_1401c8a30
+    - FUN_1401c8cfc
+    - FUN_1401c954c
+    - FUN_1401df95c
+    - FUN_1401ec950
+    - FUN_1401ecaa0
+    - FUN_1401f208c
     CAD Document:
-    - FUN_140063f48
-    Settings:
-    - FUN_1400537b0
-    - FUN_140053950
-    - FUN_140053b00
-    - FUN_140053d20
-    - FUN_140053ed4
-    Toolbar:
-    - FUN_140017ff8
-    - FUN_14002905c
-    - FUN_140029164
-    - FUN_140029264
-    - FUN_140029354
-    - FUN_1400297fc
-    - FUN_140029834
-    - FUN_140029928
-    - FUN_1400299a8
-    - FUN_140029a28
-    - FUN_140029b50
-    - FUN_140029bc8
-    - FUN_140029c58
-    - FUN_140029c9c
-    - FUN_140029d10
-    - FUN_140029da8
-    - FUN_140029ef4
-    - FUN_140029fe0
-    - FUN_14003c424
-    - FUN_140047f10
-    - FUN_14006b3a4
-    - FUN_14006b42c
-    - FUN_14006b4d0
     - FUN_14006b60c
-    - FUN_14006b670
     - FUN_14006b79c
     - FUN_14006b828
-    - FUN_14008d1f0
-    - FUN_14008d23c
-    - FUN_14008d988
-    - FUN_14008da78
-    - FUN_140093ce8
-    - FUN_14009be38
+    - FUN_140105c60
+    - FUN_1401099a8
+    - FUN_140109a28
+    - FUN_14011cb84
+    - FUN_14013077c
+    - FUN_140137e6c
+    - FUN_14014709c
+    - FUN_140154c10
+    - FUN_14017ae90
+    - FUN_14018e984
+    - FUN_1401af7ac
+    - FUN_1401b69b4
+    - FUN_1401bad64
+    - FUN_1401be35c
+    - FUN_1401e73e0
+    - FUN_1401f0340
+    - FUN_1401f05c0
+    Dialog & Form:
+    - FUN_140018edc
+    - FUN_1400299a8
+    - FUN_140029b50
+    - FUN_14002bcf0
+    - FUN_140034c70
+    - FUN_1400668f8
+    - FUN_140097284
+    - FUN_1400a74dc
+    - FUN_1400ad80c
+    - FUN_1400aef00
+    - FUN_1400b15b8
+    - FUN_1400b1fdc
+    - FUN_1400bc738
+    - FUN_1400c0bfc
+    - FUN_1400cb6b0
+    - FUN_1400cc8f4
+    - FUN_1400dae60
+    - FUN_1400db09c
+    - FUN_1400db180
+    - FUN_1400db298
+    - FUN_1400db2dc
+    - FUN_1400db484
+    - FUN_1400dbee4
+    - FUN_1400ddda8
+    - FUN_1400def60
+    - FUN_1400df288
+    - FUN_1400f0338
+    - FUN_1400f3c58
+    - FUN_1400f526c
+    - FUN_1400fca54
+    - FUN_1400fd568
+    - FUN_1401051e4
+    - FUN_140105530
+    - FUN_140105924
+    - FUN_140107b9c
+    - FUN_140107c70
+    - FUN_140107d48
+    - FUN_140107e28
+    - FUN_140107f00
+    - FUN_140107fd0
+    - FUN_140108044
+    - FUN_140108210
+    - FUN_1401082fc
+    - FUN_1401083e8
+    - FUN_1401084bc
+    - FUN_140108590
+    - FUN_1401086a4
+    - FUN_140108e68
+    - FUN_140108ecc
+    - FUN_140108fe0
+    - FUN_14010ae9c
+    - FUN_14010b51c
+    - FUN_14010eb78
+    - FUN_14010eff0
+    - FUN_140113908
+    - FUN_140113954
+    - FUN_140114b30
+    - FUN_14011a3bc
+    - FUN_14011eba0
+    - FUN_14011eea4
+    - FUN_14011ef50
+    - FUN_14011efd8
+    - FUN_14011f3ac
+    - FUN_14011f3f4
+    - FUN_14011f428
+    - FUN_14011f4f8
+    - FUN_14011f968
+    - FUN_14011fbec
+    - FUN_140120258
+    - FUN_140120b34
+    - FUN_1401220a4
+    - FUN_1401220fc
+    - FUN_1401228c0
+    - FUN_140122b24
+    - FUN_140122c18
+    - FUN_140122cf8
+    - FUN_140122d74
+    - FUN_140122e9c
+    - FUN_140124384
+    - FUN_14012480c
+    - FUN_140124f5c
+    - FUN_140125f1c
+    - FUN_140126858
+    - FUN_140126a68
+    - FUN_140128ac8
+    - FUN_14012c580
+    - FUN_14012c6e4
+    - FUN_14012eb14
+    - FUN_14012f390
+    - FUN_14012f868
+    - FUN_14012faa8
+    - FUN_14012fb38
+    - FUN_14012fb54
+    - FUN_14012fb70
+    - FUN_14012fbc4
+    - FUN_1401300a4
+    - FUN_1401301ac
+    - FUN_140130460
+    - FUN_1401304b4
+    - FUN_14013089c
+    - FUN_140130ab8
+    - FUN_1401318c8
+    - FUN_140131a38
+    - FUN_140137370
+    - FUN_140137b80
+    - FUN_14013df84
+    - FUN_14013e1a8
+    - FUN_14013e1fc
+    - FUN_14013e450
+    - FUN_14013e558
+    - FUN_14013ec30
+    - FUN_14013f43c
+    - FUN_14013f514
+    - FUN_14013f594
+    - FUN_14013f8b0
+    - FUN_140140014
+    - FUN_140141aa0
+    - FUN_140143190
+    - FUN_1401435c8
+    - FUN_140143c1c
+    - FUN_140143c3c
+    - FUN_1401443a8
+    - FUN_14014443c
+    - FUN_140152fb4
+    - FUN_1401554c0
+    - FUN_1401555ec
+    - FUN_14015d524
+    - FUN_14015d730
+    - FUN_14015d798
+    - FUN_14015d860
+    - FUN_140162c68
+    - FUN_140162cf4
+    - FUN_14016331c
+    - FUN_1401633a8
+    - FUN_1401636a4
+    - FUN_1401637c0
+    - FUN_1401640bc
+    - FUN_140166d84
+    - FUN_14016c568
+    - FUN_14016d430
+    - FUN_14016d648
+    - FUN_14016d7fc
+    - FUN_14016d808
+    - FUN_14016faf0
+    - FUN_14016fd38
+    - FUN_14016fdac
+    - FUN_14016fde0
+    - FUN_14016ff68
+    - FUN_1401701b4
+    - FUN_1401720a8
+    - FUN_14017263c
+    - FUN_140172938
+    - FUN_140172944
+    - FUN_140172e14
+    - FUN_140179068
+    - FUN_14017aa14
+    - FUN_14017b5d8
+    - FUN_14017c424
+    - FUN_14017cd58
+    - FUN_14017cea8
+    - FUN_14017cf9c
+    - FUN_14017cfe4
+    - FUN_14017dca0
+    - FUN_140180de8
+    - FUN_140185314
+    - FUN_1401863a8
+    - FUN_140186624
+    - FUN_140186720
+    - FUN_14018829c
+    - FUN_14018dca4
+    - FUN_140191970
+    - FUN_140196680
+    - FUN_140196ad0
+    - FUN_14019848c
+    - FUN_140198520
+    - FUN_140199ef0
+    - FUN_14019a0ec
+    - FUN_14019a150
+    - FUN_14019a990
+    - FUN_14019b784
+    - FUN_14019c4fc
+    - FUN_14019c938
+    - FUN_14019caa4
+    - FUN_14019cb24
+    - FUN_14019cb50
+    - FUN_14019cd34
+    - FUN_14019d3d4
+    - FUN_14019d468
+    - FUN_14019d7b0
+    - FUN_14019da04
+    - FUN_14019e12c
+    - FUN_14019e49c
+    - FUN_14019e8dc
+    - FUN_14019edb0
+    - FUN_14019edd4
+    - FUN_14019f2d0
+    - FUN_14019f350
+    - FUN_1401a15b0
+    - FUN_1401a41fc
+    - FUN_1401a43a8
+    - FUN_1401a44d8
+    - FUN_1401a45d4
+    - FUN_1401a4618
+    - FUN_1401a84ac
+    - FUN_1401a9ee0
+    - FUN_1401a9f54
+    - FUN_1401aa084
+    - FUN_1401aa0e0
+    - FUN_1401aa124
+    - FUN_1401abdc8
+    - FUN_1401abdf0
+    - FUN_1401afa64
+    - FUN_1401b07a4
+    - FUN_1401b0928
+    - FUN_1401b0d28
+    - FUN_1401b1480
+    - FUN_1401b1564
+    - FUN_1401b2b40
+    - FUN_1401b6e6c
+    - FUN_1401b9098
+    - FUN_1401bd2bc
+    - FUN_1401c1734
+    - FUN_1401c1f18
+    - FUN_1401c3240
+    - FUN_1401c3ba8
+    - FUN_1401c4a88
+    - FUN_1401c5cc8
+    - FUN_1401c6090
+    - FUN_1401c66e8
+    - FUN_1401c6784
+    - FUN_1401c9bb0
+    - FUN_1401ca334
+    - FUN_1401ca4b8
+    - FUN_1401ce8d8
+    - FUN_1401d05f8
+    - FUN_1401dcd64
+    - FUN_1401df3e4
+    - FUN_1401df884
+    - FUN_1401dfb0c
+    - FUN_1401ea355
+    - FUN_1401eaa8e
+    - FUN_1401eabf7
+    - FUN_1401ed22c
+    - FUN_1401f0e2b
+    - FUN_14020c668
+    - FUN_14020c6ef
+    Menu & Context Menu:
+    - FUN_1400b0e08
+    - FUN_1400c03cc
+    - FUN_1400c1774
+    - FUN_1400f5918
+    - FUN_140147684
+    - FUN_140194fb0
+    Ribbon Interface:
+    - FUN_14002dd4c
+    - FUN_14002eb00
+    - FUN_140034558
+    - FUN_1400701cc
+    - FUN_140070324
+    - FUN_1400724cc
+    - FUN_1400724d4
+    - FUN_1400724dc
+    - FUN_1400724e4
+    - FUN_1400724ec
+    - FUN_1400724f4
+    - FUN_1400724fc
+    - FUN_140072504
+    - FUN_14007250c
+    - FUN_140072514
     - FUN_14009be94
     - FUN_14009bf5c
     - FUN_14009c034
@@ -4120,6 +4099,132 @@ missing_functions_categorized:
     - FUN_14009c21c
     - FUN_14009c98c
     - FUN_14009cc2c
+    - FUN_1400d3954
+    - FUN_1400d55cc
+    - FUN_1400f2a84
+    - FUN_14010cc74
+    - FUN_14010ce4c
+    - FUN_14010d5b4
+    - FUN_14013ce64
+    - FUN_14013cf3c
+    - FUN_14013d304
+    - FUN_14013d528
+    - FUN_14013d588
+    - FUN_14013d748
+    - FUN_14013d91c
+    - FUN_14013d968
+    - FUN_14013db5c
+    - FUN_14013db74
+    - FUN_14013dbb4
+    - FUN_14013f798
+    - FUN_140144650
+    - FUN_1401446b8
+    - FUN_140144dd8
+    - FUN_1401453b4
+    - FUN_1401453c0
+    - FUN_140145404
+    - FUN_140145448
+    - FUN_14014b4f4
+    - FUN_14014b588
+    - FUN_14014b640
+    - FUN_14014ef64
+    - FUN_14014f47c
+    - FUN_14015111c
+    - FUN_1401547b4
+    - FUN_140159458
+    - FUN_1401596a0
+    - FUN_140159808
+    - FUN_14015a448
+    - FUN_14015b2dc
+    - FUN_14015b828
+    - FUN_14015b864
+    - FUN_14015bb50
+    - FUN_14015bc28
+    - FUN_14015c320
+    - FUN_14015c37c
+    - FUN_14015c4a0
+    - FUN_14015c53c
+    - FUN_14015c588
+    - FUN_14017def4
+    - FUN_14017e11c
+    - FUN_14017e4e0
+    - FUN_14017e5d4
+    - FUN_14017e6f8
+    - FUN_14017e914
+    - FUN_14017e950
+    - FUN_14017e990
+    - FUN_14017e9c8
+    - FUN_14017ea00
+    - FUN_14017ea38
+    - FUN_14017ea70
+    - FUN_14017eaa8
+    - FUN_14017eae0
+    - FUN_14017eb18
+    - FUN_14017eb50
+    - FUN_14017ebd0
+    - FUN_14017ec08
+    - FUN_14017ecc0
+    - FUN_14017ed4c
+    - FUN_14017edd4
+    - FUN_14017ee58
+    - FUN_14017eebc
+    - FUN_14017eef0
+    - FUN_14017ef6c
+    - FUN_14017f450
+    - FUN_14017f4e8
+    - FUN_14017f500
+    - FUN_14017f54c
+    - FUN_14017f564
+    - FUN_14017f57c
+    - FUN_14017f5b8
+    - FUN_14017f5cc
+    - FUN_14017f5e4
+    - FUN_14017f5fc
+    - FUN_14017f654
+    - FUN_14017f6d0
+    - FUN_14017f8bc
+    - FUN_14017f964
+    - FUN_14017fa68
+    - FUN_140180370
+    - FUN_14018086c
+    - FUN_140186aac
+    - FUN_1401ad74c
+    - FUN_1401eef6c
+    - FUN_1402279c4
+    Settings:
+    - FUN_1401e1bf8
+    - FUN_1401e3a1c
+    Toolbar:
+    - FUN_140017ff8
+    - FUN_14002905c
+    - FUN_140029164
+    - FUN_140029264
+    - FUN_140029354
+    - FUN_1400297fc
+    - FUN_140029834
+    - FUN_140029928
+    - FUN_140029a28
+    - FUN_140029bc8
+    - FUN_140029c58
+    - FUN_140029c9c
+    - FUN_140029d10
+    - FUN_140029da8
+    - FUN_140029ef4
+    - FUN_140029fe0
+    - FUN_14003c424
+    - FUN_140047f10
+    - FUN_14006b3a4
+    - FUN_14006b42c
+    - FUN_14006b4d0
+    - FUN_14006b670
+    - FUN_140070b38
+    - FUN_140070bf8
+    - FUN_14008d1f0
+    - FUN_14008d23c
+    - FUN_14008d988
+    - FUN_14008da78
+    - FUN_140093ce8
+    - FUN_14009be38
     - FUN_14009cc34
     - FUN_14009e7cc
     - FUN_14009f268
@@ -4127,37 +4232,28 @@ missing_functions_categorized:
     - FUN_14009f8b4
     - FUN_14009f908
     - FUN_14009f940
-    - FUN_1400a74dc
-    - FUN_1400ad80c
     - FUN_1400b0630
     - FUN_1400b0654
     - FUN_1400b08f8
     - FUN_1400b0a7c
     - FUN_1400b0d1c
     - FUN_1400b0dc4
-    - FUN_1400b0e08
     - FUN_1400b9acc
     - FUN_1400c14f0
     - FUN_1400c1640
     - FUN_1400c166c
     - FUN_1400c16a4
     - FUN_1400c16dc
-    - FUN_1400c1774
     - FUN_1400cb634
-    - FUN_1400cb6b0
     - FUN_1400cb758
     - FUN_1400cb850
     - FUN_1400cb87c
     - FUN_1400cb8c4
-    - FUN_1400cc8f4
     - FUN_1400d38c8
-    - FUN_1400d3954
     - FUN_1400d5570
-    - FUN_1400d55cc
     - FUN_1400d7d28
     - FUN_1400d7fc0
     - FUN_1400df098
-    - FUN_1400df288
     - FUN_1400df650
     - FUN_1400df6d4
     - FUN_1400df714
@@ -4172,13 +4268,14 @@ missing_functions_categorized:
     - FUN_1400dfd4c
     - FUN_1400dff1c
     - FUN_1400dffcc
+    - FUN_1400f58c8
+    - FUN_1400f58d4
     - FUN_1400fc0ec
     - FUN_1400fc184
     - FUN_1400fc4c4
     - FUN_1400fc610
     - FUN_1400fc6a8
     - FUN_1400fc9b4
-    - FUN_1400fca54
     - FUN_1400fcb98
     - FUN_1400fcce4
     - FUN_1400fcd70
@@ -4220,23 +4317,19 @@ missing_functions_categorized:
     - FUN_1400fcfe4
     - FUN_1400fcff0
     - FUN_1400fcffc
+    - FUN_14010e3e0
+    - FUN_14011085c
+    - FUN_140110c88
+    - FUN_140112ed8
+    - FUN_140125d18
     - FUN_1401262e8
     - FUN_14012638c
     - FUN_140126504
-    - FUN_1401265bc
-    - FUN_140126650
     - FUN_1401266bc
     - FUN_140126760
     - FUN_1401267d4
     - FUN_140126814
-    - FUN_140126858
-    - FUN_1401268fc
-    - FUN_140126924
-    - FUN_1401269bc
     - FUN_1401269d0
-    - FUN_1401269dc
-    - FUN_140126a20
-    - FUN_140126a68
     - FUN_140126b70
     - FUN_140126b98
     - FUN_140126ba0
@@ -4248,34 +4341,25 @@ missing_functions_categorized:
     - FUN_14013223c
     - FUN_140132354
     - FUN_1401323d0
-    - FUN_14013593c
-    - FUN_14013c128
-    - FUN_14013c428
+    - FUN_140137298
     - FUN_14013c464
     - FUN_14013c46c
     - FUN_14013c474
-    - FUN_14013c514
-    - FUN_14013c5dc
     - FUN_14013c674
     - FUN_14013c6c8
     - FUN_14013c788
     - FUN_14013c81c
     - FUN_14013c894
-    - FUN_14013c8b0
-    - FUN_14013c8bc
     - FUN_14013c900
     - FUN_14013c944
     - FUN_14013c9ac
-    - FUN_14013ca00
     - FUN_14013cb98
     - FUN_14013cc0c
     - FUN_14013cc54
     - FUN_14013cc5c
     - FUN_14013ccd0
     - FUN_14013ce44
-    - FUN_14013ce64
     - FUN_14013ced0
-    - FUN_14013cf3c
     - FUN_14013cfa8
     - FUN_14013d014
     - FUN_14013d080
@@ -4283,7 +4367,6 @@ missing_functions_categorized:
     - FUN_14013d158
     - FUN_14013d1c4
     - FUN_14013d274
-    - FUN_14013d304
     - FUN_14013d328
     - FUN_14013d34c
     - FUN_14013d3d0
@@ -4294,29 +4377,21 @@ missing_functions_categorized:
     - FUN_14013d498
     - FUN_14013d4c8
     - FUN_14013d4f8
-    - FUN_14013d528
     - FUN_14013d538
     - FUN_14013d55c
-    - FUN_14013d588
     - FUN_14013d594
     - FUN_14013d5b8
     - FUN_14013d5e4
     - FUN_14013d690
-    - FUN_14013d748
     - FUN_14013d754
     - FUN_14013d760
     - FUN_14013d80c
-    - FUN_14013d91c
     - FUN_14013d95c
-    - FUN_14013d968
     - FUN_14013d9c0
     - FUN_14013d9cc
     - FUN_14013db50
-    - FUN_14013db5c
     - FUN_14013db68
-    - FUN_14013db74
     - FUN_14013dba8
-    - FUN_14013dbb4
     - FUN_14013dc48
     - FUN_14013dc64
     - FUN_14013dd04
@@ -4325,17 +4400,11 @@ missing_functions_categorized:
     - FUN_14013de28
     - FUN_14013ded8
     - FUN_14013df10
-    - FUN_14013df84
+    - FUN_14013eaf0
     - FUN_1401441c4
     - FUN_1401442c8
     - FUN_140144338
-    - FUN_1401443a8
-    - FUN_14014443c
-    - FUN_1401444d0
-    - FUN_140144558
     - FUN_1401445e0
-    - FUN_140144650
-    - FUN_1401446b8
     - FUN_1401446fc
     - FUN_140144adc
     - FUN_140144b54
@@ -4349,15 +4418,22 @@ missing_functions_categorized:
     - FUN_140144d80
     - FUN_140144d98
     - FUN_140144dc4
-    - FUN_140144dd8
     - FUN_140144dec
     - FUN_140144e00
     - FUN_140144e38
+    - FUN_1401451d8
+    - FUN_1401454d4
+    - FUN_140145518
+    - FUN_1401456c0
+    - FUN_140145870
+    - FUN_1401468cc
+    - FUN_1401477fc
+    - FUN_140149a90
+    - FUN_140149c28
+    - FUN_14014b124
     - FUN_14014e184
     - FUN_14014e18c
     - FUN_14014e218
-    - FUN_14014e378
-    - FUN_14014e4d8
     - FUN_14014e640
     - FUN_14014e68c
     - FUN_14014e698
@@ -4366,46 +4442,30 @@ missing_functions_categorized:
     - FUN_14014e85c
     - FUN_14014e900
     - FUN_14014ed0c
-    - FUN_14014ef64
-    - FUN_14014f108
     - FUN_14014f3a0
     - FUN_14014f40c
     - FUN_14014f420
-    - FUN_14014f47c
     - FUN_14014f504
-    - FUN_14014f510
     - FUN_14014f930
-    - FUN_14014fb58
     - FUN_14014fd10
     - FUN_14014ffd8
-    - FUN_14015943c
-    - FUN_140159458
-    - FUN_140159524
-    - FUN_140159534
-    - FUN_1401596a0
+    - FUN_1401507ec
+    - FUN_140152174
     - FUN_140159764
     - FUN_1401597a8
     - FUN_1401597d8
-    - FUN_140159808
     - FUN_140159910
     - FUN_140159af0
-    - FUN_140159b38
     - FUN_140159c34
+    - FUN_14015d1bc
     - FUN_14015f0a0
     - FUN_14015f1a8
     - FUN_14015f220
     - FUN_14015f294
-    - FUN_14015f31c
-    - FUN_14015f3f0
-    - FUN_14015f450
-    - FUN_14015f4c4
     - FUN_14015f4e4
-    - FUN_14015f500
     - FUN_14015f53c
-    - FUN_14015f580
     - FUN_14015f5d4
     - FUN_14015f630
-    - FUN_14015f670
     - FUN_14015fccc
     - FUN_14015fd44
     - FUN_14015fe04
@@ -4426,23 +4486,18 @@ missing_functions_categorized:
     - FUN_14016694c
     - FUN_1401669fc
     - FUN_140166a34
-    - FUN_140166aa8
-    - FUN_140166be0
-    - FUN_140166d84
-    - FUN_14017c424
+    - FUN_14016f16c
+    - FUN_14016fd5c
+    - FUN_14016fd68
+    - FUN_1401716f0
+    - FUN_14017bb18
     - FUN_14017c5c4
     - FUN_14017cac8
     - FUN_14017caf0
     - FUN_14017cb64
     - FUN_14017cc14
     - FUN_14017cc24
-    - FUN_14017ccd4
-    - FUN_14017cd58
-    - FUN_14017cea8
     - FUN_14017cee8
-    - FUN_14017cf4c
-    - FUN_14017cf9c
-    - FUN_14017cfe4
     - FUN_14017d01c
     - FUN_14017d0d4
     - FUN_14017d358
@@ -4464,13 +4519,10 @@ missing_functions_categorized:
     - FUN_14017db0c
     - FUN_14017dba0
     - FUN_14017dbb0
-    - FUN_14017dca0
     - FUN_14017dd78
     - FUN_14017ddf8
     - FUN_14017de5c
-    - FUN_14017def4
     - FUN_14017e02c
-    - FUN_14017e11c
     - FUN_14017e178
     - FUN_14017e1ec
     - FUN_14017e1f8
@@ -4480,74 +4532,28 @@ missing_functions_categorized:
     - FUN_14017e470
     - FUN_14017e47c
     - FUN_14017e488
-    - FUN_14017e4e0
     - FUN_14017e508
     - FUN_14017e5bc
-    - FUN_14017e5d4
     - FUN_14017e5dc
     - FUN_14017e690
     - FUN_14017e6ec
-    - FUN_14017e6f8
     - FUN_14017e8b4
-    - FUN_14017e914
-    - FUN_14017e950
-    - FUN_14017e990
-    - FUN_14017e9c8
-    - FUN_14017ea00
-    - FUN_14017ea38
-    - FUN_14017ea70
-    - FUN_14017eaa8
-    - FUN_14017eae0
-    - FUN_14017eb18
-    - FUN_14017eb50
-    - FUN_14017ebd0
-    - FUN_14017ec08
-    - FUN_14017ecc0
-    - FUN_14017ed4c
-    - FUN_14017edd4
-    - FUN_14017ee58
-    - FUN_14017eebc
-    - FUN_14017eef0
     - FUN_14017ef30
-    - FUN_14017ef60
-    - FUN_14017ef6c
-    - FUN_14017f450
-    - FUN_14017f4e8
-    - FUN_14017f500
-    - FUN_14017f54c
-    - FUN_14017f564
-    - FUN_14017f57c
-    - FUN_14017f5b8
-    - FUN_14017f5cc
-    - FUN_14017f5e4
-    - FUN_14017f5fc
-    - FUN_14017f654
-    - FUN_14017f6d0
-    - FUN_14017f8bc
-    - FUN_14017f964
     - FUN_14017fa08
     - FUN_14017fa58
-    - FUN_14017fa68
     - FUN_14017fbc8
     - FUN_14017fc48
-    - FUN_14017fc9c
     - FUN_14017fd90
     - FUN_14017fe44
     - FUN_14017fea4
     - FUN_1401860c4
-    - FUN_140186108
-    - FUN_1401861bc
     - FUN_14018626c
     - FUN_140186310
     - FUN_140186384
     - FUN_1401863a0
-    - FUN_1401863a8
     - FUN_1401864bc
     - FUN_1401865c8
-    - FUN_140186624
-    - FUN_140186720
     - FUN_1401867c4
-    - FUN_140186aac
     - FUN_140186e14
     - FUN_140186fbc
     - FUN_14018a250
@@ -4563,9 +4569,6 @@ missing_functions_categorized:
     - FUN_14018adac
     - FUN_14018ae20
     - FUN_14018ae94
-    - FUN_14018af14
-    - FUN_14018d0f4
-    - FUN_14018d1a4
     - FUN_14018d3e8
     - FUN_14018d434
     - FUN_14018d480
@@ -4573,49 +4576,41 @@ missing_functions_categorized:
     - FUN_14018d6bc
     - FUN_14018d798
     - FUN_14018d870
-    - FUN_14018d8e4
     - FUN_14018d994
     - FUN_14018da58
     - FUN_14018dab0
     - FUN_14018daf0
     - FUN_14018db34
     - FUN_14018dbe0
-    - FUN_14018dca4
     - FUN_14018dd6c
     - FUN_14018dddc
     - FUN_14018de5c
     - FUN_14018dea8
-    - FUN_14018dec8
     - FUN_14018df80
     - FUN_14018dfc0
     - FUN_14018dfec
+    - FUN_140191dac
     - FUN_140192018
     - FUN_1401922a8
     - FUN_14019250c
     - FUN_14019251c
     - FUN_140192564
     - FUN_14019259c
-    - FUN_1401925d4
     - FUN_1401927a4
-    - FUN_140192fb8
-    - FUN_140192ff0
     - FUN_140193030
-    - FUN_140193074
     - FUN_140193084
     - FUN_140193410
-    - FUN_140193450
     - FUN_140193458
     - FUN_14019346c
     - FUN_140193560
     - FUN_140193608
-    - FUN_140193610
     - FUN_140193618
     - FUN_140193a10
-    - FUN_140193a90
     - FUN_140193b40
     - FUN_140193bf8
     - FUN_140193cbc
     - FUN_140193dc0
+    - FUN_140194854
     - FUN_140196000
     - FUN_140196034
     - FUN_140196068
@@ -4626,29 +4621,23 @@ missing_functions_categorized:
     - FUN_140196184
     - FUN_1401961b8
     - FUN_1401961ec
-    - FUN_14019622c
     - FUN_140196340
     - FUN_1401963c8
     - FUN_14019640c
-    - FUN_140196680
     - FUN_1401967a8
     - FUN_140196960
     - FUN_14019696c
     - FUN_1401969b0
-    - FUN_140196ad0
     - FUN_140196e10
     - FUN_140196eb8
     - FUN_140196ef0
     - FUN_140196f64
-    - FUN_14019a0ec
-    - FUN_14019a150
     - FUN_14019a1ac
     - FUN_14019a1f0
     - FUN_14019a210
     - FUN_14019a284
     - FUN_14019a520
     - FUN_14019a89c
-    - FUN_14019a990
     - FUN_14019ae30
     - FUN_14019aee4
     - FUN_14019af14
@@ -4662,74 +4651,46 @@ missing_functions_categorized:
     - FUN_14019b490
     - FUN_14019b4ac
     - FUN_14019b618
-    - FUN_14019b784
-    - FUN_14019c4fc
-    - FUN_14019c938
     - FUN_14019c990
     - FUN_14019c9c4
     - FUN_14019ca08
     - FUN_14019ca28
     - FUN_14019ca30
-    - FUN_14019caa4
     - FUN_14019caf8
-    - FUN_14019cb24
-    - FUN_14019cb50
-    - FUN_14019cc88
-    - FUN_14019cc9c
-    - FUN_14019cd34
     - FUN_14019cdac
-    - FUN_14019ce24
     - FUN_14019ceb8
     - FUN_14019cefc
     - FUN_14019cf40
     - FUN_14019d084
     - FUN_14019d08c
     - FUN_14019d094
-    - FUN_14019d0dc
     - FUN_14019d23c
     - FUN_14019d2ac
     - FUN_14019d2f0
-    - FUN_14019d3d4
-    - FUN_14019d468
     - FUN_14019d49c
     - FUN_14019d4e0
     - FUN_14019d56c
     - FUN_14019d5e0
-    - FUN_14019d7b0
-    - FUN_14019da04
     - FUN_14019da38
     - FUN_14019da6c
     - FUN_14019dbd4
     - FUN_14019dc44
-    - FUN_14019dcb8
-    - FUN_14019ddf8
-    - FUN_14019de50
     - FUN_14019df48
     - FUN_14019df60
     - FUN_14019dff0
     - FUN_14019dffc
     - FUN_14019f094
-    - FUN_14019f2d0
-    - FUN_14019f350
-    - FUN_14019f7dc
     - FUN_14019fa04
-    - FUN_14019fab0
     - FUN_14019fbdc
-    - FUN_14019fbe8
     - FUN_14019fc68
     - FUN_14019fc74
     - FUN_14019fca0
     - FUN_14019fdb4
     - FUN_1401a4128
-    - FUN_1401a41fc
-    - FUN_1401a43a8
     - FUN_1401a44bc
-    - FUN_1401a44d8
     - FUN_1401a4570
     - FUN_1401a457c
     - FUN_1401a4588
-    - FUN_1401a45d4
-    - FUN_1401a4618
     - FUN_1401a4688
     - FUN_1401a47a8
     - FUN_1401a4914
@@ -4741,18 +4702,14 @@ missing_functions_categorized:
     - FUN_1401a9218
     - FUN_1401a92ac
     - FUN_1401a943c
-    - FUN_1401a9ee0
-    - FUN_1401a9f54
     - FUN_1401ad090
     - FUN_1401ad098
     - FUN_1401ad334
     - FUN_1401ad5c8
     - FUN_1401ad6e8
-    - FUN_1401ad74c
     - FUN_1401ad7b8
     - FUN_1401ad824
     - FUN_1401ad890
-    - FUN_1401ad8fc
     - FUN_1401ada34
     - FUN_1401ada68
     - FUN_1401adb2c
@@ -4763,16 +4720,8 @@ missing_functions_categorized:
     - FUN_1401add08
     - FUN_1401add64
     - FUN_1401adedc
-    - FUN_1401b1064
-    - FUN_1401b1168
-    - FUN_1401b11e8
-    - FUN_1401b12d0
-    - FUN_1401b13a8
+    - FUN_1401ae030
     - FUN_1401b13b0
-    - FUN_1401b1480
-    - FUN_1401b1564
-    - FUN_1401b18c0
-    - FUN_1401b1900
     - FUN_1401b192c
     - FUN_1401b19a0
     - FUN_1401b19a8
@@ -4787,7 +4736,6 @@ missing_functions_categorized:
     - FUN_1401b1ff4
     - FUN_1401b7398
     - FUN_1401b7420
-    - FUN_1401b75e0
     - FUN_1401b75e8
     - FUN_1401b76c8
     - FUN_1401b77a0
@@ -4798,7 +4746,6 @@ missing_functions_categorized:
     - FUN_1401b7a4c
     - FUN_1401b7bb8
     - FUN_1401b7c2c
-    - FUN_1401b7ca8
     - FUN_1401b7d48
     - FUN_1401b7da8
     - FUN_1401b7f24
@@ -4806,6 +4753,7 @@ missing_functions_categorized:
     - FUN_1401b7fbc
     - FUN_1401b7fd8
     - FUN_1401b7ff8
+    - FUN_1401bb54c
     - FUN_1401c2068
     - FUN_1401c2104
     - FUN_1401c21e0
@@ -4817,20 +4765,12 @@ missing_functions_categorized:
     - FUN_1401c2798
     - FUN_1401c2824
     - FUN_1401c2968
-    - FUN_1401c29d4
-    - FUN_1401c2d24
     - FUN_1401e71a4
     - FUN_1401e7260
     - FUN_1401e726c
     - FUN_1401e7298
-    - FUN_1401e73e0
-    - FUN_1401ea355
-    - FUN_1401eaa8e
-    - FUN_1401eabf7
     - FUN_1401ec740
     - FUN_1401ec880
-    - FUN_1401ec950
-    - FUN_1401ecaa0
     - FUN_1401eccd0
     - FUN_1401ecd10
     - FUN_1401ecda0
@@ -4849,7 +4789,6 @@ missing_functions_categorized:
     - FUN_1401eecc0
     - FUN_1401eed88
     - FUN_1401eeec4
-    - FUN_1401eef6c
     - FUN_1401ef0e8
     - FUN_1401ef114
     - FUN_1401ef288
@@ -4876,13 +4815,9 @@ missing_functions_categorized:
     - FUN_1401f0308
     - FUN_1401f0328
     - FUN_1401f0330
-    - FUN_1401f0340
-    - FUN_1401f05c0
     - FUN_1401f0e1f
-    - FUN_1401f0e2b
     - FUN_1401f2028
     - FUN_1401f2078
-    - FUN_1401f208c
     - FUN_1401f6384
     - FUN_1401f63a4
     - FUN_1401fb02c
@@ -4936,8 +4871,6 @@ missing_functions_categorized:
     - FUN_1401fcf54
     - FUN_1401fcfac
     - FUN_14020c5e8
-    - FUN_14020c668
-    - FUN_14020c6ef
     - FUN_14022900a
     - FUN_14022901a
     - FUN_14022902a
@@ -4989,5 +4922,80 @@ missing_functions_categorized:
     - FUN_14022935a
     - FUN_14022936a
     Window Management:
-    - FUN_1400126e0
-    - FUN_140012750
+    - FUN_14001aac8
+    - FUN_1400db4e8
+    - FUN_14010cc40
+    - FUN_140122380
+    - FUN_140127b44
+    - FUN_140127f30
+    - FUN_140128510
+    - FUN_14012d68c
+    - FUN_14012e2fc
+    - FUN_14012f488
+    - FUN_14013593c
+    - FUN_14013e84c
+    - FUN_14013f614
+    - FUN_1401473e0
+    - FUN_14014aeb8
+    - FUN_14014e378
+    - FUN_14014fb58
+    - FUN_140155508
+    - FUN_140155710
+    - FUN_1401567d4
+    - FUN_140159524
+    - FUN_14015b0e0
+    - FUN_14015bb08
+    - FUN_14015d998
+    - FUN_14015f500
+    - FUN_1401612e0
+    - FUN_14016166c
+    - FUN_140161764
+    - FUN_140162044
+    - FUN_14016261c
+    - FUN_140162b34
+    - FUN_140162c10
+    - FUN_140166aa8
+    - FUN_140166be0
+    - FUN_140167608
+    - FUN_14016f2d4
+    - FUN_14016f744
+    - FUN_14017010c
+    - FUN_140170118
+    - FUN_140170160
+    - FUN_140172858
+    - FUN_140172864
+    - FUN_14017684c
+    - FUN_1401792b8
+    - FUN_140179d70
+    - FUN_14017a4c4
+    - FUN_14017a670
+    - FUN_14017b8d4
+    - FUN_140181770
+    - FUN_140188850
+    - FUN_14018e1f4
+    - FUN_140193074
+    - FUN_140193450
+    - FUN_140193a90
+    - FUN_140197878
+    - FUN_140197bbc
+    - FUN_140199b3c
+    - FUN_140199bc4
+    - FUN_14019cc88
+    - FUN_14019d0dc
+    - FUN_14019f7dc
+    - FUN_1401acbd0
+    - FUN_1401ad8fc
+    - FUN_1401af72c
+    - FUN_1401b1064
+    - FUN_1401b1168
+    - FUN_1401b7ca8
+    - FUN_1401b9a94
+    - FUN_1401bf38c
+    - FUN_1401c3854
+    - FUN_1401c38f0
+    - FUN_1401c5560
+    - FUN_1401c55e8
+    - FUN_1401c58e8
+    - FUN_1401c995c
+    - FUN_1401cac78
+    - FUN_1401cbedc
