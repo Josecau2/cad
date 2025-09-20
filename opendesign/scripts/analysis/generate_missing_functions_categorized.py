@@ -48,6 +48,8 @@ MD_DECOMP_GLOBS = [
     DOCS / "design.exe.md",
     DOCS / "design.exe (2).md",
 ]
+OUT_CSV = DOCS / "missing_functions_categorized.csv"
+HOTSPOTS_MD = DOCS / "missing_functions_hotspots.md"
 
 
 ADDR_RE = re.compile(r"0x([0-9a-fA-F]+)")
@@ -367,6 +369,61 @@ def categorize_missing(missing: list[str], pfx_map: dict[str, str], pfx_len: int
     return dict(sorted(cats.items(), key=lambda x: (x[0] != "Uncategorized", x[0])))
 
 
+def flatten_with_reasons(missing: list[str], categories: dict[str, list[str]], pfx_map: dict[str, str], per_fun_cat: dict[str, str] | None, pfx_len: int = 6) -> list[dict[str, str]]:
+    rows: list[dict[str, str]] = []
+    cat_of: dict[str, str] = {}
+    for cat, items in categories.items():
+        for fun in items:
+            cat_of[fun] = cat
+    for fun in missing:
+        addr = hex_from_fun(fun) or ""
+        pfx = prefix(addr, pfx_len) if addr else ""
+        if per_fun_cat and fun in per_fun_cat:
+            source = "body"
+            cat = per_fun_cat[fun]
+        else:
+            cat = pfx_map.get(pfx, "Uncategorized")
+            source = "prefix" if pfx in pfx_map else "none"
+        rows.append({
+            "function": fun,
+            "address": addr,
+            "prefix": pfx,
+            "category": cat_of.get(fun, cat),
+            "source": source,
+        })
+    return rows
+
+
+def write_csv(rows: list[dict[str, str]]) -> None:
+    if not rows:
+        return
+    keys = ["function", "address", "prefix", "category", "source"]
+    with OUT_CSV.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=keys)
+        w.writeheader()
+        for r in rows:
+            w.writerow(r)
+
+
+def write_hotspots_md(votes: Counter[tuple[str, str]], pfx_map: dict[str, str], top_n: int = 20) -> None:
+    # Aggregate votes per prefix
+    per_pfx: dict[str, Counter[str]] = defaultdict(Counter)
+    for (pfx, cat), c in votes.items():
+        per_pfx[pfx][cat] += c
+    ranked = sorted(per_pfx.items(), key=lambda x: -sum(x[1].values()))[:top_n]
+    lines: list[str] = []
+    lines.append("# Missing Functions Hotspots\n")
+    lines.append("These are the top address-prefix clusters by vote weight. Adding 2–5 curated entries per cluster to `decompiled_map.csv` will significantly reduce `Uncategorized`.\n\n")
+    lines.append("| Prefix | Top Category | Votes | Breakdown |\n")
+    lines.append("|--------|--------------|-------|-----------|\n")
+    for pfx, cats in ranked:
+        total = sum(cats.values())
+        top_cat, top_votes = sorted(cats.items(), key=lambda x: -x[1])[0]
+        breakdown = ", ".join(f"{k}:{v}" for k, v in sorted(cats.items(), key=lambda x: -x[1]))
+        lines.append(f"| {pfx} | {top_cat} | {total} | {breakdown} |\n")
+    HOTSPOTS_MD.write_text("".join(lines), encoding="utf-8")
+
+
 def emit_yaml(categories: dict[str, list[str]], total: int) -> str:
     generated_on = time.strftime("%Y-%m-%d %H:%M:%S %Z", time.localtime())
     header = {
@@ -417,7 +474,12 @@ def main() -> int:
     categories = categorize_missing(missing, pfx_map, per_fun_cat=per_fun_cat)
     out = emit_yaml(categories, total=len(missing))
     OUT_YAML.write_text(out, encoding="utf-8")
+    # CSV + Hotspots
+    rows = flatten_with_reasons(missing, categories, pfx_map, per_fun_cat)
+    write_csv(rows)
+    write_hotspots_md(votes, pfx_map)
     print(f"Wrote {OUT_YAML} with {len(missing)} items across {len(categories)} categories.")
+    print(f"Also wrote {OUT_CSV} and {HOTSPOTS_MD} for auditing.")
     # Simple report to stdout: show top-10 prefixes mapping
     top_prefixes = sorted(
         ((p, c) for (p, _), c in votes.items()), key=lambda x: -x[1]
